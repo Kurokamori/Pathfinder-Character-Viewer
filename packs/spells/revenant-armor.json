@@ -1,0 +1,188 @@
+{
+  "_id": "s4epuvhk0ah1hxas",
+  "name": "Revenant Armor",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "4wcsnhuck5tcysd3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 day/level or 1 hour/level; see below",
+          "units": ""
+        },
+        "target": {
+          "value": "one suit of armor"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "paladin",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "antipaladin",
+          3
+        ],
+        [
+          "magus",
+          4
+        ],
+        [
+          "shaman",
+          3
+        ],
+        [
+          "medium",
+          4
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "spiritualist",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "one suit of armor"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell endows a suit of armor with a singular purpose realized only after its wearer goes unconscious or is killed; whenever the wearer of a suit of armor warded by <i>revenant armor</i> is brought below 0 hit points or otherwise rendered unconscious (but not paralyzed or held) in combat, the armor is immediately brought to life as a Medium animated object. This animated suit of armor still contains the unconscious (or dead) body of its former wearer and moves with a shambling gait at a speed of 20 feet. This animated object has average hit points and, if the armor is made from metal, it has the metal animated object extraordinary ability (plus additional abilities based on the type of metal, as indicated on page 14 of the <i>Pathfinder RPG</i> Bestiary). Once animated, the <i>revenant armor</i> remains standing (and stands if knocked prone, doing so without provoking attacks of opportunity), and prevents the wearer of the armor from being considered helpless. If an ally of the wearer is within range of the armor, she can direct it to move, though it refuses to go anywhere that requires a skill check. If grappled or otherwise restrained, it can attempt to break free with a Strength score equal to your caster level and a CMB equal to 1 + your caster level + the armor's Strength modifier. If the armor's wearer is reduced to dust, made conscious, or removed from the armor, the spell ends.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

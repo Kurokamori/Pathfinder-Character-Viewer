@@ -1,0 +1,173 @@
+{
+  "_id": "git5kvxvr45mm7xk",
+  "name": "Geomessage",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "d05fer7u4sfoz9mj",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 day/level",
+          "units": ""
+        },
+        "target": {
+          "value": "surface touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "ranger",
+          3
+        ],
+        [
+          "bard",
+          3
+        ],
+        [
+          "medium",
+          3
+        ],
+        [
+          "occultist",
+          3
+        ],
+        [
+          "hunter",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "ill",
+    "subschool": "figment",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a scrap of vellum"
+    },
+    "sr": false,
+    "shortDescription": "<p>You create a written message of 50 words or fewer, or else an image, a drawing, or a similar diagram. The figment hangs invisible and obscured upon the target surface for the duration of the spell. Another casting of <i>geomessage</i> is needed to cause the figment to arrange itself into the intended message.  When you cast the spell, you can choose to incorporate a passphrase into the spell. If you do so, the message is protected as if <i>nondetection</i> had been cast on it for the full duration of the spell, though creatures that cast <i>geomessage</i> on the surface and speak the passphrase ignore the <i>nondetection</i> effect and cause the image to become visible until the caster speaks the passphrase again.  Without a passphrase, the message simply remains invisible to those who cast <i>geomessage</i>. Detection methods like <i>detect magic</i> and <i>see invisibility</i> indicate the message's presence but do not reveal its contents.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

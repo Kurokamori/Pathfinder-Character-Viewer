@@ -1,0 +1,104 @@
+{
+  "_id": "AXuljvWINi0KJ4QF",
+  "name": "Runeslave",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template&nbsp;</strong>Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons</strong>&nbsp;No<br><br>The ageless monuments and awesome cities of Thassilon rose upon the backs of countless slaves, but none bore the sin-poisoned civilization’s burden more than the giants. Able to perform the work of dozens of human slaves, Thassilon’s titanic servants—hill giants, stone giants, taiga giants, and others—crafted marvels nigh unparalleled in any era before or since, and shaped the face of what is now modern Varisia. Yet as viciously as the runelords worked their slaves and for all they demanded, the giant-crafted marvels were not enough. And thus, working the corrupt rune magic that was theirs alone, the runelords manufactured a damning curse and laid it over their most tireless and effective workers, and in so doing created a new breed of servant: the runeslave.<br><br>Numerous severe-looking runes spark and flicker upon a runeslave’s body, seemingly seared into the creature’s flesh. One of the runes is larger and more prominent than the others—this is always one of the runes of Thassilonian magic. Although a runeslave’s mind is dulled, its muscles bulge grotesquely, as if barely contained beneath a thin layer of skin, and such behemoths move with unnatural agility for creatures of their ponderous size.<br><br>Note that while the runeslave template does make a giant more powerful (and thus increases its CR), few, if any giants would seek to gain a runeslave’s powers. Despite the advantages the runeslave gains, what it loses in free will and longevity typically vastly outweigh the benefits. In combat, a runeslave is deadly and terrifying, but in life, the condition is rightly feared among giants as a devastating and debilitating curse.<br><br>“Runeslave” is an acquired template that can be added to any giant (referred to hereafter as the base creature). A runeslave uses all the base creature’s statistics and special abilities except as noted here.<br><br><strong>CR:</strong> Same as the base creature +1.</p>\n<p><strong>Defensive Abilities: </strong>A runeslave becomes immune to fear effects, exhaustion, and fatigue. In addition, all runeslaves gain the following additional defensive ability.</p>\n<p><em>Resist Pain (Ex): </em>Runeslaves can continue to function even after taking great punishment. They are immune to nonlethal damage. Against effects that inf lict pain (such as a&nbsp;symbol of pain&nbsp;spell), a runeslave gains a +4 bonus on all saving throws.<br>Weaknesses: Runeslaves gain the following weakness.</p>\n<p><em>Arcane Decay (Su): </em>The symbols etched upon a runeslave’s body put great stress on its physical form, choking its mind and ultimately killing the giant in time. Each runeslave has a predominant Thassilonian rune associated with one school of magic inscribed on its body. Traditionally, this rune is of a school of magic directly opposed to the runelord the runeslave serves— all of the runeslaves encountered in this adventure bear the sign of wrath upon their bodies as a sort of brand of shame. The slow decay of a runeslave’s mental faculties manifests as a gradual loss of life and sanity, represented by the accumulation of rune-shaped scars all over the body. The disease has no additional physical or mental effect until these magical runescars completely overwhelm their host, at which point the accumulated pain the giant has endured since becoming a runeslave is released in a fatal surge of unleashed suffering. All runeslaves are “infected” with this disease. Only&nbsp;limited wish,&nbsp;miracle, or&nbsp;wish&nbsp;can prevent or cure arcane decay, but in so doing removes the entire template, reverting the runeslave back to the base creature. Multiple successful Fortitude saves only delay the decay and do not cure the creature of the disease.</p>\n<p>Arcane Decay: Inherited—non-contagious; save Fortitude DC 15;&nbsp;frequency&nbsp;1/week;&nbsp;effect&nbsp;gain one runescar;&nbsp;cure&nbsp;none (but see above). When a runeslave’s number of runescars equals its Hit Dice, it dies.</p>\n<p><strong>Speed: </strong>A runeslave’s base land speed is 20 feet faster than the base creature’s. Other forms of movement, such as flying or swim speeds, are unaffected.</p>\n<p><strong>Special Attacks: </strong>A runeslave gains the following special attack.</p>\n<p><em>Arcane Surge (Su): </em>Once per day as a swift action, a runeslave can gain the benefits of the spell haste for 6 rounds. Using this ability forces the giant to make an additional Fortitude save against arcane decay, even if it has already made its weekly save to resist the disease.</p>\n<p><strong>Abilities: </strong>Change from the base creature as follows: Str +4, Dex +2, Int –2, Wis –2, Cha –2.</p>\n<p><strong>Feats: </strong>Runeslaves gain Diehard and Toughness as bonus feats.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "rslb9djp",
+        "formula": "20",
+        "operator": "+",
+        "subTarget": "landSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "6oqlm8q0",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "oeejn6sf",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "eylsh57o",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "tnn3f26k",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "3stmq4u0",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

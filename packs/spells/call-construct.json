@@ -1,0 +1,171 @@
+{
+  "_id": "5dqqieb7vr4ated0",
+  "name": "Call Construct",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "njt6zeozxrd2lnvh",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "permanent until discharged",
+          "units": ""
+        },
+        "target": {
+          "value": "construct touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "cleric/oracle",
+          8
+        ],
+        [
+          "psychic",
+          8
+        ],
+        [
+          "occultist",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 8,
+    "school": "con",
+    "subschool": "teleportation",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a sapphire worth 1,000 or 5,000 gp; see text",
+      "gpValue": 5000
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions as <i>instant summons</i>, except it can only summon a construct you control. For constructs such as golems that are immune to magic, the value of the specially inscribed sapphire must be at least 5,000 gp. For other constructs, a 1,000 gp sapphire suffices.</p><p>If the construct is no longer under your control or destroyed, the spell fails, but you know roughly where the construct or its remains are located.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

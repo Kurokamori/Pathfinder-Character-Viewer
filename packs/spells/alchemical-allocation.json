@@ -1,0 +1,147 @@
+{
+  "_id": "lni0xmn8z19ha7dp",
+  "name": "Alchemical Allocation",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "jb3167tad2y9r9t7",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "alchemist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This extract causes a pale aura to emanate from your mouth.</p><p>If you consume a potion or elixir on the round following the consumption of this extract, you can spit it back into its container as a free action. You gain all the benefits of the potion or elixir, but it is not consumed. You can only gain the benefits of one potion or elixir in this way per use of this extract.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,160 @@
+{
+  "_id": "lxxliyxfw9uvbxmt",
+  "name": "Prismatic Sphere",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "hidk3p924k5q1eyi",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "10 min./level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": "see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "10-ft.-radius sphere centered on you",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ]
+      ],
+      "domain": [
+        [
+          "Artifice",
+          9
+        ],
+        [
+          "Protection",
+          9
+        ],
+        [
+          "Sun",
+          9
+        ]
+      ],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 9,
+    "school": "abj",
+    "components": {
+      "verbal": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions like <i>prismatic wall</i>, except you conjure up an immobile, opaque globe of shimmering, multicolored light that surrounds you and protects you from all forms of attack. The sphere flashes in all colors of the visible spectrum.</p><p>The sphere's <i>blindness</i> effect on creatures with less than 8 HD lasts 2d4 x 10 minutes.</p><p>You can pass into and out of the <i>prismatic sphere</i> and remain near it without harm. When you're inside it, however, the sphere blocks any attempt to project something through the sphere (including spells). Other creatures that attempt to attack you or pass through suffer the effects of each color, one at a time.</p><p>Typically, only the upper hemisphere of the globe exists, since you are at the center of the sphere, so the lower half is usually occluded by the floor surface you are standing on.</p><p>The colors of the sphere have the same effects as the colors of a <i>prismatic wall</i>.</p><p><i>Prismatic sphere</i> can be made permanent with a <i>permanency</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

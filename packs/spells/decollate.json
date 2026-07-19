@@ -1,0 +1,175 @@
+{
+  "_id": "mjrefx0wsksq3ldm",
+  "name": "Decollate",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "9f6l3v5h3hi0bi1n",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "24 hours",
+          "units": ""
+        },
+        "target": {
+          "value": "one willing humanoid or monstrous humanoid creature"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "alchemist",
+          4
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "antipaladin",
+          4
+        ],
+        [
+          "psychic",
+          6
+        ],
+        [
+          "spiritualist",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a red wax pencil"
+    },
+    "shortDescription": "<p>A thin red line circles the target's neck. The target's head becomes detachable so long as she removes it willingly. While the target's head is detached, she gains DR 2/- and immunity to decapitation effects and other effects that require their target to have a head or a particular facial feature. The target is blind so long as she has no head, but she gains blindsense to a distance of 15 feet. The target hears normally even without its head.  While detached, the target's head appears to be dead. The target can't see through its eyes or hear events around the head. The target's body knows the direction and distance to its head. Without additional protection, the severed head has AC 7, hardness 5, and 10 hit points. Destroying the head while the  spell is in effect kills the target of the spell. If the spell's duration expires normally without the head being reattached, the target dies. If either the target or the head are removed to a different plane, or if the spell is dispelled, the head teleports back to its owner and reattaches without further harm.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

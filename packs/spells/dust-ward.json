@@ -1,0 +1,160 @@
+{
+  "_id": "omgxrbzwyma7v2zh",
+  "name": "Dust Ward",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "m1qnfc1o8whfbdqw",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "permanent",
+          "units": ""
+        },
+        "target": {
+          "value": "one magic item"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "cleric/oracle",
+          6
+        ],
+        [
+          "witch",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a pinch of pumice"
+    },
+    "sr": false,
+    "shortDescription": "<p>You ward a magic item against other creatures who try to learn to use or copy it. When you cast the spell, you designate one creature type, subtype, or a specific individual. If the item is worn or carried for 1 continuous hour or more by a creature that doesn't match the designation, the <i>dust ward</i> disintegrates the item into worthless gray dust. This destruction also occurs if the creature attempts to study the item in order to learn its properties  or how to magically craft it (a <i>miracle</i> or <i>wish</i> spell used on the gray dust can still reveal this information). The destruction of the item doesn't harm the creature wearing or carrying the item (although the item's destruction may put the creature in harm's way, such as if a magical rope were being used to cross a chasm at the time). If the offending creature wears or carries the item for less than 1 hour and passes it to a different creature, the countdown to the item's destruction starts over.  The spell cannot affect a magic item with a caster level greater than half your caster level.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

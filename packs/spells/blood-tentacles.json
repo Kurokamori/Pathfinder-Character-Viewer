@@ -1,0 +1,176 @@
+{
+  "_id": "lsa1lozdd39s7iwd",
+  "name": "Blood Tentacles",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "e2gla4jumkk6d0yt",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "antipaladin",
+          4
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "unchained Summoner",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a fresh handful of the caster's blood"
+    },
+    "sr": false,
+    "shortDescription": "<p>You smear a handful of your own blood across your chest, causing one writhing tentacle per caster level to burst forth. You can direct these tentacles to attack a single creature within 15 feet as a standard action, or one creature per 5 caster levels as a full-round action. Each tentacle has an attack bonus equal to your base attack bonus plus either your Constitution or Charisma bonus (whichever is higher). Each tentacle deals 2d6 points of damage, and a tentacle collapses into dried blood on a successful hit, granting you a number of temporary hit points equal to the damage dealt. You can't gain more temporary hit points than your maximum number of hit points. These temporary hit points disappear after 1 hour.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

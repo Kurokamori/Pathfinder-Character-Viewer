@@ -1,0 +1,186 @@
+{
+  "_id": "yhv83gip7jzr0ur2",
+  "name": "Burning Arc",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "5ubjbngn3c87gumb",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "one primary target plus one additional target/3 levels  (each of which must be within 15 ft. of the primary target)"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(min(@cl, 10))d6",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ],
+            [
+              "(min(floor(@cl / 2), 5))d6",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ],
+            [
+              "(min(floor(@cl / 4), 5))d6",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ],
+            [
+              "(min(floor(@cl / 8), 5))d6",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "evo",
+    "types": "fire",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "spellbook": "",
+    "shortDescription": "<p>Keleshites brag that they stole this spell from genie-kind thousands of years ago while other civilizations struggled without fire.</p><p>This spell causes an arc of flame to leap from your fingers, burning a number of enemies nearby. It deals 1d6 points of fire damage per caster level (maximum 10d6). For every additional target the discharge arcs to, reduce the number of damage dice by half (rounded down). Therefore, at 9th level, your <i>burning arc</i> deals 9d6 points of fire damage to the primary target, then 4d6 points of fire damage to a secondary target, then 2d6 points of fire damage to an additional target.</p><p>Each target can attempt a Reflex saving throw for half damage. The Reflex DC to halve the damage of the secondary bolts is 2 lower than the DC to halve the damage of the primary bolt. You may choose secondary targets as you like, but they must all be within 15 feet of the primary target, and no target can be struck more than once. You can choose to affect fewer secondary targets than the maximum.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

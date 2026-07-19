@@ -1,0 +1,165 @@
+{
+  "_id": "kxqp3ol6rtrmq56w",
+  "name": "Remote Viewing",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "zwiyx8ncarp7x16d",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "hour"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "hour"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "psychic",
+          5
+        ],
+        [
+          "medium",
+          4
+        ],
+        [
+          "occultist",
+          5
+        ],
+        [
+          "spiritualist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "div",
+    "subschool": "scrying",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "incense"
+    },
+    "sr": false,
+    "shortDescription": "<p>Your body enters a trance as you send your psychic senses to a distant location and gain psychic impressions of that location. You must specify the distance and direction to the location you desire to view remotely. This spell doesn't allow you to see the visual appearance of the location's surface, so it isn't useful for casting spells like <i>teleport</i>, but it grants you a psychic impression of the location, which could give you deeper information. For example, a forest that is home to a tight-knit community of fey might appear as a city in the trees, or a beautiful palace ruled by an evil king and warded by <i>forbiddance</i> might appear as a dark fortress encased in insubstantial chains.  During the 1 hour casting time of <i>remote viewing</i>, your real body is unconscious and helpless, and you are unaware of its surroundings.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

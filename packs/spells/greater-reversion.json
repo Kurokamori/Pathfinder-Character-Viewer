@@ -1,0 +1,158 @@
+{
+  "_id": "wy84mxf4hgqilrsr",
+  "name": "Greater Reversion",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "boslqia9mwhsqbr0",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 20,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 20,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "24 hours",
+          "units": ""
+        },
+        "target": {
+          "value": "self"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "psychic",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "con",
+    "subschool": "healing",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "spellbook": "",
+    "sr": false,
+    "shortDescription": "<p>You create a fine-tuned replica of yourself within the Akashic Record at the time the spell is cast. You must currently have a number of hit points equal to or greater than half your maximum hit points to cast the spell. If at any time during the duration of the spell you are brought below half your maximum hit points, you can end this spell as an immediate action to absorb strength from your replica and immediately regain a number of hit points equal to 3d8 plus 1 point per caster level (maximum +15).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,183 @@
+{
+  "_id": "1zmn8vqy3s5l9kiv",
+  "name": "Summon Monster III",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "rb0qy2krwti920x4",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "one summoned creature",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "bard",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "antipaladin",
+          3
+        ],
+        [
+          "psychic",
+          3
+        ],
+        [
+          "spiritualist",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Serpentine",
+          3
+        ]
+      ]
+    },
+    "level": 3,
+    "school": "con",
+    "subschool": "summoning",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true,
+      "divineFocus": 3
+    },
+    "materials": {
+      "focus": "a tiny bag and a small candle"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions like <i>summon monster I,</i> except that you can summon one creature from the 3rd-level list, 1d3 creatures of the same kind from the 2nd-level list, or 1d4+1 creatures of the same kind from the 1st-level list.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

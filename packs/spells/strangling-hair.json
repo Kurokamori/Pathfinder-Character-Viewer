@@ -1,0 +1,155 @@
+{
+  "_id": "pyy5dujaf2n4qyjg",
+  "name": "Strangling Hair",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3feqou61s6xnwhou",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "concentration, up to 1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "psychic",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>Your hair animates and extends to grapple and constrict an opponent. Make a grapple check against the target using your caster level as the base attack bonus plus a bonus equal to your Intelligence bonus (if a witch or wizard) or Charisma bonus (if a sorcerer). This grapple check does not provoke attacks of opportunity. If your hair succeeds in grappling a foe, that creature takes 1d6 points of damage or your unarmed strike damage, whichever is greater, and gains the grappled condition. Your hair receives a +5 bonus on grapple checks made against opponents it is already grappling, but cannot move foes or pin foes. Each round that your hair succeeds on a grapple check, it deals an additional 1d6 points of damage. The CMD of your hair, for the purposes of escaping the grapple, is equal to 10 + its CMB.  Once you choose a target, your hair continues to attack that target independently of your own actions. You may designate a new target as a move action, which causes your hair to release its current target (if any) and attack the new target that round. Your hair cannot be targeted as a separate creature, but it can be dispelled.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

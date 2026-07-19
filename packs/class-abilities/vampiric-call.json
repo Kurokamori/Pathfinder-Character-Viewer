@@ -1,0 +1,63 @@
+{
+  "_id": "UpeasYXOlT5nWAHp",
+  "name": "Vampiric Call",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/beast_02.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The vampire hunter summons base creatures of the night—bats, rats, insects, and the like—to swarm around him. These creatures provide a measure of defense against damage, granting the vampire hunter a number of&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Temporary-Hit-Points\">temporary hit points</a>&nbsp;equal to his level. At 8th level, he also gains a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Deflection-Bonus\">deflection bonus</a>&nbsp;to AC. At 16th level, the&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Deflection-Bonus\">deflection bonus</a>&nbsp;increases to +4.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "ltdmlj0m",
+        "formula": "@classes.vampirehunter.level >= 16 ? 4 : ((@classes.vampirehunter.level < 16 && @classes.vampirehunter.level > 7) ? 2 : 0)",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "deflection",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_vampiricCall",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Vampire Hunter"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

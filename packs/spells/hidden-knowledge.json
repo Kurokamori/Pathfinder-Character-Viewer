@@ -1,0 +1,172 @@
+{
+  "_id": "ifsqq71zrbbgyqwv",
+  "name": "Hidden Knowledge",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "jii3ml7iwjpu8ib6",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "up to 1 day/level (see text)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "bard",
+          2
+        ],
+        [
+          "psychic",
+          2
+        ],
+        [
+          "medium",
+          2
+        ],
+        [
+          "mesmerist",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a drop of ink"
+    },
+    "sr": false,
+    "shortDescription": "<p>This subtle but useful spell allows you to safeguard important knowledge-even from yourself. While casting this spell, you recite one piece of knowledge (up to a maximum of 50 words). Upon completion of the spell's casting, you transfer the knowledge from your mind to your skin in the form of an intricate, runic tattoo placed anywhere you choose on your body. The knowledge disappears utterly from your mind, and you might not realize you forgot something. The magic of the spell patches over gaps in your memory with recollections from the past. Until the spell's duration ends, the knowledge is lost to you. When you cast this spell, you decide how long you wish the spell's duration to be, up to a maximum duration of 1 day per level. Many Cyphermages commission nonmagical tattoos to disguise the effects of this spell. A <i>detect magic</i> spell or a successful Linguistics or Spellcraft check (DC 20 + your Intelligence modifier) reveals an enchanted tattoo, but not its contents. The effects of <i>hidden knowledge</i> can be dispelled normally, in which case the knowledge is completely lost.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

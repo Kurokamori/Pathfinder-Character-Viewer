@@ -1,0 +1,158 @@
+{
+  "_id": "r6ojcwccisqle5v7",
+  "name": "Parchment Swarm",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "dj33fvm21ahcj92g",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "magus",
+          5
+        ],
+        [
+          "occultist",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "trs",
+    "components": {
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "blank parchment or magic scroll; see text"
+    },
+    "shortDescription": "<p>When you cast this spell, you quickly tear a <i>parchment</i> into shreds, releasing the flying fragments to swarm around a target creature and deliver thousands of tiny paper cuts. Using normal <i>parchment</i>, the spell deals 1d6 points of magical slashing damage per caster level (maximum 15d6).  If you use a magic scroll as the material component, choose one of the spells stored in the scroll. If the spell is 1st level, you can choose to apply the effect of that spell to the <i>parchment</i> swarm's target on a failed Reflex save (if the spell on the scroll has its own saving throw, the target then attempts that save as normal). If the spell on the scroll is at least 2nd level, you can choose to instead change <i>parchment</i> swarm to affect a 20-foot-radius spread instead of a single target.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

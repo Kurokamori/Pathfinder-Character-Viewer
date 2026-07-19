@@ -1,0 +1,153 @@
+{
+  "_id": "hBB8NF2FxK4WRIAS",
+  "name": "Pata",
+  "type": "weapon",
+  "img": "icons/weapons/fist/punch-dagger-flared-brown.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 20</em>, <em>Pathfinder #9: Escape from Old Korvosa pg. 83</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>Adventurer's Armory pg. 18</em>, <em>Ultimate Combat pg. 144</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 14 gp <strong>Weight</strong> 3 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x3; <strong>Range</strong> -; <strong>Type</strong> P; <strong>Special</strong> performance</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Axes; Blades, Light</p><h3 class=\"framing\">Description</h3><p>An evolution of the punching dagger, the pata is a short sword that ends in a full, fingerless gauntlet hilt. You punch rather than stab with the weapon, allowing you to put more force behind each strike. While wearing a pata, you cannot use that hand for anything else. A pata provides a +10 bonus to your CMD against disarm attempts.</p>"
+    },
+    "tags": [],
+    "weight": 3,
+    "price": 14,
+    "hp": {
+      "max": "2",
+      "value": "2"
+    },
+    "hardness": 10,
+    "identifiedName": "Pata",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "cqt95i6r7yb9wunl",
+        "name": "Attack",
+        "img": "icons/weapons/fist/punch-dagger-flared-brown.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "pata",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

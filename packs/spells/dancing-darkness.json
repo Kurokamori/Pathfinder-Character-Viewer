@@ -1,0 +1,176 @@
+{
+  "_id": "h8dedg0k7wl0xw7v",
+  "name": "Dancing Darkness",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3w13r6ximyqui300",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "Up to four spheres, all within a 10-ft.-radius area",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          1
+        ],
+        [
+          "bard",
+          1
+        ],
+        [
+          "witch",
+          1
+        ],
+        [
+          "antipaladin",
+          1
+        ],
+        [
+          "magus",
+          1
+        ],
+        [
+          "shaman",
+          1
+        ],
+        [
+          "psychic",
+          1
+        ],
+        [
+          "spiritualist",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "school": "evo",
+    "types": "darkness, shadow",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>You create either up to four spheres of darkness that each reduce the illumination level by one step within a 20-foot-radius, or one dimly lit, vaguely humanoid shape. Each sphere of <i>dancing darkness</i> must stay within a 10-foot-radius area of one another but can otherwise move as you desire (no concentration required): forward or back, up or down, straight or turning corners, or the like. The darkness can move up to 100 feet per round. The effect winks out if the distance between you and it exceeds the spell's range.  <i>Dancing shadows</i> can be made permanent with a <i>permanency</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

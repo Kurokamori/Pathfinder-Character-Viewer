@@ -1,0 +1,173 @@
+{
+  "_id": "oq1baifb9r4v00ah",
+  "name": "Fey Gate",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "vrk8duwq7bhirtl2",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level; see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "cleric/oracle",
+          8
+        ],
+        [
+          "druid",
+          8
+        ],
+        [
+          "bard",
+          6
+        ],
+        [
+          "summoner",
+          6
+        ],
+        [
+          "witch",
+          8
+        ],
+        [
+          "unchained Summoner",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 8,
+    "school": "con",
+    "subschool": "creation",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions as the planar travel function of <i>gate</i>, except it can be used to travel only between points on the Material Plane and the First World, and it comes with additional dangers.</p><p>This spell forms a circular portal between 5 and 20 feet in diameter (your choice) oriented in the direction you desire when it comes into being (typically vertical and facing you). The portal is full of gray fog that blocks line of sight.</p><p>Anyone or anything that moves through the portal to enter the First World is shunted instantly to a random point on that plane (the same point for everything traveling via a particular casting). At the end of the spell's duration, the caster can attempt a DC 30 Spellcraft check. On a success, the portal remains open for 1d4+1 days. Creatures exiting the First World through a fey <i>gate</i> always arrive at the location the spell was cast.</p><p>While the spell always deposits travelers on solid ground in the First World, it conveys no protections against whatever creatures or environmental hazards may be present there.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "WnIpZJLKpgv14D48",
+  "name": "Disrupt Animation",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/badge-cross.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You can use @Compendium[pf1.spells.oyu8efso7sio8arn]{Disrupt Undead}&nbsp;as a spell-like ability, adding your wisdom modifier to the damage. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "sjzb6cxu9fcddvhv",
+        "name": "Use",
+        "img": "systems/pf1/icons/items/inventory/badge-cross.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "one undead creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "3 + @abilities.wis.mod"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rsak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "1d6",
+              {
+                "values": [
+                  "positive"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "3 + @abilities.wis.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_disruptAnimation",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Inquisitor"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

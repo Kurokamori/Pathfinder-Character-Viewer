@@ -1,0 +1,59 @@
+{
+  "_id": "717fyDCcfLtD345B",
+  "name": "Teamwork Feat",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/gray_08.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, and every three levels thereafter, the inquisitor gains a bonus feat in addition to those gained from normal advancement. These bonus feats must be selected from those listed as teamwork feats. The inquisitor must meet the prerequisites of the selected bonus feat.<br><br>As a standard action, the inquisitor can choose to learn a new bonus teamwork feat in place of the most recent bonus teamwork feat she has already learned. In effect, the inquisitor loses the bonus feat in exchange for the new one. She can only change the most recent teamwork feat gained. Whenever she gains a new teamwork feat, the previous teamwork feat becomes set and cannot be changed again. An inquisitor can change her most recent teamwork feat a number of times per day equal to her Wisdom modifier.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "upaei6g0",
+        "formula": "floor(@classes.inquisitor.level / 3)",
+        "operator": "add",
+        "subTarget": "bonusFeats",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_teamworkFeat",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Inquisitor"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

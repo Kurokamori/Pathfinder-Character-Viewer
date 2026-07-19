@@ -1,0 +1,172 @@
+{
+  "_id": "fbudsmarxob3pcms",
+  "name": "Cave Fangs",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "yriry84lrvdzhitm",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 day/level or until triggered (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half (see below)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "one 5-ft. square/level (S); the area must be a stone surface",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "druid",
+          5
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "hunter",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "con",
+    "subschool": "creation",
+    "types": "earth",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a sharp gemstone fragment worth 150 gp",
+      "gpValue": 150
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>You create a magical trap in the area that causes deadly stalactites or stalagmites to lurch out of the floor or ceiling of a stone surface to \"bite\" an intruder. The magical trap is triggered whenever a Small or larger creature (other than you or your animal companion, familiar, or spirit animal) moves through the affected area. The effect of cave fangs depends on whether you create stalactites or stalagmites (see below). You can place these trapped squares anywhere within the spell's range; they need not be adjacent to each other, and you can create any mix of stalactites and stalagmites you wish. Cave fangs can be detected and disarmed as per a magical trap with successful DC 30 Perception and Disable Device checks. All trapped squares created by a single casting are linked, and they are all disabled if one of them is. If you place the traps in an area that is occupied by a creature, the spell effect is triggered at the completion of the casting.</p><p> Stalactites: Shards of rock drop from the ceiling, dealing 3d8 points of bludgeoning and piercing damage (Reflex half) and creating an area of dense rubble that costs 2 squares of movement to enter. Dense rubble adds 5 to the DC of Acrobatics checks and adds 2 to the DCs of Stealth checks. A creature that fails its Reflex save is pinned to the ground under stalactites and rubble, gaining the entangled condition until it can free itself with a successful DC 15 Strength check or DC 20 Escape Artist check. One Small or larger creature can automatically clear the rubble by working for 1 minute.</p><p> Stalagmites: Piercing spires of rock erupt up from the ground, dealing 3d8 points of piercing damage and knocking the creature prone (a creature that succeeds at a Reflex saving throw takes half damage and avoids being knocked prone). Once the stalagmites appear, they function thereafter as spike stones for 1 minute per caster level and then crumble to dust.</p><p> If cave fangs is cast inside of a cave or cavern, each effect of the spell deals 4d8 points of damage instead of 3d8, and creatures that trigger the cave fangs take a -2 penalty on their saving throws against the spell's effect.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

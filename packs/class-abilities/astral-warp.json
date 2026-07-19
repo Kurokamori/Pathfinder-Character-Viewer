@@ -1,0 +1,165 @@
+{
+  "_id": "d9KiqvtTy20LtBwZ",
+  "name": "Astral Warp",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/haste-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 1st level, you can create a sparkling field within 30 feet that distorts time within a 5-foot cube. This field lasts until the beginning of your next turn. Any creature that enters the area or that starts its turn within the cube takes 1d4 points of force damage + 1 point of force damage per 2&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;levels you have (<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Fortitude\">Fort</a>&nbsp;negates). While within the area, a creature takes a –1 penalty on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\">Reflex</a>&nbsp;saves and to AC. You can use this ability a number of times per day equal to 3 + your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "shoo57mwdnboc82h",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/haste-royal-1.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "target": {
+          "value": "5-ft. cube area"
+        },
+        "range": {
+          "value": "30",
+          "units": "spec",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "3 + @abilities.cha.mod"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "1d4 + floor(@classes.sorcerer.level / 2)",
+              {
+                "values": [
+                  "force"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "3 + @abilities.cha.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_astralWarp",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

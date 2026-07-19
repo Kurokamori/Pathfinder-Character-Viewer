@@ -1,0 +1,150 @@
+{
+  "_id": "dw7bed4J5DALgmFR",
+  "name": "Foe Throw Infusion",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/link-blue-2.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element&nbsp;</strong>aether;&nbsp;<strong>Type&nbsp;</strong>form infusion;&nbsp;<strong>Level&nbsp;</strong>3;&nbsp;<strong>Burn&nbsp;</strong>2<br><strong>Associated Blasts&nbsp;</strong>telekinetic<br><strong>Saving Throw&nbsp;</strong>Fortitude negates; see text</p>\n<p>Your telekinetic blast can throw a Large or smaller creature instead of an unattended object; you can increase the burn cost by 1 to affect a creature of a larger size. If the creature you attempt to throw succeeds at a Fortitude save, it negates the blast entirely. Otherwise, if your blast hits, both the thrown creature and the target take the full amount of damage from your telekinetic blast, and the thrown creature falls prone in the last unoccupied space along its path. If your blast misses, the thrown creature can choose to occupy any space within 30 feet of the target, it doesn’t fall prone, and it takes half the normal amount of damage from your blast. The movement doesn’t provoke attacks of opportunity.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "zy5m3qd0l09pd6xw",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/link-blue-2.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": ""
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude negates; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_foeThrowInfusion",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

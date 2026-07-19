@@ -1,0 +1,148 @@
+{
+  "_id": "7zvBqNNlc5i5EtFd",
+  "name": "Wooden Stake",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/wooden-stake.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 17</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>Adventurer's Armory pg. 5</em>, <em>Advanced Player's Guide pg. 179</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> - <strong>Weight</strong> 1 lb.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 10 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Simple</p><p><strong>Weapon Groups</strong> Close</p><h3 class=\"framing\">Description</h3><p>This close combat weapon is just a sharpened piece of wood. Iron spikes that are used as weapons deal damage as wooden stakes.</p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Wooden Stake",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "mn6ncyb1itvbiha7",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/wooden-stake.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "",
+          "critMult": "2"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "woodenStake",
+    "scriptCalls": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

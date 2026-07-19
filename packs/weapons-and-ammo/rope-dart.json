@@ -1,0 +1,153 @@
+{
+  "_id": "xRAy5aBcjRvvbz8z",
+  "name": "Rope Dart",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/dart-feathered.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 33</em>, <em>Ultimate Combat pg. 133</em>, <em>Ultimate Equipment pg. 21</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 1 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 20 ft.; <strong>Type</strong> P; <strong>Special</strong> blocking, distracting, monk</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Monk; Thrown</p><h3 class=\"framing\">Description</h3><p>This deceptively complex weapon appears to be nothing more than a 12-foot rope attached to a 6-inchlong, conical metal spike. Similar to a meteor hammer, it can be whirled at great speeds, then aimed to strike and pierce opponents with great reach. Once it strikes, the wielder can quickly retrieve the weapon with a tug of the rope as a free action.</p>"
+    },
+    "tags": [],
+    "price": 1,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Rope Dart",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "mw2ur865d7l7pof7",
+        "name": "Attack",
+        "img": "icons/weapons/thrown/dart-feathered.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "ropeDart",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

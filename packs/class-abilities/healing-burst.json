@@ -1,0 +1,164 @@
+{
+  "_id": "0NPPWtbVko8XeYXU",
+  "name": "Healing Burst",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/link-blue-2.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element&nbsp;</strong>aether, void, water, wood;&nbsp;<strong>Type&nbsp;</strong>utility (Sp);&nbsp;<strong>Level&nbsp;</strong>4;&nbsp;<strong>Burn&nbsp;</strong>1<br><strong>Prerequisite&nbsp;</strong>kinetic healer or void healer<br><strong>Saving Throw&nbsp;</strong>none;&nbsp;<strong>SR&nbsp;</strong>yes</p>\n<p>You use kinetic healer or void healer (whichever you have, or either if you have both) to heal all creatures in a 30-foot radius around you. Healing burst heals half as much damage as normal, unless your healing amount is based on positive blast, in which case it heals the full amount. Unlike kinetic healer, you must accept the burn yourself. This counts as kinetic healer for the purpose of the kinetic chirurgeon archetype (the 17th-level metahealer ability heals the kinetic chirurgeon twice—once for half and once for full).</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "fk7iedlbj3gcfxbq",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/link-blue-2.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "creatures in range"
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "floor(((ceil(@classes.kineticist.level/2))d6 + floor(@abilities.con.mod/2) + min(@resources.burn.value, floor(@classes.kineticist.level/3) ) * 2 ) / 2 )",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_healingBurst",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

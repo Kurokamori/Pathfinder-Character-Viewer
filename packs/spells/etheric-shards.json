@@ -1,0 +1,160 @@
+{
+  "_id": "6he32yv5sa89ox5y",
+  "name": "Etheric Shards",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "mt4rjx8opy7hhemq",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex partial or Reflex negates (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "one 10-ft. cube/level",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "psychic",
+          5
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "spiritualist",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "evo",
+    "types": "force",
+    "components": {
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "broken glass"
+    },
+    "sr": false,
+    "shortDescription": "<p>You harden interpenetrated ethereal substance into deadly transdimensional razors that are invisible to normal sight. Movement through an area of <i>etheric shards</i> is halved, even for incorporeal creatures, and creatures entering a 5-foot cube filled with <i>etheric shards</i> take 1d8 points of piercing and slashing damage and must succeed at a Reflex save or take 1 point of bleed damage. This bleed damage stacks with itself and other sources of bleed damage. A creature standing within an area of <i>etheric shards</i> takes no damage as long as it remains completely motionless, but even the minor movements involved in attacking or defending in combat force a stationary creature to attempt a Reflex save. If a stationary creature succeeds at this save, it avoids damage completely for that round, but if it fails, it takes hit point damage and bleed damage as though it had moved through the square.  A creature forcibly moved through an area of <i>etheric shards</i>, such as by a bull rush or drag combat maneuver, takes a -4 penalty on its saving throw, but a creature able to see invisible or ethereal objects gains a +4 bonus, and damage to it is completely negated on a successful Reflex save.  <i>Etheric shards</i> are considered a magical trap, and a creature with trapfinding can use Perception to find them. The DC of this check is equal to 25 + the spell's level. <i>Etheric shards</i> can't be disabled with the Disable Device skill.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

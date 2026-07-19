@@ -1,0 +1,173 @@
+{
+  "_id": "2uwoo18o9yggbwsr",
+  "name": "Healing Token",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3g7qwp7j5lhefkus",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "10 minutes/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one touched holy symbol per 3 caster levels"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          2
+        ],
+        [
+          "druid",
+          2
+        ],
+        [
+          "ranger",
+          2
+        ],
+        [
+          "paladin",
+          2
+        ],
+        [
+          "inquisitor",
+          2
+        ],
+        [
+          "shaman",
+          2
+        ],
+        [
+          "hunter",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "con",
+    "subschool": "healing",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "divineFocus": 1
+    },
+    "shortDescription": "<p>You imbue one touched holy symbol per 3 caster levels with a connection to your own divine power, turning the touched holy symbols into tokens of healing. Each of the targeted holy symbols can represent any deity regardless of the deity's actual alignment.  As long as you wear or carry your divine focus, any creature carrying a token of healing can make a plea for healing in a language you understand as a standard action. When they do this, you are silently alerted to the plea for healing and can magically heal the target as an immediate action anytime before the end of your next turn.  The magical healing you use to do this can be either a supernatural ability that heals damage (if you have uses available) or a spell or spell-like ability that belongs to the healing subschool (if you can cast any). In either case, to use the ability or cast the spell through this spell, you must be able to include or target that creature, and the ability's activation time or spell's casting time must be no longer than one standard action.  If the ability or healing spell you use through a token would affect multiple creatures, such as <i>mass cure light wounds</i>, the ability or spell affects the creature that pleaded for healing as well as any other creatures within the healing spell's normal range that are also holding a holy symbol imbued with this spell.  So, for example, when you use <i>mass cure light wounds</i> through a holy symbol that has been turned into a token of healing, that spell would heal the creature holding the token that pleaded for healing as well as one creature per level that is also holding a token (no two of which can be more than 30 feet apart). However, the <i>mass cure light wounds</i> spell would heal only creatures within range that are holding tokens.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

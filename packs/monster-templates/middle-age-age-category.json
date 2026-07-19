@@ -1,0 +1,101 @@
+{
+  "name": "Middle Age (Age Category)",
+  "type": "feat",
+  "img": "icons/magic/time/hourglass-tilted-gray.webp",
+  "data": {
+    "description": {
+      "value": "<p>You suffer a -1 penalty to your physical ability scores, and gain a +1 to your mental ability scores, due to your age category.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "ngi43p28",
+        "formula": "-min(1, @abilities.str.total - 1)",
+        "operator": "add",
+        "subTarget": "str",
+        "modifier": "untypedPerm",
+        "priority": -500,
+        "value": -1
+      },
+      {
+        "_id": "kndqvezz",
+        "formula": "-min(1, @abilities.dex.total - 1)",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "untypedPerm",
+        "priority": -500,
+        "value": -1
+      },
+      {
+        "_id": "1ose1les",
+        "formula": "-min(1, @abilities.con.total - 1)",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "untypedPerm",
+        "priority": -500,
+        "value": -1
+      },
+      {
+        "_id": "70k8rdw0",
+        "formula": "1",
+        "operator": "add",
+        "subTarget": "int",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 1
+      },
+      {
+        "_id": "81zqir3h",
+        "formula": "1",
+        "operator": "add",
+        "subTarget": "wis",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 1
+      },
+      {
+        "_id": "c8y6ubiw",
+        "formula": "1",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 1
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "misc",
+    "associations": {
+      "classes": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "LhFOnsRrYD2v4zOf": 3
+  },
+  "flags": {},
+  "_id": "gHAQp2ABmWxcrFAM"
+}

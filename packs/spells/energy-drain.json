@@ -1,0 +1,173 @@
+{
+  "_id": "khfprkujokr9uigq",
+  "name": "Energy Drain",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "rpb7n3ykm6882uvh",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude partial; see text for enervation"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "ray of negative energy",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ],
+        [
+          "cleric/oracle",
+          9
+        ],
+        [
+          "shaman",
+          9
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Loss",
+          9
+        ],
+        [
+          "Undead",
+          9
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Accursed",
+          9
+        ],
+        [
+          "Undead",
+          9
+        ]
+      ]
+    },
+    "level": 9,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>This spell functions like <i>enervation</i>, except that the creature struck gains 2d4 temporary negative levels. Twenty-four hours after gaining them, the subject must make a Fortitude saving throw (DC = <i>energy drain</i> spell's save DC) for each negative level. If the save succeeds, that negative level is removed. If it fails, that negative level becomes permanent.</p><p>An undead creature struck by the ray gains 2d4x5 temporary hit points for 1 hour.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

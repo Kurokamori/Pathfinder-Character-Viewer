@@ -1,0 +1,153 @@
+{
+  "_id": "9rlo80SFRpzskmjx",
+  "name": "Firewyrm",
+  "type": "weapon",
+  "img": "icons/commodities/treasure/statue-carved-figurehead.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 163</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 6,000 gp <strong>Weight</strong> -</p>\n<p><strong>Damage</strong> 6d6; <strong>Critical</strong> -; <strong>Range</strong> -; <strong>Type</strong> fire</p>\n<p><strong>Crew</strong> 5; <strong>Aim</strong> 2; <strong>Load</strong> 6; <strong>Speed</strong> 0 ft.</p>\n<p><strong>Category</strong> Direct-Fire (Gargantuan); <strong>Proficiency</strong> Siege Engine</p>\n<h3 class=\"framing\">Description</h3>\n<p>This siege engine is a larger version of the firedrake. A firewyrm is too large to be transported to the battlefield in one piece and must be assembled once the component parts reach the battlefield. A firewyrm fires its gout of flame in either a 120-foot line or a 60-foot cone (crew leader's choice). Targets in the area take 6d6 points of fire damage (DC 20 Reflex save halves). Those who fail their saves catch on fire.</p>\n<p>A firewyrm with the broken condition that suffers a further mishap explodes, dealing its damage to all creatures within a 30-foot blast (DC 20 Reflex save halves). Firewyrms have a hardness of 10 and 140 hit points.</p>\n<p>One use of firewyrm ammunition costs 400 gp and weighs 40 pounds.</p>"
+    },
+    "tags": [],
+    "price": 6000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Firewyrm",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "d3jilu7t7v8b2fdg",
+        "name": "Attack",
+        "img": "icons/commodities/treasure/statue-carved-figurehead.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "cone",
+          "size": "60",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(6, 6, @size)",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "20",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "firewyrm",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

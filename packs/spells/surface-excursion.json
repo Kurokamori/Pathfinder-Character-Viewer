@@ -1,0 +1,185 @@
+{
+  "_id": "cdi27awh6aua4aif",
+  "name": "Surface Excursion",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "2d6dgp9rebt2wzb2",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 3,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 9,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "you plus up to one willing creature per 3 levels",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "magus",
+          5
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "psychic",
+          5
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "spiritualist",
+          4
+        ],
+        [
+          "unchained Summoner",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "con",
+    "subschool": "teleportation",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a handful of soil that has been in the sun for at least 6 hours"
+    },
+    "sr": false,
+    "shortDescription": "<p>You instantly transport yourself and touched allies onto the nearest sky-facing surface directly above you. The destination surface may be solid ground or the surface of a body of water (or other liquid), depending on your position. If reaching the surface would require crossing planar boundaries or no sky-facing surface exists directly above your position, the spell fails and has no effect.  When the spell is cast, a magical beacon appears at both your departure and arrival points, suspended 3 feet in the air. These beacons are invisible to everyone but you and those allies touched when the spell was cast. You and every creature originally targeted by the spell can touch the beacon at your arrival point to teleport back to your original departure point. Each creature that chooses to return in this manner is transported to a free space adjacent to the beacon at your original departure point. If the area around the departure beacon is occupied by a solid body (for instance, rubble from a cave-in), then you and each creature traveling with you take 1d6 points of damage and are shunted to a random open space on a solid surface within 100 feet of the beacon. If there is no free space within 100 feet, the spell effect ends with no return transportation.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

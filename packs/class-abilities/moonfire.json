@@ -1,0 +1,165 @@
+{
+  "_id": "9shG07fjbawoJrCP",
+  "name": "Moonfire",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/shadow_12.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, as a standard action, you can shoot a blast of divine moonlight from your eyes as a ranged touch attack against a single target within 30 feet. Moonfire deals 1d8 points of damage per 2 class levels you have, and the target is dazzled for 1 round per class level you have. Moonfire deals 1d10 points of damage per class level you have against lycanthropes. You can use this ability once per day at 8th level, and one additional time per day for every 4 levels beyond 8th.</p>\n<p>This power replaces the Eyes of Darkness power of the Darkness Domain.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "s1divupkoxd8thq5",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/shadow_12.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "floor((@classes.cleric.level - 4) / 4)"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rsak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(floor(@classes.cleric.level / 2))d8",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.cleric.level - 4) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_moonfire",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cleric"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

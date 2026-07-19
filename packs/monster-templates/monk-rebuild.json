@@ -1,0 +1,74 @@
+{
+  "_id": "BI0MvUb9zxGT8Nd9",
+  "name": "Monk (Rebuild)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template&nbsp;</strong>Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>A monk creature gains extra attacks with unarmed strikes or natural attacks, an increase in damage with those attacks, and defensive abilities. A monk creature's CR increases by 3 if the creature has 10 or more HD. A monk creature must be lawful.<br><br><strong>Quick Rules:</strong> +2 on all rolls based on Dex and Wis; gains the Improved Unarmed Strike feat. When the creature makes a full attack with unarmed strikes or natural attacks, it can make an extra attack of the same type (of its choice) with a –5 penalty. If the creature uses unarmed strikes, it deals damage as if it were a monk of a level equal to its HD (maximum 20 HD). A creature with 10 or more HD that uses natural attacks instead increases the damage dealt by all of its natural attacks by one die step. If the creature is wearing no armor, it gains a bonus to AC equal to 2 + its Wis modifier. This bonus to AC increases by 1 for every 4 HD it possesses (to a maximum of +5 at 20 HD). The creature gains evasion† (improved evasion† if the creature has 10 or more HD).<br><br><strong>Rebuild Rules:</strong>&nbsp;Defensive Abilities&nbsp;evasion† (improved evasion† if the creature has 10 or more HD), and if the creature is wearing no armor, it gains a bonus to AC equal its Wis modifier. This bonus to AC increases by 1 for every 4 HD (to a maximum of +5 at 20 HD);&nbsp;Special Attacks&nbsp;when the creature makes a full attack with unarmed strikes or natural attacks, it can make an extra attack of the same type with a –5 penalty. If the creature uses unarmed strikes, it deals damage as if it were a monk with a level equal to its HD (maximum 20 HD). A creature with 10 or more HD that uses natural attacks increases the damage dealt by all of its natural attacks by one die step instead;&nbsp;Ability Scores&nbsp;+4 Dexterity and Wisdom;&nbsp;Feats&nbsp;Improved Unarmed Strike.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "f4zmsahn",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "3ukkrzck",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ubil8bpk",
+        "formula": "@abilities.wis.mod + (2 + floor(@attributes.hd.total/4))",
+        "operator": "+",
+        "subTarget": "ac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "@attributes.hd.total >= 10 ? 3 : 2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

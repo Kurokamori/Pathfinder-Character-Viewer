@@ -1,0 +1,177 @@
+{
+  "_id": "td7njmfarubxh6u3",
+  "name": "Shroud of Darkness",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "idq6jxpcg07mz1df",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature/3 levels, no two of which can be more than 30 ft. apart"
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "bard",
+          5
+        ],
+        [
+          "inquisitor",
+          5
+        ],
+        [
+          "antipaladin",
+          4
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "mesmerist",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "evo",
+    "types": "darkness",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a pinch of black sand"
+    },
+    "shortDescription": "<p>With a dark incantation and a gesture of your hand over your eyes, you cause a shroud of <i>darkness</i> to descend upon the targets of this spell. The subjects treat the light level as two steps lower than normal for the duration of this spell. Bright light becomes dim light, normal light becomes <i>darkness</i>, and areas of dim light and <i>darkness</i> become supernaturally dark (as <i>darkness</i>, but even creatures with darkvision cannot see).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

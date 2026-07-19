@@ -1,0 +1,179 @@
+{
+  "_id": "ug4qh4cuh5f9ralf",
+  "name": "Curse Terrain, Lesser",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "jh9h0xhmzszp3fek",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 day (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "300-ft. radius emanating from the touched point",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "cleric/oracle",
+          2
+        ],
+        [
+          "druid",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "shaman",
+          2
+        ],
+        [
+          "hunter",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "nec",
+    "types": "curse, evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "the heart of a creature that dwelled in the area and powdered onyx worth 350 gp",
+      "gpValue": 350
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>By touching the ground, you curse the land with three unnatural hazards, as the minor perilous demesne curse (see page 145). Though this makes the hazards appear frequently, their manifestations are still unpredictable-you can't control when the hazards begin or end, nor where they appear within the cursed terrain.  <i>Curse terrain</i> spells can be made permanent with a <i>permanency</i> spell. The minimum caster level and gp cost are shown on the table. The spell is still dismissable if made permanent.     <table border ='1'><tr><th>Spell</th><th>Minimum Caster Level</th><th>GP Cost</th></tr><tr><td>Lesser curse terrain</td><td>9th</td><td>2,500 gp</td></tr><tr><td>Curse terrain</td><td>11th</td><td>7,500 gp</td></tr><tr><td>Greater curse terrain</td><td>15th</td><td>17,500 gp</td></tr><tr><td>Supreme curse terrain</td><td>19th</td><td>27,500 gp</td></tr></table>   </p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

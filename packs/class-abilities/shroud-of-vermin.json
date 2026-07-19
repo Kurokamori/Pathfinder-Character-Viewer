@@ -1,0 +1,63 @@
+{
+  "_id": "LBrnB5Ncpcb5oryt",
+  "name": "Shroud of Vermin",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/green_23.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 9th level,&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Swarm\">swarms</a>&nbsp;no longer see you as prey. You can walk among&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Swarm\">swarms</a>&nbsp;without&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/f/fear\">fear</a>&nbsp;of being harmed by them at all, and by taking a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>&nbsp;to mentally&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/c/command\">command</a>&nbsp;a&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Swarm\">swarm</a>&nbsp;in which you stand, you can direct that&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Swarm\">swarm’s</a>&nbsp;attacks and movements as long as you have more&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a>&nbsp;than the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Swarm\">swarm</a>. Even when you aren’t standing amid a&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Swarm\">swarm</a>, your body crawls with&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Vermin\">vermin</a>, and their chitinous bodies increase your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor bonus</a>&nbsp;by +1. At 11th level, this bonus increases to +2, and at 17th level it increases to +3.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "rp0h8aqw",
+        "formula": "@classes.sorcerer.level >= 17 ? 3 : ((@classes.sorcerer.level > 10 && @classes.sorcerer.level < 17) ? 2 : 1)",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_shroudOfVermin",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

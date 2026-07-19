@@ -1,0 +1,60 @@
+{
+  "_id": "T6u2XHcyzXHYB2JN",
+  "name": "Iron Constitution",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You gain a +1 bonus on Fortitude saves.</p>\n<p>At 7th level, and again at 14th level, this bonus increases by +1.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "qvjvr1jw",
+        "formula": "1 + floor(@classes.oracle.level / 7)",
+        "operator": "+",
+        "subTarget": "fort",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_ironConstitution",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

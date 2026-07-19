@@ -1,0 +1,151 @@
+{
+  "_id": "6oevs2mE3QqqQEAK",
+  "name": "Net",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/net.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 33</em>, <em>PRPG Core Rulebook pg. 143</em>, <em>Ultimate Equipment pg. 21</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 20 gp <strong>Weight</strong> 6 lbs.</p><p><strong>Damage</strong> - (small), - (medium); <strong>Critical</strong> -; <strong>Range</strong> 10 ft.; <strong>Type</strong> -; <strong>Special</strong> see text</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Thrown</p><h3 class=\"framing\">Description</h3><p>A net is used to entangle enemies. When you throw a net, you make a ranged touch attack against your target. A net's maximum range is 10 feet. If you hit, the target is entangled. An entangled creature takes a -2 penalty on attack rolls and a -4 penalty to Dexterity, can move at only half speed, and cannot charge or run. If you control the trailing rope by succeeding at an opposed Strength check while holding it, the entangled creature can move only within the limits that the rope allows. If the entangled creature attempts to cast a spell, it must succeed at a concentration check with a DC of 15 + the spell's level or be unable to cast the spell.</p><p></p><p> An entangled creature can escape with a successful DC 20 Escape Artist check (a full-round action). The net has 5 hit points and can be burst with a successful DC 25 Strength check (also a full-round action). A net is useful only against creatures within one size category of you.</p><p></p><p>A net must be folded to be thrown effectively. The first time you throw your net in a fight, you make a normal ranged touch attack roll. After the net is unfolded, you take a -4 penalty on attack rolls with it. It takes 2 rounds for a proficient user to fold a net and twice that long for a nonproficient one to do so.</p>"
+    },
+    "tags": [],
+    "weight": 6,
+    "price": 20,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 5,
+    "identifiedName": "Net",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "huxclnk2ed9201uq",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/net.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "NULL",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 0
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "net",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

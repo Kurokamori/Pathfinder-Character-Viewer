@@ -1,0 +1,60 @@
+{
+  "_id": "c1DXh24tF5vQFLaI",
+  "name": "Bonus Feats (GUN)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/weapon_44.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, and every four levels thereafter, a gunslinger gains a bonus feat in addition to those gained by normal advancement. These bonus feats must be combat or grit feats.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "v70np67b",
+        "formula": "floor(@classes.gunslinger.level / 4)",
+        "operator": "add",
+        "subTarget": "bonusFeats",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_bonusFeatsGun",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Gunslinger"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

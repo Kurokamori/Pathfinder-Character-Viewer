@@ -1,0 +1,165 @@
+{
+  "_id": "aFkHXjdNW6VWJE2D",
+  "name": "Breath Weapon (BLO)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, you gain a breath weapon that you can use once per day. This breath weapon deals 1d6 points of damage of your energy type per bloodrager level. Those caught in the area of the breath can attempt a Reflex saving throw for half damage. The DC of this save is equal to 10 + 1/2 your bloodrager level + your Constitution modifier. The shape of the breath weapon depends on your dragon type (as indicated on the above table).</p>\n<p>At 16th level, you can use this ability twice per day.</p>\n<p>At 20th level, you can use this ability three times per day.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "7jn8o888ordsvo2r",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/red_05.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "@classes.bloodrager.level >= 20 ? 3 : ((@classes.bloodrager.level < 20 && @classes.bloodrager.level >= 16) ? 2 : 1)"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(@classes.bloodrager.level)d6",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "@classes.bloodrager.level >= 20 ? 3 : ((@classes.bloodrager.level < 20 && @classes.bloodrager.level >= 16) ? 2 : 1)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_breathWeaponBlo",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

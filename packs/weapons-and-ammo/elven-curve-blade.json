@@ -1,0 +1,155 @@
+{
+  "_id": "iSbfuFMtzdCEhqgr",
+  "name": "Elven Curve Blade",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/elven-curve-blade.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 20</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>PRPG Core Rulebook pg. 143</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 80 gp <strong>Weight</strong> 7 lbs.</p><p><strong>Damage</strong> 1d8 (small), 1d10 (medium); <strong>Critical</strong> 18-20/x2; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> -</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Blades, Heavy</p><h3 class=\"framing\">Description</h3><p>Essentially a longer version of a scimitar, but with a thinner blade, the elven curve blade is exceptionally rare. You receive a +2 circumstance bonus to your CMD whenever a foe attempts to sunder your elven curve blade because of its flexible metal.</p><p></p><p> You can use the Weapon Finesse feat to apply your Dexterity modifier instead of your Strength modifier on attack rolls with an elven curve blade that is sized for you, even though it isn't a light weapon.</p>"
+    },
+    "tags": [],
+    "weight": 7,
+    "price": 80,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Elven Curve Blade",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "utrhsa8xib96gnlt",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/elven-curve-blade.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 10, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 18,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "elvenCurveBlade",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

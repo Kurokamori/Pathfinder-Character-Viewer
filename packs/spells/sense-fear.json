@@ -1,0 +1,205 @@
+{
+  "_id": "svrjcfbr1zywz0uz",
+  "name": "Sense Fear",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ibg5t5nf6hnkiesn",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "10 minutes/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          2
+        ],
+        [
+          "druid",
+          2
+        ],
+        [
+          "ranger",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "inquisitor",
+          2
+        ],
+        [
+          "antipaladin",
+          1
+        ],
+        [
+          "bloodrager",
+          1
+        ],
+        [
+          "shaman",
+          2
+        ],
+        [
+          "psychic",
+          2
+        ],
+        [
+          "medium",
+          1
+        ],
+        [
+          "mesmerist",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ],
+        [
+          "spiritualist",
+          2
+        ],
+        [
+          "hunter",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a patch of fur"
+    },
+    "sr": false,
+    "shortDescription": "<p>You sense the fear of those nearby, feeling it in the air around you. You can detect spooked, shaken, scared, frightened, panicked, terrified, and horrified creatures within 30 feet, and you immediately know what level of fear they are experiencing. You determine the creatures' approximate direction from you, though you do not sense a given creature's identity or know which squares the creatures occupy. If you're within 5 feet of a creature whose fear you sense, you pinpoint that creature's location, as if using blindsense.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

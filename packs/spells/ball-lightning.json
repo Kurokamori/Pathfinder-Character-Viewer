@@ -1,0 +1,177 @@
+{
+  "_id": "1moeejp3mch70ys5",
+  "name": "Ball Lightning",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "8qwrq3sph0q2lef3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "two or more 5-ft.-diameter spheres",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "magus",
+          4
+        ],
+        [
+          "bloodrager",
+          4
+        ],
+        [
+          "shaman",
+          4
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "hunter",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "evo",
+    "types": "air, electricity",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a small iron ring"
+    },
+    "shortDescription": "<p>You create two globes of lightning that fly in whichever direction you indicate. For every 4 caster levels above 7th, you create an additional globe of lightning (3 globes at 11th, 4 globes at 15th, to the maximum of 5 globes at 19th). These globes fly at a rate of 20 feet per round and have perfect maneuverability. Wind does not affect a flying sphere's course.</p><p>If a globe enters a space with a creature, it stops moving for the round and deals 3d6 points of electricity damage to that creature, though a successful Reflex save negates the damage. Creatures wearing metal armor take a -4 penalty on this saving throw.</p><p>Each globe moves as long as you actively direct it (it's a move action for you to direct all the spheres created by a single casting of this spell); otherwise they stay at rest. These globes have no mass and cannot push aside unwilling creatures or move solid objects. A <i>ball lightning</i> globe winks out if it exceeds the spell's range.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

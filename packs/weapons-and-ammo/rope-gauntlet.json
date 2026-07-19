@@ -1,0 +1,150 @@
+{
+  "_id": "LC0RB4eEczWDuEE4",
+  "name": "Rope Gauntlet",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/rope-gauntlets.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Adventurer's Armory pg. 4</em>, <em>Legacy of Fire Player's Guide pg. 23</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 2 sp <strong>Weight</strong> 2 lbs.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> B (or S); <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Close</p><h3 class=\"framing\">Description</h3><p>By wrapping your hands and forearms in thin but tough hemp ropes and then soaking the makeshift gloves in water for weight and expansion, you can transform your fists into rock-hard weapons easily capable of killing in a fistfight. Each rope gauntlet takes a full minute to wrap and another minute to soak, but once applied the gauntlet can be worn for a day; removing a rope gauntlet takes 1 full round. When wearing rope gauntlets, you are considered armed and your attacks deal normal damage. If you are proficient with rope gauntlets, you may use the rough edges of the ropes to deal slashing damage rather than bludgeoning damage. Your fingers are mostly exposed, allowing you to wield or carry items in your hands while wearing rope gauntlets, but the constriction of the weapon at your knuckles gives you a -2 penalty on all precision-based tasks involving your hands (such opening locks).</p>"
+    },
+    "tags": [],
+    "weight": 2,
+    "price": 0.2,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Rope Gauntlet",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "6ylw84qmuwax9qvs",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/rope-gauntlets.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "ropeGauntlet",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

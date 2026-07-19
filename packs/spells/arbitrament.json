@@ -1,0 +1,151 @@
+{
+  "_id": "lkxofop6xnndyf5g",
+  "name": "Arbitrament",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "c72e8wd7ujt843d4",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "non-neutral creatures in a 40-ft.-radius spread centered on you"
+        },
+        "range": {
+          "value": 40,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will partial, see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          7
+        ],
+        [
+          "inquisitor",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "evo",
+    "types": "sonic",
+    "components": {
+      "verbal": true
+    },
+    "shortDescription": "<p>All chaotic evil, chaotic good, lawful evil, and lawful good creatures within the area of this spell suffer the following conditions, based on their Hit Dice.   <table border ='1'><tr><th>Hit Dice</th><th>Effect</th></tr><tr><td>Equal to caster level</td><td>Sickened</td></tr><tr><td>Up to caster level - 1</td><td>Sickened, staggered</td></tr><tr><td>Up to caster level - 5</td><td>Nauseated, sickened, staggered</td></tr><tr><td>Up to caster level - 10</td><td>Killed, nauseated, sickened, staggered</td></tr></table>   The effects are concurrent. A creature can attempt a Will save to reduce or negate the effects. If subject to multiple effects, the creature rolls once and applies the result to each effect.  <br><b>Sickened</b>: The creature is sickened for 1d4 rounds (Will negates).  <br><b>Staggered</b>: The creature is staggered for 2d4 rounds, or for 1d4 rounds on a successful Will save.  <br><b>Nauseated</b>: The creature is nauseated for 1d10 minutes, or for 1d4 rounds on a successful Will save.  <br><b>Killed</b>: Living creatures die, and undead creatures are destroyed. On a successful Will save, the creature instead takes 3d6 points of damage + 1 point per caster level (maximum +25).  Furthermore, if you are on your home plane when you cast this spell, all chaotic evil, chaotic good, lawful evil, and lawful good extraplanar creatures within the area are banished to their home planes (Will negates, at a -4 penalty). Creatures so banished cannot return for at least 24 hours. This effect takes place regardless of whether the creatures hear the <i>arbitrament</i>.  Creatures whose Hit Dice exceed your caster level are unaffected by <i>arbitrament</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

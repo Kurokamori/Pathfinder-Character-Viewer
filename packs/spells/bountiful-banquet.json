@@ -1,0 +1,169 @@
+{
+  "_id": "ayvd6wrq2lmq9211",
+  "name": "Bountiful Banquet",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "vwx56rh81hkq2jlb",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour; see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "feast for two creatures/level",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "bard",
+          4
+        ],
+        [
+          "shaman",
+          4
+        ],
+        [
+          "hunter",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "con",
+    "subschool": "creation",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a turkey bone"
+    },
+    "sr": false,
+    "shortDescription": "<p>You conjure a beautiful and delicious feast with hors d'oeuvres, four courses worth of food, and plentiful drink. The food appears on ornate serving trays or in exquisite covered tureens, as appropriate to each type of dish. Place settings and serving utensils also appear-enough for each creature that will participate in the feast-along with elegant tablecloths and table linens. The spell doesn't create furniture, but the feast does adapt to appear on top of existing tables (or similar objects in the environment).  Though the feast and all the finery last only 1 hour, creatures that partake remain nourished and sated for 24 hours. Though you have little control over the fine details of the feast, you can specify what type of dish you want for each course and what sorts of beverages are provided. The feast automatically adjusts depending on the type of spellcaster you are. For instance, a druid casting this spell typically creates a spread of natural berries, whole roasted animals, and sweet (and possibly fermented) nectar for beverages, all on rough-hewn wooden plates with chopsticks instead of silverware and sizable leaves replacing napkins.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

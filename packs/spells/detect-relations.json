@@ -1,0 +1,165 @@
+{
+  "_id": "d3wbaz4ibw8cramt",
+  "name": "Detect Relations",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "pn9kivu66vq5omkk",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "concentration, up to 1 min./level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature per level, no two of which can be more than 30 ft. apart"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          2
+        ],
+        [
+          "bard",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "inquisitor",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true,
+      "divineFocus": 3
+    },
+    "materials": {
+      "focus": "a seed"
+    },
+    "sr": false,
+    "shortDescription": "<p>You can determine whether or not two or more creatures are related by blood. The amount of information gleaned depends on how long you study a particular area or set of subjects.  <i>1st round</i>: Whether or not the subjects are related by blood.  <i>2nd round</i>: Number of related subjects and their general relation to one another (for example, this would reveal that one subject is a descendant of the other, but it would not specify \"mother\" or \"grandmother\").  <i>3rd round</i>: Precise relationship between subjects in the area. A target's Will save prevents you from determining its exact relationship with another creature, and only one subject needs to succeed at this save to prevent you from determining its relationship with another creature. (So, for instance, if two brothers are in the area and one succeeds at his Will save, you could tell that they are siblings, but could not distinguish whether they are full- or half-siblings.)  Each round, you can turn to detect relations in a new area. The spell can penetrate barriers, but 6 inches of stone, 1 inch of common metal, a thin sheet of lead, or 1 foot of wood or dirt will block it.  This spell functions by analyzing the blood and minds of creatures in the area, collectively examining these traits and comparing them to those of others in the area while looking for patterns. Thus, adoptive siblings and parents cannot be detected with this spell, since they share no blood.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "hpdynlxhfnop2wm4",
+  "name": "Harrowing",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "krxyt7z6qtsl7egv",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 day/level or until fulfilled",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "bard",
+          3
+        ],
+        [
+          "witch",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Harrow",
+          3
+        ]
+      ]
+    },
+    "level": 3,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a Harrow deck"
+    },
+    "sr": false,
+    "shortDescription": "<p>You use a Harrow deck to tell a fortune for yourself or someone else. If you cast <i>harrowing</i> on another creature, you must remain adjacent to the target for the duration of the casting time. A <i>harrowing</i> must describe one set of events or course of action (for example, \"hunting down the pirate king,\" or \"traveling to Viperwall to search for a magic sword\") that the target of the spell intends to undertake at some point during the spell's duration.</p><p>If you have access to a Harrow deck, draw nine cards when this spell is cast. If you do not have a Harrow deck, you can simulate the draws by rolling a d6 and a d10 for each of the nine cards, as detailed on page 293 of this book. Record the ability score and alignment associated with each card. Each of these cards grants a luck bonus or a penalty on a specific type of d20 check; the magnitude of the penalty or bonus depends upon how closely that particular card's alignment matches the target creature's alignment. If the card and target's alignments are identical, that card provides a +2 luck bonus on the associated suit's check. If the card and target's alignments are of the opposite alignment (see below), the card inflicts a -1 penalty on that associated check. If the card has any other alignment, it provides a +1 luck bonus on the associated suit's check.</p><p>While penalties persist on all associated checks for as long as the <i>harrowing</i> persists, the bonuses are one-use bonuses that the harrowed character can \"spend\" at any time to modify that card's associated check. You can spend a bonus to modify an appropriate roll after the die is rolled, but cannot spend the bonus once you know the result of the roll. Since all of the bonuses granted by a <i>harrowing</i> are luck bonuses, they do not stack with each other. Penalties, on the other hand, do stack.</p><p>Once you spend all of the bonuses granted by a <i>harrowing</i>, or once the spell's duration ends, the spell ends and the penalties are removed.</p><p>A single creature can only be under the effects of one <i>harrowing</i> at a time. If it is subjected to a second <i>harrowing</i> while a previous <i>harrowing</i> is still in effect, the new <i>harrowing</i> automatically fails.</p>   <table border ='1'><tr><th>Associated Suit Checks</th></tr><tr><th>Suit</th><th>Associated Check</th></tr><tr><td>Hammer (Str)</td><td>Attack rolls (ranged and melee)</td></tr><tr><td>Key (Dex)</td><td>Reflex saving throws</td></tr><tr><td>Shield (Con)</td><td>Fortitude saving throws</td></tr><tr><td>Book (Int)</td><td>Skill checks</td></tr><tr><td>Star (Wis)</td><td>Will saving throws</td></tr><tr><td>Crown (Cha)</td><td>Any d20 roll</td></tr></table>    <table border ='1'><tr><th colspan='2'>Opposition Alignments</th></tr><tr><th>Alignment</th><th>Opposition</th></tr><tr><td>LG</td><td>CE</td></tr><tr><td>NG</td><td>NE</td></tr><tr><td>CG</td><td>LE</td></tr><tr><td>LN</td><td>CN</td></tr><tr><td>N</td><td>LG, LE, CG, or CE (pick one when spell is cast)</td></tr><tr><td>CN</td><td>LN</td></tr><tr><td>LE</td><td>CG</td></tr><tr><td>NE</td><td>NG</td></tr><tr><td>CE</td><td>LG</td></tr></table>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,167 @@
+{
+  "_id": "iHgN3OH0lPEMM6on",
+  "name": "Diamond Spray",
+  "type": "spell",
+  "img": "icons/magic/light/projectile-needles-salvo-white.webp",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "zhqcrljtnec4yz4q",
+        "name": "Use",
+        "img": "icons/magic/light/projectile-needles-salvo-white.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "cone",
+          "size": "20",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(min(10, @cl))d6",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [
+          "Ignore up to [[min(10, floor(@cl / 2))[Caster Level]]] hardness"
+        ],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "cone-shaped burst",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "arcanist",
+          3
+        ],
+        [
+          "sorcerer/wizard",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "evo",
+    "types": "earth",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a lump of coal"
+    },
+    "spellbook": "",
+    "shortDescription": "<p><span id=\"ctl00_MainContent_DataListTypes_ctl00_LabelName\">A cone of tiny, sparkling slivers as hard and sharp as filed diamonds springs from your outstretched fingers at tremendous speed. Any creature in the area of the torrent takes 1d6 points of slashing damage per caster level (maximum 10d6). These magical slivers are treated as adamantine and cold iron for the purpose of overcoming damage reduction. In addition, this spell bypasses up to 1 point of an object&rsquo;s hardness per 2 caster levels (maximum 10).</span></p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "LhFOnsRrYD2v4zOf": 3
+  },
+  "flags": {}
+}

@@ -1,0 +1,151 @@
+{
+  "_id": "kTiSd8vO1cPMxXWo",
+  "name": "Dwarven Double Waraxe",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/waraxe-dwarven-double.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Advanced Race Guide pg. 17</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 60 gp <strong>Weight</strong> 12 lbs.</p><p><strong>Damage</strong> 1d8 (small), 1d10 (medium); <strong>Critical</strong> x3; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> see text</p><p><strong>Category</strong> One-Handed; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>This hefty waraxe is similar to the common dwarven waraxe, but its recurved blade spans forward and back from its head like a deadly butterfly. A dwarven double waraxe grants a +1 bonus on all attack rolls after the first when using Cleave or Great Cleave.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 60,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 10,
+    "identifiedName": "Dwarven Double Waraxe",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "5emx51uqvwl69cki",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/waraxe-dwarven-double.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 10, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "dwarvenDoubleWaraxe",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "1h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "1oqvwOeH33hspGDx",
+  "name": "Mighty Pebble",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>As a standard action, you can charge and throw a pebble (or other stone of similar size) that detonates when it strikes a target as a ranged attack. The pebble has a range increment of 20 feet and has a +1 enhancement bonus to attack and damage for every four oracle levels you possess. Any creature struck by the pebble takes 1d6 points of bludgeoning damage per two oracle levels you possess (minimum 1d6). Creatures in squares adjacent to the target take half damage, or no damage if they make a Reflex saving throw. If the attack roll misses, treat the pebble as a thrown splash weapon to determine where it lands.</p>\n<p>You can use this ability once per day, plus one additional time per day at 5th level and every five levels thereafter.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "fu876t5w4djv8o1h",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "1 + floor(@classes.oracle.level / 5)"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rsak",
+        "attackBonus": "floor(@classes.oracle.level / 4)",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(floor(@classes.oracle.level / 2))d6 + floor(@classes.oracle.level / 4)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + floor(@classes.oracle.level / 5)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_mightyPebble",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

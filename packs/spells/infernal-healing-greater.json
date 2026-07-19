@@ -1,0 +1,174 @@
+{
+  "_id": "ny2qxht2aeesoi08",
+  "name": "Infernal Healing, Greater",
+  "type": "spell",
+  "img": "systems/pf1/icons/spells/horror-red-2.jpg",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "jrz7bzszvlkrxxs5",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/horror-red-2.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute",
+          "units": ""
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "magus",
+          4
+        ],
+        [
+          "unchained Summoner",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "con",
+    "subschool": "healing",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "1 drop of devil blood or 1 dose of unholy water"
+    },
+    "spellbook": "",
+    "shortDescription": "<p>As @Compendium[pf1.spells.r6mfw5nrc2ndkacy]{Infernal Healing}, except the target gains fast healing 4 and the target detects as an evil cleric.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

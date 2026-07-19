@@ -1,0 +1,184 @@
+{
+  "_id": "kvt3s374lja3fav6",
+  "name": "Peace Bond",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "w84iyaoln3eu1qy3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "one or more 5-ft. cubes, no two of which can be more than 30 ft. apart",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          1
+        ],
+        [
+          "cleric/oracle",
+          1
+        ],
+        [
+          "druid",
+          1
+        ],
+        [
+          "bard",
+          1
+        ],
+        [
+          "paladin",
+          1
+        ],
+        [
+          "witch",
+          1
+        ],
+        [
+          "inquisitor",
+          1
+        ],
+        [
+          "shaman",
+          1
+        ],
+        [
+          "hunter",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a glass cube"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell creates one glowing rune of <i>peace</i>, plus one per 2 caster levels above 1st (to a maximum of five runes at 9th level). An identical symbol appears on your forehead  for the duration of the spell and cannot be disguised (though it is visible only if you are visible). Each rune illuminates a 5-foot cube, preventing any spell you cast of up to 3rd level and that has a defined area (as opposed to targets or an effect) from entering or affecting the 5-foot cube. For example, creatures and items within any square affected by <i><i>peace</i> bond</i> take no damage from a <i>fireball</i> you cast. However, if you cast <i>stinking cloud</i>, the noxious vapors are an effect and enter such cubes normally. This spell does not break line of effect within any other spells you cast; it simply negates all effects of your 1st-, 2nd- and 3rd-level area spells within the <i><i>peace</i> bond</i>'s area. <i>Peace bond</i> offers no protection against your spell-like abilities or supernatural area effects.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

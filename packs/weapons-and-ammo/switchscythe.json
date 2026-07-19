@@ -1,0 +1,156 @@
+{
+  "_id": "Ybiyah8XFZ1Yhh35",
+  "name": "Switchscythe",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/switchscythe.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Adventurer's Armory 2 pg. 9</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 18 gp <strong>Weight</strong> 10 lbs.</p><p><strong>Damage</strong> 1d6 (small), 2d4 (medium); <strong>Critical</strong> x4; <strong>Range</strong> -; <strong>Type</strong> P or S; <strong>Special</strong> trip</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Blades, Heavy</p><h3 class=\"framing\">Description</h3><p>This scythe has a spring-loaded blade that folds down into the weapon's handle. Opening the scythe blade is a swift action, and closing it again is a standard action. You can use Bluff or Sleight of Hand to treat a closed switchscythe as a hidden weapon; the apparatus can be disguised with 1 minute of work, which grants a +5 bonus on such checks. This disguise is ruined when the weapon is opened and must be reapplied to hide the weapon again. Any effects that apply to a scythe also apply to a switchscythe.</p>"
+    },
+    "tags": [],
+    "weight": 10,
+    "price": 18,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Switchscythe",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "s1y8saocif2ciz02",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/switchscythe.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(2, 4, @size)",
+              {
+                "values": [
+                  "piercing",
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": null,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "switchscythe",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

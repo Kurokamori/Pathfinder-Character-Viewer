@@ -1,0 +1,164 @@
+{
+  "_id": "lgrpe1zwgml5c41r",
+  "name": "Skinsend",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "8w1fd6gewpuag9aw",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "alchemist",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "psychic",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>You cause your own skin to peel off your body and animate as a magical creature you control. You may project your consciousness to your animated skin or return it to your actual body as a standard action. When your consciousness is in your body, you are helpless (except for transferring your will to your skin, or dismissing the spell).</p><p>Your possessed skin is identical to you in all ways, except the following: It has only half the number of hit points you had at the time you cast the spell, and cannot be <i>heal</i>ed above this maximum; construct type, traits, and immunities; Str 3, Con -; DR 10/piercing or slashing; and compression (as the universal monster ability, <i>Bestiary</i> 2 295). Your skin can take any actions you could normally take in your own body (such as to fight or cast spells).</p><p>When your skin leaves your body, your body's hit points drop to 0. Your body cannot <i>heal</i> damage naturally while you have no skin, nor do spells that cure hit point damage work on your body; only regeneration (from a <i>regenerate</i> spell, <i>ring of regeneration</i>, the regeneration monster ability, or any other effect that can regrow missing limbs) or <i>heal</i> can regrow your skin and allow you <i>heal</i> above 0 hit points.</p><p>If your body is <i>regenerate</i>d before your skin returns to it, the skin dies and your consciousness returns automatically to your body. Your skin can be preserved with <i>gentle repose</i> and is suitable for any purpose that requires some of your flesh (such as a <i>resurrection</i> spell) or any magic or ritual that requires a creature's skin.</p><p>When your skin returns to your body, you regain hit points equal to your skin's remaining hit points. If the spell ends before you reunite with your skin or if your skin is killed while you are in your body, you remain helpless and at 0 hit points until your full body is restored to you (requiring powerful magic, as described above). If your body dies while you are possessing your skin, you die when the spell ends, regardless of how many hit points the skin has left. If your body or skin is slain with your consciousness in it, the spell ends and you are instantly killed.</p><p>This spell leaves long scars on your skin where it split apart, although these fade normally with the use of <i>heal</i>ing magic.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

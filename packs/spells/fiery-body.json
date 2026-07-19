@@ -1,0 +1,153 @@
+{
+  "_id": "qk3oeq4awbc1smjw",
+  "name": "Fiery Body",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "78ha6n361346qytm",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Ash",
+          9
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 9,
+    "school": "trs",
+    "types": "fire",
+    "components": {
+      "verbal": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell transforms your body into living flame. You and your equipment are immune to fire damage. In fact, every time you would normally take damage from fire, you are instead healed of damage at a rate of 1 point per 3 points of damage the fire attack would have normally inflicted. You are immune to blindness, critical hits, ability score damage, deafness, disease, drowning, electricity, poison, stunning, and all spells that affect your physiology or respiration. You take only half damage from acid or electricity. You take 150% as much damage from cold than normal.</p><p>You gain a +6 enhancement bonus to your Dexterity score and a fly speed of 40 ft. (perfect maneuverability). Your unarmed attack deals an additional 3d6 points of fire damage, and you are considered armed when making unarmed attacks. Your body burns so brightly that creatures who do not avert their gaze from you are dazzled. Fire spells you cast have their save DCs increased by +1. If you enter water, you are surrounded by a 5-foot radius of steam and bubbles that grant you concealment (50% miss chance) but you take 2d6 points of damage each round you remain in water.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

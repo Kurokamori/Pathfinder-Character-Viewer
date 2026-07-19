@@ -1,0 +1,189 @@
+{
+  "_id": "1ctn7c2mxzb3ggwm",
+  "name": "Selective Alarm",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "u2do4dbjzcmzq37v",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "2 hours/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "up to 20-ft.-radius emanation centered on a point in space",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "ranger",
+          2
+        ],
+        [
+          "bard",
+          3
+        ],
+        [
+          "summoner",
+          3
+        ],
+        [
+          "inquisitor",
+          3
+        ],
+        [
+          "psychic",
+          3
+        ],
+        [
+          "occultist",
+          3
+        ],
+        [
+          "spiritualist",
+          3
+        ],
+        [
+          "hunter",
+          2
+        ],
+        [
+          "unchained Summoner",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true,
+      "divineFocus": 3
+    },
+    "materials": {
+      "focus": "a slender iron rod 1 foot in length"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions as <i>alarm</i>, except that you can tweak the spell to be more discerning in what types of creatures or objects trigger the <i>alarm</i>. Instead of being triggered whenever a creature of Tiny size or larger enters the warded area, you can set whatever triggering conditions you wish, as long as they are based on observable phenomenon. For example, you could cause the selective <i>alarm</i> to trigger when creatures of a certain race (such as orcs, bugbears, or kobolds) enter the area, or whenever a group of four or more creatures enters the area together, or when a metal object is brought into the area. You can't choose triggering conditions that rely on unobservable information, such as having it triggered when creatures of a certain alignment enter the area, nor could you have the <i>alarm</i> be triggered by \"something worth more than 5,000 gp\" entering the area, or even \"a weapon\" entering the area, because an item's value and classification as a weapon is subjective, and might vary from one person to the next.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

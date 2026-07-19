@@ -1,0 +1,63 @@
+{
+  "_id": "Q8xnt84nTaUmKgo1",
+  "name": "Fearless",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/greater-shield-focus.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, you gain a +4 bonus on saving throws made against fear and a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor</a>&nbsp;bonus. At 9th level, you lose your&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Light-Sensitivity-Ex-\">light sensitivity</a>, gain immunity to fear, and your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor</a>&nbsp;bonus increases to +2.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "2ro2xe0x",
+        "formula": "@classes.sorcerer.level >= 9 ? 2 : 1",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_fearless",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

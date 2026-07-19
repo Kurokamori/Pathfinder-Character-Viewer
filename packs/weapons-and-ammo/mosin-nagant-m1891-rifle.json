@@ -1,0 +1,156 @@
+{
+  "_id": "fzP5dhevEliYzAv4",
+  "name": "Mosin-Nagant M1891 Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-brown.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #71: Rasputin Must Die! pg. 64</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 500 gp <strong>Weight</strong> 9 lbs.</p>\n<p><strong>Damage</strong> 1d10 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 80 ft.; <strong>Type</strong> B and P; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> 1; <strong>Capacity</strong> 5</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This bolt-action rifle is the mainstay of Russian military forces. It is similar to the advanced firearms rif le with the following differences. It uses the same 7.62 54mmR ammunition as the Madsen machine gun, and is fed from a 5-round internal, nondetachable magazine that is typically loaded with 5-round stripper clips (loading it is a move action).</p>\n<p>Without stripper clips, you may only reload up to 2 rounds of ammunition as a move action. Ammunition is typically sold in groups of 5 rounds.</p>\n<p>The rifle has a lug for the attachment of a socket bayonet, and can be equipped with a unique sidemount scope system (see below).</p>"
+    },
+    "tags": [],
+    "weight": 9,
+    "price": 500,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Mosin-Nagant M1891 Rifle",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ykwzbrq1d0qraamc",
+        "name": "Attack",
+        "img": "icons/weapons/guns/rifle-brown.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "80",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 10, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "mosinnagantM1891Rifle",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

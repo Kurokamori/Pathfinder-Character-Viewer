@@ -1,0 +1,169 @@
+{
+  "_id": "1p5efnjtbuf2qzb0",
+  "name": "Rite of Centered Mind",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "au2rr639z2w72fac",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "hour"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "hour"
+          }
+        },
+        "duration": {
+          "value": "24 hours or until discharged",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          1
+        ],
+        [
+          "druid",
+          1
+        ],
+        [
+          "shaman",
+          1
+        ],
+        [
+          "hunter",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "school": "abj",
+    "types": "meditative",
+    "components": {
+      "verbal": true,
+      "material": true
+    },
+    "materials": {
+      "value": "soothing incense worth 100 gp",
+      "gpValue": 100
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>You heighten your awareness of your own thoughts, allowing you to more easily resist outside influences. You gain a +1 resistance bonus on saving throws to resist mind-affecting effects. This resistance bonus is increased to +2 if the effect is an emotion or fear effect. Additionally, at any time during the spell's duration, whenever you fail a saving throw to resist a mind-affecting effect, you can expend the spell's remaining duration as an immediate action in order to reroll that saving throw. You must take the second result, even if it's worse. The +2 resistance bonus granted by the spell applies to the reroll, but after you make this reroll, the spell ends.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

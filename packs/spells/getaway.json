@@ -1,0 +1,173 @@
+{
+  "_id": "q5432hyeds4pncxn",
+  "name": "Getaway",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "sd30x3j3fx9q3dgz",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "you and one willing creature/2 levels, all of which must be within 30 feet of you"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "bard",
+          6
+        ],
+        [
+          "psychic",
+          6
+        ],
+        [
+          "mesmerist",
+          6
+        ],
+        [
+          "occultist",
+          6
+        ],
+        [
+          "spiritualist",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "con",
+    "subschool": "teleportation",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a brass doorknob"
+    },
+    "sr": false,
+    "shortDescription": "<p><i>Getaway</i> teleports you and allies you designate at the time of casting to a predetermined location. You must initially cast the spell at that location-all creatures affected by the spell must be present at that time and within 30 feet of you. At any time before the spell's duration expires, you may trigger the spell as a swift action. At this time, all affected creatures (or their remains and gear) within 30 feet of you are teleported to the location where you first cast the spell. Creatures more than 30 feet away from you are left behind. Selected creatures within 30 feet of you who do not wish to travel with you at that time can simply choose not to go. You can be transported any distance within a plane but cannot travel between planes.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

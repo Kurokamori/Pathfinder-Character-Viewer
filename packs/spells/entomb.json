@@ -1,0 +1,167 @@
+{
+  "_id": "q68qh9292419ko45",
+  "name": "Entomb",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "jfbu59uamaksgihz",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "permanent",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "up to three 10-ft. cubes/level (S)",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "druid",
+          8
+        ],
+        [
+          "shaman",
+          8
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 8,
+    "school": "trs",
+    "types": "earth",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a pristine geode worth at least 1,000 gp",
+      "gpValue": 1000
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>You designate an aboveground area and send it deep within the earth. During the casting of this spell, the chosen area is rocked by minor tremors that alert nearby creatures to the impending danger. Once the spell is complete, the chosen area is drawn into the earth and buried in a self-contained vault, with the uppermost point at a depth of up to 10 feet per caster level below the surface. The surrounding atmosphere and all creatures within the selected area at the end of the spell's casting time are entombed in this vault.  The magic of the vault maintains the natural light, temperature, and air quality of the area as it originally existed aboveground, but any magical effects that affected these qualities do not have their duration extended. For example, a sunny field would remain brightly lit indefinitely, despite being buried underground, while a <i>daylight</i> spell would expire at the end of that spell's duration.  When creating the vault, you can leave a tunnel to the surface world (up to 20 feet wide), or you can completely isolate the vault from the outside world. Casting this spell does not destroy or damage anything that may have existed in the ground where you choose to place this vault, but instead pushes it farther down into the earth. Should your vault be dispelled, the entombed area returns to the surface, and anything that may have been displaced by the vault returns to its original place. If there is something already on the surface that blocks the vault's path, the vault pushes it harmlessly aside when returning.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

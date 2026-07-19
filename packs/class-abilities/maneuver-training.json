@@ -1,0 +1,63 @@
+{
+  "_id": "E7enBZN7FCsoyIof",
+  "name": "Maneuver Training",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/athletic.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, a monk uses his monk level in place of his&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Bonus\">base attack bonus</a>&nbsp;when calculating his&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Bonus\">Combat Maneuver Bonus</a>. Base attack bonuses granted from other classes are unaffected and are added normally.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "0iguyvon",
+        "formula": "@classes.monk.level - @attributes.bab.total",
+        "operator": "+",
+        "subTarget": "cmb",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_maneuverTraining",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Monk"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

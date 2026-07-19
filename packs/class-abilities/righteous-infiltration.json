@@ -1,0 +1,70 @@
+{
+  "_id": "e9uWh9dJrrmQ2VPP",
+  "name": "Righteous Infiltration",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/badge-cross.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You use your Wisdom modifier instead of your Charisma modifier when making Bluff and Intimidate checks.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "hg0esutt",
+        "formula": "@abilities.wis.mod - @abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "skill.blf",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "5csj2oc2",
+        "formula": "@abilities.wis.mod - @abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "skill.int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_righteousInfiltration",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Inquisitor"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

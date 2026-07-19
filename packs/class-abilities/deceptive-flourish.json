@@ -1,0 +1,70 @@
+{
+  "_id": "TF9JLx9PwVnN5QPx",
+  "name": "Deceptive Flourish",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_03.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Enhancement-Bonus\">enhancement bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/bluff\">Bluff</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/disguise\">Disguise</a>&nbsp;skill checks. This bonus increases by 1 for every 5&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/wizard\">wizard</a> levels you have, up to a maximum of +6 at 20th level. At 20th level, you gain the benefits of @Compendium[pf1.spells.8nrt26t37v7koqr8]{Misdirection}&nbsp;(<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a>&nbsp;DC = 20 + your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a> modifier) or @Compendium[pf1.spells.awia42zci8nufpfl]{Nondetection}&nbsp;permanently. At will as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>, you can change which of the two spells is active, and each time you&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Activate-Magic-Item\">activate</a> @Compendium[pf1.spells.8nrt26t37v7koqr8]{Misdirection}, you can choose a new creature or object as the secondary object.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "ij6c0rgl",
+        "formula": "2 + (floor(@classes.wizard.level / 5))",
+        "operator": "+",
+        "subTarget": "skill.blf",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "h39o8dbh",
+        "formula": "2 + (floor(@classes.wizard.level / 5))",
+        "operator": "+",
+        "subTarget": "skill.dis",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_deceptiveFlourish",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Wizard"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

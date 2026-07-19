@@ -1,0 +1,42 @@
+{
+  "_id": "bqdgdzahtubuuxmn",
+  "name": "Kit, Disguise",
+  "type": "loot",
+  "img": "systems/pf1/icons/items/inventory/dice.jpg",
+  "data": {
+    "description": {
+      "value": "\r\n<p><b>Price</b> 50 gp; <b>Weight</b> 8 lbs.</p>\r\n<p>This kit contains tools like makeup and fake facial hair, and provides a +2 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus\">circumstance bonus</a> on <a href=\"https://www.d20pfsrd.com/skills/disguise\">Disguise</a> checks. A disguise kit is exhausted after 10 uses.</p>\r\n\r\n"
+    },
+    "tags": [],
+    "weight": 8,
+    "price": 50,
+    "equipped": false,
+    "identifiedName": "Kit, Disguise",
+    "changes": [
+      {
+        "_id": "cl9ar24j",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.dis",
+        "modifier": "circumstance",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "kitDisguise",
+    "scriptCalls": [],
+    "subType": "gear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

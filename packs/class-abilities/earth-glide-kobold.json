@@ -1,0 +1,63 @@
+{
+  "_id": "qL46iuYaKstSaQv4",
+  "name": "Earth Glide (Kobold)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/yellow_42.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 15th level, you gain the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Earth-Glide-Ex-\">earth glide</a>&nbsp;universal monster ability with a speed equal to your base speed. This does not give you the ability to breathe while passing through earth, so you must hold your breath or use some alternate method to breathe while using this ability.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "zlikyzbw",
+        "formula": "@attributes.speed.land.base",
+        "operator": "add",
+        "subTarget": "burrowSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_earthGlideKobold",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,176 @@
+{
+  "_id": "j5tial1pm3qmzvzt",
+  "name": "Replay Tracks",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "13w24wbzq35mrzhz",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 3,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 9,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "concentration, up to 1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "druid",
+          5
+        ],
+        [
+          "ranger",
+          2
+        ],
+        [
+          "inquisitor",
+          4
+        ],
+        [
+          "psychic",
+          5
+        ],
+        [
+          "medium",
+          3
+        ],
+        [
+          "occultist",
+          3
+        ],
+        [
+          "hunter",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a track or other sign of a creature's passing found with Perception or Survival"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell allows you to reconstruct past events that occurred in your current location based on the tracks and other signs left behind. <i>Replay tracks</i> reveals events that occurred while the tracks that serve as the focus for the spell were being left, revealing events in the order they happened in real time or in reverse, depending on whether you are following the tracks forward or backward, although the image isn't clear enough to make out details (such as a creature's exact identity). You can attempt Survival checks to follow tracks as part of concentrating on the spell, but only events connected to the tracks used as the focus of the spell are revealed by the spell. Elements that left no trace detectable by you, such as creatures benefitting from <i>pass without trace</i>, are absent from the events you visualize.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

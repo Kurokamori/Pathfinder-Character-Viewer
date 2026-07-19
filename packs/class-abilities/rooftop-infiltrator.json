@@ -1,0 +1,60 @@
+{
+  "_id": "J8n678vtcDpTt1ae",
+  "name": "Rooftop Infiltrator",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/deceitful.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The vigilante gains a climb speed equal to half his base speed, which increases to his full base speed when climbing a rope.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "aj92z6b4",
+        "formula": "floor(@attributes.land.speed.base / 2)",
+        "operator": "+",
+        "subTarget": "climbSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_rooftopInfiltrator",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Vigilante"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

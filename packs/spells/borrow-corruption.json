@@ -1,0 +1,185 @@
+{
+  "_id": "iks2d9ve0cgdkryu",
+  "name": "Borrow Corruption",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3hixjh5xpbipm7bu",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "antipaladin",
+          2
+        ],
+        [
+          "shaman",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ],
+        [
+          "medium",
+          2
+        ],
+        [
+          "occultist",
+          3
+        ],
+        [
+          "hunter",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "trs",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a dirty scrap of a good priest's raiment"
+    },
+    "sr": false,
+    "shortDescription": "<p>You touch a creature with at least one manifestation from a corruption (see page 14). You temporarily gain any stains and gifts that corruption grants to the creature, and the creature retains them. If the gifts have limited uses, you count as having no uses remaining. You take 1d3 points of Wisdom drain whenever you cast this spell.  If your campaign uses the sanity system (see page 12), your sanity score decreases by 2 (and thus your sanity edge decreases by 1) each time you cast this spell, instead of you taking Wisdom drain. Only <i>greater restoration</i>, <i>miracle</i>, or <i>wish</i> can remove this decrease. A single casting of <i>greater restoration</i> removes one decrease of sanity from casting <i>borrow corruption</i>, while a casting of <i>miracle</i> or <i>wish</i> removes them all.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

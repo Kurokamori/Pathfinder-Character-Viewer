@@ -1,0 +1,178 @@
+{
+  "_id": "53ie187gupbkvy4w",
+  "name": "Summon Totem Creature",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3ry9llimrxygha73",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "one summoned creature",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "druid",
+          3
+        ],
+        [
+          "ranger",
+          3
+        ],
+        [
+          "summoner",
+          3
+        ],
+        [
+          "hunter",
+          3
+        ],
+        [
+          "unchained Summoner",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "con",
+    "subschool": "summoning",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a piece of bone from any one of your totem animals"
+    },
+    "sr": false,
+    "shortDescription": "<p>The Shoanti revere more than the deities of distant planes, but also the animals and natural forces of the rugged lands they call home. Shoanti spellcasters have learned ways to call upon the might of their quahs' totem creatures in times of need. A character must have been raised by the Shoanti and be considered part of a quah to be able to cast this spell. Characters with access to this spell can only summon creatures revered by the quah they are a part of, as noted on the following lists. Except as noted above, this spell functions as summon nature's ally III.</p><p><b>Lyrune-Quah (Moon Clan</b>): air elemental (small), 1d3 bats, wolf, 1d3 owls.</p><p><b>Shadde-Quah (Axe Clan</b>): 1d3 eagles, earth elemental (small), water elemental (small).</p><p><b>Shriikirri-Quah (Hawk Clan</b>): air elemental (small), 1d3+1 hawks (familiars), horse.</p><p><b>Shundar-Quah (Spire Clan</b>): air elemental (small), earth elemental (small), 1d3 eagles.</p><p><b>Sklar-Quah (Sun Clan</b>): 1d3 fire beetles, fire elemental (small), horse.</p><p><b>Skoan-Quah (Skull Clan</b>): 1d3+1 eagles (vultures), 1d3 fire beetles, 1d3 giant centipedes.</p><p><b>Tamiir-Quah (Wind Clan</b>): air elemental (small), 1d3 eagles, earth elemental (small).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

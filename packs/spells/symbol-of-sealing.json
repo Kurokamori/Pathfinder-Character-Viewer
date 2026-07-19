@@ -1,0 +1,171 @@
+{
+  "_id": "gpj46hcsawa41jeo",
+  "name": "Symbol of Sealing",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "oafle4kpfhq3z2bp",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "permanent",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "0",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "one symbol",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "cleric/oracle",
+          6
+        ],
+        [
+          "witch",
+          6
+        ],
+        [
+          "occultist",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "abj",
+    "types": "force",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "mercury and phosphorous, plus powdered diamond and opal worth a total of 5,000 gp",
+      "gpValue": 5000
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell allows you to scribe a potent rune of power upon or above a door or other opening measuring no more than 20 square feet/level in size. When the casting is completed, the symbol immediately triggers, glowing visibly and sealing the door or opening with an invisible barrier of force equivalent to a <i>Wall of Force</i>. Destroying the symbol ends the effect, though destroying it once the symbol has been activated requires destroying the <i>Wall of Force</i> first. Once triggered, the wall remains for 10 minutes per caster level.</p><p>When scribing a <i>symbol of sealing</i>, you can specify a password or phrase that allows a creature speaking it to bypass the seal and pass through the opening. You can also attune any number of creatures to the <i>symbol of sealing</i>, but doing this extends the casting time as described under <i>symbol of death</i> (Core <i>Rulebook</i> 355). However, the force wall created by the symbol blocks attacks and line of effect even for creatures that know the password or are attuned-the password only prevents them from triggering the symbol, not from ignoring its effects if triggered.</p><p>A <i>disintegrate</i> spell or similar effect can destroy the <i>Wall of Force</i> created by the symbol if the caster makes a caster level check against a DC of 11 + your caster level. A <i>knock</i> spell has no effect on a <i>symbol of sealing</i> or its force wall. A <i>symbol of sealing</i> cannot be dispelled, but mage's disjunction automatically destroys it.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

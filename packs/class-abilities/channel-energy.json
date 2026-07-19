@@ -1,0 +1,190 @@
+{
+  "_id": "kXXz1lO4i7CibHJ9",
+  "name": "Channel Energy",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/blue_20.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Regardless of alignment, any cleric can release a wave of energy by channeling the power of her faith through her holy (or unholy) symbol. This energy can be used to cause or heal damage, depending on the type of energy channeled and the creatures targeted.</p>\n<p>A good cleric (or a neutral cleric who worships a good deity) channels positive energy and can choose to deal damage to&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>&nbsp;creatures or to heal living creatures. An evil cleric (or a neutral cleric who worships an evil deity) channels negative energy and can choose to deal damage to living creatures or to heal&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>&nbsp;creatures. A neutral cleric of a neutral deity (or one who is not devoted to a particular deity) must choose whether she channels positive or negative energy. Once this choice is made, it cannot be reversed. This decision also determines whether the cleric can cast spontaneous cure or inflict spells (see spontaneous casting).</p>\n<p>Channeling energy causes a burst that affects all creatures of one type (either&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>&nbsp;or living) in a 30-foot radius centered on the cleric. The amount of damage dealt or healed is equal to 1d6 points of damage plus 1d6 points of damage for every two cleric levels beyond 1st (2d6 at 3rd, 3d6 at 5th, and so on). Creatures that take damage from channeled energy receive a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a>&nbsp;save to halve the damage. The DC of this save is equal to 10 + 1/2 the cleric’s level + the cleric’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\" rel=\"nofollow\">Charisma</a>&nbsp;modifier. Creatures healed by channel energy cannot exceed their maximum hit point total—all excess healing is lost. A cleric may channel energy a number of times per day equal to 3 + her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\" rel=\"nofollow\">Charisma</a>&nbsp;modifier. This is a standard action that does not provoke an attack of opportunity. A cleric can choose whether or not to include herself in this effect.</p>\n<p>A cleric must be able to present her holy symbol to use this ability.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ba5rpqney7k421ob",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/blue_20.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "self; affects living OR undead"
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": "1",
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "3 + @abilities.cha.mod"
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "30",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(ceil(@classes.cleric.level / 2))d6",
+              {
+                "values": [
+                  "positive"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "10+floor(@classes.cleric.level / 2) + @abilities.cha.mod",
+          "type": "will",
+          "description": "Will halves damage"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "3 + @abilities.cha.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": [
+        {
+          "_index": 0,
+          "dataType": "data",
+          "hiddenLinks": {},
+          "id": "jTHOihihdodSu76X",
+          "img": "systems/pf1/icons/feats/channel-smite.jpg",
+          "name": "Channel Smite"
+        },
+        {
+          "_index": 1,
+          "dataType": "data",
+          "hiddenLinks": {},
+          "id": "A6x4JZZOs5zFVhry",
+          "img": "systems/pf1/icons/feats/command-undead.png",
+          "name": "Command Undead"
+        },
+        {
+          "_index": 2,
+          "dataType": "data",
+          "hiddenLinks": {},
+          "id": "AEC0MwNgQcWessn5",
+          "img": "systems/pf1/icons/feats/elemental-channel.jpg",
+          "name": "Elemental Channel"
+        }
+      ]
+    },
+    "tag": "classFeat_channelEnergy",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cleric"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

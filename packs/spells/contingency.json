@@ -1,0 +1,162 @@
+{
+  "_id": "4br9puuneexco5hx",
+  "name": "Contingency",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ed8la69ezto4bxa9",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": ""
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": "1 day/level (D) or until discharged",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "psychic",
+          6
+        ],
+        [
+          "occultist",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "evo",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "focus": true
+    },
+    "materials": {
+      "value": "quicksilver and an eyelash of a spell-using creature",
+      "focus": "ivory statuette of you worth 1,500 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p>You can place another spell upon your person so that it comes into effect under some condition you dictate when casting <i>contingency</i>.</p><p>The <i>contingency</i> spell and the companion spell are cast at the same time. The 10-minute casting time is the minimum total for both castings; if the companion spell has a casting time longer than 10 minutes, use that instead. You must pay any costs associated with the companion spell when you cast <i>contingency</i>.</p><p>The spell to be brought into effect by the <i>contingency</i> must be one that affects your person and be of a spell level no higher than one-third your caster level (rounded down, maximum 6th level).</p><p>The conditions needed to bring the spell into effect must be clear, although they can be general. In all cases, the <i>contingency</i> immediately brings into effect the companion spell, the latter being \"cast\" instantaneously when the prescribed circumstances occur.</p><p>If complicated or convoluted conditions are prescribed, the whole spell combination (<i>contingency</i> and the companion magic) may fail when triggered. The companion spell occurs based solely on the stated conditions, regardless of whether you want it to.</p><p>You can use only one <i>contingency</i> spell at a time; if a second is cast, the first one (if still active) is dispelled.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

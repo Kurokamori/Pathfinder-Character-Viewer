@@ -1,0 +1,135 @@
+{
+  "_id": "DiOph9nni1zEU3tW",
+  "name": "Assault Bridge, Gargantuan",
+  "type": "weapon",
+  "img": "icons/sundries/misc/ladder.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 165</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 50 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> -; <strong>Critical</strong> -; <strong>Range</strong> -; <strong>Type</strong> -</p><p><strong>Crew</strong> 0; <strong>Aim</strong> 0; <strong>Load</strong> 0; <strong>Speed</strong> 0 ft.</p><p><strong>Category</strong> Close Assault; <strong>Proficiency</strong> Siege Engine</p><h3 class=\"framing\">Description</h3><p>An assault bridge is used to span a ditch, moat, or other gap. Raising an assault bridge requires one full-round action per 5 feet of length; up to four creatures may cooperate to raise a bridge. The time required is doubled for each size category that the bridge is larger than the creatures raising it. Large assault bridges have 40 hit points, Huge ones have 60 hit points, Gargantuan ones have 160 hit points, and Colossal ones have 240 hit points.</p><p></p><p><h2>Table 3-16: Bridges and Escalade Ladders</h2><table class=\"inner\"><tbody><tr><td><strong>Size</strong></td><td><strong>Width</strong></td><td><strong>Length/Height</strong></td></tr><tr><td>Large</td><td>5 ft.</td><td>20 ft.</td></tr><tr><td>Huge</td><td>5 ft.</td><td>30 ft.</td></tr><tr><td>Gargantuan</td><td>10 ft.</td><td>40 ft.</td></tr><tr><td>Colossal</td><td>10 ft.</td><td>60 ft.</td></tr></tbody></table></p>"
+    },
+    "tags": [],
+    "price": 50,
+    "hardness": 10,
+    "changes": [],
+    "actions": [
+      {
+        "_id": "k21ak0wzttd5urue",
+        "name": "Attack",
+        "img": "icons/sundries/misc/ladder.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "",
+          "critMult": "2"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "assaultBridgeGargantuan",
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

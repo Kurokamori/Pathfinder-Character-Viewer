@@ -1,0 +1,63 @@
+{
+  "_id": "BTkYdjVLcQMfFsv9",
+  "name": "Nimble",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/armor_01.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Starting at 2nd level, a gunslinger gains a +1 dodge bonus to AC while wearing light or no armor. Anything that causes the gunslinger to lose her Dexterity bonus to AC also causes the gunslinger to lose this dodge bonus. This bonus increases by +1 for every four levels beyond 2nd level (to a maximum of +5 at 20th level).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "2cczatqr",
+        "formula": "1 + floor((@classes.gunslinger.level - 2) / 4)",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "dodge",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_nimble",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Gunslinger"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

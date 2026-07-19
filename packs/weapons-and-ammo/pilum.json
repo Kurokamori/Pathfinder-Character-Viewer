@@ -1,0 +1,151 @@
+{
+  "_id": "F5ZLN44A3QWL8S7k",
+  "name": "Pilum",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/pilum.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 0</em>, <em>Adventurer's Armory pg. 4</em>, <em>Advanced Player's Guide pg. 179</em>, <em>Ultimate Equipment pg. 19</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 5 gp <strong>Weight</strong> 4 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 20 ft.; <strong>Type</strong> P; <strong>Special</strong> see text</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Martial</p><p><strong>Weapon Groups</strong> Spears; Thrown</p><h3 class=\"framing\">Description</h3><p>The tip of this heavy javelin is designed to break off and embed itself into a shield once it hits. Like ammunition, a thrown pilum that hits its target is destroyed. If you hit a shieldbearing opponent with a pilum, he loses the AC bonuses from that shield until he takes a standard action to pry the remnants of the pilum from his shield.</p>"
+    },
+    "tags": [],
+    "weight": 4,
+    "price": 5,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 5,
+    "identifiedName": "Pilum",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "poh32idms5tst7je",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/pilum.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 20,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "pilum",
+    "scriptCalls": [],
+    "weaponType": "martial",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,153 @@
+{
+  "_id": "kBfgnl7ccM6QLCcH",
+  "name": "Bolas",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/bolas-stone.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 33</em>, <em>PRPG Core Rulebook pg. 143</em>, <em>Ultimate Equipment pg. 21</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 5 gp <strong>Weight</strong> 2 lbs.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 10 ft.; <strong>Type</strong> B; <strong>Special</strong> nonlethal, trip</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Thrown</p><h3 class=\"framing\">Description</h3><p>A bolas is a pair of wooden, stone, or metal weights connected by a thin rope or cord. You can whirl and throw this weapon to make a ranged trip attack against an opponent. You can't be tripped during your own trip attempt when using a bolas.</p>"
+    },
+    "tags": [],
+    "weight": 2,
+    "price": 5,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Bolas",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "nqupd11e8o35l8t0",
+        "name": "Attack",
+        "img": "icons/weapons/thrown/bolas-stone.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

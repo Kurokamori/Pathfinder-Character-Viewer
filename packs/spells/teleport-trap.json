@@ -1,0 +1,162 @@
+{
+  "_id": "v58v451n6dj73wvc",
+  "name": "Teleport Trap",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "x1ft1n8eowc2ad9i",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 day/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "one 40-ft. cube/level (S)",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Trap",
+          7
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "powdered lodestone and silver worth 100 gp per 40-ft. cube",
+      "gpValue": 100
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "shortDescription": "<p><i>Teleport trap</i> wards an area, redirecting all <i>teleport</i>ation into or out of the area to a specific point within the area determined by you at the time of casting. The destination must be an open space on a solid surface. The spell's area overlaps walls and other solid and liquid objects (preventing intruders from bypassing the ward by <i>teleport</i>ing into a wall or through similar means). A <i>teleport</i>ing creature that is affected by a <i><i>teleport</i> trap</i> can resist the effect with a Will save-if the save is successful, the creature simply doesn't <i>teleport</i> at all (but the use of the <i>teleport</i> effect is still consumed)-either to the intended location or the <i><i>teleport</i> trap</i>'s actual destination. A DC 27 Knowledge (arcana) allows such a creature to recognize the <i><i>teleport</i> trap</i>'s presence, but does not reveal the trap's linked destination.</p><p>At your discretion, the <i><i>teleport</i> trap</i> can exclude a category of creatures, such as an alignment, a type of creature, or creatures that carry a specific item or know a password (though this only works if the creature is <i>teleport</i>ing out of the area, not into it). You select this option and the conditions at the time you cast the spell. Overly complicated conditions may cause the spell to fail entirely. Multiple castings of <i><i>teleport</i> trap</i> can be linked to cover a larger area, allowing <i>teleport</i>ed creatures to be directed to a single point within the combined area of the spells.</p><p><i>Teleport trap</i> can be made permanent at the cost of 7,000 gp. A single <i>permanency</i> spell can be used on all <i><i>teleport</i> trap</i>s that share a linked destination, but the gold piece cost must be paid for each individual spell.</p><p>The Pathfinders of the Grand Lodge make use of permanent <i><i>teleport</i> trap</i>s in several key locations, trapping would-be intruders in a small wing of jail cells. At least one crypt of the Whispering Tyrant makes use of the spell as well, trapping grave robbers in coffin-sized stone cysts, there to die a slow and agonizing death from thirst and starvation.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,149 @@
+{
+  "_id": "LWPBZON5AHSjxqXi",
+  "name": "Throwing Arrow Cord",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/throwing-arrow-cord.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 19</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> - <strong>Weight</strong> -</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 60 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>This simple fiber or leather cord has a knot at either end. One end is wound once around the notch of a throwing arrow (see New Ammunition, below). The cord runs taut along the shaft to the front of the arrow, where you hold the arrow to throw. The remainder of the cord wraps around your hand. The cord dramatically increases the throwing arrow's range. Attaching the cord to a throwing arrow is a move action that requires two hands and provokes attacks of opportunity. The Rapid Reload feat can be taken for throwing arrow cords, allowing you to load a throwing arrow as a free action.</p>"
+    },
+    "tags": [],
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 5,
+    "identifiedName": "Throwing Arrow Cord",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "6zfaahgennb068f8",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/throwing-arrow-cord.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 60,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "20",
+          "critMult": "2"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "throwingArrowCord",
+    "scriptCalls": [],
+    "weaponType": "martial",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

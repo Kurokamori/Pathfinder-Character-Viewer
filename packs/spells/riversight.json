@@ -1,0 +1,174 @@
+{
+  "_id": "o44e1jonqlc833m2",
+  "name": "Riversight",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ooxs8fwu38upm7de",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "nonmagical freshwater waterway"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "magical sensor",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "druid",
+          2
+        ],
+        [
+          "ranger",
+          2
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "inquisitor",
+          3
+        ],
+        [
+          "hunter",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "div",
+    "subschool": "scrying",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true,
+      "divineFocus": 3
+    },
+    "materials": {
+      "focus": "a smooth river stone"
+    },
+    "sr": false,
+    "shortDescription": "<p>You can view events transpiring along a natural watercourse you touch. You can see anything on or within the river as if you were present at that location, or you can observe anything happening within 15 feet of the river's banks as if peering from the water's surface. Moving your point of view to a different location along the river is a standard action, though your perception can follow something moving along the river as a free action.</p><p>The range of this spell is affected by whether you are attempting to gaze up or downriver-if viewing a location downriver, you can view any spot within 2 miles per caster level; if viewing upriver, you can view any spot within 1/2 mile per caster level. The magical sensor created by this spell can travel only as far along the river as your range and the river permits; obstructions such as dams and reservoirs halt the sensor, as does an estuary flowing into the sea or other body of saltwater.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

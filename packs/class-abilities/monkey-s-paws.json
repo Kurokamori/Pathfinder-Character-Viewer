@@ -1,0 +1,70 @@
+{
+  "_id": "saThiFWHXa3ag6rn",
+  "name": "Monkey's Paws",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/deceitful.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The vigilante gains a climb speed equal to his base speed and a +4 competence bonus on Escape Artist checks.</p>\n<p>The vigilante must have the rooftop infiltrator talent and be at least 5th level to select this talent.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "ljqr5lsn",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "skill.esc",
+        "modifier": "competence",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "qr4fdp29",
+        "formula": "@attributes.speed.land.base",
+        "operator": "+",
+        "subTarget": "climbSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_monkeysPaws",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Vigilante"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

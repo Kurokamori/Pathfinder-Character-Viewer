@@ -1,0 +1,59 @@
+{
+  "_id": "o8AEIzEXMjEZ2EX1",
+  "name": "Bonus Combat Feats (BRA)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/gray_08.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 2nd level and every 3 levels thereafter, a brawler gains a bonus combat feat in addition to those gained from normal advancement. These bonus feats must be ones that affect or improve her defenses or melee attacks. The brawler must meet the prerequisites of the selected bonus combat feat.<br><br>Upon reaching 5th level and every 3 levels thereafter, a brawler can choose to learn a new bonus combat feat in place of a bonus combat feat she has already learned. In effect, the brawler loses the bonus combat feat in exchange for the new one. The old feat cannot be one that was used as a prerequisite for another feat, prestige class, or other ability. A brawler can only change one feat at any given level, and must choose whether or not to swap the feat at the time she gains a new bonus combat feat for the level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "6b0hdj9l",
+        "formula": "floor((@classes.brawler.level + 1) / 3)",
+        "operator": "add",
+        "subTarget": "bonusFeats",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_bonusCombatFeatsBra",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Brawler"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

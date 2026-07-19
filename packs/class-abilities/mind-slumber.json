@@ -1,0 +1,154 @@
+{
+  "_id": "MVI1rJZeHX2JuEfW",
+  "name": "Mind Slumber",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/leadership.jpg",
+  "data": {
+    "description": {
+      "value": "<p>By expending 1 point of mental focus as a standard action, you can lull a living creature into a deep mental slumber, forcing it to view the world as a dream. The target must be within 30 feet of you, and it can attempt a Will saving throw to negate the effect. If it fails the save, the creature falls asleep, although it still perceives the world around it as a dream. This doesn’t cause the creature to fall prone, but it does drop whatever it is holding. The creature can’t take any actions while in this state, but it isn’t helpless— it perceives danger as part of its dream. The creature remains asleep for a number of rounds equal to your occultist level or until it takes any amount of damage, which immediately wakes it. At the end of each of its turns, it receives another Will saving throw to end the effect. The creature can be manipulated or examined without waking it, but it can’t be moved from its square without waking it. This is a mind-affecting compulsion effect.</p>\n<p>Regardless of whether it succeeds at the save, the target is then immune to this effect for 24 hours.</p>\n<p>You must be at least 3rd level to select this focus power.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "gs7vvk4r4w7enwpm",
+        "name": "Use",
+        "img": "systems/pf1/icons/feats/leadership.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "@classes.occultist.level",
+          "units": "round"
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_mindSlumber",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Occultist"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

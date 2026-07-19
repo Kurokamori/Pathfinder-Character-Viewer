@@ -1,0 +1,94 @@
+{
+  "_id": "8I0XKl38jZIaokAf",
+  "name": "Broken Soul",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons&nbsp;</strong>No<br><br>A broken soul is torment and pain made manifest. Tortured to the extremes of both physical and mental endurance, and then taken beyond those barriers, a broken soul gains extraordinary reserves of fortitude and resilience as well as the ability to inflict a measure of its own terrible suffering on others.<br><br>Each broken soul has a unique appearance, the torture it has endured plainly visible on its body. Its skin is a mass of scar tissue, marred with bruises that do not fade and scored with countless scars. In some cases, a broken soul’s flesh has been flayed away, revealing the musculature and bone underneath. Weeping sores and open cuts cover a broken soul’s body, wounds that never fully heal. Its limbs are often twisted, the result of broken bones that were never set properly, and it might be missing fingers, toes, ears, or other appendages. A broken soul’s existence is one of unending suffering, and the constant pain often drives the creature irrevocably mad. In their insanity, these unfortunates hate all other creatures and seek to inflict their wounds and their agony on all they encounter.<br><br>The creation of a broken soul can happen in a number of ways. Some broken souls arise spontaneously, the result of horrific treatment at the hands of cruel abusers. With no way to escape their torment, these creatures embrace the pain and anguish and transcend them, making them a part of their very being. In so doing, they become something both more and less than they were. Other broken souls are purposefully created out of helpless prisoners by sadistic torturers through a harrowing gauntlet of mental and physical torments. By breaking a creature’s mind and body, these torturers hope to create guardians or servants whose loyalty is ensured by the constant pain they must endure. Even more harrowing, some broken souls take it upon themselves to create more of their kind, fashioning gruesome works of living, mutilated art in an effort to share their suffering. These “artists” often turn on their own torturers first, perfecting their skills on those who created them before turning their attention to any other unfortunate creatures they can find.<br><br>“Broken soul” is an acquired template that can be added to any living creature with an Intelligence score of 3 or higher (referred to hereafter as the base creature). A broken soul uses all the base creature’s statistics and special abilities except as noted here.<br><br><strong>CR:</strong> Same as the base creature +2.</p>\n<p><br><strong>Alignment:</strong> Usually chaotic evil.</p>\n<p><br><strong>Armor Class:</strong> A mass of scar tissue covers every inch of the broken soul’s body, increasing the base creature’s natural armor bonus by +4.<br><br><strong>Defensive Abilities:</strong> Inured to pain and abuse, a broken soul gains damage reduction 5/— and acid, cold, electricity, fire, and sonic resistance 5.</p>\n<p><br><strong>Speed:</strong> Because a broken soul is in constant agony, reduce each of its speeds by 10 feet (minimum speed of 5 feet).</p>\n<p><br><strong>Special Attacks:</strong> A broken soul gains the following special attacks. Save DCs are equal to 10 + 1/2 the broken soul’s Hit Dice + the broken soul’s Charisma modifier unless otherwise noted.</p>\n<p><br><em>Agonized Wail (Su):</em> As a standard action, a broken soul can emit an agonized wail that inspires terror in those who hear it. All creatures within 120 feet must succeed at a Will save or become shaken for as long as they remain within 120 feet of the broken soul. A successful save renders a creature immune to that broken soul’s agonized wail for 24 hours. This is a sonic mind-affecting fear effect.</p>\n<p><br><em>Baleful Gaze (Su):</em> Any creature within 60 feet of a broken soul must succeed at a Fortitude save or take 1d4 points of Strength, Constitution, and Charisma drain. Whatever the result of the saving throw, the creature cannot be affected by the same broken soul’s baleful gaze again for 1 minute.</p>\n<p><br><em>Torturous Touch (Su):</em> A broken soul can make a touch attack to cause hideous, painful wounds to rip open in the target’s body. This touch deals 2d6 points of slashing damage and 1d6 points of Dexterity damage, and causes the touched creature to fall prone in a fit of convulsions and be dazed for 1d4 rounds. A successful Fortitude save negates the Dexterity damage and the convulsive fit.</p>\n<p><br><strong>Abilities:</strong> Con +6, Wis –2 (minimum 1). In addition, a broken soul gains a +2 bonus to one ability score of its choice and a –6 penalty to another ability score of its choice (minimum 1), which can apply to the ability scores modified by this template.</p>\n<p><br><strong>Feats:</strong> A broken soul gains Diehard, Endurance, Great Fortitude, and Toughness as bonus feats.</p>\n<p><br><strong>Skills:</strong> A broken soul gains a +8 racial bonus on Intimidate checks, but takes a –10 racial penalty on Concentration checks because of its constant pain.</p>\n<p><br><strong>Organization:</strong> Solitary.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "q8bn0ygq",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "2kaiarg0",
+        "formula": "10",
+        "operator": "+",
+        "subTarget": "allSpeeds",
+        "modifier": "penalty",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "ui8flvyg",
+        "formula": "6",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "hphbkfe8",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "4okbaqwb",
+        "formula": "8",
+        "operator": "+",
+        "subTarget": "skill.int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

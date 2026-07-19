@@ -1,0 +1,73 @@
+{
+  "_id": "4zVndIJ8NMWWzl1T",
+  "name": "AC Bonus (MNK)",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/fog-air-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>When unarmored and unencumbered, the monk adds his&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>&nbsp;bonus (if any) to his&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-class\">AC</a>&nbsp;and his&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Defense\">CMD</a>. In addition, a monk gains a +1 bonus to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\">AC</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Defense\">CMD</a>&nbsp;at 4th level. This bonus increases by 1 for every four monk levels thereafter, up to a maximum of +5 at 20th level.</p>\n<p>These bonuses to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\">AC</a>&nbsp;apply even against touch attacks or when the monk is&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed\">flat-footed</a>. He loses these bonuses <span class=\"notImp\" title=\"Not Implemented\">when he is immobilized or&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Helpless\">helpless</a></span>, when he wears any&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, when he carries a shield, or when he carries a medium or heavy load.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "c1v782dm",
+        "formula": "(@shield.type < 1 && @armor.type < 1 && @attributes.encumbrance.level < 1 ? 1 : 0) * (@abilities.wis.mod + floor(@classes.monk.level / 4))",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "3n8ckhwe",
+        "formula": "(@shield.type < 1 && @armor.type < 1 && @attributes.encumbrance.level < 1 ? 1 : 0) * (@abilities.wis.mod + floor(@classes.monk.level / 4))",
+        "operator": "add",
+        "subTarget": "cmd",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_acBonusMnk",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Monk"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

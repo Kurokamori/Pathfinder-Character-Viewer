@@ -1,0 +1,161 @@
+{
+  "_id": "gfm57ftq6c0age2u",
+  "name": "Gilded Whispers",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "7knqwkoo0jyekx9p",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 day/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "a gold or platinum coin"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "cleric/oracle",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "100 gp of powdered gemstones",
+      "gpValue": 100
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "shortDescription": "<p>Developed by priests of Abadar to catch thieves and skimmers, <i>gilded whispers</i> later spread to other faiths and was adapted to the arcane arts through the combined efforts of Aram Zey and Kreighton Shaine. Pathfinders most commonly use this spell to track bribes and illicit purchases back to their ultimate source, especially when they suspect the influence of Aspis Consortium agents.</p><p><i>Gilded whispers</i> allows you to use a single coin as a conduit for an eavesdropping spell. When you use a divination (<i>scrying</i>) spell or item, such as <i>clairvoyance/ clairaudience</i>, <i>scrying</i>, or a <i>crystal ball</i>, you can choose to target a coin you have affected with <i>gilded whispers</i> instead of a creature or location (even if you would not otherwise be able to target an object), though any range limits on the <i>scrying</i> effect still apply. If the coin is held or carried by a creature, its owner receives any applicable saving throw against the effect. The caster of <i>gilded whispers</i> treats the coin as a familiar subject. The residual psychic impressions left upon the coin by other handlers help mask this dweomer from detection, protecting <i>gilded whispers</i> against location by <i>detect magic</i>, <i>arcane sight</i>, and similar effects unless the latter spell's caster succeeds on a caster level check (1d20 + caster level) against a DC of 11 + the caster level of the spellcaster who cast <i>gilded whispers</i>.</p><p>The <i>scrying</i> sensor created by using a divination (<i>scrying</i>) spell to observe or listen to the coin's surroundings can be detected as normal.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

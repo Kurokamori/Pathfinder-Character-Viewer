@@ -1,0 +1,151 @@
+{
+  "_id": "0amLz3l4v3ICwuSk",
+  "name": "Doru",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/pike-flared-brown.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Distant Shores pg. 12</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 4 gp <strong>Weight</strong> 6 lbs.</p>\n<p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x3; <strong>Range</strong> 20 ft.; <strong>Type</strong> P; <strong>Special</strong> brace</p>\n<p><strong>Category</strong> One-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>Balanced by a metal butt, this large spear is weighted so that it can be used in one hand by a proficient wielder. You can use a doru two-handed as a simple weapon. You can also use a doru as a onehanded martial weapon, but its critical hit multiplier decreases to x2.</p>"
+    },
+    "tags": [],
+    "weight": 6,
+    "price": 4,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 10,
+    "identifiedName": "Doru",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "8acam7gg4v6kahcr",
+        "name": "Attack",
+        "img": "icons/weapons/polearms/pike-flared-brown.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 20,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "doru",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "1h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

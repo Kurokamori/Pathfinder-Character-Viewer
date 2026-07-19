@@ -1,0 +1,170 @@
+{
+  "_id": "fb38vn4hm4rur6gm",
+  "name": "Wall of Force",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "dg4kreglrre2nr6j",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "wall whose area is up to one 10-ft. square/level",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "magus",
+          5
+        ],
+        [
+          "psychic",
+          5
+        ],
+        [
+          "occultist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Isolation",
+          6
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "evo",
+    "types": "force",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "powdered quartz"
+    },
+    "sr": false,
+    "shortDescription": "<p>A <i>Wall of Force</i> creates an invisible wall of pure force. The wall cannot move and is not easily destroyed. A <i>Wall of Force</i> is immune to <i>dispel magic</i>, although a mage's disjunction can still dispel it.</p><p>A <i>Wall of Force</i> can be damaged by spells as normal, except for <i>disintegrate</i>, which automatically destroys it. It can be damaged by weapons and supernatural abilities, but a <i>Wall of Force</i> has hardness 30 and a number of hit points equal to 20 per caster level. Contact with a <i>sphere of annihilation</i> or <i>rod of cancellation</i> instantly destroys a <i>Wall of Force</i>.</p><p>Breath weapons and spells cannot pass through a <i>Wall of Force</i> in either direction, although <i>dimension door</i>, <i>teleport</i>, and similar effects can bypass the barrier. It blocks ethereal creatures as well as material ones (though ethereal creatures can usually circumvent the wall by going around it, through material floors and ceilings). Gaze attacks can operate through a <i>Wall of Force</i>.</p><p>The caster can form the wall into a flat, vertical plane whose area is up to one 10-foot square per level. The wall must be continuous and unbroken when formed. If its surface is broken by any object or creature, the spell fails.</p><p><i>Wall of Force</i> can be made permanent with a <i>permanency</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

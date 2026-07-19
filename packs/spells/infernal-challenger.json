@@ -1,0 +1,167 @@
+{
+  "_id": "rbggh9zwr983vdtx",
+  "name": "Infernal Challenger",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "hyq03hql4gk1shym",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "one called bearded devil and testing ground; see text",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "summoner",
+          3
+        ],
+        [
+          "unchained Summoner",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "con",
+    "subschool": "calling",
+    "types": "lawful, see text",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true,
+      "divineFocus": 3
+    },
+    "materials": {
+      "focus": "an iron badge or medallion"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell summons a bearded devil, causing it to appear where you designate. The area within a 50-foot radius of where the devil appears is ringed with a smoldering, red glow. This area is the testing ground. To successfully cast this spell, no creature other than the devil's challenger (see below) can be within this area while the spell is being cast. On the round it appears, the devil identifies itself (typically by name and with a brief recitation of honors) and states it is prepared to do battle with a sole mortal champion. In the same round, either you or a creature you designate while casting the spell must identify the devil's challenger. For the duration of the spell, the devil does everything in its power to kill the challenger. You do not control the devil or have any influence over how it conducts itself in battle, but the devil cannot leave the testing ground. Unlike with <i>summon monster</i> and similar spells, you cannot dismiss the devil. Rather, the conjured devil remains until any one of the following criteria is met: it is reduced below 0 hit points or otherwise defeated, its challenger is slain, its challenger leaves the testing ground, or it takes damage from any source other than its challenger. Upon any of these occurrences, the devil vanishes. Conjuring a devil is typically an evil act. If cast for any purpose besides the administering of a Hellknight test, this spell has the evil descriptor.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

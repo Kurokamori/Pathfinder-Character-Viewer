@@ -1,0 +1,181 @@
+{
+  "_id": "d75efwlvj5ch1ob8",
+  "name": "Blood Ties",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "p4sdmy56uue0hav1",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 day/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "two living creatures"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "druid",
+          5
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "inquisitor",
+          5
+        ],
+        [
+          "antipaladin",
+          4
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "psychic",
+          5
+        ],
+        [
+          "hunter",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "nec",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a small length of crimson string"
+    },
+    "sr": false,
+    "shortDescription": "<p>One of the targets of this spell must be a hostage-a bound, pinned, or helpless creature within your reach (though the spell doesn't end if the hostage later moves beyond your reach). The second target must be a member of the first target's family. If neither creature successfully saves against the spell, the second target also takes any damage conferred to the hostage, provided both are still alive, to a maximum of 10 points of damage per caster level per day (damage beyond that necessary to kill the first target does not transfer). This transferred damage is typeless and ignores the second creature's damage reduction and resistances. If either target succeeds at the saving throw, you can never attempt to exploit the connection between these particular two creatures again. The connection between your targets weakens when the two are less familiar with one another. Each target gains a +2 bonus on its save if the two are distant relations or related by marriage. Each target takes a -2 penalty on its save if the two targets are parent and child or siblings.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

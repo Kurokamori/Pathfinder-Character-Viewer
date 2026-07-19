@@ -1,0 +1,171 @@
+{
+  "_id": "kdnkszyxk0a7n62w",
+  "name": "Apport Object",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ltpshyqn9gdlkkwq",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous or 1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one touched object of up to 1 lb. and 1 cu. ft."
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "bard",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "psychic",
+          2
+        ],
+        [
+          "medium",
+          2
+        ],
+        [
+          "mesmerist",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "con",
+    "subschool": "teleportation",
+    "components": {
+      "verbal": true
+    },
+    "shortDescription": "<p>This spell allows you to instantaneously transport a small nonliving object from one location to another. There are two ways to use the spell: sending allows you to immediately send an object held in your hands to a nearby location, while receiving permits you to cast the spell ahead of time on an object and summon it to your location at a later time.  <b>Sending</b>: If you choose to send the object elsewhere, the spell functions like <i>teleport object</i>, except the size of the object is limited and the distance it can travel is equal to only 25 feet + 5 feet per 2 levels. You can't transport an object to the Ethereal Plane. You can send the held object to any square within range, and you don't need line of sight to the target location. You can place the object in the open or inside a container, a pocket, or even someone's hand. If there isn't room in the space you select (either because the space chosen is too small or because there is already something else there), or if the person doesn't want or isn't expecting the object in his hands, it appears on the ground within the target's square instead. You can transport the object to an elevation above the floor as long as the destination is within the spell's total distance limit.  <b>Receiving</b>: You can prepare an object ahead of time to apport it to yourself by casting the spell upon it and assigning a mental trigger to complete the spell. You don't need line of sight to the object to apport it to you, but the object must be within a distance equal to 25 feet + 5 feet per 2 levels. Completing the spell is a swift action that has the same restrictions as a thought spell component. You can apport an object in this way even if someone holding the object is unwilling to let you take it. Once you apport the object, the spell ends.  You can't send or receive an object into a space that is protected by an <i>antimagic field</i>, <i>Globe of Invulnerability</i>, or similar effect that keeps magical effects out; if you attempt to do so, the spell is lost.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

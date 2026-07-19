@@ -1,0 +1,64 @@
+{
+  "_id": "L6gBfTUHFJMiY9Uj",
+  "name": "Mutagen, Con",
+  "type": "buff",
+  "img": "icons/tools/laboratory/vial-orange.webp",
+  "data": {
+    "tags": [],
+    "changes": [
+      {
+        "_id": "z8sjbmbz",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "alchemical",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "z55z4u8d",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "alchemical",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ig61op2j",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "alchemical",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level * 10"
+    },
+    "links": {
+      "children": []
+    },
+    "tag": "mutagenCon",
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "1",
+    "hideFromToken": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

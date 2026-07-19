@@ -1,0 +1,71 @@
+{
+  "_id": "7WaQxnVaaoL4AGr8",
+  "name": "Uncanny Dodge",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/wind-stance.jpg",
+  "data": {
+    "description": {
+      "value": "<p>This character gains the ability to react to danger before her senses would normally allow her to do so. She cannot be caught <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed\" rel=\"nofollow\">flat-footed</a>, nor does she lose her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dex</a>&nbsp;bonus to AC if the attacker is invisible. She still loses her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a>&nbsp;bonus to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> if immobilized. A character with this ability can still lose her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a>&nbsp;bonus to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a>&nbsp;if an opponent successfully uses the feint action against her.</p>\n<p>If a character already has <a href=\"https://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Uncanny-Dodge-Ex-\">uncanny dodge</a>&nbsp;from a different class, she automatically gains&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Improved-Uncanny-Dodge-Ex-\">improved uncanny dodge</a>&nbsp;(see below) instead.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "1yiag0iu",
+        "formula": "@abilities.dex.maxBonus",
+        "operator": "add",
+        "subTarget": "ffac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 3
+      },
+      {
+        "_id": "ub84g9h5",
+        "formula": "@abilities.dex.maxBonus",
+        "operator": "add",
+        "subTarget": "ffcmd",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 3
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_uncannyDodge",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Barbarian"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

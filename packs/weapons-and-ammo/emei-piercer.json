@@ -1,0 +1,152 @@
+{
+  "_id": "aBSCa5u1Xa3GIRCU",
+  "name": "Emei Piercer",
+  "type": "weapon",
+  "img": "icons/weapons/fist/fist-knuckles-spiked-blue.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 20</em>, <em>Ultimate Combat pg. 130</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 3 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> 1d2 (small), 1d3 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> -; <strong>Type</strong> P; <strong>Special</strong> see text</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Close; Monk</p><h3 class=\"framing\">Description</h3><p>This weapon is used to augment unarmed martial techniques. It consists of an 8- to 10-inch-long, dual-pointed steel spike set on swivels and mounted on a ring, so that it can be spun around at high speeds when slipped over the wielder's ring finger. The ring prevents the wielder from being disarmed and turns unarmed strikes into piercing attacks.</p>"
+    },
+    "tags": [],
+    "price": 3,
+    "hp": {
+      "max": "2",
+      "value": "2"
+    },
+    "hardness": 10,
+    "identifiedName": "Emei Piercer",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "gi3fez887ebe3psf",
+        "name": "Attack",
+        "img": "icons/weapons/fist/fist-knuckles-spiked-blue.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 3, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "emeiPiercer",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

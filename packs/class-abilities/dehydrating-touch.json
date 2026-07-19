@@ -1,0 +1,165 @@
+{
+  "_id": "OXG4lt3sDQJLFAYd",
+  "name": "Dehydrating Touch",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/ice_16.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Starting at 1st level, you can make a melee&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks\">touch attack</a>&nbsp;as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>&nbsp;that inflicts 1d6 points of&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage\">nonlethal damage</a>&nbsp;+ 1 for every two sorcerer levels you possess and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Sickened\" rel=\"nofollow\">sickens</a>&nbsp;the target for 1 round.&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Ooze\">Oozes</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Plant\">plants</a>, and creatures with the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Aquatic\">aquatic</a>&nbsp;or&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Water\">water</a>&nbsp;subtypes suffer lethal damage instead. You can use this ability a number of times per day equal to 3 + your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "6gsyppy0nitgcnpa",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/ice_16.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "3 + @abilities.cha.mod"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "1d6 + floor(@classes.sorcerer.level / 2)",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "3 + @abilities.cha.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_dehydratingTouch",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

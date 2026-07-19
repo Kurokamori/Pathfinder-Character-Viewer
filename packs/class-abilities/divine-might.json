@@ -1,0 +1,53 @@
+{
+  "_id": "GGIJUPfgLWU4FmNU",
+  "name": "Divine Might",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/blue_23.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, an omdura can call on the powers of her god once per day to aid in her struggle against her enemies. As a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions\">swift action</a>, the omdura chooses one target within sight to be the focus of her divine might. If the target is opposed to the omdura’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Alignment\">alignment</a>&nbsp;on either the law/chaos or the good/evil axis, the omdura adds half her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;bonus (minimum +o) to her&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>&nbsp;and adds half her omdura level to damage rolls against the target of her divine might. A neutral omdura can choose any target to be the target of her divine might, but she adds only one­ third her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;bonus and omdura level.</p>\n<p>In addition, while divine might is in effect, the omdura gains a&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Deflection-Bonus\">deflection bonus</a>&nbsp;equal to half her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier (one-third for a neutral omdura) to her AC against attacks made by the target of the divine might. If a non­ neutral omdura targets a creature that is not opposed to her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Alignment\">alignment</a>, the use of this ability is wasted with no effect.</p>\n<p>The divine might effect remains until the target of divine might is&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Dead\">dead</a>&nbsp;or the next time the omdura rests and regains her uses of this ability. At 9th level and every 5 levels thereafter, the omdura can use divine might one additional time per day to a maximum of four times per day at 19th level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + floor((@classes.omdura.level - 4) / 5)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_divineMight",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Omdura"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,66 @@
+{
+  "_id": "pctNgVcWt0SJZcxz",
+  "name": "Trapfinding (SLA)",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/weapons/rhoka.PNG",
+  "data": {
+    "description": {
+      "value": "<p>The slayer gains Disable Device as a class skill. The slayer also gains the trapfinding and trap sense rogue abilities, using his slayer level as his effective rogue level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "dzjkz8b1",
+        "formula": "@classes.slayer.level < 4 ? 1 : (floor(@classes.slayer.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.dev",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [
+      {
+        "text": "+[[@classes.slayer.level < 4 ? 1 : (floor(@classes.slayer.level / 2))]] vs Traps",
+        "target": "skill",
+        "subTarget": "skill.per"
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_trapfindingSla",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Slayer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

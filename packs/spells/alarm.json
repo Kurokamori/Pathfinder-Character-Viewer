@@ -1,0 +1,206 @@
+{
+  "_id": "nee6cxpoekp3aklq",
+  "name": "Alarm",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "k3lfkaq3g6fwoibk",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "2 hours/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "20",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "20-ft.-radius emanation centered on a point in space",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          1
+        ],
+        [
+          "ranger",
+          1
+        ],
+        [
+          "bard",
+          1
+        ],
+        [
+          "summoner",
+          1
+        ],
+        [
+          "inquisitor",
+          1
+        ],
+        [
+          "psychic",
+          1
+        ],
+        [
+          "occultist",
+          1
+        ],
+        [
+          "spiritualist",
+          1
+        ],
+        [
+          "hunter",
+          1
+        ],
+        [
+          "unchained Summoner",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Home",
+          1
+        ],
+        [
+          "Ambush",
+          1
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Destined",
+          1
+        ],
+        [
+          "Kobold",
+          1
+        ]
+      ]
+    },
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true,
+      "divineFocus": 3
+    },
+    "materials": {
+      "focus": "a tiny bell and a piece of very fine silver wire"
+    },
+    "sr": false,
+    "shortDescription": "<p><i>Alarm</i> creates a subtle ward on an area you select. Once the spell effect is in place, it thereafter sounds a mental or audible alarm each time a creature of Tiny or larger size enters the warded area or touches it. A creature that speaks the password (determined by you at the time of casting) does not set off the <i>alarm</i>. You decide at the time of casting whether the <i>alarm</i> will be mental or audible in nature.</p><p><i>Mental Alarm</i>: A mental <i>alarm</i> alerts you (and only you) so long as you remain within 1 mile of the warded area. You note a single mental \"ping\" that awakens you from normal sleep but does not otherwise disturb concentration. A silence spell has no effect on a mental <i>alarm</i>.</p><p><i>Audible Alarm</i>: An audible <i>alarm</i> produces the sound of a hand bell, and anyone within 60 feet of the warded area can hear it clearly. Reduce the distance by 10 feet for each interposing closed door and by 20 feet for each substantial interposing wall.</p><p>In quiet conditions, the ringing can be heard faintly as far as 180 feet away. The sound lasts for 1 round. Creatures within a <i>silence</i> spell cannot hear the ringing.  Ethereal or astral creatures do not trigger the <i>alarm</i>.</p><p><i>Alarm</i> can be made permanent with a <i>permanency</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

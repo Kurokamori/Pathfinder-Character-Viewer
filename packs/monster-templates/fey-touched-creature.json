@@ -1,0 +1,54 @@
+{
+  "_id": "VBHPKsaj8qPHd6Rs",
+  "name": "Fey-Touched Creature",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template&nbsp;</strong>Inherited<br /><strong>Simple Template</strong>&nbsp;No<br /><strong>Usable with Summons</strong>&nbsp;Yes - Spellcasters with ties to the fey (such as sorcerers with the fey bloodline) can summon fey-touched creatures with summon monster spells<br /><br />Fey-touched creatures are descended from inhabitants of the First World and often possess striking features compared to their normal counterparts, such as bright coloration or a cunning visage. The fey-touched creature&rsquo;s First World ancestor needn&rsquo;t be a fey specifically, and even magical beasts, First World gnomes, and other non-fey inhabitants of the fecund, magical plane can produce fey-touched heirs generations after their initial dalliance with residents of other planes. Some fey-touched creatures thus claim to be descended from the legendary Tane and even the godlike Eldest, though these claims are likely unfounded&mdash;such claims themselves intentional or accidental manifestations of the creature&rsquo;s hereditary First World influence.<br /><br />A fey-touched creature&rsquo;s CR increases by 1 only if the base creature has 5 or more Hit Dice. The fey-touched creature template can be applied only to living creatures. A fey-touched creature&rsquo;s quick and rebuild rules are the same. Spellcasters with ties to the fey (such as sorcerers with the fey bloodline) can summon fey-touched creatures with&nbsp;summon monster&nbsp;spells and take fey-touched creatures as improved familiars at 3rd level, similar to selecting celestial or infernal familiars.<br /><br /><strong>Rebuild Rules:</strong>&nbsp;Senses&nbsp;gains low-light vision;&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>Defensive Abilities&nbsp;</strong>gains +2 bonus on Will saves and DR as noted on the table;&nbsp;SR&nbsp;gains SR equal to new CR +5;&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>Special Qualities&nbsp;</strong>change shape (a single fixed Small or Medium humanoid form,&nbsp;<a href=\"https://aonprd.com/SpellDisplay.aspx?ItemName=alter%20self\">alter self</a>), woodland stride (as the druid ability).<br /><br /><strong>Fey-touched Creature Defenses</strong></p>\n<hr />\n<table class=\"innner\" style=\"color: #ffffff; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; font-size: 15px; background-color: #0f0f0f;\">\n<tbody style=\"margin-top: 0px;\">\n<tr style=\"margin-top: 0px;\">\n<td style=\"margin-top: 0px;\"><strong style=\"margin-top: 0px;\">Hit Dice</strong></td>\n<td><strong style=\"margin-top: 0px;\">DR</strong></td>\n</tr>\n<tr>\n<td style=\"margin-top: 0px;\">1-4</td>\n<td>&mdash;</td>\n</tr>\n<tr>\n<td style=\"margin-top: 0px;\">5-10</td>\n<td>5/cold iron</td>\n</tr>\n<tr>\n<td style=\"margin-top: 0px;\">11+</td>\n<td>10/cold iron</td>\n</tr>\n</tbody>\n</table>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "mrsplyh6",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "will",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "@attributes.hd.total >= 5 ? 1 : 0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

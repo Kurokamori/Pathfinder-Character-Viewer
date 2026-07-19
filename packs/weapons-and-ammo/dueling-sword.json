@@ -1,0 +1,150 @@
+{
+  "_id": "cKJ0wG42qRrrJJeI",
+  "name": "Dueling Sword",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/sword-dueling.png",
+  "data": {
+    "description": {
+      "value": "<p><em>These slightly curved swords measure just over 3 feet in length.</em></p>\n<p>An&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/sword-dueling\">dueling sword</a> can be used as a martial weapon (in which case it functions as a @Compendium[pf1.weapons-and-ammo.zWRlna42PMJVX6un]{longsword}), but if you have the feat @Compendium[pf1.feats.BJBC4lbo7xGWPsKJ]{Exotic Weapon Proficiency (dueling sword)}, you can use the @Compendium[pf1.feats.vWiTqHC4Y3Xn1Pme]{Weapon Finesse} feat to apply your <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>&nbsp;modifier instead of your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;modifier to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>&nbsp;with a&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/sword-dueling\">dueling sword</a>&nbsp;sized for you, even though it isn&rsquo;t a light weapon. You can also wield a&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/sword-dueling\">dueling sword</a>&nbsp;in two hands to apply 1-1/2 times your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;bonus to damage rolls.</p>"
+    },
+    "tags": [],
+    "weight": 3,
+    "price": 20,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 10,
+    "identifiedName": "Dueling Sword",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "cswkiyemhiw3gd3t",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/sword-dueling.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "19",
+          "critMult": "2"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "1h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

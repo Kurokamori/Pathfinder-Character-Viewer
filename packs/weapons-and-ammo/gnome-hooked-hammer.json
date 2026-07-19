@@ -1,0 +1,156 @@
+{
+  "_id": "VM6EF0t88wdSMQDd",
+  "name": "Gnome Hooked Hammer",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/gnome-hooked-hammer.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 20</em>, <em>PRPG Core Rulebook pg. 143</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 20 gp <strong>Weight</strong> 6 lbs.</p><p><strong>Damage</strong> 1d6/1d4 (small), 1d8/1d6 (medium); <strong>Critical</strong> x3/x4; <strong>Range</strong> -; <strong>Type</strong> B or P; <strong>Special</strong> double, trip</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Double</p><h3 class=\"framing\">Description</h3><p>A gnome hooked hammer is a double weapon-an ingenious tool with a hammer head at one end of its haft and a long, curved pick at the other. The hammer's blunt head is a bludgeoning weapon that deals 1d6 points of damage (critical multiplier x3). Its hook is a piercing weapon that deals 1d4 points of damage (critical multiplier x4). You can use either head as the primary weapon. Gnomes treat hooked hammers as martial weapons.</p>"
+    },
+    "tags": [],
+    "weight": 6,
+    "price": 20,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Gnome Hooked Hammer",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "zjno6926mvbmgfcr",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/gnome-hooked-hammer.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "gnomeHookedHammer",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

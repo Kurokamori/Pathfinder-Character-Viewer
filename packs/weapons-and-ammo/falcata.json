@@ -1,0 +1,151 @@
+{
+  "_id": "jKhkfr91Tmd4xfVA",
+  "name": "Falcata",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/falcata.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 20</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>Adventurer's Armory pg. 33</em>, <em>Advanced Player's Guide pg. 178</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 18 gp <strong>Weight</strong> 4 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> 19-20/x3; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> -</p><p><strong>Category</strong> One-Handed; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Blades, Heavy</p><h3 class=\"framing\">Description</h3><p>This heavy blade has a single sharp edge, concave at the bottom and convex at the top, with a hook-shaped hilt. Its shape distributes the weight to give it the momentum of an axe with the cutting edge of a sword, much like a larger version of a kukri. The hooked hilt is sometimes carved to resemble the head of a horse or bird of prey, and may have a thin chain stretched across its opening, acting as a partial guard for the hand and fingers.</p>"
+    },
+    "tags": [],
+    "weight": 4,
+    "price": 18,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "hardness": 10,
+    "identifiedName": "Falcata",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "29i43lzwgflninm9",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/falcata.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "falcata",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "1h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,188 @@
+{
+  "_id": "u5ss3ac14t6h5l50",
+  "name": "Huntmaster's Spear",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ttjftjtkw96qod8t",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "24 hours or until discharged",
+          "units": ""
+        },
+        "target": {
+          "value": "nonmagical spear touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless, object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "druid",
+          2
+        ],
+        [
+          "ranger",
+          1
+        ],
+        [
+          "paladin",
+          1
+        ],
+        [
+          "inquisitor",
+          2
+        ],
+        [
+          "antipaladin",
+          1
+        ],
+        [
+          "magus",
+          2
+        ],
+        [
+          "bloodrager",
+          2
+        ],
+        [
+          "shaman",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ],
+        [
+          "hunter",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "see text"
+    },
+    "shortDescription": "<p>Choose one creature type (and subtype, if applicable) from the ranger's favored enemy list. When you cast this spell, the targeted spear hums with destructive energy and functions as a <i>+1 spear</i> against creatures of the selected type.  You can discharge this spell in order to make an especially powerful attack with the spear. The spear's critical range becomes 18-20 and its critical multiplier becomes x3. If you make this attack as part of a charge action, you gain an enhancement bonus of +30 feet to your base speed while performing the charge. If you throw the spear as part of this attack, its range increment increases to 80 feet. If you cast this spell on a masterwork spear, it also gains the <i>bane</i> special ability against the selected creature type and automatically bypasses any damage reduction (except DR/-) regardless of the creature's type. After resolving the attack, the spear is completely destroyed in a burst of energy.  Any creature other than you treats the spear as a normal weapon of its type. You can have only one huntmaster's spear in effect at a time. If you cast the spell again, any previous instance of the spell immediately ends. If you expend a monster trophy of the type selected as an optional material component for this spell, you reduce the casting time to 1 round.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

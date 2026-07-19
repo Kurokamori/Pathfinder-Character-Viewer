@@ -1,0 +1,155 @@
+{
+  "_id": "tJ6SgELD1EMxgwE6",
+  "name": "Flambard",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/flambard.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Adventurer's Armory pg. 3</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 50 gp <strong>Weight</strong> 6 lbs.</p><p><strong>Damage</strong> 1d8 (small), 1d10 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> sunder</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Blades, Heavy</p><h3 class=\"framing\">Description</h3><p>This two-handed sword has a wavy blade that is especially useful for cutting through wooden weapons. If you are proficient with this weapon, you gain a +4 bonus on any sunder attempts made against weapons with a wooden haft; otherwise you may use this sword as a bastard sword.</p>"
+    },
+    "tags": [],
+    "weight": 6,
+    "price": 50,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Flambard",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "8zodhzwf9k6xgewn",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/flambard.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 10, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "flambard",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,157 @@
+{
+  "_id": "88xyrqt9mfwa3mgp",
+  "name": "Absolution",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "1fcvdznyt35pgnu4",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "living creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "paladin",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 1
+    },
+    "materials": {
+      "value": "a vial of holy water"
+    },
+    "sr": false,
+    "shortDescription": "<p>You purge impure thoughts from the target's mind and fill him with exultant relief at the forgiveness of his sins. <i>Absolution</i> ends all charm or compulsion effects affecting the target (including harmless compulsions, such as heroism) as per <i>break enchantment</i>. If the target was forced to perform any actions contrary to his alignment, monk vows, paladin oath, or similar code of conduct by that charm or compulsion effect, that action doesn't cause him to lose access to class abilities, including divine spellcasting.  Unlike an <i>atonement</i> spell, <i>absolution</i> can't reverse alignment change or the effects of willing transgressions, induce a creature to change its alignment, or restore class abilities lost because of misdeeds performed in the past. <i>Absolution</i> automatically works if the caster and the target share the same alignment or the same patron deity. If they don't, but their alignments are within one step of each other, <i>absolution</i> has a 5% chance of success per caster level. If neither of these is true, the spell automatically fails.  If using the honor subsystem (<i>Pathfinder RPG Ultimate Campaign</i> 160), casting <i>absolution</i> also eliminates the honor loss for events and actions committed by the target while he was affected by a charm or compulsion effect that the spell ended.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,151 @@
+{
+  "_id": "ApaNzAuXfOedJHJv",
+  "name": "Dwarven War-Shield",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/armor/dwarven-war-shield.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Adventurer's Armory 2 pg. 9</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 50 gp <strong>Weight</strong> 8 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> P or S; <strong>Special</strong> see text</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Close</p><h3 class=\"framing\">Description</h3><p>This shield's sides are cut into jagged angles and honed to razor sharpness. Dwarven skirmishers often wield these shields in pairs, savagely hacking opponents to pieces, while some dwarven scoundrels enjoy the shields' imposing appearance and ease of use. If you have the Two-Weapon Fighting feat and are wielding two dwarven war-shields, increase the higher of the two shield bonuses by 1. You lose this benefit for 1 round when you make a shield bash with one or both dwarven war-shields (unless you have the Improved Shield Bash feat or a similar benefit). A hand holding a dwarven warshield can't be used for anything else. A dwarven war-shield gains no benefit from shield spikes.</p>"
+    },
+    "tags": [],
+    "weight": 8,
+    "price": 50,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Dwarven War-Shield",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "poecnoi9unjep0jl",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/armor/dwarven-war-shield.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing",
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "dwarvenWarshield",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,164 @@
+{
+  "_id": "y76rzmzb9kUgkeSN",
+  "name": "Righteous Fury",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/blue_21.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 9th level, once per day you can create a spear of pure light and throw it at a creature within 60 feet as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>. This is a ranged&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks\">touch attack</a>&nbsp;that uses your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier in place of your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>&nbsp;modifier to determine the&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Bonus\">attack bonus</a>. The&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/spear\">spear</a>&nbsp;deals 1d6 points of damage per&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;level and ignores all&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\">damage reduction</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/damaging-objects#TOC-Hardness\">hardness</a>. This damage increases to 1d8 points of damage per&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;level against an evil creature. At 13th level, you can use this ability twice per day. At 17th level, you can use this ability three times per day.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "dsure36mpljlyk7m",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/blue_21.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": "60 ft.",
+          "units": "spec",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rsak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(@classes.sorcerer.level)d6",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "cha",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_righteousFury",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

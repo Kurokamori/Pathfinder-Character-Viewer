@@ -1,0 +1,165 @@
+{
+  "_id": "KvbjWRYZanUWM23X",
+  "name": "Energy Kinetic Blade",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/yellow_10.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element(s)</strong>&nbsp;universal;&nbsp;<strong>Type</strong>&nbsp;form infusion;&nbsp;<strong>Level</strong>&nbsp;1;&nbsp;<strong>Burn</strong>&nbsp;1<br><strong>Associated Blasts</strong>&nbsp;any<br><strong>Saving Throw</strong>&nbsp;none</p>\n<p>You form a weapon using your kinetic abilities. You create a non-reach, light or one-handed weapon in your hand formed of pure energy or elemental matter. (If you’re a telekineticist, you instead transfer the power of your kinetic blast to any object held in one hand.) The kinetic blade’s shape is purely cosmetic and doesn’t affect the damage dice, critical threat range, or critical multiplier of the kinetic blade, nor does it grant the kinetic blade any weapon special features. The object held by a telekineticist for this form infusion doesn’t prevent her from using gather power.</p>\n<p>You can use this form infusion once as part of an attack action, a charge action, or a full-attack action in order to make melee attacks with your kinetic blade. Since it’s part of another action (and isn’t an action itself), using this wild talent doesn’t provoke any additional&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity\">attacks of opportunity</a>. The kinetic blade deals your kinetic blast damage on each hit (applying any modifiers to your kinetic blast’s damage as normal, but not your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;modifier). The blade disappears at the end of your turn. The weapon deals the same damage type that your kinetic blast deals, and it interacts with&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\">Armor Class</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Spell-Resistance\">spell resistance</a>&nbsp;as normal for a blast of its type. Even if a telekineticist uses this power on a magic weapon or another unusual object, the attack doesn’t use any of the magic weapon’s bonuses or effects and simply deals the telekineticist’s blast damage. The kinetic blade doesn’t add the damage bonus from elemental overflow.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "7fyj2ntpukefmzbg",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/yellow_10.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "msak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(ceil(@classes.kineticist.level/2))d6*@critMult",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_energyKineticBlade",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    },
+    "abilityType": "su",
+    "crOffset": "0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

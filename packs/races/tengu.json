@@ -1,0 +1,107 @@
+{
+  "_id": "yAS41rHv0WzDmuRm",
+  "name": "Tengu",
+  "type": "race",
+  "img": "systems/pf1/icons/races/tengu.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Racial Traits</strong>: Tengus are fast and observant, but relatively fragile and delicate. They gain +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>, +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>, &ndash;2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>.</li>\n<li><strong>Type:</strong> Tengus are&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Humanoid\">humanoids</a>&nbsp;with the tengu subtype.</li>\n<li><strong>Size:</strong> Tengus are Medium creatures and receive no bonuses or penalties due to their size.</li>\n<li><strong>Speed:</strong> Tengus have a base speed of 30 feet.</li>\n<li><strong>Languages:</strong> Tengus begin play speaking Common and Tengu. Tengus with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose any languages they want (except for secret languages, such as Druidic). See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n</ul>\n<h3>Feat and Skill Racial Traits</h3>\n<ul>\n<li><strong>Sneaky:</strong> Tengus gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a> on @Compendium[pf1.skills.YYmmxDgp0g3ltSUG]{Perception} and @Compendium[pf1.skills.T6nefKotIb5vKE9h]{Stealth}&nbsp;checks.</li>\n<li><strong>Gifted Linguist</strong>: Tengus gain a +4&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a> on @Compendium[pf1.skills.QXIYXqy6ivNHrDrW]{Linguistics} checks, and learn 2 languages each time they gain a rank in @Compendium[pf1.skills.QXIYXqy6ivNHrDrW]{Linguistics}&nbsp;rather than 1 language.</li>\n</ul>\n<h3>Offense Racial Traits</h3>\n<ul>\n<li><strong>Swordtrained:</strong> Tengus are trained from birth in swordplay, and as a result are automatically proficient with sword-like weapons (including @Compendium[pf1.weapons-and-ammo.KtgSPHGqIRTwhwZM]{bastard swords}, @Compendium[pf1.weapons-and-ammo.fOSuWwRSZLTrROch]{daggers}, @Compendium[pf1.weapons-and-ammo.iSbfuFMtzdCEhqgr]{elven curve blade}, @Compendium[pf1.weapons-and-ammo.v8Ee5Iagp62xsUQZ]{falchions}, @Compendium[pf1.weapons-and-ammo.oyUApQSVsAqzyjdz]{greatswords}, @Compendium[pf1.weapons-and-ammo.Uw42p33QKEUhlSMi]{kukri}, @Compendium[pf1.weapons-and-ammo.zWRlna42PMJVX6un]{longswords}, @Compendium[pf1.weapons-and-ammo.05NnBuNnkMsaNoXf]{punching dagger}, @Compendium[pf1.weapons-and-ammo.LA6TC5679iOXDNwq]{rapiers}, @Compendium[pf1.weapons-and-ammo.SjYkpvZqfgvh0EAd]{scimitars}, @Compendium[pf1.weapons-and-ammo.7tGcTtI2fEj1AFaT]{shortswords}, and @Compendium[pf1.weapons-and-ammo.4nFjnETINUoBFWKX]{two-bladed swords}).</li>\n<li><strong>Natural Weapons</strong>: A tengu has a bite attack that deals 1d3 points of damage.</li>\n</ul>\n<h3>Senses Racial Traits</h3>\n<ul>\n<li><strong>Senses:</strong> Tengus have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision\">low-light vision</a>&nbsp;allowing them to see twice as far as&nbsp;<a href=\"https://www.d20pfsrd.com/races/core-races/human\">humans</a>&nbsp;in conditions of dim light.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "i834vuey",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ktyd4wix",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "wis",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "uvbcegzy",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "f1djrvlm",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.per",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "gkm4n4er",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.ste",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "93w1k7bi",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "skill.lin",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common",
+        "tengu"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "subTypes": [
+      [
+        "Tengu"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

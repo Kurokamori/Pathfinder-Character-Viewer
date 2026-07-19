@@ -1,0 +1,185 @@
+{
+  "_id": "r6mfw5nrc2ndkacy",
+  "name": "Infernal Healing",
+  "type": "spell",
+  "img": "systems/pf1/icons/spells/horror-red-1.jpg",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "0ixon9qm6gxj7348",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/horror-red-1.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute",
+          "units": ""
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          1
+        ],
+        [
+          "cleric/oracle",
+          1
+        ],
+        [
+          "summoner",
+          1
+        ],
+        [
+          "witch",
+          1
+        ],
+        [
+          "magus",
+          1
+        ],
+        [
+          "unchained Summoner",
+          1
+        ],
+        [
+          "arcanist",
+          1
+        ],
+        [
+          "bloodrager",
+          1
+        ],
+        [
+          "warpriest",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "school": "con",
+    "subschool": "healing",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "1 drop of devil blood or 1 dose of unholy water"
+    },
+    "spellbook": "",
+    "shortDescription": "<p>You anoint a wounded creature with devil's blood or unholy water, giving it fast healing 1. This ability cannot repair damage caused by silver weapons, good-aligned weapons, or spells or effects with the good descriptor. The target detects as an evil creature for the duration of the spell and can sense the evil of the magic, though this has no long-term effect on the target's alignment.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

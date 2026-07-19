@@ -1,0 +1,153 @@
+{
+  "_id": "BiFLo26hRjGOA6Wp",
+  "name": "Firedrake",
+  "type": "weapon",
+  "img": "icons/commodities/treasure/statue-carved-figurehead.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 163</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 4,000 gp <strong>Weight</strong> -</p>\n<p><strong>Damage</strong> 6d6; <strong>Critical</strong> -; <strong>Range</strong> -; <strong>Type</strong> fire</p>\n<p><strong>Crew</strong> 3; <strong>Aim</strong> 2; <strong>Load</strong> 5; <strong>Speed</strong> 10 ft.</p>\n<p><strong>Category</strong> Direct-Fire (Huge); <strong>Proficiency</strong> Siege Engine</p>\n<h3 class=\"framing\">Description</h3>\n<p>These large siege engines are typically wheeled or attached to vehicles that can transport them to the battlefield. This apparatus fires gouts of alchemist's fire in either a 60-foot line or a 30-foot cone (siege crew leader's choice). Targets in the area take 6d6 points of fire damage (DC 15 Reflex save halves); those who fail their saves also catch on fire.</p>\n<p>A firedrake with the broken condition that suffers a further mishap explodes, dealing its damage to all creatures within a 20-foot blast (DC 15 Reflex save halves). Firedrakes have a hardness of 10 and 70 hit points.</p>\n<p>One use of firedrake ammunition costs 200 gp and weighs 20 pounds.</p>"
+    },
+    "tags": [],
+    "price": 4000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Firedrake",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "cwz8thw4io28ae7m",
+        "name": "Attack",
+        "img": "icons/commodities/treasure/statue-carved-figurehead.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "cone",
+          "size": "30",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(6, 6, @size)",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": null,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "15",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "firedrake",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

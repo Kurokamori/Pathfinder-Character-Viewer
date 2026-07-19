@@ -1,0 +1,157 @@
+{
+  "_id": "FGtPRARd9Z57clLg",
+  "name": "Double Hackbut",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-wood.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 137</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 4,000 gp <strong>Weight</strong> 18 lbs.</p>\n<p><strong>Damage</strong> 2d10 (small), 2d12 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 50 ft.; <strong>Type</strong> B and P; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> 1-2 (5 ft.); <strong>Capacity</strong> 2</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This double-length rifle uses a pair of trunnions to mount its barrel into a swiveling mechanism fastened to the top of a lightweight, twowheeled carriage. It takes a full-round action to set up the carriage. The carriage has a hind leg, allowing the wielder to wheel the device about and immediately prop it for stability during combat.</p>\n<p>Unlike other two-handed firearms, you must fire the double hackbut while it is mounted, or else firing it imparts a -4 penalty on attack rolls and the recoil knocks you prone. A Large or larger creature can fire a double hackbut one size smaller than itself without the gun's mounting as a normal two-handed weapon and without the danger of being knocked prone, but takes the normal penalty for firing an inappropriately sized weapon.</p>\n<p><strong>This is an early firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 18,
+    "price": 4000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Double Hackbut",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "mg07aiellroh72pc",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-wood.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "50",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(2, 12, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "doubleHackbut",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

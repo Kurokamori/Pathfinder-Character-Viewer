@@ -1,0 +1,58 @@
+{
+  "_id": "h0Brxw6khcjlEf1T",
+  "name": "Bravery",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/affliction_24.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Starting at 2nd level, a fighter gains a +1 bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a>&nbsp;saves against fear. This bonus increases by +1 for every four levels beyond 2nd.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [
+      {
+        "subTarget": "will",
+        "target": "savingThrows",
+        "text": "+[[floor((@classes.fighter.level + 2) / 4)]] vs fear effects"
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_bravery",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Fighter"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "TH51moex2K8P4UjM",
+  "name": "Resist Energy (CAV)",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/banner-red.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, the cavalier can steel himself against harmful energies. Once per day as a move action, he chooses one of the following: acid, cold, electricity, or fire. He gains energy resistance 5 against the chosen type for 1 minute. At 12th, 16th, and 20th levels, the resistance increases by 5, and the cavalier gains an additional daily use of this ability.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.cavalier.level - 4) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_resistEnergyCav",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cavalier"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

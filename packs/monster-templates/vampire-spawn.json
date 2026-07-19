@@ -1,0 +1,84 @@
+{
+  "_id": "O6PQCcUIQLwgEKiH",
+  "name": "Vampire Spawn",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons</strong>&nbsp;No<br><br>The following template can be used to create unique vampire spawn with class levels.<br><br>“Vampire spawn” is an acquired template that can be added to any living creature with 4 or more Hit Dice (referred to hereafter as the base creature). A vampire spawn uses the base creature’s stats and abilities except as noted here.<br><br><strong>CR:</strong> Same as the base creature + 1.</p>\n<p><strong>Alignment: </strong>Any evil.</p>\n<p><strong>Type: </strong>The creature’s type changes to undead. Do not recalculate class Hit Dice, BAB, or saves.</p>\n<p><strong>Senses: </strong>A vampire spawn gains darkvision to 60 feet.</p>\n<p><strong>Armor Class: </strong>Natural armor increases to +4, unless the base creature’s natural armor is already +4 or higher.</p>\n<p><strong>Hit Dice: </strong>Change all racial Hit Dice to d8s. Class Hit Dice are unaffected. As undead, vampire spawn use their Cha modifier to determine bonus hit points (instead of Con).</p>\n<p><strong>Defensive Abilities: </strong>A vampire spawn gains channel resistance +2, DR 5/silver, resistance 10 against cold and electricity, and fast healing 2.</p>\n<p><strong>Weaknesses: </strong>A vampire spawn has the same weaknesses of the vampire that created it.<br><br><em>Resurrection Vulnerability (Su): </em>A&nbsp;raise dead&nbsp;or similar spell cast on a vampire spawn destroys it (Will negates). Using the spell in this way does not require a material component.<br><br><strong>Melee: </strong>A vampire spawn gains a slam attack if the base creature didn’t have one. Damage for the slam depends on the vampire spawn’s size (see&nbsp;Bestiary&nbsp;301).</p>\n<p><strong>Special Attacks: </strong>A vampire spawn gains a vampire’s blood drain and dominate special attacks. The vampire who created the spawn can influence a spawn’s dominated creature as if she had dominated it herself.<br><br><em>Energy Drain (Su): </em>A creature hit by a vampire spawn’s slam (or other natural weapon) gains 1 negative level. This ability only triggers only once per round.<br><br><strong>Special Qualities: </strong>A vampire spawn gains the gaseous form, shadowless, and spider climb abilities of a vampire.</p>\n<p><strong>Ability Scores: </strong>Cha +2.</p>\n<p><strong>Skills: </strong>Spawn gain a +8 racial bonus on Acrobatics and Stealth checks.</p>\n<p><strong>Feats: </strong>Spawn gain Skill Focus (Perception) as a bonus feat.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "ymdc3uim",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "951je0ss",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "w815ptxu",
+        "formula": "8",
+        "operator": "add",
+        "subTarget": "skill.acr",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "4fgbtneu",
+        "formula": "8",
+        "operator": "add",
+        "subTarget": "skill.ste",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

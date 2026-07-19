@@ -1,0 +1,174 @@
+{
+  "_id": "ldijs33l5ycavo2g",
+  "name": "Psychic Reading",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "b9x28ygnt4cbh1ew",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round",
+          "units": ""
+        },
+        "target": {
+          "value": "one humanoid creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "bard",
+          2
+        ],
+        [
+          "inquisitor",
+          2
+        ],
+        [
+          "psychic",
+          1
+        ],
+        [
+          "medium",
+          1
+        ],
+        [
+          "mesmerist",
+          1
+        ],
+        [
+          "occultist",
+          1
+        ],
+        [
+          "spiritualist",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "div",
+    "components": {
+      "verbal": true
+    },
+    "shortDescription": "<p>You are able to read a person's surface thoughts and take cues from the person's appearance, body language, and manner of speech to infer a great deal of information about the person, even if that person is in disguise (including polymorph effects). When casting the spell, attempt a DC 20 Sense Motive check with a bonus equal to your caster level. A successful skill check reveals to you one of the following pieces of information of your choice, plus one additional piece of information for every 5 points by which your check result exceeds 20: age, alignment, class&#8224;, feats&#8224;, gender, native language, place of origin, race or ethnicity, racial traits&#8224;, religion, sexual orientation, or training in a Craft, Perform, or Profession skill. For items marked with a cross (&#8224;), if the target has more than one of these features, each one you discover counts as a piece of information.  There's a 70% chance that all information you receive is correct. This roll is made secretly. Otherwise, on a roll of 71-80, you receive one false piece of information, on a roll of 81-90 you receive two, and on a roll of 91-100 you receive three. You can't get more false information than the total number of pieces of information you discover.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

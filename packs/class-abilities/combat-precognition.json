@@ -1,0 +1,63 @@
+{
+  "_id": "vJFFn2zOL4sljFpb",
+  "name": "Combat Precognition",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_09.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Your insight into the future grants you an advantage in combat. At 3rd level and every 4 levels thereafter, you gain a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Insight-Bonus\">insight bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Initiative\">initiative</a>&nbsp;checks.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "3bd9tl1e",
+        "formula": "1 + (floor((@classes.sorcerer.level - 3) / 4))",
+        "operator": "add",
+        "subTarget": "init",
+        "modifier": "insight",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_combatPrecognition",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

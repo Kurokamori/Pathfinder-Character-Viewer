@@ -1,0 +1,59 @@
+{
+  "_id": "K5qGe9bp4lDynT3K",
+  "name": "Physical Enhancement",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/blue_23.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You gain a +1 enhancement bonus to one physical ability score (<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\" rel=\"nofollow\">Strength</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a>, or&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>) (select which ability increases from the \"Changes\" tab of this window). This bonus increases by +1 for every five wizard levels you possess to a maximum of +5 at 20th level. You can change this bonus to a new ability score when you prepare spells. At 20th level, this bonus applies to two physical ability scores of your choice.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "7ufw57l2",
+        "formula": "1 + floor(@classes.wizard.level / 5)",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_physicalEnhancement",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": []
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

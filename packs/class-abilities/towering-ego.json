@@ -1,0 +1,63 @@
+{
+  "_id": "7bJF48eC3lZpL1LG",
+  "name": "Towering Ego",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/yellow_14.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 2nd level, a mesmerist gains a bonus equal to his Charisma bonus (minimum 0) on Will saving throws. If the mesmerist is under any effect that would prevent him from providing the emotional component of psychic spells, he loses this bonus on saving throws.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "hu6at6e7",
+        "formula": "@abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "will",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_toweringEgo",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Mesmerist"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

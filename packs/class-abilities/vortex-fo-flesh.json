@@ -1,0 +1,165 @@
+{
+  "_id": "U1CW0u9EbUD7tzWt",
+  "name": "Vortex fo Flesh",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/emerald_01.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 9th level, you can momentarily change into an amalgam of erratic geometric shapes once per day, lashing out at every creature in a 20-foot-radius spread around you as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>. This attack deals 1d6 points of bludgeoning, piercing, and slashing damage per&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;level. If you benefit from a spell or effect that allows you to overcome damage resistance with your&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Natural-Attacks\">natural attacks</a>&nbsp;(such as&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/m/magic-fang\">magic fang</a>), this attack ignores&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Damage-Reduction-Ex-or-Su-\">DR</a>&nbsp;of the same type. Those caught in the area can attempt a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\">Reflex</a>&nbsp;saving throw (DC = 10 + half your&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;level + your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier) for half damage. At 17th level, you can use this ability twice per day. At 20th level, you can use this ability three times per day.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "nq3jaxdz89sb73b5",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/emerald_01.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "20-ft. radius"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "@classes.sorcerer.level >= 20 ? 3 : ((@classes.sorcerer.level > 16 && @classes.sorcerer.level < 20) ? 2 : 1)"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(@classes.sorcerer.level)d6",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "@classes.sorcerer.level >= 20 ? 3 : ((@classes.sorcerer.level > 16 && @classes.sorcerer.level < 20) ? 2 : 1)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_vortexFoFlesh",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,72 @@
+{
+  "_id": "Z53orCz6KeTS5LOb",
+  "name": "AC Bonus (BRA)",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/dodge.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, when a brawler wears light or no armor, she gains a +1 dodge bonus to AC and CMD. This bonus increases by 1 at 9th, 13th, and 18th levels.<br><br>These bonuses to AC apply against touch attacks. She loses these bonuses while immobilized or helpless, wearing medium or heavy armor, or carrying a medium or heavy load.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "ipjt76kz",
+        "formula": "(@armor.type < 2 && @attributes.encumbrance.level < 1 ? 1 : 0) * min(4, max(0, floor((@classes.brawler.level - 1) / 4)))",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "dodge",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "tvl84rm2",
+        "formula": "(@armor.type < 2 && @attributes.encumbrance.level < 1 ? 1 : 0) * min(4, max(0, floor((@classes.brawler.level - 1) / 4)))",
+        "operator": "add",
+        "subTarget": "cmd",
+        "modifier": "dodge",
+        "priority": 0,
+        "value": 0
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_acBonusBra",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Brawler"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

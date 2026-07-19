@@ -1,0 +1,84 @@
+{
+  "_id": "Q2RyiEsoCOuqwKO4",
+  "name": "Giant (Rebuild)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template&nbsp;</strong>Yes<br><strong>Usable with Summons&nbsp;</strong>No<br><br>Creatures with the giant template are larger and stronger than their normal-sized kin. This template cannot be applied to creatures that are Colossal.<br><br><strong>Quick Rules:</strong> +2 to all rolls based on Str or Con, +2 hp/ HD, –1 penalty on all rolls based on Dex.<br><br><strong>Rebuild Rules</strong>:&nbsp;Size&nbsp;increase by one category;&nbsp;AC&nbsp;increase natural armor by +3;&nbsp;Attacks&nbsp;increase dice rolled by 1 step;&nbsp;Ability Scores&nbsp;+4 size bonus to Str and Con, –2 Dex.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "eeekz08l",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "size",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "fezi8wh2",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "size",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "mjs7jhei",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "penalty",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "zos71i47",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

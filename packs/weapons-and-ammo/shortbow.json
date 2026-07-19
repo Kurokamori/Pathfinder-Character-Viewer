@@ -1,0 +1,155 @@
+{
+  "_id": "Ata6ajiY9wuAnBLB",
+  "name": "Shortbow",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/shortbow.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 0</em>, <em>PRPG Core Rulebook pg. 143</em>, <em>Ultimate Equipment pg. 19</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 30 gp <strong>Weight</strong> 2 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x3; <strong>Range</strong> 60 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Martial</p><p><strong>Weapon Groups</strong> Bows</p><h3 class=\"framing\">Description</h3><p>A shortbow is made up of one piece of wood about 3 feet in length. You need two hands to use a bow, regardless of its size. You can use a shortbow while mounted. If you have a penalty for low Strength, apply it to damage rolls when you use a shortbow. If you have a bonus for high Strength, you can apply it to damage rolls when you use a composite shortbow, but not a regular shortbow. A shortbow fires arrows.</p>"
+    },
+    "tags": [],
+    "weight": 2,
+    "price": 30,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Shortbow",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "dxu7hjzkfbrhsscw",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/shortbow.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size) + min(@abilities.str.mod, 0)[Strength]",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "shortbow",
+    "scriptCalls": [],
+    "weaponType": "martial",
+    "weaponSubtype": "ranged",
+    "ammoType": "arrow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

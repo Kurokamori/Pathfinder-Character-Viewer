@@ -1,0 +1,170 @@
+{
+  "_id": "r3vwq533ekogxq1p",
+  "name": "Deadman's Contingency",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "b4g8d6leilm16rll",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "up to 1 hour/level plus 1d6 rounds (D); see text",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "bard",
+          4
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "evo",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "focus": true
+    },
+    "materials": {
+      "value": "a scorpion's tail",
+      "focus": "ivory statuette of you worth 1,500 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions as <i>contingency</i>, except as noted above. This spell also only comes into effect after your death and works only with certain spells. The companion spell triggers 1d6 rounds after your death. All decisions made involving the companion spell must be made when deadman's <i>contingency</i> is cast (including messages and recipients for spells like <i>magic mouth</i> or <i>sending</i>). If the spell targets an object or appears in a certain location, it must target or be centered on your corpse.  The following spells can be companion spells for deadman's <i>contingency</i>: <i>animate dead</i> (animating your corpse as an uncontrolled skeleton or zombie), <i>disintegrate</i>, <i>fireball</i>, <i>gentle repose</i>, <i>magic mouth</i>, <i>major image</i> (with a duration of 3 rounds), <i>permanent image</i>, <i>sending</i>, <i>stinking cloud</i>, and <i>teleport object</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

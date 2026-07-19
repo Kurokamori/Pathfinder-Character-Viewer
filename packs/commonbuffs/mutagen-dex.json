@@ -1,0 +1,64 @@
+{
+  "_id": "bleCnwZmMAOu4nE4",
+  "name": "Mutagen, Dex",
+  "type": "buff",
+  "img": "icons/tools/laboratory/vial-orange.webp",
+  "data": {
+    "tags": [],
+    "changes": [
+      {
+        "_id": "xm326qun",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "alchemical",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "4gdkxux3",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "wis",
+        "modifier": "alchemical",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "l0cf69i5",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "alchemical",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level * 10"
+    },
+    "links": {
+      "children": []
+    },
+    "tag": "mutagenDex",
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "1",
+    "hideFromToken": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

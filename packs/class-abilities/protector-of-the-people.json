@@ -1,0 +1,53 @@
+{
+  "_id": "1fEKSNPwGg6hB1Ui",
+  "name": "Protector of the People",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/banner-red.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, the cavalier can inspire the people around him as a swift action. Each creature within 30 feet that is either a resident of his chosen settlement or whose alignment is within one step of the cavalier’s settlement gains a morale bonus on saving throws equal to the cavalier’s Charisma modifier for 1 round. This bonus doubles if a creature meets both requirements. The cavalier can use this ability once per day, plus one additional time per day at 12th level and every 4 levels thereafter.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.cavalier.level - 4) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_protectorOfThePeople",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cavalier"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

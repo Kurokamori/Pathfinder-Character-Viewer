@@ -1,0 +1,165 @@
+{
+  "_id": "tjokidgeh3dy9mv0",
+  "name": "Form of the Exotic Dragon I",
+  "type": "spell",
+  "img": "systems/pf1/icons/races/creature-types/dragon.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "vvyims5gyqo7j4kw",
+        "name": "Use",
+        "img": "systems/pf1/icons/races/creature-types/dragon.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": "see below"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "druid",
+          7
+        ],
+        [
+          "alchemist",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "trs",
+    "subschool": "polymorph",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a scale of the dragon type you plan to assume"
+    },
+    "preparation": {
+      "preparedAmount": 1,
+      "maxAmount": 1
+    },
+    "sr": false,
+    "shortDescription": "<p>You become a Medium imperial or primal dragon. Druids can choose from the primal dragon (brine, cloud, crystal, magma, or umbral) forms only. You gain a +4 size bonus to your Strength, a +2 size bonus to your Constitution, a +4 natural armor bonus, a fly speed of 60 feet (poor), darkvision with a range of 60 feet, a breath weapon, and either resistance to one form of energy or some other bonus. You also gain one bite attack (1d8), two claw attacks (1d6), and either a gore attack (1d8) if you assume the form of an imperial dragon or two wing attacks (1d4) if you assume the form of a primal dragon. Your breath weapon, resistance, and any other benefits you gain depend on the type of dragon. You can use the breath weapon only once per casting of this spell. All breath weapons deal 6d8 points of damage unless noted otherwise and allow a Reflex save to halve the normal damage. In addition, some of the dragon types grant additional abilities, as noted below.  <br><b>Brine Dragon</b>: 60-foot line of acid, acid resistance 20, swim 60 feet.  <br><b>Cloud Dragon</b>: 30-foot cone of electricity, electricity resistance 20, swim 40 feet.  <br><b>Crystal Dragon</b>: 30-foot cone of sonic (damage dice are d6s instead of d8s), sonic resistance 20, climb 20 feet, burrow 20 feet.  <br><b>Forest Dragon</b>: 30-foot cone of piercing, burrow 20 feet, climb 30 feet.  <br><b>Magma Dragon</b>: 30-foot cone of fire, fire resistance 30, vulnerability to cold.  <br><b>Sea Dragon</b>: 30-foot cone of fire, electricity resistance 20, swim 40 feet.  <br><b>Sky Dragon</b>: 30-foot cone of electricity, electricity resistance 20, improve fly speed maneuverability to average.  <br><b>Sovereign Dragon</b>: 30-foot cone of sonic (damage dice are d6s instead of d8s), spell resistance equal to 13 + the spell's level.  <br><b>Umbral Dragon</b>: 30-foot cone of negative energy (damage dice are d6s instead of d8s; doesn't heal undead creatures), cold resistance 20, +4 on saves vs. death effects.  <br><b>Underworld Dragon</b>: 30-foot cone of fire, fire resistance 20, vulnerability to cold, burrow 20 feet.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

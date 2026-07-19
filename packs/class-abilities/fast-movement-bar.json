@@ -1,0 +1,63 @@
+{
+  "_id": "9EX00obqhGHcrOdp",
+  "name": "Fast Movement (BAR)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/armor_01.jpg",
+  "data": {
+    "description": {
+      "value": "<p>A barbarian’s land speed is faster than the norm for her race by +10 feet. This benefit applies only when he is wearing no&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, light&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, or medium&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, and not carrying a heavy load. Apply this bonus before modifying the barbarian’s speed because of any load carried or armor worn. This bonus stacks with any other bonuses to the barbarian’s land speed.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "cu5r7fnq",
+        "formula": "@armor.type <= 2 && @attributes.encumbrance.level < 2 ? 10 : 0",
+        "operator": "add",
+        "subTarget": "landSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_fastMovementBar",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Barbarian"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

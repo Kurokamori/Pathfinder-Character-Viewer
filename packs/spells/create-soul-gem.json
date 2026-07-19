@@ -1,0 +1,172 @@
+{
+  "_id": "eefd95mtv1nhe5pj",
+  "name": "Create Soul Gem",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "lg3yqx096upcpjol",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 day/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one dying or recently dead creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "shaman",
+          3
+        ],
+        [
+          "occultist",
+          3
+        ],
+        [
+          "spiritualist",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "nec",
+    "types": "death, evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "crystal lens worth 500 gp"
+    },
+    "shortDescription": "<p>You draw forth the ebbing life force of a dying creature or one that has died in the past round, focusing it through a crystal lens focus to transform into a soul gem. If the creature is alive and fails its saving throw, it dies and you capture its soul in the gem. If the creature is dead, it can still resist the spell effect by attempting a Will save as if it were still alive. The value of the soul gem created depends on the nature of the creature it is made from (see page 191). Soul gems created by this spell crumble to dust once the spell's duration expires, releasing the trapped soul to travel on to judgment in the Great Beyond.  Only one soul gem can be created from a dying creature. Any attempt to resurrect a body whose soul is trapped in a soul gem requires a caster check against <i>create soul</i> gem's save DC. Failure results in the resurrection spell having no effect, while success shatters the target's soul gem and returns the creature to life as normal. If the soul gem resides in an unholy location, such as that created by the <i>unhallow</i> spell, the DC of this check increases by 2.  If you are a souldrinker (see page 212), you can cast this spell and expend 5 soul points to fill the gem with the equivalent of one basic soul.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

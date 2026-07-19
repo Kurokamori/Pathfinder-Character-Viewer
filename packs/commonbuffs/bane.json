@@ -1,0 +1,56 @@
+{
+  "_id": "D2huasedfGMSetP7",
+  "name": "Bane",
+  "type": "buff",
+  "img": "systems/pf1/icons/spells/evil-eye-eerie-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You take a -1 penalty on attack rolls and saving throws vs fear effects.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "naa3gpnz",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "attack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "subTarget": "allSavingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "-[[1]] vs Fear effects"
+      }
+    ],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level"
+    },
+    "links": {
+      "children": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100001,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

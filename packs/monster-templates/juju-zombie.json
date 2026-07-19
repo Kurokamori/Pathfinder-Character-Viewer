@@ -1,0 +1,84 @@
+{
+  "_id": "AqTrfwmoBJUsVnNq",
+  "name": "Juju Zombie",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template&nbsp;</strong>No<br><strong>Usable with Summons</strong>&nbsp;No<br><br>A juju zombie is an animated corpse of a creature, created to serve as an undead minion, that retains the skills and abilities it possessed in life.<br><br>“Juju zombie\" is an acquired template that can be added to any living corporeal creature, referred to hereafter as the base creature.<br><br><strong>CR:</strong> As base creature +1.</p>\n<p><strong>Alignment: </strong>Any evil.</p>\n<p><strong>Type: </strong>The creature’s type changes to undead. It retains any subtype except for alignment subtypes and subtypes that indicate kind.</p>\n<p><strong>Armor Class: </strong>A juju zombie gains a +3 bonus to its natural armor over the base creature’s natural armor bonus.</p>\n<p><strong>Hit Dice: </strong>Change all the creature’s racial Hit Dice to d8s. All Hit Dice derived from class levels remain unchanged. As undead, juju zombies use their Charisma modifiers to determine bonus hit points (instead of Constitution).</p>\n<p><strong>Defensive Abilities: </strong>Juju zombies gain channel resistance +4, DR 5/magic and slashing (or DR 10/magic and slashing if it has 11 HD or more), and fire resistance 10. They are immune to cold, electricity, and&nbsp;magic missile.</p>\n<p><strong>Speed: </strong>A winged juju zombie’s maneuverability drops to clumsy. If the base creature flew magically, its fly speed is unchanged. Retain all other movement types.</p>\n<p><strong>Attacks: </strong>A juju zombie retains all the natural weapons, manufactured weapon attacks, and weapon proficiencies of the base creature. It also gains a slam attack that deals damage based on the juju zombie’s size, but as if it were one size category larger than its actual size.</p>\n<p><strong>Abilities: </strong>Increase from the base creature as follows: Str +4, Dex +2. A juju zombie has no Con score; as an undead, it uses its Charisma in place of Constitution when calculating hit points, Fortitude saves, or any special ability that relies on Constitution.</p>\n<p><strong>Feats: </strong>A juju zombie gains Improved Initiative and Toughness as bonus feats.</p>\n<p><strong>Skills: </strong>A juju zombie gains a +8 racial bonus on all Climb checks.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "400qukef",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "91xmmjdb",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "a43w1rgk",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "vc04sz3r",
+        "formula": "8",
+        "operator": "+",
+        "subTarget": "skill.clm",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,148 @@
+{
+  "_id": "KVnt2bU40TdySu6L",
+  "name": "Lizard King War Trident",
+  "type": "weapon",
+  "img": "icons/weapons/polearms/trident-silver-blue.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Classic Monsters Revisited pg. 38</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"3.5 Material\" src=\"https://www.aonprd.com/images/ThreeFiveSymbol.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 20 gp <strong>Weight</strong> 12 lbs.</p>\n<p><strong>Damage</strong> see text (small), see text (medium); <strong>Critical</strong> x3; <strong>Range</strong> 10 ft.; <strong>Type</strong> P; <strong>Special</strong> brace</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Martial</p>\n<h3 class=\"framing\">Description</h3>\n<p>Upon his 100th birthday, a lizard king's status is officially acknowledged, and he is honored with the presentation of a special weapon, the war trident, reserved exclusively for the use of his kind. These large, two-handed tridents are much heavier than normal (12 pounds) in order to take advantage of their wielders' great strength, and as a result they lose their range increment but deal 1d10 points of damage and have a x3 critical hit multiplier. In addition, extensive ritualistic practice with this weapon gives the lizard king the Improved Critical (war trident) feat as a bonus feat. A war trident is worth 20 gp, although most are masterwork and many are inlaid with precious metals and fetch higher prices.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 20,
+    "hardness": 10,
+    "identifiedName": "Lizard King War Trident",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "t6dsjtf71kl6y1ov",
+        "name": "Attack",
+        "img": "icons/weapons/polearms/trident-silver-blue.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "NULL",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "lizardKingWarTrident",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "martial",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

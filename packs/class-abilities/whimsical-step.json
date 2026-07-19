@@ -1,0 +1,53 @@
+{
+  "_id": "Gs0smO9lOF12M5kO",
+  "name": "Whimsical Step",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Once per day as a move action, you can teleport up to 10 feet per oracle level.</p>\n<p>You can use this ability once per day at 7th level and one additional time per day for every 4 levels beyond 7th.</p>\n<p>You must be at least 7th level to select this revelation.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.oracle.level - 3) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_whimsicalStep",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

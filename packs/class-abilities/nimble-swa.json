@@ -1,0 +1,60 @@
+{
+  "_id": "H9Rq9os7iM27l8Gt",
+  "name": "Nimble (SWA)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/armor_01.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, a swashbuckler gains a +1 dodge bonus to AC while wearing light or no armor. Anything that causes the swashbuckler to lose her Dexterity bonus to AC also causes her to lose this dodge bonus.</p>\n<p>This bonus increases by 1 for every 4 levels beyond 3rd (to a maximum of +5 at 19th level).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "rivltfwf",
+        "formula": "floor((@classes.swashbuckler.level + 1) / 4)",
+        "operator": "+",
+        "subTarget": "ac",
+        "modifier": "dodge",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_nimbleSwa",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Swashbuckler"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

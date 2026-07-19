@@ -1,0 +1,164 @@
+{
+  "_id": "lbbkx4obhu2xaq7g",
+  "name": "Skeleton Crew",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "35mswhrnd4f00udw",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 day/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one or more humanoid corpses touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "unchained Summoner",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell turns corpses into skeletons (<i>Pathfinder RPG Bestiary</i> 250) that act as crew and obey your commands to the extent of their abilities.</p><p>The undead you create are 1 Hit Die skeletons that possess Profession (sailor) scores equal to half your character level plus your Wisdom modifier (for clerics), Intelligence modifier (for witches and wizards), or Charisma modifier (for sorcerers and summoners). Each skeleton can perform the duties of one crew member but has no other abilities. The created skeletons cannot speak, attack, or even defend themselves. The only orders they obey are ones pertaining to the operation of a ship. Skeletal crew members are not proficient with any weapons or armor.</p><p>You can't create more Hit Dice of skeletal crew members than twice your caster level with a single casting of <i>skeleton crew</i>. The <i>desecrate</i> spell doubles this limit.</p><p>The undead you create by casting <i>skeleton crew</i> remain under your control for the duration of the spell, and do not count against your limit of total Hit Dice worth of undead creatures you can control.</p><p>A skeletal crew member can only be created from a mostly intact humanoid corpse. The corpse must have bones. When you cast this spell, any flesh left on the corpses melts away into fog.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,60 @@
+{
+  "_id": "ZMk7lj8hea8clAxe",
+  "name": "Gunslinger Initiative",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/improved-initiative.jpg",
+  "data": {
+    "description": {
+      "value": "<p><span style=\"color: #191813; font-size: 13px;\">At 3rd level, as long as the gunslinger has at least 1 grit point, she gains the following benefits. First, she gains a +2 bonus on </span><a style=\"box-sizing: border-box; user-select: text; cursor: url('ui/cursors/pointer.webp'), pointer; font-size: 13px;\" href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Initiative\">initiative</a><span style=\"color: #191813; font-size: 13px;\">&nbsp;checks. Furthermore, if she has the&nbsp;</span><a style=\"box-sizing: border-box; user-select: text; cursor: url('ui/cursors/pointer.webp'), pointer; font-size: 13px;\" href=\"https://www.d20pfsrd.com/feats/combat-feats/quick-draw-combat\">Quick Draw</a><span style=\"color: #191813; font-size: 13px;\">&nbsp;feat, her hands are free and unrestrained, and the firearm is not hidden, she can draw a single firearm as part of the&nbsp;</span><a style=\"box-sizing: border-box; user-select: text; cursor: url('ui/cursors/pointer.webp'), pointer; font-size: 13px;\" href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Initiative\">initiative</a><span style=\"color: #191813; font-size: 13px;\"> check.</span></p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "unlimited",
+      "value": 5
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "s57us5lv",
+        "formula": "(@resources.gritGun.value > 0 ? 1 : 0)",
+        "operator": "add",
+        "subTarget": "init",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 1
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_gunslingerInitiative",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": []
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "cS03VDWW7D1q5qUn": 3
+  },
+  "flags": {}
+}

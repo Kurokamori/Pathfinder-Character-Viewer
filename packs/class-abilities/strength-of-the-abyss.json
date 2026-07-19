@@ -1,0 +1,63 @@
+{
+  "_id": "asX1tCPLkhm2UiwQ",
+  "name": "Strength of the Abyss",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/yellow_14.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 9th level, you gain a +2 inherent bonus to your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\" rel=\"nofollow\">Strength</a>. This bonus increases to +4 at 13th level, and to +6 at 17th level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "6wg7svns",
+        "formula": "@classes.sorcerer.level >= 17 ? 6 : ((@classes.sorcerer.level > 12 && @classes.sorcerer.level < 17) ? 4 : 2)",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "inherent",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_strengthOfTheAbyss",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,152 @@
+{
+  "_id": "adthxd4ppz2fx89b",
+  "name": "Vinetrap",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "jk8upeehfcoq0qkc",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "long",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex negates (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "radius spread of up to 10 ft./level, 90 ft. high",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          8
+        ],
+        [
+          "druid",
+          8
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 8,
+    "school": "con",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "divineFocus": 1
+    },
+    "shortDescription": "<p>Vines choked with thorns, blossoms, leaflets, and other floral debris burst to life on and around the subject of this spell, winding around limbs and armor and making it progressively more difficult for the subject to maneuver. When this spell is cast, the subject may attempt a Reflex save. Success indicates that the vines fail to take root and the spell has no effect. On a failed save, the subject's base speed is immediately reduced by 5 feet. Each round thereafter, the subject must make another successful Reflex save or his speed is reduced by another 5 feet. This occurs each round until he is reduced to a speed equal to half of what it was before the spell was cast.  As a full-round action, the subject or an adjacent creature can tear the vines off the subject's body, resetting the speed penalty to just 5 feet, though the vines continue to grow each round thereafter for the spell's duration, requiring additional checks, unless it is actually dispelled. The spell's effects can also be prematurely ended by dealing at least 20 points of fire damage to the subject. When the spell's duration ends or the effect is terminated, the vines immediately wilt and the subject's speed returns to normal. Regardless of the subject's base speed, the vines cannot reduce a creature's speed below 5 feet.  This spell has additional effects depending on which version you cast, chosen when you cast the spell.  <i>Blessed Thorns</i>: The vines sprout vicious thorns made of celestial steel. Each round at the beginning of your turn, the subject takes 2d4 points of damage, plus 1 point of damage for each round since the creature last took a full-round action to tear the vines off. When you cast this version of the spell, you can also choose to make the thorns either cold iron or silver for the purposes of overcoming damage reduction.  <i>Noxious Vines</i>: The vines emit noxious fumes that act as a lung and eye irritant. The subject and any creatures adjacent to the subject must attempt a DC 15 Fortitude check each round at the beginning of their turn. On a failed save, the creatures becomes blinded for that round and can't cast spells with verbal components.  <i>Swift Vines</i>: The vines act twice as quickly as normal, and slow the creature by 10 feet per round instead of 5 feet (though they still can't decrease the creature's speed to less than half). In addition, once the creature is slowed to half-speed, it becomes staggered until the vines are torn off or the spell ends.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

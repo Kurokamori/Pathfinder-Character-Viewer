@@ -1,0 +1,53 @@
+{
+  "_id": "hslkjPA3AVl3hDWu",
+  "name": "Dispelling Touch",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/ice_16.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, you can use a targeted&nbsp;dispel magic&nbsp;effect as a melee touch attack. You can use this ability once per day at 8th level and one additional time per day for every four cleric levels beyond 8th.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.cleric.level - 4) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_dispellingTouch",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cleric"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

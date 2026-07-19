@@ -1,0 +1,182 @@
+{
+  "_id": "JkZWJXPWSYLkLMOy",
+  "name": "Clay Skin",
+  "type": "spell",
+  "img": "icons/magic/earth/strike-fist-stone.webp",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "f9bujam5p5g9bjhy",
+        "name": "Use",
+        "img": "icons/magic/earth/strike-fist-stone.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": "10 minutes/level or until discharged",
+          "units": ""
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "alchemist",
+          3
+        ],
+        [
+          "arcanist",
+          3
+        ],
+        [
+          "bloodrager",
+          3
+        ],
+        [
+          "inquisitor",
+          3
+        ],
+        [
+          "investigator",
+          3
+        ],
+        [
+          "magus",
+          3
+        ],
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "summoner",
+          3
+        ],
+        [
+          "unchained Summoner",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "clay and iron fillings"
+    },
+    "spellbook": "",
+    "shortDescription": "<p><span id=\"ctl00_MainContent_DataListTypes_ctl00_LabelName\">The target&rsquo;s skin becomes as thick and tough as clay, granting the target DR 5/adamantine. Once the spell has prevented a total of 5 points of damage per caster level (maximum 50 points), it is discharged and the spell ends.</span></p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "LhFOnsRrYD2v4zOf": 3
+  },
+  "flags": {}
+}

@@ -1,0 +1,169 @@
+{
+  "_id": "dpmoeh4lh1iujpyr",
+  "name": "Crime Wave",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "uuad7ozo0brasrz7",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature/level, no two of which can be more than 30 ft. apart"
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "bard",
+          5
+        ],
+        [
+          "antipaladin",
+          4
+        ],
+        [
+          "psychic",
+          7
+        ],
+        [
+          "mesmerist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a tarnished coin"
+    },
+    "shortDescription": "<p>You instill overwhelming avarice in the targets and impel them toward a wild spree of larceny. Creatures affected by a <i>crime wave</i> must roll percentile dice each round to determine what action they take.  <b>d% Behavior</b>  1-25 Act normally, but with suspicion toward others. The target doesn't benefit from or provide benefits with teamwork feats and the aid another action. If a creature attempts to use a harmless spell or effect on the target, there is a 50% chance the target tries to avoid that effect as best as possible (taking an attack of opportunity against a spellcaster, requiring a successful attack roll on a touch spell, or attempting a saving throw).  26-50 Attempt a stealAPG combat maneuver or Sleight of Hand check to steal a random valuable object from the nearest creature (or a nearby unattended object, if obviously of great value), moving adjacent to that creature or object as needed. Once an affected creature has stolen an item, further results of 26-50 cause the affected creature to flee, focusing all of its efforts on escaping with its loot and fighting to prevent the stolen object from being taken.  51-75 Attempt to break, destroy, or deface the nearest unattended manufactured object or structure. If the object or structure is too difficult to damage, the affected creature instead vandalizes or otherwise defaces its appearance.  76-100 Attack the nearest creature (for this purpose, a familiar counts as part of the affected creature's self).  A character affected by a <i>crime wave</i> who is unable to carry out the indicated action moves toward the nearest source of cover or concealment and attempts a Stealth check to hide. Affected creatures with the ability to turn invisible (including through the use of magic items or spells) do so instead of attempting a Stealth check.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

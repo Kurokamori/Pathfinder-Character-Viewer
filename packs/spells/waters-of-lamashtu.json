@@ -1,0 +1,179 @@
+{
+  "_id": "yzxabopbmjm1uyw5",
+  "name": "Waters of Lamashtu",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "12gjbfdqq8giuu52",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude partial"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "up to 1 flask of the Waters of Lamashtu per 2 levels",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          3
+        ],
+        [
+          "druid",
+          3
+        ],
+        [
+          "alchemist",
+          2
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "antipaladin",
+          2
+        ],
+        [
+          "hunter",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "con",
+    "subschool": "creation",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "250 gp of powdered amber",
+      "gpValue": 250
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell generates what appears to be clear, pure water, but it is in fact a foul secretion known as the <i>Waters of Lamashtu</i>. The liquid functions in all the same ways as unholy water (see <i>curse</i> water). In addition, any creature that is anointed with or drinks this fluid must attempt a Fortitude save (drinking the <i>Waters of Lamashtu</i> is particularly effective-a creature that drinks the liquid takes a -4 penalty on its save to resist its effects). Success causes the creature to become violently ill, vomit up the fluid, and become sickened for 1d4 rounds. Failure indicates the water takes root and wreaks havoc on the victim's mind (dealing 1d6 points of Intelligence damage) and twists and deforms its body (dealing 1d6 points of Dexterity damage). The subject's Dexterity and Intelligence cannot drop below 1 as a result of this effect. Casting this spell creates approximately 2 ounces of the <i>Waters of Lamashtu</i>-enough for one dose or, if bottled, one use as a thrown weapon.  The fluid can be created and stored indefinitely, though it cannot be created inside a creature. Extensive exposure to the <i>Waters of Lamashtu</i> (such as drinking nothing else for months at a time) can have other long-term effects on the target, including the development of monstrous deformities or even total transformation into a beast, depending on the GM's discretion (these mutations are rarely, if ever, beneficial to the victim).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,148 @@
+{
+  "_id": "TdVKK47usXLu4zxs",
+  "name": "Injection Spear",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/javelin.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #61: Shards of Sin pg. 64</em>, <em>Classic Horrors Revisited pg. 8</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 60 gp <strong>Weight</strong> 8 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x3; <strong>Range</strong> -; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>This exotic two-handed weapon allows the user to inject targets with liquid on a hit. The spear's reservoir can hold up to 5 doses of a single fluid-a single dose is automatically injected when the spear hits a target. A non-proficient user can wield an injection spear as a standard spear but cannot trigger the injection. An injection spear is otherwise identical to a normal spear, save that it cannot be thrown, weighs 8 pounds, cannot be used to brace, and costs 60 gp.</p>"
+    },
+    "tags": [],
+    "weight": 8,
+    "price": 60,
+    "hardness": 10,
+    "identifiedName": "Injection Spear",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "gja7dgs4h9pmmslu",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/javelin.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "injectionSpear",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

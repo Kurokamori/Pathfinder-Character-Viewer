@@ -1,0 +1,101 @@
+{
+  "_id": "u7edWPktC4cruJQQ",
+  "name": "(Mythic) Hierophant",
+  "type": "class",
+  "img": "systems/pf1/icons/items/inventory/badge-cross.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Source&nbsp;<a href=\"http://paizo.com/products/btpy8ywe?Pathfinder-Roleplaying-Game-Mythic-Adventures\" target=\"_blank\" rel=\"noopener\">Mythic Adventures pg. 32</a><br />Those who draw upon a god&rsquo;s power find themselves becoming closer to the divine. Some aspire to become immortal servants of their gods, and others reach for apotheosis itself. A hierophant could be either of these, channeling divine power directly or indirectly&mdash;whether from a deity, the spirit of nature, or the power of life itself&mdash;and eventually becoming more like a patron of divine power than a mere devotee.<br /><br />Role: As a hierophant, your role in the group is to act as a conduit to the divine, healing and helping your allies through the miracles that you bestow. This focus is just as strong if you are instead a servant of nature, using the powers granted to you by this path to protect the wilderness and bring its fury to those who would dare to defile it.<br /><br />Classes: Members of any class that draws upon divine magic will find the path of the hierophant useful&mdash; particularly clerics, druids, and oracles. Even classes with limited divine spellcasting, such as the inquisitor and paladin, have a number of useful options in this path.<br /><br />Bonus Hit Points: Whenever you gain a hierophant tier, you gain 4 bonus hit points. These hit points stack with themselves, and don&rsquo;t affect your overall Hit Dice or other statistics.</p>\n<h2>Path Features</h2>\n<div>\n<table>\n<tbody>\n<tr>\n<td>Tier</td>\n<td>Path Features</td>\n</tr>\n<tr>\n<td>1st</td>\n<td>Divine surge, path ability</td>\n</tr>\n<tr>\n<td>2nd</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>3rd</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>4th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>5th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>6th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>7th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>8th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>9th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>10th</td>\n<td>Divine vessel, path ability</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>As you gain tiers, you gain the following abilities.<br /><br />Divine Surge: Select one of the following abilities. Once chosen, it can&rsquo;t be changed.<br /><br />Beast&rsquo;s Fury (Su): As a swift action, you can expend one use of mythic power to imbue your animal companion, cohort, eidolon, familiar, or bonded mount with some of your mythic power. As an immediate action, that creature can move up to its speed and make an attack with one of its natural weapons. When making this attack, the creature rolls twice and takes the higher result. Any damage dealt by this attack bypasses all damage reduction. A creature affected by this ability can take these actions in addition to any other actions it takes during its turn.<br /><br />Inspired Spell (Su): As a standard action, you can expend one use of mythic power to cast any one divine spell without expending a prepared spell or spell slot. The spell must be on one of your divine class spell lists (or your domain or mystery spell list), must be of a level that you can cast with that divine spellcasting class, and must have a casting time of \"1 standard action\" (or less). You don&rsquo;t need to have the spell prepared, nor does it need to be on your list of spells known. When casting a spell in this way, you treat your caster level as 2 levels higher for the purpose of any effect dependent on level. You can apply any metamagic feats you know to this spell, but its total adjusted level can&rsquo;t be greater than that of the highest-level divine spell you can cast from that spellcasting class.<br /><br />Recalled Blessing (Su): You can expend one use of mythic power to cast any one divine spell without expending a prepared spell or spell slot. If you prepare spells, this spell must be one you prepared today; if you&rsquo;re a spontaneous caster, this spell must be one of your spells known. You can&rsquo;t apply metamagic feats to this spell. If the spell requires a saving throw, non-mythic creatures roll twice and take the lower result. If the spell heals damage or requires you to attempt a caster level check to cure an aff liction or remove a condition, roll twice and take the higher result.<br /><br />Path Ability: At 1st tier and every tier thereafter, select one new path ability from the hierophant path abilities lists or from the universal path abilities lists (see page 50). Once you select an ability, it can&rsquo;t be changed. Unless otherwise noted, each ability can be selected only once. Some abilities have requirements, such as a class ability or minimum mythic tier, that you must meet before you select them.<br /><br />Divine Vessel (Ex): At 10th tier, whenever you cast a spell that targets one or more non-mythic creatures, those creatures must roll twice for any saving throws associated with the spell and take the lower result. Whenever you are healed of hit point damage by a spell or effect, you are healed for the maximum possible amount. You also gain DR 10/epic. Once per round when you take more than 20 points of damage (after damage reduction is applied), you regain one use of mythic power.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "hq53n1x9",
+        "formula": "@classes.mythicHierophant.level*4",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "links": {
+      "children": [],
+      "classAssociations": []
+    },
+    "tag": "mythicHierophant",
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "classType": "mythic",
+    "hd": 0,
+    "hp": 0,
+    "bab": "",
+    "savingThrows": {
+      "fort": {
+        "value": ""
+      },
+      "ref": {
+        "value": ""
+      },
+      "will": {
+        "value": ""
+      }
+    },
+    "classSkills": {
+      "acr": false,
+      "apr": false,
+      "art": false,
+      "blf": false,
+      "clm": false,
+      "crf": false,
+      "dip": false,
+      "dev": false,
+      "dis": false,
+      "esc": false,
+      "fly": false,
+      "han": false,
+      "hea": false,
+      "int": false,
+      "kar": false,
+      "kdu": false,
+      "ken": false,
+      "kge": false,
+      "khi": false,
+      "klo": false,
+      "kna": false,
+      "kno": false,
+      "kpl": false,
+      "kre": false,
+      "lin": false,
+      "lor": false,
+      "per": false,
+      "prf": false,
+      "pro": false,
+      "rid": false,
+      "sen": false,
+      "slt": false,
+      "spl": false,
+      "ste": false,
+      "sur": false,
+      "swm": false,
+      "umd": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

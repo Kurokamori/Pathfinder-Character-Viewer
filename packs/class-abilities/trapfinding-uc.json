@@ -1,0 +1,68 @@
+{
+  "_id": "OhHKCLQXoMlYNodk",
+  "name": "Trapfinding (UC)",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/lockpick.jpg",
+  "data": {
+    "description": {
+      "value": "<p>A rogue adds 1/2 her level to&nbsp;<a href=\"https://www.d20pfsrd.com/skills/perception\">Perception</a>&nbsp;<a href=\"https://www.d20pfsrd.com/skills#skill-checks\">skill checks</a>&nbsp;made to locate traps and to&nbsp;<a href=\"https://www.d20pfsrd.com/skills/disable-device\">Disable Device</a>&nbsp;<a href=\"https://www.d20pfsrd.com/skills#skill-checks\">skill checks</a>&nbsp;(minimum +1). A rogue can use&nbsp;<a href=\"https://www.d20pfsrd.com/skills/disable-device\">Disable Device</a>&nbsp;to disarm magic traps.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "vhodw42z",
+        "formula": "@classes.rogueUnchained.level < 4 ? 1 : (floor(@classes.rogueUnchained.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.dev",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [
+      {
+        "text": "+[[@classes.rogueUnchained.level < 4 ? 1 : (floor(@classes.rogueUnchained.level / 2))]] vs Traps",
+        "target": "skill",
+        "subTarget": "skill.per"
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_trapfindingUc",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Rogue"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

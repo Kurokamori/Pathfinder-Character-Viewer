@@ -1,0 +1,160 @@
+{
+  "_id": "odel1qsctfkp8rdm",
+  "name": "Forbiddance",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "m4wlujxauj1ks81j",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 6,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 18,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "permanent",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": "see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "60-ft. cube/level",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          6
+        ],
+        [
+          "inquisitor",
+          6
+        ],
+        [
+          "occultist",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 1
+    },
+    "materials": {
+      "value": "holy water and incense worth 1,500 gp, plus 1,500 gp per 60-foot cube"
+    },
+    "shortDescription": "<p><i>Forbiddance</i> seals an area against all planar travel into or within it. This includes all teleportation spells (such as <i>dimension door</i> and <i>teleport),</i> plane shifting, astral travel, ethereal travel, and all summoning spells. Such effects simply fail automatically.</p><p>In addition, it damages entering creatures whose alignments are different from yours. The effect on those attempting to enter the warded area is based on their alignment relative to yours (see below). A creature inside the area when the spell is cast takes no damage unless it exits the area and attempts to reenter, at which time it is affected as normal.</p><p><i>Alignments identical</i>: No effect. The creature may enter the area freely (although not by planar travel).</p><p><i>Alignments different with respect to either law/chaos or good/evil</i>: The creature takes 6d6 points of damage. A successful Will save halves the damage, and spell resistance applies.</p><p><i>Alignments different with respect to both law/chaos and good/evil</i>: The creature takes 12d6 points of damage. A successful Will save halves the damage, and spell resistance applies.</p><p>At your option, the abjuration can include a password, in which case creatures of alignments different from yours can avoid the damage by speaking the password as they enter the area. You must select this option (and the password) at the time of casting. Adding a password requires the burning of additional rare incenses worth at least 1,000 gp, plus 1,000 gp per 60-foot cube.</p><p><i>Dispel magic</i> does not dispel a <i>forbiddance</i> effect unless the dispeller's level is at least as high as your caster level.</p><p>You can't have multiple overlapping <i>forbiddance</i> effects. In such a case, the more recent effect stops at the boundary of the older effect.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

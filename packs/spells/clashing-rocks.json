@@ -1,0 +1,159 @@
+{
+  "_id": "o8jhvddxgunzx94i",
+  "name": "Clashing Rocks",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "scm521tmf8ogqf0f",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "long",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex partial, see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "see text",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ],
+        [
+          "druid",
+          9
+        ]
+      ],
+      "domain": [
+        [
+          "Ruins",
+          9
+        ]
+      ],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 9,
+    "school": "con",
+    "subschool": "creation",
+    "types": "earth",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>You create two Colossal-sized masses of rock, dirt, and stone and slam them together against a single creature between them. The <i>clashing rocks</i> appear up to 30 feet away from the target on opposite sides and rush toward it with a mighty grinding crash. You must make a ranged touch attack to hit the target with the rocks. The <i>clashing rocks</i> ignore concealment and cover, and if there is a solid barrier between the target and either of the <i>clashing rocks</i>, the spell has a +28 bonus on the Strength check to burst through the barrier and continue unimpeded to the target. A creature struck by the <i>clashing rocks</i> takes 20d6 points of bludgeoning damage and is knocked prone. If the target fails a Reflex saving throw, it is also buried under the resulting rubble as if by a cave-in (see <i>Pathfinder RPG Core Rulebook</i> 415).</p><p>If the <i>clashing rocks</i> miss the target, the target still takes 10d6 points of bludgeoning damage from falling rocks and is knocked prone. A successful Reflex save reduces this damage to half and the target remains standing. Creatures other than the target that occupy the spaces where the <i>clashing rocks</i> appear or within their path (30 feet wide, 30 feet high, and up to 60 feet long) must also make Reflex saves or take 10d6 points of bludgeoning damage and be knocked prone (save for half and remain standing). A creature can only take damage once from the <i>clashing rocks</i>, no matter how many times the <i>clashing rocks</i> pass over a target creature.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

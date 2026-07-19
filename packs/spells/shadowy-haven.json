@@ -1,0 +1,156 @@
+{
+  "_id": "i9qdkbhqxkmuwx54",
+  "name": "Shadowy Haven",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "8um9l6u0vqcar121",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "2 hours/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one 5-foot square of floor touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a small black silk bag"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions like <i>rope trick</i>, except the point of entry is through a 5-foot-square instead of a rope. The space holds as many as 10 creatures of any size.  When this spell is cast upon a 5-foot-square part of a wall, it creates an extradimensional space adjacent to the Plane of Shadow. Creatures in the extradimensional space are hidden beyond the reach of spells (including divinations) unless those spells work across planes. The space holds as many as 10 creatures (of any size). The entrance to the extradimensional space remains visible as an area that is darker than the ambient illumination.  Spells cannot be cast across the extradimensional interface, nor can area effects cross it. Those in the extradimensional space can see out of it as if a 5-foot-by-5-foot door or window were centered on the affected surface. The window is invisible (though it is within the shadowed entrance to the spell, which is visible), and even creatures that can see the window from the outside can't see through it. Anything inside the extradimensional space is ejected when the spell ends. Only one creature may enter or exit the extradimensional space at a time.  The entrance is only open when the area around it is in dim light. Any other level of light (brighter or darker) closes the entrance, trapping creatures inside the extradimensional space. If the entrance is closed when the spell expires, there is a 50% chance that creatures in it are ejected into the Shadow Plane instead of the location of the entrance. If this occurs, the creatures appear on the Shadow Plane 1d10 miles in a random direction from their corresponding location on the Material Plane. The spell has no effect if cast on a plane that is not adjacent to the Shadow Plane.  Because the extradimensional space is adjacent to the Shadow Plane, any <i>shadow walk</i> spell or similar effect that allows travel to the Shadow Plane is more accurate, reducing the distance creatures arrive off-target by half.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

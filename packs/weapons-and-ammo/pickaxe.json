@@ -1,0 +1,148 @@
+{
+  "_id": "PDVR2OAcIJTtYT21",
+  "name": "Pickaxe",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/pickaxe.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #14: Children of the Void pg. 30</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/ThreeFiveSymbol.gif\" title=\"3.5 Material\" style=\"margin: 3px 3px 0px 3px\">Statistics</h3><p><strong>Cost</strong> 14 gp <strong>Weight</strong> 12 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x4; <strong>Range</strong> -; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>A two-handed version of the heavy pick, the brutal pickaxe is equally effective at breaking up earth and stone as it is at sundering flesh and bone. Often a weapon of convenience for commoners, the pickaxe is also a favorite among brutes and thugs who value the intimidation factor afforded by the immense weapon.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 14,
+    "hardness": 10,
+    "identifiedName": "Pickaxe",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ydr0tce1ezj9h3gc",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/pickaxe.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "pickaxe",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "martial",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

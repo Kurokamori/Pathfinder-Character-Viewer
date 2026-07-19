@@ -1,0 +1,158 @@
+{
+  "_id": "7re5tyxfpphormys",
+  "name": "Holy Ice",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "xpqqc3grk3sf4co9",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level, instantaneous, or until expended (see text)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex negates or none (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "Wall of Ice or flying ice javelins (see text)",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "trs",
+    "types": "cold, good, water",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a flask of holy water or 5 pounds of powdered silver worth 25 gp",
+      "gpValue": 25
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "shortDescription": "<p>This spell creates a large mass of frozen holy water that can be used for one of two effects.</p><p><i>Holy Ice</i> Wall: This functions like <i>Wall of Ice</i> (hemisphere or plane). Any creature that takes damage from holy water takes 1 point of damage every time it touches or attacks the ice wall with melee attacks; extended contact with the wall (such as standing or walking on it) deals 1d6 points of damage. Even when the ice has been broken through, a sheet of frigid holy air remains. Any creature that steps through it (including the one who broke through the wall) takes 1d6 points of damage + 1 point per caster level (no save); half of this damage is cold damage, half is damage from holy water (creatures unharmed by holy water do not take the damage).</p><p><i>Holy Ice</i> Javelins: The spell creates a number of javelins of frozen holy water in your square equal to your caster level (maximum 15), which hurl themselves toward one or more targets that are no more than 10 feet away from each other.</p><p>You must succeed on attack rolls (one per javelin) to hit the target with the javelin, using your base attack bonus + your Wisdom modifier. The javelins deal 1d6 damage each, plus 1 point of cold damage and 1 point of damage from holy water.</p><p>The javelins are destroyed by this attack.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

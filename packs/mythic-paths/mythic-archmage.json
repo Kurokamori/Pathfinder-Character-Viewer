@@ -1,0 +1,101 @@
+{
+  "_id": "T4Tio8DQTvnbgf2g",
+  "name": "(Mythic) Archmage",
+  "type": "class",
+  "img": "systems/pf1/icons/spells/beam-magenta-3.jpg",
+  "data": {
+    "description": {
+      "value": "<h1>Archmage</h1>\n<p>Source&nbsp;<a href=\"http://paizo.com/products/btpy8ywe?Pathfinder-Roleplaying-Game-Mythic-Adventures\" target=\"_blank\" rel=\"noopener\">Mythic Adventures pg. 14</a><br>For most practitioners of the arcane arts, learning magic requires a great deal of study and practice. Even for those who draw magic from their blood, the effort can be taxing. Not so for the archmage. This master of the arcane draws power from the very fabric of reality itself, learning to weave magic easily and naturally.<br><br>The archmage is the master of arcane magic, and many of the abilities of this path enhance your ability to cast arcane spells or greatly increase their potency. In addition, may of the options in this path increase your knowledge of magic and of those who wield it. At the highest tiers, you can begin to break down the walls between the different types of magic and alter the very fabric of reality itself.<br><br>Role: As an archmage, you use your abilities to add a great deal of power to your arcane spells, enabling them to blast through defenses and cripple foes. Your mastery over the arcane arts and your vast knowledge are of great benefit to the rest of your group, and your talent at getting the most out of magic items can prove invaluable. Although you gain little in the way of defenses, your overwhelming offensive capabilities more than make up for it—though you should still avoid being engaged in melee.<br><br>Classes: The archmage is the most common path selection for characters capable of casting arcane spells, particularly sorcerers and wizards. Bards, summoners, and witches will find that this path has a great deal to offer, though some other paths might also prove useful to them.<br><br>Bonus Hit Points: Whenever you gain an archmage tier, you gain 3 bonus hit points. These hit points stack with themselves, and don’t affect your overall Hit Dice or other statistics.</p>\n<h2>Path Features</h2>\n<div>\n<table>\n<tbody>\n<tr>\n<td>Tier</td>\n<td>Path Features</td>\n</tr>\n<tr>\n<td>1st</td>\n<td>Archmage arcana, path ability</td>\n</tr>\n<tr>\n<td>2nd</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>3rd</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>4th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>5th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>6th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>7th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>8th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>9th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>10th</td>\n<td>Path ability, true archmage</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>As you gain new tiers, you gain the following abilities.<br><br>Archmage Arcana: Select one of the following abilities. Once chosen, it can’t be changed.<br><br>Arcane Surge (Su): As a swift action, you can expend one use of mythic power to cast any one arcane spell without expending a prepared spell or spell slot. If you prepare spells, this spell must be one you prepared today (even if you have already cast it); if you’re a spontaneous caster, this spell must be one of your spells known. If the spell requires a saving throw, any non-mythic creatures affected by the spell roll twice and take the lower result. If you must attempt a caster level check for the spell to overcome a creature’s spell resistance, you can roll your caster level check twice (adding your tier to each) and take the higher result. You can’t add a metamagic feat to a spell you cast using this ability.<br><br>Mage Strike (Su): As a swift action, you can expend one use of mythic power to make one melee attack. This is in addition to any other attacks you make this round. If you expend one arcane spell that you’ve prepared or arcane spell slot that you have available, you gain a bonus on the attack roll equal to double the spell’s or slot’s level, and the attack deals an additional 2d6 points of energy damage (your choice of acid, cold, electricity, or fire) per level of the spell or slot expended. The normal damage from this attack bypasses all damage reduction, but the energy damage is still affected by resistances and immunities.<br><br>Wild Arcana (Su): As a standard action, you can expend one use of mythic power to cast any one arcane spell without expending a prepared spell or spell slot. The spell must be on one of your arcane class spell lists, must be of a level that you can cast with that arcane spellcasting class, and must have a casting time of \"1 standard action\" (or less). You don’t need to have the spell prepared, nor does it need to be on your list of spells known. When casting a spell in this way, you treat your caster level as 2 levels higher for the purpose of any effect dependent on level. You can apply any metamagic feats you know to this spell, but its total adjusted level can’t be greater than that of the highest-level arcane spell you can cast from that spellcasting class.<br><br>Path Ability: At 1st tier and every tier thereafter, select one new path ability from the archmage path abilities lists or from the universal path abilities lists (see page 50). Once you select an ability, it can’t be changed. Unless otherwise noted, each ability can be selected only once. Some abilities have requirements, such as a class ability or minimum mythic tier, that you must meet before you select those abilities.<br><br>True Archmage (Ex): At 10th tier, whenever you cast an arcane spell that targets one or more non-mythic creatures, each of those creatures must roll any saving throws against the spell twice and take the lower result. You gain spell resistance equal to 15 + your highest arcane caster level, but only against arcane spells. Once per round when your spell resistance protects you from a spell cast by an enemy mythic creature, you regain one use of mythic power.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "bt1qld1j",
+        "formula": "@classes.mythicArchmage.level*3",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "links": {
+      "children": [],
+      "classAssociations": []
+    },
+    "tag": "mythicArchmage",
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "classType": "mythic",
+    "hd": 0,
+    "hp": 0,
+    "bab": "",
+    "savingThrows": {
+      "fort": {
+        "value": ""
+      },
+      "ref": {
+        "value": ""
+      },
+      "will": {
+        "value": ""
+      }
+    },
+    "classSkills": {
+      "acr": false,
+      "apr": false,
+      "art": false,
+      "blf": false,
+      "clm": false,
+      "crf": false,
+      "dip": false,
+      "dev": false,
+      "dis": false,
+      "esc": false,
+      "fly": false,
+      "han": false,
+      "hea": false,
+      "int": false,
+      "kar": false,
+      "kdu": false,
+      "ken": false,
+      "kge": false,
+      "khi": false,
+      "klo": false,
+      "kna": false,
+      "kno": false,
+      "kpl": false,
+      "kre": false,
+      "lin": false,
+      "lor": false,
+      "per": false,
+      "prf": false,
+      "pro": false,
+      "rid": false,
+      "sen": false,
+      "slt": false,
+      "spl": false,
+      "ste": false,
+      "sur": false,
+      "swm": false,
+      "umd": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

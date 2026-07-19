@@ -1,0 +1,59 @@
+{
+  "_id": "qzrYai2tj5Ehg6Um",
+  "name": "Bonus Feats (SWA)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/affliction_18.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level and every 4 levels thereafter, a swashbuckler gains a bonus feat in addition to those gained from normal advancement. These bonus feats must be selected from those listed as combat feats. Swashbuckler levels are considered fighter levels for the purpose of meeting combat feat prerequisites.<br><br>In addition, upon reaching 4th level and every 4 levels thereafter, a swashbuckler can choose to learn a new bonus feat in place of a bonus feat she has already learned. In effect, the swashbuckler loses the bonus feat in exchange for the new one. The old feat cannot be one that was used as a prerequisite for another feat, prestige class, or other ability. A swashbuckler can only change one feat at any given level, and must choose whether or not to swap the feat at the time she gains a new bonus feat for the level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "ow4ai6bb",
+        "formula": "floor(@classes.swashbuckler.level / 4)",
+        "operator": "add",
+        "subTarget": "bonusFeats",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_bonusFeatsSwa",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Swashbuckler"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

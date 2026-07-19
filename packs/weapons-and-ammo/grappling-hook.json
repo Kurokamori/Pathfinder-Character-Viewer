@@ -1,0 +1,154 @@
+{
+  "_id": "8KCwDN3vuwoF6erS",
+  "name": "Grappling Hook",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/grappling-hook.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pirates of the Inner Sea pg. 19</em>, <em>Skull and Shackles Player's Guide pg. 6</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 6 gp <strong>Weight</strong> 14 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 10 ft.; <strong>Type</strong> P; <strong>Special</strong> grappling</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>A grappling hook is usually thought of as a climbing instrument, but is also used to grapple enemy ships and draw them close before a boarding action.</p><p></p><p> Grappling hooks bite deeply into the wood of the railing. It takes 1 minute to pry a grappling hook free. The rope attached to a grappling hook can be cut, but pirates often target the rigging and masts to make it difficult to remove the hooks. Tying off the rope of a grappling hook is a move action.</p><p></p><p> A grappling hook can also be used as a ranged weapon. If you are proficient in the grappling hook, it is a grappling weapon. On a successful critical hit with a weapon of this type, you can grapple the target of the attack. You can attempt a combat maneuver check to grapple your opponent as a free action. This grapple attempt does not provoke an attack of opportunity from the creature you are attempting to grapple if that creature is not threatening you. While you grapple the target with a grappling weapon, you can only move or damage the creature on your turn. You are still considered grappled, though you do not have to be adjacent to the creature to continue the grapple. If you move far enough away to be out of the weapon's reach, the grapple ends.</p><p></p><p> A grappling hook's weight includes the weight of 50 feet of hemp rope. It can be reduced by using shorter or lighter rope.</p>"
+    },
+    "tags": [],
+    "weight": 14,
+    "price": 6,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Grappling Hook",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "qtkavgce6pc8yznp",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/grappling-hook.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "grapplingHook",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

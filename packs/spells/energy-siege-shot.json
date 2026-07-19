@@ -1,0 +1,164 @@
+{
+  "_id": "x2djoiwxmgh23slx",
+  "name": "Energy Siege Shot",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "lkryzwnpd8kt79ga",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "10 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one Large siege engine"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude negates (harmless, object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "summoner",
+          5
+        ],
+        [
+          "occultist",
+          5
+        ],
+        [
+          "unchained Summoner",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "trs",
+    "types": "variable",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a ball of pitch"
+    },
+    "shortDescription": "<p>This spell transforms any ammunition fired by the target ranged siege engine into ammunition made of pure energy. When casting the spell, the caster picks a one of the following energy types: acid, cold, electricity, fire, sonic, or force. The ammunition within the siege weapon now deals that type of energy damage on a hit, though the amount of damage dealt by the ammunition does not change, nor does it change any of the other effects of the ammunition. Unlike other forms of energy damage, this energy damage does full damage to objects. Based on the type of energy the caster chose while casting, the ammunition also gains one of the following effects.  <br><i>Acid</i>: The ammunition deals half its damage in a splash to all creatures and unattended objects within 15 feet of the target hit by the siege engine. Creatures can halve the splash damage with a Reflex saving throw. The DC of the splash is the same as the DC of the spell. <br> <i>Cold</i>: The ammunition creates an ice sheen within a 20-foot-radius burst around the target of the siege engine's attack. That sheen lasts 1d6 rounds. Creatures within the ice sheen are entangled. Any creature within the area of the ice sheen at the start of its turn takes 2d6 cold damage.  <br><i>Electricity</i>: Creatures hit by the siege engine attack or within 15 feet of the attack are staggered for 1 round.  <br><i>Fire</i>: Creatures and wood objects within 15 feet of the attack may catch on fire (<i>Core Rulebook</i> 444 and page 164 of this book).  <br><i>Sonic</i>: Creatures hit by the attack or within 20 feet of the attack must succeed at a Fortitude saving throw or be deafened for one hour. The DC of this effect is the same as the spell DC.  <br><i>Force</i>: No extra effect.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

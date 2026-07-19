@@ -1,0 +1,165 @@
+{
+  "_id": "tU2oGF0EOkgJl5fj",
+  "name": "Brain Drain",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You can take a standard action to violently probe the mind of a single intelligent enemy within 100 feet. The target receives a Will save to negate the effect and immediately knows the source of this harmful mental prying. Those who fail this save are wracked with pain, taking 1d4 points of damage for every oracle level you possess. After successfully attacking with this ability, you may use a full-round action to sort through the jumble of stolen thoughts and memories to make a single Knowledge check using the victim's skill bonus. The randomly stolen thoughts remain in your mind for a number of rounds equal to your Charisma modifier. Treat the knowledge gained as if you had used&nbsp;detect thoughts. This is a mind-affecting effect.</p>\n<p>You can use this ability once per day at 1st level, plus one additional time per day at 5th level and for every five levels beyond 5th.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "abklnlyurs4zbdey",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "seeText"
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": "100",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "day",
+          "value": 0,
+          "maxFormula": "1 + floor(@classes.oracle.level / 5)"
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(@classes.oracle.level)d4",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + floor(@classes.oracle.level / 5)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_brainDrain",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

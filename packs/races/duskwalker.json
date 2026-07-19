@@ -1,0 +1,108 @@
+{
+  "_id": "HKRRq2tdZVEGlmHG",
+  "name": "Duskwalker",
+  "type": "race",
+  "img": "systems/pf1/icons/races/creature-types/outsider.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li>\n<p><strong>Ability Score Modifiers:</strong> +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>, –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>, +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>: Duskwalkers are agile and wise, but their bodies are fragile.</p>\n</li>\n<li>\n<p><strong>Size:</strong> Duskwalkers are Medium creatures and have no bonuses or penalties due to their size.</p>\n</li>\n<li><strong>Speed:</strong> Duskwalkers have a base speed of 30 feet.</li>\n<li>\n<p><strong>Languages:</strong> Duskwalkers begin play speaking Common and one of the following: Abyssal,&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/monster-listings/templates/celestial-creature-cr-special\">Celestial</a>&nbsp;or Infernal. Duskwalkers with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose from the following bonus languages: Abyssal, Celestial, Draconic, Dwarven, Elven, Halfling, Infernal, or Protean.</p>\n</li>\n<li><strong>Skilled:</strong> Duskwalkers gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>&nbsp;(religion) and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/heal\">Heal</a>&nbsp;checks.</li>\n</ul>\n<h4>Senses</h4>\n<ul>\n<li style=\"box-sizing: border-box;\"><strong>Senses:</strong>&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision\">Darkvision</a>: Duskwalkers can see in the dark up to 60 feet.</li>\n</ul>\n<h4>Defensive Abilities</h4>\n<ul>\n<li>\n<h4><strong><span id=\"Ward_against_Corruption_Ex-2\">Ward against Corruption (Ex):&nbsp;</span></strong>Duskwalkers gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on saving throws against negative energy and death effects, as well as the&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Spell-Like-Abilities-Sp-\">spell-like</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Supernatural-Abilities-Su-\">supernatural</a>&nbsp;abilities of&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>&nbsp;and sahkils. They are immune to all abilities that would transform their bodies or souls into&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>.</h4>\n</li>\n</ul>\n<h4>Offensive Abilities</h4>\n<ul>\n<li>\n<h4><strong><span id=\"Ghost_Hunter_Su-2\">Ghost Hunter (Su):&nbsp;</span></strong>In a duskwalker’s hands, any weapon can strike true against spectral beings. A duskwalker’s non-magical weapons deal half damage to&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Incorporeal\">incorporeal</a>&nbsp;creatures, as if they were magic weapons, and her magic weapons can deal critical hits and precision damage, even if they do not have the&nbsp;<a href=\"https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/ghost-touch\">ghost touch</a>&nbsp;property. Once per day as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>, a duskwalker can focus her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural</a>&nbsp;revulsion toward&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>. If she does so, she treats all weapons she wields as if they had the&nbsp;<a href=\"https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/ghost-touch\">ghost touch</a>&nbsp;property for 1 minute.</h4>\n</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "wahtpdue",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "a2ffn1nh",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "wis",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "bdhjjrf5",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "zkucmlpj",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.kre",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "ekugc8zo",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.hea",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] Racial vs. Negative Energy and Death effects",
+        "subTarget": "allSavingThrows"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "creatureType": "outsider",
+    "subTypes": [
+      [
+        "Native"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

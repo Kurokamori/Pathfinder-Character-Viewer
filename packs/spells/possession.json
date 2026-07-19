@@ -1,0 +1,179 @@
+{
+  "_id": "4mw83czf7b62rar3",
+  "name": "Possession",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "kqh6rtetp5b5qm5g",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "summoner",
+          5
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "psychic",
+          5
+        ],
+        [
+          "medium",
+          3
+        ],
+        [
+          "mesmerist",
+          5
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "spiritualist",
+          4
+        ],
+        [
+          "unchained Summoner",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>You attempt to possess a creature by projecting your soul into its  body. The target creature must be within spell range and you must know where it is, though you do not need line of sight or line of effect to it. When you transfer your soul upon casting, your body appears to be dead. Failure to take over a host ends the spell.  If you are successful, your life force occupies the host body. The host's soul is imprisoned with you, but can still use its own senses (though it can't assert any influence or use even purely mental abilities). You can communicate telepathically with the host as if you shared a common language, but only with your consent. You keep your Intelligence, Wisdom, Charisma, level, class, base attack bonus, base save bonuses, alignment, and mental abilities. The body retains its Strength, Dexterity, Constitution, hit points, natural abilities, and automatic abilities. A body with extra limbs doesn't allow you to make more attacks (or more advantageous two-weapon attacks) than normal. You can't activate the body's extraordinary or supernatural abilities, nor can you cast any of its spells or spell-like abilities.  As a standard action, you can shift freely back to your own body regardless of range, so long as it remains on the same plane. If the host's body is killed, you return to your own body and the life force of the host departs (it is dead). If your body is slain, when the spell expires or the host's body is killed, you are slain. It is possible to cast this spell on a new target from within another creature's body; this resets the duration. You still return to your original body (not any intermediate body) when you take a standard action to do so or the spell's duration expires. Returning to your body ends the spell. Creatures whose souls are their bodies, such as incorporeal undead and non-native outsiders, use the effects of <i>greater possession</i> instead.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

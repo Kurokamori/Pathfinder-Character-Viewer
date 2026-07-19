@@ -1,0 +1,80 @@
+{
+  "_id": "OVgKFw1tfetZhvM7",
+  "name": "Inspired Rhetoric",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/badge-cross.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You use your Wisdom modifier in place of your Charisma modifier when making Diplomacy, Intimidate, and Perform (oratory) checks. Perform (oratory) is an inquisitor class skill for you.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "5it01gar",
+        "formula": "@abilities.wis.mod - @abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "skill.dip",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "aly8lmvw",
+        "formula": "@abilities.wis.mod - @abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "skill.int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "pr9rznkf",
+        "formula": "@abilities.wis.mod - @abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "skill.prf",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_inspiredRhetoric",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Inquisitor"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

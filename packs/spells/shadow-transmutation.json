@@ -1,0 +1,177 @@
+{
+  "_id": "iv56csqwu1no7ht8",
+  "name": "Shadow Transmutation",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "5wyc3r6nv6u7n2k3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "see text",
+          "units": ""
+        },
+        "target": {
+          "value": "see text"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will disbelief (if interacted with); varies; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "bard",
+          6
+        ],
+        [
+          "summoner",
+          6
+        ],
+        [
+          "witch",
+          6
+        ],
+        [
+          "shaman",
+          6
+        ],
+        [
+          "medium",
+          6
+        ],
+        [
+          "spiritualist",
+          6
+        ],
+        [
+          "unchained Summoner",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "ill",
+    "subschool": "shadow",
+    "types": "shadow",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>You suffuse one subject's body with energy from the Shadow Plane, altering its form to match a creature from the Shadow Plane. Shadow transmutation can mimic any of the following spells: <i>animal growth</i>, <i>anthropomorphic</i> animalUM, <i>enlarge person</i>, <i>fins to</i> feetARG, longarmACG, <i>polymorph</i>, <i>reduce person</i>, and <i>stone fist</i>. If using <i>shadow transmutation</i> as <i>polymorph</i>, the target does not gain any sensory abilities that its new form has (such as low-light vision or darkvision) and the speed of any movement types gained from the spell cannot exceed the target's base speed or natural speed with those movement types (whichever is higher). A creature under the effects of <i>shadow transmutation</i> deals normal damage and has all the normal abilities and weaknesses of whatever form it assumes using the spell.  Any creature that interacts with a target under the effects of the spell (including attacking or being attacked by that creature) can attempt a Will save to recognize the target's true nature. Creatures that succeed at their Will saves to disbelieve  the illusion take one-fifth (20%) of the normal damage from the target's natural attacks or special abilities granted by the target's shadowy form (if any), and the target's special abilities that don't deal damage have only a 20% chance of working against them. Creatures that succeed at their saves see the <i>shadow transmutation</i> as transparent images superimposed over the target.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

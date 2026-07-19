@@ -1,0 +1,178 @@
+{
+  "_id": "p5cqz8mzfy93ztee",
+  "name": "Grim Stalker",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "x4siswwcq6510piq",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 day/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one object touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (object); see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "cleric/oracle",
+          7
+        ],
+        [
+          "summoner",
+          6
+        ],
+        [
+          "witch",
+          7
+        ],
+        [
+          "magus",
+          6
+        ],
+        [
+          "shaman",
+          7
+        ],
+        [
+          "unchained Summoner",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "nec",
+    "subschool": "haunted",
+    "types": "death, emotion, fear, mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a hound's fang"
+    },
+    "shortDescription": "<p>You bind spirits of ill fate to an object, focusing their wrath onto the next creature that touches the object. When a creature touches the target object, it can attempt a Will save to negate the spell's effect. Although a successful save prevents the creature from becoming haunted, the haunt still resides within the object, and targets either the next creature to touch the object or the same creature again if it still holds the object after 24 hours. The haunt remains within the object until a creature fails its save or the spell's duration ends.  Once a creature is affected by the haunt, it begins noticing a large, black mastiff with ominous green eyes watching and following it from a distance, always just beyond the range of focus or interaction. The grim stalker terrorizes the creature's sleep, affecting it as per <i>nightmare</i> every night during the spell's duration (Will negates for one night). Each time the creature takes hit point damage, the grim stalker lunges closer, causing the creature to become shaken for 1 round (Will negates). Each time the creature is reduced to less than one-tenth of its maximum hit points, the grim stalker lunges at the creature as an immediate action, affecting it as per <i>phantasmal killer</i>.  Each time the grim stalker lunges at the affected creature, the spell's haunt-like manifestation occurs during that round. Alternatively, a haunted creature can attempt to force the grim  stalker to manifest using a simple ritual that requires a successful Knowledge (arcana), Knowledge (religion), or Spellcraft check; occult reagents costing 450 gp (which are consumed as part of the ritual); and a full-round action. The DC for this check equals the spell's save DC. Successfully performing the ritual causes the grim stalker to manifest as a Nessian warhound (<i>Pathfinder RPG Bestiary</i> 173) in an available square 20 feet away from the victim, save that its only subtype is extraplanar, its alignment is neutral, its bite and breath weapon deal negative energy damage instead of fire damage, and it has negative energy affinity instead of fire immunity and vulnerability to cold. The grim stalker immediately attacks the affected creature, persisting until either it or the creature is slain, at which point the spell effect (and the warhound) disappears.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

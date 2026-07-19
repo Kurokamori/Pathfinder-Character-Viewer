@@ -1,0 +1,63 @@
+{
+  "_id": "BoEkMviJrW0PKmhj",
+  "name": "Trap Sense",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/hook-hand.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, this character gains a +1 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\" rel=\"nofollow\">Reflex</a>&nbsp;saves made to avoid traps and a +1&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#dodge_bonus\" rel=\"nofollow\">dodge bonus</a>&nbsp;to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> against attacks made by traps. These bonuses increase by +1 every three levels thereafter (6th, 9th, 12th, 15th, and 18th level). Trap sense bonuses gained from multiple classes stack.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [
+      {
+        "subTarget": "ref",
+        "target": "savingThrows",
+        "text": "+[[floor(@classes.rogue.level/3)]] vs. traps"
+      },
+      {
+        "subTarget": "ac",
+        "target": "misc",
+        "text": "+[[floor(@classes.rogue.level/3)]] dodge vs. traps"
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_trapSense",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Barbarian"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

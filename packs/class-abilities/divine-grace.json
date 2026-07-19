@@ -1,0 +1,63 @@
+{
+  "_id": "eYuNS8kf9Z3V6kjO",
+  "name": "Divine Grace",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/alignment-channel.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 2nd level, a paladin gains a bonus equal to her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;bonus (if any) on all&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Saving-Throws\">Saving Throws</a>.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "ojf9ujzu",
+        "formula": "@abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "allSavingThrows",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_divineGrace",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Paladin"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

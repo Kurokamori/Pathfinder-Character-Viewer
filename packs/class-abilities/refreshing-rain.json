@@ -1,0 +1,53 @@
+{
+  "_id": "XfCULgDMFWhi7g55",
+  "name": "Refreshing Rain",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/needles-blue-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, as standard action, you can call a brief shower of rain in a 30-foot radius. Creatures in the area are healed of an amount of nonlethal damage equal to double your cleric level and are no longer exhausted, fatigued, nauseated, or sickened. You can use this ability once per day at 8th level, and one additional time per day for every 4 levels beyond 8th.</p>\n<p>This power replaces the Lightning Lord power of the Weather Domain.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.cleric.level - 4) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_refreshingRain",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cleric"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,168 @@
+{
+  "_id": "mmdypasgl5us00wb",
+  "name": "Forbid Action",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "9b6cmjrvi2i7un5a",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          1
+        ],
+        [
+          "inquisitor",
+          1
+        ],
+        [
+          "psychic",
+          1
+        ],
+        [
+          "mesmerist",
+          1
+        ],
+        [
+          "occultist",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Legislation",
+          1
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "language-dependent, mind-affecting",
+    "components": {
+      "verbal": true
+    },
+    "shortDescription": "<p>You forbid the target a single course of action, which it avoids to the best of its ability. You may demand the target not take actions that fall into one of the following options.</p><p>Attack: The target cannot take any action that involves an attack roll, or uses a spell or ability that targets a foe or an area that includes a foe.</p><p>Cast: Target cannot cast spells or use spell-like abilities.</p><p>Communicate: The target cannot take any actions that allow it to communicate with anyone. This includes such acts as speaking, Bluff checks to pass secret messages, writing, and using telepathy. It does not prevent verbalizations made for purposes other than communication, such as command words or the verbal component of spellcasting.</p><p>Draw: Target cannot ready or prepare any item, weapon, component, or equipment.</p><p>Move: The target can take no act that would cause it to end up in a different location. The target does not resist being moved by others (and thus can be picked up or dragged, or can float along on a raft), but does not consciously attempt to move (including not directing a mount to move).</p><p>The target is free to take any actions not forbidden by the caster. For example, a target affected by this spell's demand to not move is still free to cast spells, make attacks, or shout for help.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

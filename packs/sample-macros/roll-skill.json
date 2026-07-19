@@ -1,0 +1,14 @@
+{
+  "_id": "mL9k7wUzzFbj1NmY",
+  "name": "Roll Skill",
+  "permission": {
+    "default": 0
+  },
+  "type": "script",
+  "flags": {},
+  "scope": "global",
+  "command": "// CONFIGURATION\n// If one or more tokens are selected, those will be used instead of the listed actors\n// Leave the actorNames array empty to guess the players\n// Example actorNames: `actorNames: [\"Bob\", \"John\"],`\nconst c = {\n  actorNames: [],\n  skills: [\"per\", \"sen\", \"ste\", \"sur\"],\n};\n// END CONFIGURATION\n\nconst tokens = canvas.tokens.controlled;\nlet actors = tokens.map(o => o.actor);\nif (!actors.length && c.actorNames.length) actors = game.actors.filter(o => c.actorNames.includes(o.name));\nif (!actors.length) actors = game.actors.filter(o => o.isPC && o.testUserPermission(game.user, \"OWNER\"));\nactors = actors.filter(o => o.testUserPermission(game.user, \"OWNER\"));\n\nif (!actors.length) ui.notifications.warn(\"No applicable actor(s) found\");\nelse {\n  const _roll = async function(type) {\n    let madeSound = false;\n    for (let a = 0;a < actors.length; a++) {\n      const o = actors[a];\n      const info = o.getSkillInfo(type);\n      if (!info) continue;\n      await o.rollSkill(type, { event: new MouseEvent({}), skipDialog: true, noSound: madeSound, });\n      madeSound = true;\n    }\n  };\n\n  const buttons = c.skills.reduce((cur, s) => {\n    let info;\n    for (const o of actors) {\n      info = o.getSkillInfo(s);\n      if (info) break;\n    }\n    if (!info) return cur;\n    const label = info.name;\n    cur[s] = {\n      label: label,\n      callback: () => _roll(s),\n    };\n    return cur;\n  }, {});\n\n  const msg = `Choose a skill to roll for the following actor(s): <strong>${actors.map(o => o.name).join(\"</strong>, <strong>\")}</strong>`;\n\n  new Dialog({\n    title: \"Roll saving throw\",\n    content: `<p>${msg}</p>`,\n    buttons: buttons,\n  }).render(true);\n}",
+  "author": "T9i9xVjdkHeFZC72",
+  "img": "systems/pf1/icons/feats/skill-focus.jpg",
+  "actorIds": []
+}

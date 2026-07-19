@@ -1,0 +1,165 @@
+{
+  "_id": "07nv5yhctnbrxxc0",
+  "name": "Contingent Scroll",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "185q6lc5fabvshhm",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "10 minutes/level (D) or until discharged",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "bard",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ],
+        [
+          "occultist",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "evo",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "focus": true
+    },
+    "materials": {
+      "value": "the scroll to be triggered; see text",
+      "focus": "a platinum quill worth 100 gp"
+    },
+    "shortDescription": "<p>You transfer the power of a scroll to the target so that it comes into effect under some condition you dictate. Casting this spell destroys the scroll, but allows the spell in it to be triggered in a manner similar to the <i>contingency</i> spell. The spell on the scroll must be a spell on your spell list, it must affect the target of this spell (the target of this spell is considered the caster of the scroll), and its level must be no higher than one-fourth your caster level (maximum 5th level).  The writing on the scroll appears on the target's skin in any location you desire; this writing does not harm or interfere with the target in any way, and doesn't need to be on exposed skin to function. For example, you could make the writing appear under a target's clothing. The writing on the target's skin can be deciphered and identified as if it were the scroll it was copied from. Damaging the target has no effect on the stored spell, but effects such as <i>erase</i> that target magical writing can affect it.  The condition needed to bring the spell into effect must be clear, although it can be general. In all cases, this spell immediately brings into effect the scroll's spell, the latter being effectively cast instantaneously when the trigger occurs. If a complicated or convoluted condition is prescribed, the whole spell combination (the <i>contingent scroll</i> and the scroll's spell) might fail when triggered. The scroll's spell occurs based solely on the stated conditions, regardless of whether you want it occur to at that moment.  This spell counts as a <i>contingency</i> spell for the purpose of having multiple contingent effects on a creature at the same time.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,190 @@
+{
+  "_id": "blvetbc929cfx4m8",
+  "name": "Mind Blank",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "hxs3wpvlvgqzerqs",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "24 hours",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "witch",
+          8
+        ],
+        [
+          "psychic",
+          7
+        ]
+      ],
+      "domain": [
+        [
+          "Liberation",
+          8
+        ],
+        [
+          "Protection",
+          8
+        ],
+        [
+          "Vermin",
+          9
+        ]
+      ],
+      "subDomain": [
+        [
+          "Thought",
+          8
+        ],
+        [
+          "Espionage",
+          9
+        ],
+        [
+          "Flowing",
+          8
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Martyred",
+          8
+        ],
+        [
+          "Rakshasa",
+          8
+        ]
+      ]
+    },
+    "level": 8,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>The subject is protected from all devices and spells that gather information about the target through divination magic (such as <i>detect evil, locate creature, scry,</i> and <i>see invisible</i>). This spell also grants a +8 resistance bonus on saving throws against all mindaffecting spells and effects. <i>Mind blank</i> even foils limited <i>wish</i>, miracle, and <i>wish</i> spells when they are used in such a way as to gain information about the target. In the case of scrying that scans an area the creature is in, such as <i>arcane eye,</i> the spell works but the creature simply isn't detected. Scrying attempts that are targeted specifically at the subject do not work at all.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

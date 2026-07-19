@@ -1,0 +1,176 @@
+{
+  "_id": "u0qadkpm7dglk6kz",
+  "name": "Magnetic Field",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "2pud4m4fbjtqvau6",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/2 levels (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 30,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex negates (object; see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "30-ft.-radius emanation",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "cleric/oracle",
+          7
+        ],
+        [
+          "alchemist",
+          6
+        ],
+        [
+          "summoner",
+          6
+        ],
+        [
+          "witch",
+          7
+        ],
+        [
+          "magus",
+          6
+        ],
+        [
+          "unchained Summoner",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Nanite",
+          7
+        ]
+      ]
+    },
+    "level": 7,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>You create a spherical magnetic field that surrounds you to a range of 30 feet and follows you for the duration of the spell.</p><p>Unattended metal objects in range-including weapons, armor, and anything made primarily out of metal-are pulled violently toward you, stopping just short of your space and falling harmlessly to the ground. Objects secured to a nonmetallic fixture remain where they are unless a forceful tug would be enough to detach them. Loose objects weighing more than 500 pounds are not affected. If the magnetic field would cause a dangerous metal object such as a sword or anvil to intersect a square occupied by a creature, that creature must succeed at a Reflex save or take damage as if from an improvised weapon of the object's size (or smaller or larger, at the GM's discretion).</p><p>A creature in the area wearing metal armor, wielding a metal weapon, or holding a metal object must succeed at a Reflex save or be dragged 5 feet closer to you in a straight line, as if affected by the pull universal monster rule (<i>Bestiary</i> 303). A creature can drop a metal object it's holding as a free action to avoid the effect if it's not wearing metal armor; a creature being dragged by its shield can loosen it as a move action and drop it as a free action. Creatures made entirely or mostly of metal take a -2 penalty on their Reflex saves. Creatures that fail their saves by 5 or more are pulled an additional 5 feet closer for every increment of 5 by which they failed their saves.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

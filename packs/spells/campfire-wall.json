@@ -1,0 +1,174 @@
+{
+  "_id": "184d4mq7yubz2qnq",
+  "name": "Campfire Wall",
+  "type": "spell",
+  "img": "systems/pf1/icons/spells/shielding-fire-3.jpg",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "olkihnxm76449jky",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/shielding-fire-3.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "2 hours/level; see below (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "20",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "20-ft.-radius sphere centered on fire source",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "druid",
+          2
+        ],
+        [
+          "ranger",
+          2
+        ],
+        [
+          "bard",
+          3
+        ],
+        [
+          "occultist",
+          2
+        ],
+        [
+          "hunter",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "evo",
+    "types": "fire, light",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "ash made from burnt thorns"
+    },
+    "spellbook": "",
+    "shortDescription": "<p>You can create a barrier around a fire of at least campfire size that shelters everyone inside so long as the fire continues to burn. The barrier appears as a crackling sphere of light and fire that is clearly visible, providing as much illumination as a torch.</p><p>The barrier bocks line of sight, granting creatures on either side of the barrier total concealment from creatures on the other side. Any object or creature passing through the barrier from outside takes 1d6 points of fire damage and is also outlined with light equivalent to that of a torch, for 1d6 minutes. Creatures outlined in this way are plainly visible regardless of the light conditions and do not benefit from any sort of concealment, magical or otherwise. The light is not bright enough to have any special effect on undead or creatures vulnerable to light.</p><p>Creatures inside the barrier can leave without penalty, but if they try to return they suffer the same consequences as anyone else. If the fire source at the barrier's center is extinguished or moved, the spell ends.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

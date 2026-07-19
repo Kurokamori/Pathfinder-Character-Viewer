@@ -1,0 +1,68 @@
+{
+  "_id": "4bcGnKYf9beV0nfa",
+  "name": "Danger Sense",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/tiring-critical.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, a barbarian gains a +1 bonus on Reflex saves to avoid traps and a +1 dodge bonus to AC against attacks by traps. In addition, she gains a +1 bonus on Perception checks to avoid being surprised by a foe. These bonuses increase by 1 every 3 levels thereafter (to a maximum of +6 at 18th level).</p>\n<p>This ability counts as trap sense for any feat or class prerequisite, and can be replaced by any archetype class feature that replaces trap sense. The bonuses gained from this ability stack with those gained from trap sense (if the barbarian has trap sense from another class).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [
+      {
+        "subTarget": "ref",
+        "target": "savingThrows",
+        "text": "+[[@classes.rogue.level < 3 ? 1 : (floor(@classes.rogue.level / 3))]] vs Traps"
+      },
+      {
+        "subTarget": "skill.per",
+        "target": "skill",
+        "text": "+[[@classes.rogue.level < 3 ? 1 : (floor(@classes.rogue.level / 3))]] to avoid being surprised by a foe"
+      },
+      {
+        "subTarget": "ac",
+        "target": "misc",
+        "text": "+[[@classes.rogue.level < 3 ? 1 : (floor(@classes.rogue.level / 3))]] vs attacks made by traps"
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_dangerSense",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Barbarian (Unchained)"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

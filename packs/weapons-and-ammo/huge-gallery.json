@@ -1,0 +1,135 @@
+{
+  "_id": "WlwsCuzPv17FXTte",
+  "name": "Huge Gallery",
+  "type": "weapon",
+  "img": "icons/sundries/misc/bird-house.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 166</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 500 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> -; <strong>Critical</strong> -; <strong>Range</strong> -; <strong>Type</strong> -</p><p><strong>Crew</strong> 6; <strong>Aim</strong> 0; <strong>Load</strong> 0; <strong>Speed</strong> 15 ft.</p><p><strong>Category</strong> Close Assault; <strong>Proficiency</strong> Siege Engine</p><h3 class=\"framing\">Description</h3><p>A mobile temporary defense, a gallery is similar to a building made of hide or wood. Most are of flimsy construction, but rare examples are more stoutly built (use the rules for giving siege engines armor, and adjust AC, hardness, and hit points accordingly). Galleries are almost always a single section of movable \"wall\" plus another section that acts as the \"roof.\" (Galleries made to house battering rams are an exception, and typically have two joined wall sections and roof sections.) Because a gallery is partially open, it does not provide the same cover as a normal building: a creature inside a gallery gains cover if it is the same size as the gallery, improved cover if it is one size smaller, and total cover if it is two or more sizes smaller. Galleries are sized like creatures-a Larger gallery protects the same space as a Large creature, and so on.</p><p></p><p> Wooden galleries can be moved on rollers at a speed of 10 feet with their full crew, or 5 feet with at least half the required crew. Galleries have a base speed of 15 feet (or 10 feet if protected with medium or heavy armor).</p><p></p><p> Galleries have a hardness of 5, and hit points based on their size. A Large gallery has 30 hit points, a Huge one has 120 hit points, a Gargantuan one has 320 hit points, and a colossal one has 625 hit points.</p>"
+    },
+    "tags": [],
+    "price": 500,
+    "hardness": 10,
+    "changes": [],
+    "actions": [
+      {
+        "_id": "fgbjc5tn3zt5b152",
+        "name": "Attack",
+        "img": "icons/sundries/misc/bird-house.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "",
+          "critMult": "2"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "hugeGallery",
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

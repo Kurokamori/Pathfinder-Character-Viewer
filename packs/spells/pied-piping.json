@@ -1,0 +1,151 @@
+{
+  "_id": "rm9o0r8qqrf2x2yc",
+  "name": "Pied Piping",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "daqeq39mrch6012u",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "concentration + 1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 90,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will partial; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "90-ft.-radius emanation, centered on you",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "bard",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "mind-affecting, sonic",
+    "components": {
+      "focus": true
+    },
+    "materials": {
+      "focus": "musical instrument"
+    },
+    "shortDescription": "<p>You call forth a melody so compelling and attractive that creatures belonging to a group with a specific, identifiable physical trait (such as type, subtype, age, gender, or hair color) find it almost impossible not to approach and follow you. You choose the nature of the creatures you seek to attract when you cast the spell and, once you make this choice, cannot alter it. You can only use physical traits to determine your audience. You can never use social and other more voluntary criteria (such as alignment, religion, nationality, or class) to select targets for this spell.</p><p>Eligible creatures must make a saving throw each round spent within the area of the spell and, once they fail, approach you at their normal movement speed and stand as close to you as possible without actually entering an occupied square.</p><p>If you move, they do their best to maintain their proximity to you and follow. Affected creatures can take no actions other than listening to your music and following you if you move.</p><p>Those entering the area while the spell is in effect must also successfully save or be compelled to come to you.</p><p>The attractive power of the spell does not cause affected creatures to put themselves in jeopardy and they have enough presence of mind to avoid or negotiate around obstacles and other perilous hazards. If unable to approach or follow you without endangering themselves, they simply wait, swaying to the music, until you pass out of range, at which point they regain their senses after 1 round/ level. If circumstances change once you move out of range, making it possible for affected creatures to resume their attempts to get near you they do so, and, if they manage to return to within the area of the spell before it wears off, the spell continues as normal.</p><p>If attacked, affected creatures can take defensive measures, even going so far as to avoid existing threats by moving out of the area of the spell, but cannot make attacks themselves or take any other actions until the effects of the spell wear off. The effects of the spell persist for 1 round/ level even after you stop concentrating. Once the spell ceases, the affected creatures continue to stay near you until the effects of the spell wear off.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

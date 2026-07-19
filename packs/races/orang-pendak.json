@@ -1,0 +1,107 @@
+{
+  "_id": "m5cdZ1RG7c1mkhqF",
+  "name": "Orang-Pendak",
+  "type": "race",
+  "img": "systems/pf1/icons/skills/blue_26.jpg",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers:</strong> Orang-pendaks are strong and intuitive, but not particularly clever. They gain +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;and +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>&nbsp;but suffer –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>.</li>\n<li><strong>Size:</strong> Orang-pendaks are Small creatures and gain a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Size-Bonus\">size bonus</a>&nbsp;to their AC, a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Size-Bonus\">size bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>, a –1 penalty on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers\">combat maneuver</a>&nbsp;checks and to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Defense\">CMD</a>, and a +4&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Size-Bonus\">size bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;checks.</li>\n<li><strong>Base&nbsp;Speed:</strong> Orang-pendaks have a base speed of 30 feet.</li>\n<li><strong>Languages: </strong>Orang-pendaks begin play speaking Sasquatch. Orang-pendaks who have high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose from the following: Aklo, Common, Draconic, Goblin, Grippli, Sylvan, Vanaran, and Vishkanya. See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n</ul>\n<h3>Skill Racial Traits</h3>\n<ul>\n<li><strong>Forest Walker (Ex)</strong>&nbsp;Orang-pendaks gain a +4 bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/climb\">Climb</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;checks in forests and jungles.</li>\n<li><strong>Simian Empathy (Ex)&nbsp;</strong>Orang-pendaks gain a +4&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/handle-animal\">Handle Animal</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/druid#TOC-Wild-Empathy-Ex-\">wild empathy</a>&nbsp;checks with apes and&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/monster-listings/animals/primates/primate-monkey\">monkeys</a>.</li>\n<li><strong>Tear Apart (Ex)</strong>&nbsp;Orang-pendaks have powerful upper bodies and gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;checks to break or burst an object. This bonus also applies on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers\">combat maneuver</a>&nbsp;checks to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Sunder\">sunder</a>&nbsp;with their unarmed attacks.</li>\n</ul>\n<h3>Other Racial Traits</h3>\n<ul>\n<li>\n<h4><strong>Own Two Feet (Ex)</strong>&nbsp;Orang-pendaks are extremely unnerved whenever they are riding another creature or on a vehicle, and they take a – 2 penalty on ability checks,&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>, damage rolls, saving throws, and skill checks when doing so.</h4>\n</li>\n</ul>\n<h3>Senses Racial Traits</h3>\n<ul>\n<li><strong>Low-Light Vision: </strong>Orang-pendaks can see twice as far as&nbsp;<a href=\"https://www.d20pfsrd.com/races/core-races/human\">humans</a>&nbsp;in conditions of dim light.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "8puu0hv7",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "rztjhpdv",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "knd1ob9o",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "skill",
+        "subTarget": "skill.clm",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] Racial in Jungles and Forests"
+      },
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "skill",
+        "subTarget": "skill.ste",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] Racial in Jungles and Forests"
+      },
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "skill",
+        "subTarget": "skill.han",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[4]] Racial vs. Apes and Monkeys"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [],
+      "custom": "Sasquatch"
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "size": "sm",
+    "subTypes": [
+      [
+        "Orang-Pendak"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

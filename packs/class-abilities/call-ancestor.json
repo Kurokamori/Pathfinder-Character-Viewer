@@ -1,0 +1,53 @@
+{
+  "_id": "PHOOhGGjWqXXki7I",
+  "name": "Call Ancestor",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/blue_26.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 9th level, once per day, you can spend a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>&nbsp;to grant a long-dead relative a brief facsimile of life. This functions as the @Compendium[pf1.spells.wy8c3at9nrhjfavm]{Simulacrum, Lesser}&nbsp;spell, except the&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/simulacrum\">simulacrum</a>&nbsp;lasts only 1 round per&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;level you have, has the same statistics as you, and always has the likeness of an ancestor. In addition, the&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/simulacrum\">simulacrum</a>&nbsp;has lost knowledge from the past. When&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Conjuration-Summoning\">summoning</a>&nbsp;the&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/simulacrum\">simulacrum</a>, select one&nbsp;<a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>&nbsp;skill. The&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/simulacrum\">simulacrum</a>&nbsp;is considered trained in that skill and has a bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>&nbsp;checks of this type equal to twice your level plus your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;modifier. The&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/simulacrum\">simulacrum</a>&nbsp;is under your control, but it cannot attack or take hostile actions. At 17th level, you can use this ability twice per day. At 20th level, you can use this ability three times per day. You cannot have more than one ancestor&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/simulacrum\">simulacrum</a>&nbsp;active at any one time.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "@classes.sorcerer.level >= 20 ? 3 : ((@classes.sorcerer.level < 20 && @classes.sorcerer.level > 16) ? 2 : 1)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_callAncestor",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

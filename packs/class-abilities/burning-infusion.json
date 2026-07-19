@@ -1,0 +1,150 @@
+{
+  "_id": "jq9veKHhIybXs7ms",
+  "name": "Burning Infusion",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/fireball-red-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element</strong>&nbsp;fire;&nbsp;<strong>Type</strong>&nbsp;substance infusion;&nbsp;<strong>Level</strong>&nbsp;1;&nbsp;<strong>Burn</strong>&nbsp;1<br><strong>Associated Blasts</strong>&nbsp;blue flame, fire, magma, plasma<strong>Saving Throw</strong>&nbsp;Reflex negates</p>\n<p>Your kinetic blast ignites your foes. Whenever an infused blast hits a foe and penetrates its spell resistance, that foe catches on fire, regardless of whether it takes damage. A foe that catches fire takes 1d6 points of fire damage each round until the fire is extinguished.</p>\n<p>Against a creature on fire from this infusion, any fire kinetic blasts gain a +2 bonus on attack rolls, to DCs, and on caster level checks to overcome spell resistance.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "swlv6wro6ksmn9za",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/fireball-red-3.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": ""
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_burningInfusion",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

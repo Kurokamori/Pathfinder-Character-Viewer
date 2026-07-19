@@ -1,0 +1,170 @@
+{
+  "_id": "3v5vw6x0aa2hp3vc",
+  "name": "Shadow Endurance",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "dtvbkbti1kts6cck",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level until discharged, then 1 minute/level; see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will disbelief (if interacted with); varies; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "bard",
+          5
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "mesmerist",
+          5
+        ],
+        [
+          "spiritualist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "ill",
+    "subschool": "shadow",
+    "types": "shadow",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a fetchling's tooth"
+    },
+    "sr": false,
+    "shortDescription": "<p>You conjure protective wisps of darkness made from shadow. If you are reduced below 0 hit points or rendered unconscious, <i>shadow endurance</i> immediately discharges, shunting your injured body into a hidden alcove on the Shadow Plane. You immediately stabilize, but cannot awaken or take any further actions until the second duration expires.  As you vanish, a quasi-real duplicate of you made from shadow substance appears where you fell, as if created by <i>shadow conjuration</i>. The duplicate acts on your initiative and is under your control. Your duplicate is 1/4 as real as you and appears with 25% of your full hit point total, and any creature that fails a Will saving throw believes it to be you. The duplicate has the same equipment-based bonuses as you, but deals only 1/4 of your normal damage against enemies. It can cast any spells you can, drawing on your reserve of magic, but the duplicate's caster level is 1/4 your actual level. Regardless of your alignment, your shadow duplicate is neutral evil, though it will not harm your friends and allies.  When the second duration of the spell expires, your duplicate disappears and your body reappears in the location from which you vanished. If the image is destroyed, the spell immediately expires and your body reappears.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

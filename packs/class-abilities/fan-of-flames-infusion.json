@@ -1,0 +1,153 @@
+{
+  "_id": "p1kPuhotKvZGVCOK",
+  "name": "Fan of Flames Infusion",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/fireball-red-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element&nbsp;</strong>fire;&nbsp;<strong>Type&nbsp;</strong>form infusion;&nbsp;<strong>Level&nbsp;</strong>1;&nbsp;<strong>Burn&nbsp;</strong>1<br><strong>Associated Blasts&nbsp;</strong>blue flame, fire<br><strong>Saving Throw&nbsp;</strong>Reflex half</p>\n<p>Your kinetic blast extends in a fan of flames, damaging all creatures and objects in a 15-foot cone. The saving throw DC is Dexterity-based.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "2pe408d9extk9uk9",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/fireball-red-3.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "special"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "special"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": "15-ft. cone"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_fanOfFlamesInfusion",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

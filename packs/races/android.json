@@ -1,0 +1,103 @@
+{
+  "_id": "9Fe6mDt0oP52m6Jl",
+  "name": "Android",
+  "type": "race",
+  "img": "systems/pf1/icons/races/android.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers</strong>: Androids have swift reflexes and are very intelligent, but have difficulty relating to others. As a result, androids gain a +2 bonus to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>, but suffer a &ndash;2 penalty to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>.</li>\n<li><strong>Size:</strong> Androids are Medium creatures, and they have no bonuses or penalties due to their size.</li>\n<li><strong>Base Speed</strong>: Androids have a base speed of 30 feet.</li>\n<li><strong>Languages:</strong> Androids begin play speaking Common. Androids with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;can choose any languages they want (except secret languages, such as Druidic). See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n</ul>\n<h3>Feat and Skill Racial Traits</h3>\n<ul>\n<li><strong>Alert:</strong> Androids gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a> on @Compendium[pf1.skills.YYmmxDgp0g3ltSUG]{Perception}&nbsp;checks.</li>\n<li><strong>Emotionless:</strong> Androids have problems processing emotions properly, and thus take a &ndash;4 penalty on @Compendium[pf1.skills.R8HGxGCKayOl15AO]{Sense Motive}&nbsp;checks.</li>\n</ul>\n<h3>Senses Racial Traits</h3>\n<ul>\n<li><strong>Exceptional Senses</strong>: Androids have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision\">darkvision</a>&nbsp;and so can see perfectly in the dark to a range of 60 feet and in addition, they possess&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision\">low-light vision</a>.</li>\n</ul>\n<h3>Other Racial Traits</h3>\n<ul>\n<li><strong>Constructed:</strong> For the purposes of effects targeting creatures by type (such as a @Compendium[pf1.classes.w3wjj6s3N69BsMc3]{ranger's} @Compendium[pf1.class-abilities.XmALhWqXdN9yOmtd]{Favored Enemy} and <a href=\"https://www.d20pfsrd.com/magic/all-spells/b/bane\">bane</a>&nbsp;weapons), androids count as both&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Humanoid\">humanoids</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Construct\">constructs</a>. Androids gain a +4&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on all saving throws against&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Magic-Descriptor-Mind-Affecting\">mind-affecting</a> effects, @Compendium[pf1.conditions.8zG4yDD2zGVSAJFH]{paralysis}, poison, and @Compendium[pf1.conditions.assqfdN6G1URo9MZ]{stun} effects, are not subject to @Compendium[pf1.conditions.nku8mgRBNt0iXqzB]{fatigue} or @Compendium[pf1.conditions.I1cKXhfBaFIrL9Ix]{exhaustion}, and are immune to <a href=\"https://www.d20pfsrd.com/gamemastering/afflictions/diseases\">disease</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/sleep\">sleep</a>&nbsp;effects. Androids can never gain morale bonuses, and are immune to fear effects and all emotion-based effects.</li>\n<li><strong>Nanite Surge</strong>: An android&rsquo;s body is infused with nanites. Once per day as an&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions\">immediate action</a>, an android can cause her nanites to surge, granting a bonus equal to 3 + the android&rsquo;s character level on any one d20 roll; this ability must be activated before the roll is made. When an android uses this power, her circuitry-tattoos glow with light equivalent to that of a torch in illumination for 1 round.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "3pg0ijk0",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "iau35wns",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "5pvv33rp",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ivu3rr3d",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.per",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "0jdv2k33",
+        "formula": "-4",
+        "operator": "add",
+        "subTarget": "skill.sen",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "subTarget": "allSavingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[4]] Racial vs Mind Affecting, Paralysis, Poison, Stun\nImmune to Disease, Sleep and Emotion-based Effects"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "subTypes": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

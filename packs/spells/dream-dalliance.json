@@ -1,0 +1,157 @@
+{
+  "_id": "mlwe19v7suk75jrl",
+  "name": "Dream Dalliance",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "tn7u0vwpp6i357ee",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will disbelief, then Will partial (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ],
+        [
+          "mesmerist",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "ill",
+    "subschool": "phantasm",
+    "types": "mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>You create a comforting phantasm, which leeches onto the psyche of a nearby target. The creature can attempt a Will saving throw to prevent the phantasm from entering its psyche, but otherwise it takes up permanent residence in the creature's mind. The phantasm fills its target's dreams with happy visions, comforting manifestations of loved ones, and incredible vistas, feeding the target a perfect fantasy life it never wishes to leave. After the target's next night's sleep, the target must succeed at a Will saving throw to wake up; otherwise, it remains asleep for the rest of the day and following night. Each night it must succeed at a new saving throw or remain asleep for days or weeks on end as it slowly starves to death (presuming it normally needs to eat to survive). Loud noises, jostling, and even pain won't rouse the slumbering target. Dealing 1 point of damage per the target's Hit Die awakens the target, but it awakens fatigued and takes a -2 penalty on all saving throws against spells and effects that may put it back to sleep until the phantasm has been banished.  The phantasm remains in its host's mind indefinitely, requiring a new Will saving throw to wake up every time the target rests, until it is removed via <i>break enchantment</i>, <i>greater restoration</i>, or <i>miracle</i>. Alternatively, the phantasm can be confronted in its host's mindscape (<i>Pathfinder RPG Occult Adventures</i> 202), where it manifests as a slothful duplicate of its host with identical abilities, skills, and attributes.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

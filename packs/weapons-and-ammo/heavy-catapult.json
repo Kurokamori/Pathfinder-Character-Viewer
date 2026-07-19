@@ -1,0 +1,153 @@
+{
+  "_id": "voIH7Ul2BOwG1k7r",
+  "name": "Heavy Catapult",
+  "type": "weapon",
+  "img": "icons/weapons/artillery/catapult-simple.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 162</em>, <em>PRPG Core Rulebook pg. 434</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 1,000 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> 8d6; <strong>Critical</strong> x2; <strong>Range</strong> 300 ft. (100 ft. min.); <strong>Type</strong> B</p><p><strong>Crew</strong> 4; <strong>Aim</strong> 3; <strong>Load</strong> 3; <strong>Speed</strong> 0 ft.</p><p><strong>Category</strong> Indirect-Fire (Gargantuan); <strong>Proficiency</strong> Siege Engine</p><h3 class=\"framing\">Description</h3><p>Catapults are stone-throwing siege engines powered by winched arms that run through torsion skeins, and hold their payload in a cup that swings up and over the weapon when released. Catapults can hurl a variety of different types of ammunition (the damage given is for stone projectiles; other types of ammunition can be found later in this chapter). They are indirect-fire siege engines.</p><p></p><p> <em>Light</em>: These catapults are Large and often mounted on wheels. The targeting DC of a light catapult is 15. Light catapults have a hardness of 5 and 50 hit points. Light catapult stones cost 10 gp and weigh 50 pounds each. <em>Standard</em>: These Huge siege engines are too large to be transported to the battlefield in one piece, and require assembly. They typically hurl large stones indirectly at a target (targeting DC 20). Standard catapults have a hardness of 5 and 100 hit points. Standard catapult stones cost 15 gp and weigh 75 pounds each. <em>Heavy</em>: These Gargantuan siege engines are too large to be transported to the battlefield in one piece, and require assembly. They typically hurl large stones indirectly at a target (targeting DC 25). Heavy catapults have a hardness of 5 and 200 hit points. Heavy catapult stones cost 25 gp and weigh 90 pounds each.</p>"
+    },
+    "tags": [],
+    "price": 1000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Heavy Catapult",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "1zv4kbeoj6k07t7w",
+        "name": "Attack",
+        "img": "icons/weapons/artillery/catapult-simple.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "300",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": "100",
+          "minUnits": "ft"
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(8, 6, @size)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "heavyCatapult",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

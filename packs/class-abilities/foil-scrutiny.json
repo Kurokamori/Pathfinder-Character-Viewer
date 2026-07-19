@@ -1,0 +1,70 @@
+{
+  "_id": "iBeDQtCPXycfpiqV",
+  "name": "Foil Scrutiny",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/weapons/rhoka.PNG",
+  "data": {
+    "description": {
+      "value": "<p>A slayer with this talent is able to obscure his thoughts and intentions. He gains a +2 bonus on all Bluff and Disguise checks, as well as on Will saving throws to resist mind-reading spells and effects (such as&nbsp;detect thoughts&nbsp;and&nbsp;discern lies).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "rqb8uxvs",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "skill.blf",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "c4s34q3f",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "skill.dis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_foilScrutiny",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Slayer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

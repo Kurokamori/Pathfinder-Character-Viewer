@@ -1,0 +1,54 @@
+{
+  "_id": "Vx8af8Biu7abYsDm",
+  "name": "Fighter (Rebuild)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template&nbsp;</strong>Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>A fighter creature gains bonus combat feats, and both armor and weapon training. A fighter creature's CR increases by 2 if the creature has 10 or more HD.<br><br><strong>Quick Rules:</strong> +2 on all rolls based on Str; gains a bonus combat feat and an additional bonus combat feat for every 4 HD (to a maximum of 10 feats; a fighter creature is considered a fighter with a level equal to its HD for the purpose of qualifying for combat feats). If the creature has 3 or more HD, it gains armor training† (the bonus increases and penalty decreases for every 4 HD the creature possesses thereafter, to the class feature's normal maximums). If the creature has 5 or more HD, it gains weapon training† (the creature gains only one weapon group, and its bonuses increase by 1 every 4 HD thereafter, to a maximum of +4).<br><br><strong>Rebuild Rules:</strong>&nbsp;Special Attacks&nbsp;If the creature has 5 or more HD, it gains weapon training† (the creature gains only one weapon group, and its bonuses increase by 1 every 4 HD thereafter, to a maximum of +4);&nbsp;Special Abilities&nbsp;If the creature has 3 or more HD, it gains armor training† (the bonus increases and penalty decreases for every 4 HD it possesses thereafter, to the class feature's normal maximums);&nbsp;Ability Scores&nbsp;+4 Strength;&nbsp;Feats&nbsp;The creature gains a bonus combat feat and an additional combat feat for every 4 HD (to a maximum of 10 feats from this ability).</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "wv01qv36",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "@attributes.hd.total >= 10 ? 2 : 1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

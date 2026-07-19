@@ -1,0 +1,156 @@
+{
+  "_id": "svkzlis7pqjux13a",
+  "name": "Stolen Light",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "5bbwu9asm4dgcsfr",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "full"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "permanent or 1 minute/level (see text)",
+          "units": ""
+        },
+        "target": {
+          "value": "transparent gem touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "bard",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "ill",
+    "subschool": "figment",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a gem worth at least 500 gp"
+    },
+    "shortDescription": "<p>Kreighton Shaine researched this spell from the fragmentary notes of a Vudrani ascetic recorded in a strange tome, and rumors credit him with no fewer than a dozen permanent <i>stolen light</i> gems hidden in compartments and drawers in his study. <i>Stolen light</i> stores images within a gem. To store an image, as part of casting you must touch a gem worth not less than 500 gp. You trap within the gem an image of everything visible within a 30-foot cone measured from the gem, in a direction of your choice. Alternatively, you can capture a less detailed image of a single object within sight.</p><p>Once the casting is complete, the gem turns opaque, and the image inside cannot be seen. The stolen image remains within the gem until released or dispelled.</p><p>To release an image, you touch a gem holding <i>stolen light</i> as a standard action and speak a command word chosen at the time of casting. For 1 minute per caster level, the image stored within the gem becomes visible. Details can be made out as clearly as they could be perceived at the time of casting. Darkvision is of no use for making out details in a stolen image, though low-light vision or other exceptional visual talents may reveal information the caster did not see.</p><p>Light sources brighter than bright light are reduced to bright light in the stolen image. Once the image has been released, it cannot again be recovered from the gem.</p><p><i>Stolen light</i> can be made permanent with the <i>permanency</i> spell by a caster of 10th level for a cost of 5,000 gp. This leaves the gem capable of projecting the image indefinitely, activated and deactivated by its command word, until it is destroyed or dispelled.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

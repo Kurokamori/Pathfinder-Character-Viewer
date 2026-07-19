@@ -1,0 +1,64 @@
+{
+  "_id": "7mD4ZksvKFaorAfj",
+  "name": "Shield Focus",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/shield-focus.jpg",
+  "data": {
+    "description": {
+      "value": "\n                <i>You are skilled at deflecting blows with your shield.</i>\n                <br />\n                <br />\n                \n                <p><b>Prerequisites</b></p>\n                <p> Shield Proficiency, base attack bonus +1.</p>\n                \n            <br />\n                <p><b>Benefits</b></p>\n                <p><p class=\"stat-block-1\"> Increase the AC bonus granted by any shield you are using by 1.</p></p>\n                \n            \n            "
+    },
+    "tags": [
+      [
+        "Combat"
+      ],
+      [
+        "Shield"
+      ],
+      [
+        "Defensive"
+      ]
+    ],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "insvnslf",
+        "formula": "@shield.type > 0 ? 1 : 0",
+        "operator": "add",
+        "subTarget": "sac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "feat_shieldFocus",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "associations": {
+      "classes": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,150 @@
+{
+  "_id": "T2bUDeuzGQKxjZuP",
+  "name": "Past-Life Memories",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/slice-spirit-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You add a bonus equal to half your psychic level (minimum 1) to all Knowledge checks and can attempt all Knowledge skill checks untrained.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "0b58ng9o",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kar",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "i47fu2fe",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kdu",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "x4loqr7e",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.ken",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "8nmhktnn",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kge",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "1sttj5z0",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.khi",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "t38xlbaf",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.klo",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "2d5nn322",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kna",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "eecx1kw3",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kno",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "5o3q7uoh",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kpl",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "hme2y4cc",
+        "formula": "floor(@classes.psychic.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.kre",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_pastlifeMemories",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Psychic"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "qyqbVqtFmw5QBRbg",
+  "name": "Destructive Aura",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/arrow_03.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, you can emit a 30-foot aura of destruction for a number of rounds per day equal to your cleric level. All attacks made against targets in this aura (including you) gain a morale bonus on damage equal to 1/2 your cleric level and all critical threats are automatically confirmed. These rounds do not need to be consecutive.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor(@classes.cleric.level / 2)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_destructiveAura",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cleric"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

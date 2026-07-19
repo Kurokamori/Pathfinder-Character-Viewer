@@ -1,0 +1,15 @@
+{
+  "_id": "8VcUUx7d4TX4WTkt",
+  "name": "Award XP",
+  "type": "script",
+  "author": "T9i9xVjdkHeFZC72",
+  "img": "icons/svg/book.svg",
+  "scope": "global",
+  "command": "// CONFIGURATION\n// If one or more tokens are selected, those will be used instead of the listed actors\n// Leave the actorNames array empty to guess the players\n// Example actorNames: `actorNames: [\"Bob\", \"John\"],`\nconst c = {\n  actorNames: [],\n};\n// END CONFIGURATION\n\nconst tokens = canvas.tokens.controlled;\nlet actors = tokens.map(o => o.actor);\nif (!actors.length && c.actorNames.length) actors = game.actors.filter(o => c.actorNames.includes(o.name));\nif (!actors.length) actors = game.actors.filter(o => o.isPC);\nactors = actors.filter(o => o.testUserPermission(game.user, 'OWNER'));\n\nif (!actors.length) ui.notifications.warn('No applicable actor(s) found');\nelse {\n  const appCls = game.pf1.applications.ExperienceDistributor;\n  new appCls(actors).render(true);\n}",
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

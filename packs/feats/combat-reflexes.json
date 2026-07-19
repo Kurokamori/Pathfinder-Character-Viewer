@@ -1,0 +1,60 @@
+{
+  "_id": "h9nHYLxXvIXBTmup",
+  "name": "Combat Reflexes",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/combat-reflexes.jpg",
+  "data": {
+    "description": {
+      "value": "<p><em>You can make additional attacks of opportunity.</em><br /><br /><strong>Benefits</strong><br />You may make a number of additional attacks of opportunity per round equal to your Dexterity bonus. With this feat, you may also make attacks of opportunity while flat-footed.<br /><br /><strong>Normal</strong><br />A character without this feat can make only one attack of opportunity per round and can't make attacks of opportunity while flat-footed.<br /><br /><strong>Special</strong><br />The Combat Reflexes feat does not allow a rogue to use her opportunist ability more than once per round.<br /><br /><strong>Combat Trick</strong><br />When you miss with an attack of opportunity, you can spend 5 stamina points to make a second attack for the same provoking action. That second attack of opportunity takes a -5 penalty on the attack roll and costs one of your attacks of opportunity for the round.</p>\n<p>&nbsp;</p>\n<p><strong>Usage</strong>: spend 1 charge after use.</p>"
+    },
+    "tags": [
+      [
+        "PFS"
+      ],
+      [
+        "Combat"
+      ]
+    ],
+    "actions": [],
+    "uses": {
+      "per": "charges",
+      "value": 1,
+      "maxFormula": "1 + @abilities.dex.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [
+      {
+        "subTarget": "attack",
+        "text": "Combat Reflexes: [[@resources.combatReflexes.value]] AoO available."
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "feat_combatReflexes",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "associations": {
+      "classes": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

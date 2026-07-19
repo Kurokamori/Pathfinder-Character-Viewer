@@ -1,0 +1,63 @@
+{
+  "_id": "zaywNbVm5ayrzFkT",
+  "name": "Fleet",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You gain a +10-foot enhancement bonus to your base land speed. You lose this extra speed if you wear any armor or carry a medium or heavy load.</p>\n<p>At 7th level, and every 6 levels thereafter, this bonus increases by 10 feet. Oracles with the lame oracle curse can’t select this revelation.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "bwydwlx6",
+        "formula": "10 + (floor((@classes.oracle.level - 1) / 6)*10)",
+        "operator": "+",
+        "subTarget": "landSpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_fleet",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

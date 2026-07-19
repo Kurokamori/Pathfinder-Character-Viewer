@@ -1,0 +1,141 @@
+{
+  "_id": "utncinnlwzscpzbd",
+  "name": "Tanglefoot Bag",
+  "type": "weapon",
+  "img": "icons/containers/bags/sack-simple-leahter-green.webp",
+  "data": {
+    "description": {
+      "value": "<p class=\"source\"><strong>Source</strong>&nbsp;<a title=\"PZO1110\" href=\"http://www.amazon.com/gp/product/1601251505/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601251505&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20\" target=\"_blank\" rel=\"noopener\">PZO1110</a></p>\n<p>A tanglefoot bag is a small sack filled with tar, resin, and other sticky substances. When you throw a tanglefoot bag at a creature (as a ranged&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks\">touch attack</a>&nbsp;with a range increment of 10 feet), the bag comes apart and goo bursts out, entangling the target and then becoming tough and resilient upon exposure to air. An&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Entangled\">entangled</a>&nbsp;creature takes a -2 penalty on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>&nbsp;and a -4 penalty to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>&nbsp;and must make a DC 15&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\">Reflex</a>&nbsp;save or be glued to the floor, unable to move. Even on a successful save, it can move only at half speed. Huge or larger creatures are unaffected by a tanglefoot bag. A flying creature is not stuck to the floor, but it must make a DC 15&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\">Reflex</a>&nbsp;save or be unable to fly (assuming it uses its wings to fly) and fall to the ground. A tanglefoot bag does not function underwater.</p>\n<p>A creature that is glued to the floor (or unable to fly) can break free by making a DC 17&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;check or by dealing 15 points of damage to the goo with a slashing weapon. A creature trying to scrape goo off itself, or another creature assisting, does not need to make an&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack roll</a>; hitting the goo is automatic, after which the creature that hit makes a damage roll to see how much of the goo was scraped off. Once free, the creature can move (including flying) at half speed. If the&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Entangled\">entangled</a>&nbsp;creature attempts to cast a spell, it must make&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Concentration\">concentration</a>&nbsp;check with a DC of 15 + the spell's level or be unable to cast the spell. The goo becomes brittle and fragile after 2d4 rounds, cracking apart and losing its effectiveness. An application of&nbsp;<a class=\"magic-item\" href=\"https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/r-z/universal-solvent\">universal solvent</a>&nbsp;to a stuck creature dissolves the alchemical goo immediately.</p>\n<p class=\"header\">Alchemical Power Component</p>\n<p class=\"source\"><strong>Source</strong>&nbsp;<a title=\"PZO9410\" href=\"http://www.amazon.com/gp/product/1601252226/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601252226&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20\" target=\"_blank\" rel=\"noopener\">PZO9410</a></p>\n<p>Tanglefoot bags can make troublesome spells even worse when used as a power component.</p>\n<ul>\n<li><a class=\"spell\" href=\"https://www.d20pfsrd.com/magic/all-spells/b/black-tentacles\">Black Tentacles</a>&nbsp;(M): For each tanglefoot bag used as a power component, you may reroll the tentacles'&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Grapple\">grapple</a>&nbsp;check against one creature of your choice.</li>\n<li><a class=\"spell\" href=\"https://www.d20pfsrd.com/magic/all-spells/s/slow\">Slow</a>&nbsp;(M): For each tangelefoot bag used as a power component, you may designate one slowed creature as being affected by a tanglefoot bag.</li>\n<li><a class=\"spell\" href=\"https://www.d20pfsrd.com/magic/all-spells/w/web\">Web</a>&nbsp;(M): Increase the DC of breaking free by making a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers\">combat maneuver</a>&nbsp;or&nbsp;<a href=\"https://www.d20pfsrd.com/skills/escape-artist\">Escape Artist</a>&nbsp;check by 1.</li>\n</ul>"
+    },
+    "tags": [],
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "identifiedName": "Tanglefoot Bag",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "xs9an01txxyflh8t",
+        "name": "Attack",
+        "img": "icons/containers/bags/sack-simple-leahter-green.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "maxIncrements": 5,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "single",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "15",
+          "type": "ref",
+          "description": "Reflex partial (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "single"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "61klraqiWb97OOLa": 3
+  },
+  "flags": {}
+}

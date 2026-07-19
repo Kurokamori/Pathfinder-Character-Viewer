@@ -1,0 +1,199 @@
+{
+  "_id": "gmugktarbieojt59",
+  "name": "Flame Strike",
+  "type": "spell",
+  "img": "systems/pf1/icons/spells/beam-red-2.jpg",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "g53idl2534pvhyp8",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/beam-red-2.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "10",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(min(15, @cl))d6",
+              {
+                "values": [
+                  "fire",
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "cylinder (10-ft. radius, 40-ft. high)",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        },
+        "attack": {
+          "parts": []
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "inquisitor",
+          5
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "hunter",
+          4
+        ]
+      ],
+      "domain": [
+        [
+          "Sun",
+          5
+        ],
+        [
+          "War",
+          5
+        ]
+      ],
+      "subDomain": [
+        [
+          "Arson",
+          5
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Celestial",
+          5
+        ]
+      ]
+    },
+    "level": 5,
+    "school": "evo",
+    "types": "fire",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "divineFocus": 1
+    },
+    "spellbook": "",
+    "shortDescription": "<p>A <i>flame strike</i> evokes a vertical column of divine fire. The spell deals 1d6 points of damage per caster level (maximum 15d6). Half the damage is fire damage, but the other half results directly from divine power and is therefore not subject to being reduced by resistance to fire-based attacks.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

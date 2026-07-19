@@ -1,0 +1,156 @@
+{
+  "_id": "tv6idm3k5h3wulmc",
+  "name": "Recorporeal Incarnation",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "t49fa627ldzfq1xt",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 week/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one willing living creature and one humanoid corpse"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "witch",
+          7
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a gem worth at least 250 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p><i>Recorporeal incarnation</i> effectively replaces the target living creature's body with that of the target corpse. The target corpse must be fresh-either dead for no more than 24 hours or appropriately preserved by an effect such as <i>gentle repose</i>. While casting the spell, you must remain in contact with the corpse while touching the living target with the focus item. As the spell is cast, the dead body's flesh unravels like ribbons to sheathe the living target, who must be within one size category of the corpse. While the spell is in effect, the focus item must remain within 30 feet of the target living creature.  The living target gains the physical appearance and size of the corpse, and gains its abilities as defined in <i>alter self</i> as well as any immunities, weapon proficiencies, weaknesses, and spell resistance the dead target had while living. The living target gains a +20 circumstance bonus on Disguise checks to impersonate the individual whose corpse is targeted by this spell. The disguise created by <i>recorporeal incarnation</i> lasts for a number of weeks equal to your caster level, or until the focus item is moved more than 30 feet away from the living target. When the effect ends, the living target returns to its normal form, sloughing off the corpse's flesh.  The greatest strength of <i>recorporeal incarnation</i> is the difficulty of detecting it as a disguise. If subjected to <i>detect magic</i>, the living target sheds no magical aura, though the focus item gives off an aura of strong necromantic magic. <i>True seeing</i> does not reveal the living target's true form, since the corpse's flesh magically obscures it. The spell <i>detect undead</i> and similar effects indicate the living target is an undead creature, but the target is not truly undead, and is not affected by any other effects that target undead creatures. <i>Recorporeal incarnation</i> does not disguise the target's alignment.  If the living target of <i>recorporeal incarnation</i> dies while the spell is in effect, the spell continues. Any <i>raise dead</i> or similar spell cast upon that target resurrects that target, not the corpse flesh. Since <i>recorporeal incarnation</i> destroys the majority of the target corpse's physical remains, the target corpse cannot be restored to life except by <i>miracle</i>, <i>resurrection</i>, true <i>resurrection</i>, or <i>wish</i>.  <i>Recorporeal incarnation</i> can be made permanent by a 15th-level caster using <i>permanency</i> with a material component worth 17,500 gp.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

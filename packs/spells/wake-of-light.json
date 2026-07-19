@@ -1,0 +1,149 @@
+{
+  "_id": "uqm9qhmeetoiype1",
+  "name": "Wake of Light",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "54tkf4ik7ipbp3ji",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 120,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "a 10-ft.-wide path in a straight line, up to 120 ft. long",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "paladin",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "evo",
+    "types": "good",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "divineFocus": 1
+    },
+    "shortDescription": "<p>You and your mount lay down a trail of glowing, heavenly mist behind you as you move that makes passage easier for good creatures but more difficult for evil creatures. This glowing trail of mist appears behind your mount in a straight line starting where you cast the spell and ending where your mount ends its movement. The mist takes the form of a path 10 feet wide and up to 120 feet long and always floats just above the ground, up to a height of 1 foot. Thereafter, the mist persists for 1 round per level.</p><p>Good creatures may walk along the top of the mist as if it were solid, treating squares of difficult terrain containing the mist as normal terrain. Evil creatures find the mist thick and cloying, and treat squares of normal terrain containing the mist as difficult terrain instead. Neutral creatures pass through the mist with no effect. The mist has no effect on obstacles or otherwise impassable terrain, and does not block sight or provide concealment.</p><p>Except for very special circumstances (such as a celestial or fiendish mount), mounts use the alignment of their rider when determining how this spell affects them. You must be mounted to enjoy the benefits of this spell. If you dismount, get knocked off, or take any other action that separates you from your mount, the spell immediately ends, although the mist remains for the spell's normal duration.</p><p>A wake of light cannot follow across water, underwater, or through the air in the case of a mount capable of walking on water, swimming, or flight.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "lHJpjQhk1Epn79Dw",
+  "name": "Touch of Glory",
+  "type": "buff",
+  "img": "systems/pf1/icons/feats/extra-mercy.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Effect</strong>: You gain a bonus equal to the caster cleric level on a single Charisma-based skill check or Charisma ability check.</p>\n<p><strong>Duration</strong>: One hour or until the creatur elects to apply the bonus to a roll.</p>\n<p><strong>Usage</strong>: Set this buff's level equal to the caster level of touch of glory.</p>\n<p>Current value: [[@item.level]]</p>\n<p>&nbsp;</p>"
+    },
+    "tags": [],
+    "changes": [],
+    "contextNotes": [
+      {
+        "subTarget": "chaSkills",
+        "text": "+[[@item.level]] to a single charisma based skill check. The receiver of the buff must elect to use the buff before the roll.."
+      },
+      {
+        "subTarget": "chaChecks",
+        "text": "+[[@item.level]] to a single charisma ability check. The receiver of the buff must elect to use the buff before the roll."
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "tag": "touchOfGlory",
+    "flags": {
+      "boolean": [],
+      "dictionary": [
+        [
+          "summary",
+          "The receiver is imbued with divine radiance."
+        ]
+      ]
+    },
+    "scriptCalls": [],
+    "level": "0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "cS03VDWW7D1q5qUn": 3
+  },
+  "flags": {}
+}

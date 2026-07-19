@@ -1,0 +1,55 @@
+{
+  "_id": "MrxwYWWezbJTZLog",
+  "name": "Cloak of Resistance +1",
+  "type": "equipment",
+  "img": "systems/pf1/icons/items/equipment/cloak-plain.jpg",
+  "data": {
+    "description": {
+      "value": "<p>This garment offers magic protection in the form of a +1 to +5&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Resistance-Bonus\">resistance bonus</a>&nbsp;on all saving throws (<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Fortitude\">Fortitude</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\">Reflex</a>, and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a>).</p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 1000,
+    "resizing": true,
+    "unidentified": {
+      "name": "Cloak"
+    },
+    "identifiedName": "Cloak of Resistance +1",
+    "cl": 5,
+    "aura": {
+      "school": "abj"
+    },
+    "changes": [
+      {
+        "_id": "7okw4xq4",
+        "formula": "1",
+        "operator": "add",
+        "subTarget": "allSavingThrows",
+        "modifier": "resist",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "cloakOfResistance1",
+    "scriptCalls": [],
+    "equipmentType": "misc",
+    "equipmentSubtype": "wondrous",
+    "slot": "shoulders"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

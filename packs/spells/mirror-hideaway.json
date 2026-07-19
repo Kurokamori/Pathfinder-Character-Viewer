@@ -1,0 +1,164 @@
+{
+  "_id": "lsmtsbph1d14fq0r",
+  "name": "Mirror Hideaway",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "9eex7xlg71lsnxy5",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one mirror"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "psychic",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a glass or metal marble and a twisted loop of parchment"
+    },
+    "sr": false,
+    "shortDescription": "<p>You transform a mirror into a portal to an extradimensional space. The space can hold as many as eight Medium creatures. Creatures that enter this space are hidden and beyond the reach of spells (including divinations), unless those spells work across planes. If the mirror is covered (such as by a cloth, or by being placed face down or against a wall), the portal becomes inactive. If the mirror is broken or moved more than 5 feet from where it was when you cast the spell, the spell ends; any creatures within the extradimensional space are expelled from it (see below) and become nauseated for 1d6 rounds.</p><p>Spells cannot be cast across the extradimensional interface, nor can area effects cross it. Those in the space can see and hear through it as if looking through an open window the same size as the mirror. Creatures outside the extradimensional space see only what is normally reflected in the mirror. Any creature in the space can make itself visible in the reflection of the mirror for 1 round at a time, however creatures outside the space cannot hear any sounds that originate inside.</p><p>Anything inside the extradimensional space is expelled when the spell ends (even if the mirror is covered). Only one creature at a time can enter the mirror, and creatures can enter only if they can fit through an opening the same size as the mirror. For example, a hand mirror isn't big enough for a Small or larger creature to use it as a portal.</p><p>Objects can enter the extradimensional space only if brought by a creature able to fully pass through the mirror.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

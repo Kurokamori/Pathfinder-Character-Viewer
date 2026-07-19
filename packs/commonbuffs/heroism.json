@@ -1,0 +1,65 @@
+{
+  "_id": "ulvEcJsFba6Fg4g9",
+  "name": "Heroism",
+  "type": "buff",
+  "img": "systems/pf1/icons/skills/yellow_17.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You gain a +2 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Morale-Bonus\">morale bonus</a> on attack rolls, saves, and skill checks.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "nueem2us",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "attack",
+        "modifier": "morale",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "qmgiyv88",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "allSavingThrows",
+        "modifier": "morale",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "zstphu4j",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "skills",
+        "modifier": "morale",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level * 10"
+    },
+    "links": {
+      "children": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "5"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 5800000,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,54 @@
+{
+  "_id": "cVE48is5NiDMEg8O",
+  "name": "Rogue",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons&nbsp;</strong>No<br><br>A rogue creature gains sneak attack. It also gains defensive abilities and rogue talents if it has 10 or more Hit Dice. A rogue creature's CR increases by 2 if the creature has 10 or more HD.<br><br><strong>Quick Rules: </strong>+2 to AC and on all rolls based on Dex; gains sneak attack† with a number of sneak attack dice equal to 1/2 its HD (maximum 10d6 at 20 HD); gains evasion† and uncanny dodge† (if the creature has 10 or more HD, it also gains improved uncanny dodge† and two rogue talents†, one of which can be an advanced talent†).<br><br><strong>Rebuild Rules:</strong>&nbsp;</p>\n<p><strong>Defensive abilities&nbsp;</strong>evasion, uncanny dodge (improved uncanny dodge if the creature has 10 or more HD);</p>\n<p><strong>Special Attacks </strong>sneak attack (with a number of sneak attack dice equal to 1/2 the creature's HD, to a maximum of 10d6 at 20 HD);</p>\n<p><strong>Special Qualities </strong>if the creature has 10 or more HD, it gains two rogue talents†, one of which can be an advanced talent†;</p>\n<p><strong>Ability Scores </strong>+4 Dexterity.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "grvmqzq9",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "@attributes.hd.total >= 10 ? 2 : 1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

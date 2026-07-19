@@ -1,0 +1,63 @@
+{
+  "_id": "dvQdP8QfrDA9Lxzk",
+  "name": "Fast Movement (BLO)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/armor_01.jpg",
+  "data": {
+    "description": {
+      "value": "<p>A bloodrager’s land speed is faster than is normal for his race by 10 feet. This benefit applies only when he is wearing no&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, light&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, or medium&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, and not carrying a heavy load. Apply this bonus before modifying the bloodrager’s speed due to any armor worn or load carried. This bonus stacks with any other bonuses to the bloodrager’s land speed.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "8e1bsiz2",
+        "formula": "@armor.type <= 2 && @attributes.encumbrance.level < 2 ? 10 : 0",
+        "operator": "add",
+        "subTarget": "landSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_fastMovementBlo",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

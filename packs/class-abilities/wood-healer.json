@@ -1,0 +1,164 @@
+{
+  "_id": "DXrLofakB68e8Y4Z",
+  "name": "Wood Healer",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/vines-jade-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element&nbsp;</strong>wood;&nbsp;<strong>Type&nbsp;</strong>utility (Sp);&nbsp;<strong>Level&nbsp;</strong>1;&nbsp;<strong>Burn&nbsp;</strong>1<br><strong>Prerequisite&nbsp;</strong>positive blast<br><strong>Saving Throw&nbsp;</strong>none;&nbsp;<strong>SR&nbsp;</strong>yes</p>\n<p>This functions as kinetic healer, but you must base the amount of healing on your positive blast, not wood blast.</p>\n<p>A phytokineticist with positive blast as her first blast qualifies for the kinetic chirurgeon archetype and gains this utility talent instead of kinetic healer.</p>\n<p>This wild talent counts as kinetic healer for prerequisites for selecting other kineticist wild talents.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "i2gcinhp3nrd9sss",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/vines-jade-3.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "heal",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(ceil(@classes.kineticist.level/2))d6 + floor(@abilities.con.mod/2) + min(@resources.burn.value, floor(@classes.kineticist.level/3) ) * 2 * @critMult",
+              {
+                "values": [
+                  "positive"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_woodHealer",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

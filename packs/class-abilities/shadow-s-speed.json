@@ -1,0 +1,60 @@
+{
+  "_id": "iMZTa86xlmGO77x1",
+  "name": "Shadow's Speed",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/deceitful.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The vigilante’s base speed increases by 10 feet.</p>\n<p>At 10th level, it increases by an additional 10 feet.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "an4f9gvm",
+        "formula": "@classes.vigilante.level >= 10 ? 20 : 10",
+        "operator": "+",
+        "subTarget": "landSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_shadowsSpeed",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Vigilante"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

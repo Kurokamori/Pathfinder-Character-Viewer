@@ -1,0 +1,104 @@
+{
+  "_id": "DxKzgjuvqHZMjKz0",
+  "name": "Paladin (Quick)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template&nbsp;</strong>Acquired<br><strong>Simple Template&nbsp;</strong>Yes<br><strong>Usable with Summons&nbsp;</strong>No<br><br>Paladin creatures can battle evil using smite evil and heal using lay on hands, and they possesses some defensive abilities as well. A paladin creature's CR increases by 3 if the creature has 10 or more HD. A paladin creature must be lawful good.<br><br><strong>Quick Rules: </strong>+2 on all rolls based on Str and Cha; can smite evil† once per day (treating its HD as its paladin level for the purposes of damage); can use lay on hands† once per day (healing 1d6 hit points for every 2 HD it possesses instead of using its paladin level); gains detect evil† and divine grace† (if the creature has 10 or more HD, it also gains aura of resolve†).<br><br><strong>Rebuild Rules:</strong>&nbsp;Defensive Abilities&nbsp;divine grace† (if the creature has 10 or more HD, it also gains aura of resolve†);&nbsp;Special Attacks&nbsp;smite evil† ability once per day (treating its HD as its paladin level for the purposes of damage);&nbsp;Special Qualities&nbsp;detect evil† as the paladin class feature, lay on hands† once per day (healing 1d6 hit points for every 2 HD the creature possesses instead of using its paladin level);&nbsp;Ability Scores&nbsp;+4 Strength and Charisma.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "vz4q6ofq",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "mattack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "uaetggyj",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wdamage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      },
+      {
+        "_id": "jm5a570v",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "strSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "vrbsze5w",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "strChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "v7w7db7k",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "chaSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "3tiuunci",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "chaChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "@attributes.hd.total >= 10 ? 3 : 2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

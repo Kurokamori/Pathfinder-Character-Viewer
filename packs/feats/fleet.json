@@ -1,0 +1,61 @@
+{
+  "_id": "BkKYCzEGNTzZRiTz",
+  "name": "Fleet",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/fleet.png",
+  "data": {
+    "description": {
+      "value": "\n                <i>You are faster than most.</i>\n                <br />\n                <br />\n                \n                <p><b>Benefits</b></p>\n                <p><p class=\"stat-block-1\"> While you are wearing light or no armor, your base speed increases by 5 feet. You lose the benefits of this feat if you carry a medium or heavy load.</p></p>\n                \n            <br />\n                <p><b>Special</b></p>\n                <p><p class=\"stat-block-1\"> You can take this feat multiple times. The effects stack. </p></p>\n                \n            \n            "
+    },
+    "tags": [
+      [
+        "General"
+      ],
+      [
+        "Movement"
+      ]
+    ],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "y4qckv6r",
+        "formula": "(@armor.type < 2 && @attributes.encumbrance.level < 1) ? 5 : 0",
+        "operator": "add",
+        "subTarget": "landSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "feat_fleet",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "associations": {
+      "classes": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

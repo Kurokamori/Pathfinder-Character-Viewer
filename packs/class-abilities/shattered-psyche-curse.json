@@ -1,0 +1,69 @@
+{
+  "_id": "4O9Xj4DdzpPmwYB9",
+  "name": "Shattered Psyche Curse",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/horror-eerie-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Your mind is crowded with dozens of voices, fragmented snippets of your past lives. You take a –2 penalty on all Intelligence-based skill checks, Wisdom-based skill checks, and concentration checks. You gain a +4 competence bonus on saving throws made against mind-affecting effects.</p>\n<p>At 5th level, you’re immune to charm effects.</p>\n<p>At 10th level, you’re immune to compulsion effects.</p>\n<p>At 15th level, you’re immune to all mind-affecting effects.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "onn9cugu",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "intSkills",
+        "modifier": "penalty",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "u29h7om2",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "wisSkills",
+        "modifier": "penalty",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_shatteredPsycheCurse",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

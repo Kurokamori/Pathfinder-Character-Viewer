@@ -1,0 +1,154 @@
+{
+  "_id": "pB36YwY2TIyKQV2S",
+  "name": "Combat Scabbard",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/combat-scabbard.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Adventurer's Armory pg. 6</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 1 gp <strong>Weight</strong> 1 lb.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> B; <strong>Special</strong> improvised, see text</p><p><strong>Category</strong> One-Handed; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>This scabbard is an improvised weapon designed to allow you to remove it from your belt as a swift action when drawing the weapon it contains. Taking the Equipment Trick feat (see page 22) for a scabbard gives you additional combat options for using a scabbard. For the purpose of fighter weapon groups, a scabbard for a heavy blade is considered a hammer, and a scabbard for a light blade is considered a close weapon.</p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 1,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 10,
+    "identifiedName": "Combat Scabbard",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "hq054almcvl4sjdh",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/combat-scabbard.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "combatScabbard",
+    "scriptCalls": [],
+    "weaponType": "martial",
+    "weaponSubtype": "1h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

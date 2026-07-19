@@ -1,0 +1,172 @@
+{
+  "_id": "nll8ip8348eti0ff",
+  "name": "Geyser",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "149dku07mfdf4db8",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "concentration + 1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "long",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex partial (see below)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "spout of boiling water filling a 5 ft. square and spraying upward 10 ft./2 levels",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "magus",
+          5
+        ],
+        [
+          "hunter",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Aquatic",
+          4
+        ]
+      ]
+    },
+    "level": 5,
+    "school": "con",
+    "subschool": "creation",
+    "types": "fire, water",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a piece of lava rock"
+    },
+    "sr": false,
+    "shortDescription": "<p>You cause a column of boiling water to spring forth from any horizontal surface, knocking over creatures directly over it and exposing nearby creatures to searing droplets as its spray falls back to the ground.</p><p>Any creature entering the <i>geyser</i>, or occupying the square it appears in, must make a Reflex saving throw to avoid being hurled into the air and then tossed to the ground. If the creature fails its saving throw, it takes 3d6 points of fire damage from the boiling water and also takes falling damage based upon the height of the <i>geyser</i> (e.g., if the <i>geyser</i> is 50 feet tall, the creature takes 5d6 falling damage), landing prone in a random square adjacent to the <i>geyser</i>. A successful saving throw halves the damage and negates the falling damage, and the creature is moved to the closest square adjacent to the <i>geyser</i> (Large-sized or larger creatures are moved enough so that they are not on top of the <i>geyser</i> but still adjacent to it).</p><p>This movement does not provoke attacks of opportunity and does not count toward the creature's normal movement.</p><p>In addition, the <i>geyser</i> sprays boiling water in a hemispherical emanation around its square. The radius of this emanation is equal to one-half the <i>geyser</i>'s height (e.g., a 50-foot <i>geyser</i> has a 25-foot-radius emanation). Any creature within this area, including yourself, takes 1d6 points of fire damage each round as droplets of boiling water cascade on them.</p><p>You can choose to make a smaller <i>geyser</i> than your level permits if an obstruction prevents it from reaching its full height, or if you simply want to create a spread of boiling rain that's smaller than what would be created by a full-height <i>geyser</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

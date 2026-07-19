@@ -1,0 +1,74 @@
+{
+  "_id": "F4glao5wCxrNEsw4",
+  "name": "Mutant Goblin",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons</strong>&nbsp;No<br><br>No description provided.<br><br>“Mutant goblin” is an acquired template that can be added to a goblin (referred to hereafter as the base creature). A mutant goblin uses the base creature’s statistics and special abilities except as noted here.<br><br><strong>CR:</strong> Same as the base creature + 1.</p>\n<p><strong>Armor Class:</strong> Natural armor bonus increases by 4.</p>\n<p><strong>Mutations: </strong>A mutant goblin gains four of the following mutations, determined randomly when it gains the template. For every 5 Hit Dice it has (5, 10, and so on), it gains another random mutation. (Other possible mutations include tusks, a spiked tail, and gills.)<br><br><em>Breath Weapon (Su): </em>The goblin can spew a line of foul acidic blood from its mouth (20-foot line, Reflex DC = 10 + 1/2 Hit Die + its Constitution modifier for half damage, 1d4 points of acid damage per HD, usable every 1d4 rounds). If it has 5 or more HD, the range increases to 30 feet and the damage increases to 1d6 points of acid damage per HD.</p>\n<p><em>Claws (Ex): </em>The goblin’s hands become claws. It gains a natural claw attack for each hand that deals damage appropriate to its size, and gains the grab ability with its claws.</p>\n<p><em>Extra Arm (Ex): </em>The goblin gains an extra arm with a functional hand, as the vestigial armUM&nbsp;discovery. If it gains this mutation again, it gains another arm.</p>\n<p><em>Fast Healing (Ex): </em>The goblin gains fast healing 1. If it has 5 Hit Dice or more, this increases to fast healing 2. If the creature has 10 HD or more, this increases to fast healing 5.</p>\n<p><em>Venomous Bite (Ex): </em>The mutant goblin grows large fangs, gaining a poisonous bite as a natural attack that deals damage appropriate to its size. The poison functions like wyvern poison, except its DC is 10 + 1/2 HD + its Constitution modifier.</p>\n<p><em>Wings (Ex): </em>The goblin gains dragonfly wings, granting it a fly speed of 30 feet with clumsy maneuverability.<br><br><strong>Abilities: </strong>Str +4, Int –2.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "2734xy3h",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "ghzvlk9v",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "34w8b1xp",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

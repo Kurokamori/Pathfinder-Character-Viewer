@@ -1,0 +1,154 @@
+{
+  "_id": "bBZEesM8WLIGPhKw",
+  "name": "Giant (Quick)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template&nbsp;</strong>Yes<br><strong>Usable with Summons&nbsp;</strong>No<br><br>Creatures with the giant template are larger and stronger than their normal-sized kin. This template cannot be applied to creatures that are Colossal.<br><br><strong>Quick Rules:</strong> +2 to all rolls based on Str or Con, +2 hp/ HD, –1 penalty on all rolls based on Dex.<br><br><strong>Rebuild Rules</strong>:&nbsp;Size&nbsp;increase by one category;&nbsp;AC&nbsp;increase natural armor by +3;&nbsp;Attacks&nbsp;increase dice rolled by 1 step;&nbsp;Ability Scores&nbsp;+4 size bonus to Str and Con, –2 Dex.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "qxkfuu5q",
+        "formula": "2*(@attributes.hd.total)",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      },
+      {
+        "_id": "9i8nuhea",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "mattack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "j71rtfd6",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wdamage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      },
+      {
+        "_id": "57nhhdor",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "strSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "12rizvbj",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "strChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "ez6le8xi",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "fort",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "p5hqrcg9",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "conSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "u5aufd41",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "conChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "z6gzyn3g",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "ref",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "dpwp7xwy",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "dexSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "07utsybe",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "dexChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

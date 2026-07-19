@@ -1,0 +1,150 @@
+{
+  "_id": "woLWajpm5tajnZXG",
+  "name": "Kobold Tail Attachment (Pounder)",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/kobold-tail-attachment.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Advanced Race Guide pg. 135</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 1 gp <strong>Weight</strong> 4 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> B; <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Special</p><h3 class=\"framing\">Description</h3><p>A kobold with the Tail Terror feat (see below) can slip this device over the tip of his tail to augment his natural attack. Each tail attachment provides just enough weight, balance, and striking power to increase the damage of his tail slap. It takes a full-round action to slip on a kobold tail attachment, and the kobold gains a +4 bonus against disarm attempts made to remove his tail attachment.  </p><p></p><p> While a kobold is wearing a kobold tail attachment, the attack deals the tail attachment damage, and some attachments gain a special feature. Tail attachments are light weapons and can be improved by feats that can improve weapon attacks (such as Weapon Focus and Weapon Specialization). All kobold tail attachments make up a kobold tail attachment weapon group that can be improved by the fighter's weapon training class ability. Tail attachments can be constructed of special material and made into masterwork or magic items. There are five types of common tail attachments.  </p><p></p><p>  <em>Long Lash</em>: This slender cord has tiny bits of glass and stone embedded in its length. </p><p> <em>Pounder</em>: This squat ball is made from some sort of dull metal.  </p><p> <em>Razored</em>: This metal wedge has a prickly edge on one of its sides.  </p><p> <em>Spiked</em>: This narrow spike tapers to a sharp point.  </p><p> <em>Sweeper</em>: When properly used, this sharply curved piece of metal can knock opponents off their feet. Unlike most trip weapons, you cannot drop it if you are tripped during your own trip attempt. </p>"
+    },
+    "tags": [],
+    "weight": 4,
+    "price": 1,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Kobold Tail Attachment (Pounder)",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "uyrgd5l01jlnmahx",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/kobold-tail-attachment.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "koboldTailAttachmentPounder",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

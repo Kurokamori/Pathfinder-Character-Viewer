@@ -1,0 +1,60 @@
+{
+  "_id": "dfTaltqK6RlSaLVt",
+  "name": "Swashbuckler Weapon Training",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/weapon_31.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 5th level, a swashbuckler gains a +1 bonus on attack and damage rolls with one-handed or light piercing melee weapons. While wielding such a weapon, she gains the benefit of the @Compendium[pf1.feats.TbOPtIL8Fv8obXtP]{Improved Critical} feat. These attack and damage bonuses increase by 1 for every 4 levels beyond 5th level (to a maximum of +4 at 17th level).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "6i701ysv",
+        "formula": "floor((@classes.swashbuckler.level - 1) / 4)",
+        "operator": "+",
+        "subTarget": "wdamage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_swashbucklerWeaponTraining",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Swashbuckler"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

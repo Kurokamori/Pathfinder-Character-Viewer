@@ -1,0 +1,165 @@
+{
+  "_id": "j9b3l9g3hcds8wy9",
+  "name": "Loathsome Veil",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "q6u3tkshvu37hhrv",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "concentration + 1 round/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "transparent pattern 40 ft. long, 20 ft. high",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "psychic",
+          3
+        ],
+        [
+          "mesmerist",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "ill",
+    "subschool": "pattern",
+    "types": "mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a tangle of multicolored threads"
+    },
+    "shortDescription": "<p>This spell creates a transparent veil of shifting, multicolored strands of light that form into endlessly varied and alien patterns. One side of the veil, chosen by you at the time of casting, is harmless. The other side twists and turns into impossible shapes, affecting any creature with 60 feet who views the veil. The veil affects a maximum of 24 Hit Dice of creatures. Creatures with the fewest HD are affected first.</p><p>Among creatures with equal HD, those who are closest to the spell are affected first. The effect is according to the creature's HD.</p><p>4 HD or fewer: The creature is nauseated while it can see the veil, nauseated for 1d4 rounds after it last saw the veil, then sickened for 2d4 rounds after it last saw the veil.</p><p>8 HD or fewer: The creature is nauseated for 1d4 rounds, sickened while it can see the veil, then sickened for 1d4 rounds after it last saw the veil.</p><p><i>9 or more H</i>D: The creature is sickened while it can see the veil.</p><p>A successful saving throw ignores all effects of the veil.</p><p>Sightless creatures are not affected by <i>loathsome veil</i>.</p><p>Affected creatures can avert or close their eyes to avoid seeing the veil, similar to avoiding a gaze attack.</p><p><i>Loathsome veil</i> can be made permanent with the <i>permanency</i> spell by a caster of 10th level or higher for the cost of 7,500 gp.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

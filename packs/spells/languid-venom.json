@@ -1,0 +1,166 @@
+{
+  "_id": "1rt2lg6tt2kms0z0",
+  "name": "Languid Venom",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "7y2fpnvlmf99v3f6",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "permanent until discharged (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "one dose of poison or one venomous creature"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "alchemist",
+          2
+        ],
+        [
+          "shaman",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "nec",
+    "types": "poison",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "herbs used in antitoxins worth 25 gp",
+      "gpValue": 25
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "shortDescription": "<p>You greatly extend the time it takes for the poison you touch to take effect, giving that poison an onset time up to 1 hour per caster level. (You touch the poison's container, so you don't risk exposing yourself to a contact poison.) The target doesn't attempt a saving throw when initially exposed to the <i>languid venom</i>, but instead saves at the end of the poison's onset time. If the poison is neutralized or otherwise cured prior to the end of its onset time, it is rendered harmless. Failing saves against multiple doses of <i>languid venom</i> have the normal cumulative effect for poisons (<i>Pathfinder RPG Core Rulebook</i> 558).  <i>Languid venom</i> is difficult to detect or identify. <i>Detect poison</i> and similar effects detect <i>languid venom</i> only with a successful caster level check against a DC equal to 11 + your caster level (rolled secretly by the GM). Even if the poison is detected, the DC of Craft (alchemy) or Wisdom checks to identify the poison is increased by 10. If a poison is affected by an additional effect that requires a caster level check to detect the poison or increases the DC to identify it-such as <i>obscure poison</i> (see page 220)-those effects don't stack. Use only the caster level check with the higher DC and increase the DC of the check to identify the poison by the higher of the two.  If cast upon a venomous creature, <i>languid venom</i> delays the onset of that creature's poison when the creature next delivers its natural poison.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

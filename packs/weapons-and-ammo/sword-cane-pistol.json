@@ -1,0 +1,156 @@
+{
+  "_id": "d2Xx40c91wwckazK",
+  "name": "Sword Cane Pistol",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-pistol-wood.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 139</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"No character may purchase a firearm unless she possesses the Gunsmithing feat and firearms are never considered Always Available\" src=\"https://www.aonprd.com/images/PathfinderSocietySymbolN.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 775 gp <strong>Weight</strong> 1 lb.</p>\n<p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x3; <strong>Range</strong> 10 ft.; <strong>Type</strong> B and P; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> 1 (5 ft.); <strong>Capacity</strong> 1</p>\n<p><strong>Category</strong> One-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>A combination weapon, this gun mixes a coat pistol with a sword cane. The sword cane pistol is considered a double weapon for the purpose of creating masterwork or magical versions of this weapon. The pistol attachment makes the nature of the weapon a little more difficult to hide. An observer must succeed at a DC 15 Perception check to realize that an undrawn sword cane pistol is a weapon rather than a simple walking stick; the DC decreases to 5 if the observer is able to handle the weapon.</p>\n<p>A sword cane pistol uses either a bullet and 1 dose of black powder or a single alchemical cartridge as ammunition. The sword part of the weapon must be drawn in order to load the pistol part of the weapon.</p>\n<p><strong>This is an early firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 775,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Sword Cane Pistol",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "vev42wroaiommza0",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-pistol-wood.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": null,
+          "critMult": 3
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "swordCanePistol",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "1h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

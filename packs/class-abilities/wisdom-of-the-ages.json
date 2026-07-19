@@ -1,0 +1,63 @@
+{
+  "_id": "FvcDu5fIjym65YS8",
+  "name": "Wisdom of the Ages",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/green_03.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The shaman can call upon her ancestors for lore and guidance. She can use her Wisdom modifier instead of her Intelligence modifier on all Intelligence-based skill checks.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "a3e502qq",
+        "formula": "@abilities.wis.mod - @abilities.int.mod",
+        "operator": "+",
+        "subTarget": "intSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_wisdomOfTheAges",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Shaman"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

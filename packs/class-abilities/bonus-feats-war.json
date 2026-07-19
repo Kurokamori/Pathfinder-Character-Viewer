@@ -1,0 +1,59 @@
+{
+  "_id": "HL0mn3TDEKQWeF03",
+  "name": "Bonus Feats (WAR)",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/defensive-combat-training.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level and every 3 levels thereafter, a warpriest gains a bonus feat in addition to those gained from normal advancement. These bonus feats must be selected from those listed as combat feats. The warpriest must meet the prerequisites for these feats, but he treats his warpriest level as his base attack bonus (in addition to base attack bonuses gained from other classes and Hit Dice) for the purpose of qualifying for these feats. Finally, for the purposes of these feats, the warpriest can select feats that have a minimum number of fighter levels as a prerequisite, treating his warpriest level as his fighter level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "eg2gc92z",
+        "formula": "floor(@classes.warpriest.level / 3)",
+        "operator": "add",
+        "subTarget": "bonusFeats",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_bonusFeatsWar",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Warpriest"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

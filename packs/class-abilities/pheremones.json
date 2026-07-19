@@ -1,0 +1,80 @@
+{
+  "_id": "ZFkrafAaQF4395q4",
+  "name": "Pheremones",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/potions/unique-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The alchemist exudes an imperceptible musk that grants him a permanent +3 competence bonus on Bluff, Diplomacy, and Intimidate checks.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "d06xgjr8",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "skill.int",
+        "modifier": "competence",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "7exsikbi",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "skill.dip",
+        "modifier": "competence",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "gp1x00is",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "skill.blf",
+        "modifier": "competence",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_pheremones",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Alchemist"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

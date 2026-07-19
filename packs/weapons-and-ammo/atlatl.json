@@ -1,0 +1,154 @@
+{
+  "_id": "IuMbrWJqt6pLLmbz",
+  "name": "Atlatl",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/dart-feathered.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 0</em>, <em>Ultimate Equipment pg. 19</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 2 gp <strong>Weight</strong> 2 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 50 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Martial</p><p><strong>Weapon Groups</strong> Thrown</p><h3 class=\"framing\">Description</h3><p>This Stone Age weapon is a thin piece of wood or antler used as a lever to hurl a specially fitted dart. An atlatl gives much greater range to a dart, but must be loaded like a projectile weapon. Your Strength modifier applies to damage rolls when you use an atlatl, just as it does for thrown weapons. You can fire-but not load-an atlatl with one hand. Loading an atlatl is a move action that requires two hands and provokes attacks of opportunity. The Rapid Reload feat can be taken for atlatls, allowing you to load a dart as a free action.</p>"
+    },
+    "tags": [],
+    "weight": 2,
+    "price": 2,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Atlatl",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "edq48wbctncsqv66",
+        "name": "Attack",
+        "img": "icons/weapons/thrown/dart-feathered.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "50",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "atlatl",
+    "scriptCalls": [],
+    "weaponType": "martial",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

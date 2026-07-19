@@ -1,0 +1,148 @@
+{
+  "_id": "6evY2t6MSaSxECbv",
+  "name": "Sarissa",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/bill.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Giant Hunter's Handbook pg. 24</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 12 gp <strong>Weight</strong> 12 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x3; <strong>Range</strong> -; <strong>Type</strong> P; <strong>Special</strong> brace, reach, see text</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>This spearlike weapon is about 15 feet long. Its unwieldy length is counterbalanced by a heavy brass base. A sarissa provides extended reach-tripling your reach rather than doubling it. A Medium wielder would threaten spaces 10 to 15 feet away, but not adjacent squares or squares 5 to 10 feet away (as with a typical reach weapon). Because of its great length and weight, a sarissa can be used to attack foes in only one direction each round. You must select a cone each round before you make any attacks with the sarissa. The weapon threatens only foes within this cone and within its extended reach. You can't change the area you threaten with the sarissa until your next turn. While you carry the sarissa pointed upward (typical for overland movement), you threaten only squares in the sarissa's reach in a cone pointed upward.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 12,
+    "hardness": 10,
+    "identifiedName": "Sarissa",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "62e4x552ht4pcit7",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/bill.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "sarissa",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "martial",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

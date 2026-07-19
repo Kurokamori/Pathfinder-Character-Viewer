@@ -1,0 +1,156 @@
+{
+  "_id": "CadEsVvAN7kdruSH",
+  "name": "Thark Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-topbarrel.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder: Worldscape #2 pg. 27</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 6,500 gp <strong>Weight</strong> 12 lbs.</p><p><strong>Damage</strong> 1d8 (small), 1d10 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 1 mile; <strong>Type</strong> B and P; <strong>Special</strong> see text</p><p><strong>Misfire</strong> 1-2; <strong>Capacity</strong> 1</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>Similar in construction to the standard radium rifle employed by Barsoom's red Martians, the Thark rifle (named for Barsoom's most prominent green Martian tribe) offers a staggering range and greater damage capacity fitting the brutality of its Large wielder. The Thark rifle is a Large two-handed weapon.<h2 class=\"title\">Radium Weapons</h2>Barsoomian firearms are stocked with rare local woods. Metal components consist of an alloy of aluminum and steel that exceeds the strength of Earth metals (giving Barsoomian firarms a hardness of 12). Radium weapons ?re special cartridges that must be manufactured under artificial light, as exposure to sunlight results in an explosion. When the cartridges strike their target they shatter exposing the radium powder within. The moment sunlight strikes this substance it explodes with considerable violence, making the weapons versatile for either direct fire or suppressive fire. Radium weapons follow the general rules for advanced firearms found in <em>Path?nder Roleplaying Game: Ultimate Combat</em>.</p><p></p><p> All radium weapons use radium cartridges for ammunition. As a result. in addition to targeting specific creatures or objects. the wielder may fire a radium weapon at an unoccupied square similar to throwing a splash weapon (<em>Pathfinder RFC Core Rulebook 202</em>). All creatures within 15 feet of the targeted square take 2d6 points of bludgeoning, piercing, and slashing damage (Reflex DC 15 half). Radium cartridge damage does not change based on the size of the weapon used to fire them. Radium cartridges cannot be fired effectively in this way outside the rays of the sun, such as underground or at night. Radium cartridges cost 3 gp per cartridge.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 6500,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Thark Rifle",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "67e2rnicsq77w6dl",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-topbarrel.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "5280",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 10, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "tharkRifle",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "hmysSEOYPAXWV19Z",
+  "name": "Gnarled Creature (Rebuild)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;Yes<br><br>Creatures who have been “blessed” with the demon lord Kostchtchie’s attention may acquire this template, which leaves them hunched and knotted with corded muscles and awkwardly formed limbs. Though slower and clumsier than their fellows, gnarled creatures are much stronger and hardier and have thick, horny skin. “Gnarled” is an acquired template that can be applied to any creature of the animal, dragon, fey, humanoid, magical beast, monstrous humanoid, outsider, undead, or vermin type.<br><br><strong>Quick Rules:</strong> +1 on all rolls based on Str or Con, +1 hp/HD, –1 penalty on all rolls based on Dex, –2 penalty on all rolls based on Cha, gains Diehard as a bonus feat.<br><br><strong>Rebuild Rules:</strong> AC increase natural armor by +3; Speed reduce base speed by 10 ft. (cannot be lower than 10 ft.); Defensive Abilities gains the ferocity ability; Ability Scores +2 Str, +2 Con, –2 Dex, –4 Cha.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "5pe3vvh0",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "hzye0ylq",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "gy1ccgsz",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "v5u7smw4",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "d5qlve74",
+        "formula": "-4",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

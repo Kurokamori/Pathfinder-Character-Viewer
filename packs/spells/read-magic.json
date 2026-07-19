@@ -1,0 +1,231 @@
+{
+  "_id": "j0bc0iii8zp1jiwr",
+  "name": "Read Magic",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "snzxoi6f8akk9lx0",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "10 min./level",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          0
+        ],
+        [
+          "cleric/oracle",
+          0
+        ],
+        [
+          "druid",
+          0
+        ],
+        [
+          "ranger",
+          1
+        ],
+        [
+          "bard",
+          0
+        ],
+        [
+          "paladin",
+          1
+        ],
+        [
+          "summoner",
+          0
+        ],
+        [
+          "witch",
+          0
+        ],
+        [
+          "inquisitor",
+          0
+        ],
+        [
+          "antipaladin",
+          1
+        ],
+        [
+          "magus",
+          0
+        ],
+        [
+          "adept",
+          0
+        ],
+        [
+          "shaman",
+          0
+        ],
+        [
+          "psychic",
+          0
+        ],
+        [
+          "medium",
+          0
+        ],
+        [
+          "mesmerist",
+          0
+        ],
+        [
+          "occultist",
+          0
+        ],
+        [
+          "spiritualist",
+          0
+        ],
+        [
+          "hunter",
+          0
+        ],
+        [
+          "unchained Summoner",
+          0
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 0,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a clear crystal or mineral prism"
+    },
+    "preparation": {
+      "autoDeductCharges": false
+    },
+    "sr": false,
+    "shortDescription": "<p>You can decipher magical inscriptions on objects-books, scrolls, weapons, and the like-that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed or trapped scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of <i>read magic.</i> You can read at the rate of one page (250 words) per minute. The spell allows you to identify a <i>Glyph of Warding</i> with a DC 13 Spellcraft check, a greater <i>Glyph of Warding</i> with a DC 16 Spellcraft check, or any <i>symbol</i> spell with a Spellcraft check (DC 10 + spell level).</p><p><i>Read magic</i> can be made permanent with a <i>permanency</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

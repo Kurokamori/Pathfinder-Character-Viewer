@@ -1,0 +1,168 @@
+{
+  "_id": "dw5k7pl4sz07pxke",
+  "name": "Ward of the Season",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "deukylvq7knls7st",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one creature"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "druid",
+          3
+        ],
+        [
+          "ranger",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "shaman",
+          3
+        ],
+        [
+          "hunter",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell harnesses the power of the seasons to protect the target and grant a number of bonuses. This spell has one of four different effects. The caster of the spell can select any one of the following four effects, but can change the effect as a standard action that reduces the total remaining duration by 1 hour.  <i>Spring</i>: The target is wrapped in light vines, culminating in a crown of bright, beautiful flowers. While the spell remains in effect, the target is immune to bleed effects and regains 1 hit point per round whenever below 0 hit points, as long as the target is still alive. This stabilizes the target. For each hit point restored in this way, the spell's total remaining duration is reduced by 1 hour.  <i>Summer</i>: The target is surrounded by tiny motes of light. While the spell remains in effect, the target's base speed increases 10 feet. The target may instead increase its base speed by 30 feet for 1 round by reducing the spell's total remaining duration by 1 hour.  <i>Fall</i>: A cloak of autumn leaves appears on the target. While the spell remains in effect, the target gains a +2 morale bonus on Fortitude saves. The target can decide to roll twice on any saving throw against disease or poison and take the higher result by reducing the spell's total remaining duration by 1 hour.  <i>Winter</i>: A flutter of snow and crisp air surrounds the target. While this spell remains in effect, the target automatically succeeds at Acrobatics skill checks made to avoid falling while moving across slick or narrow surfaces. The target can move freely through difficult terrain for 1 round by reducing the spell's remaining duration by 1 hour. Difficult terrain created by magic affects the target normally.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

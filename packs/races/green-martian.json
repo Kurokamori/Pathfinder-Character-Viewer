@@ -1,0 +1,83 @@
+{
+  "_id": "YxeSVRbG7lfQybfr",
+  "name": "Green Martian",
+  "type": "race",
+  "img": "systems/pf1/icons/races/lizardfolk.png",
+  "data": {
+    "description": {
+      "value": "<h2><span style=\"margin-top: 0px;\">Standard Racial Traits</span></h2>\n<p><span id=\"ctl00_MainContent_DataListTypes_ctl00_LabelName\" style=\"margin-top: 0px;\"><strong>+2 Strength, +2 Wisdom, -2 Charisma</strong>: Green Martians are keen-sighted and agile, but they understand little of social graces and are prone to brutishness.<br /><strong>Large</strong>: Green Martians are Large creatures and take a -1 size penalty to their AC, a -1 size penalty on attack rolls, a +1 bonus on combat maneuver checks and to their CMD, and a -4 size penalty on Stealth checks. A Green Martian takes up a space that is 10 Feet by 10 feet, and has a reach of 5 feet.<br /><strong>Normal Speed</strong>: Green Martians have a base speed at 30 feet.<br /><strong>Detect Thoughts</strong>: Green Martians possess limited telepathy. allowing them to read the surface thoughts at those around them. they can use&nbsp;<em>detect thoughts</em>&nbsp;as a constant spell-like ability. The caster level of the spell-like ability is equal to the user's character level.<br /><strong>Fearless</strong>: Green Martians gain a +2 racial bonus on all saving throws against fear eltects.<br /><strong>Ferocity</strong>: If the hit points of a green Martian fall below 0 but it is not yet dead, it can continue to fight. It it does, it is staggered, and loses 1 hit point each round. It still dies when its hit points reach a negative amount equal to its Constitution score.<br /><strong>Multi-Armed</strong>: A green Martian has four arms. One hand is considered its primary hand; all others are considered off hands. It can use any of its hands for other purposes that require free hands.<br /><strong>Weapon Familiarity</strong>: Green Martians are proficient with longswords and spears.<br /><strong>Skill Training</strong>: Ride and Survival are always considered class skills for green Martians.<br /><strong>Languages</strong>: Green Martians begin play speaking Common. Green Martians with high Intelligence scores can choose any languages they want (except secret languages, such as Druidic).</span></p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "0osulph1",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "wts6q3pk",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "rsw1263k",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "subTarget": "allSavingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] Racial vs Fear Effects"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "subTypes": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

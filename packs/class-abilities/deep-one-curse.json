@@ -1,0 +1,59 @@
+{
+  "_id": "GiP6E1ohZlWq8xUY",
+  "name": "Deep One Curse",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/horror-eerie-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The lure of the ocean tugs at your soul. You reduce your base land speed by 5 feet. You gain a swim speed equal to your land speed, and if you already have a swim speed, you increase it by 10 feet.</p>\n<p>At 5th level, your natural armor bonus increases by 1 as your skin thickens.</p>\n<p>At 10th level, you gain a +1 bonus to your caster level when casting spells underwater and when casting spells with the water descriptor.</p>\n<p>At 15th level, you gain the benefits of&nbsp;freedom of movement&nbsp;while underwater.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "a123bebl",
+        "formula": "@classes.oracle.level >= 5 ? 1 : 0",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_deepOneCurse",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

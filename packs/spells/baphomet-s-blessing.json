@@ -1,0 +1,176 @@
+{
+  "_id": "nmoqqlcl46w56o88",
+  "name": "Baphomet's Blessing",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "qrd8l2tiqxkds1iv",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one living creature"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "hunter",
+          4
+        ],
+        [
+          "unchained Summoner",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "trs",
+    "subschool": "polymorph",
+    "components": {
+      "verbal": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "powdered bull's horn"
+    },
+    "shortDescription": "<p>You change the target's head into that of a bull. The creature's Intelligence becomes 2, and it gains a gore melee attack that it can use as a primary or secondary attack. The gore attack uses the creature's base attack bonus, and the creature gains a +2 bonus on attack and damage rolls with the gore attack.</p><p>The gore attack deals a number of points of damage equal to 1d6 + Strength modifier if the target is Small, 1d8 + Strength modifier if the target is Medium, and 2d6 + Strength modifier if the target is Large or larger.</p><p>The affected creature still retains its type, class, levels, and Hit Dice. The creature's base attack bonus, base save bonuses, and hit points remain unmodified. It retains all of its class features and may still cast spells, though it must do so using its newly modified Intelligence score. Any items equipped in the creature's head slot meld into its body. Affected items that grant passive bonuses continue to do so, though items that require activation become nonfunctional for the duration of the spell.</p><p>If the target fails to resist Baphomet's blessing, it also becomes immune to polymorph spells (except for this one) for the duration of the spell's effect. Undead, incorporeal, or gaseous creatures are immune to Baphomet's blessing.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

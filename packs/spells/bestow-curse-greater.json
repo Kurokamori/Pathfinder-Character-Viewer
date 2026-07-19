@@ -1,0 +1,161 @@
+{
+  "_id": "p613n5sqbfpq22un",
+  "name": "Bestow Curse, Greater",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "f5x2hyg1mt5bziyo",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "permanent",
+          "units": ""
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "cleric/oracle",
+          7
+        ],
+        [
+          "witch",
+          7
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Corruption",
+          6
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 8,
+    "school": "nec",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "spellbook": "",
+    "shortDescription": "<p>You place a curse on the subject. Choose one of the following.</p>\n<ul>\n<li>-12 penalty to an ability score, or -6 penalty to two ability scores (to a minimum ability score of 1).</li>\n<li>-8 penalty on attack rolls, saves, ability checks, and skill checks.</li>\n<li>Each turn, the target has a 25% chance to act normally; otherwise, it takes no actions.</li>\n<li>Bestow one of the curses or variants in this article.</li>\n<li>Bestow curse of the ages or unluck (<em>Core Rulebook</em> 557). If a specific affliction is bestowed, the save DC of the spell replaces the usual save DC of the affliction. You can also invent your own curse, but it should be no more powerful than those described above. The curse bestowed by this spell cannot be dispelled, but it can be removed with a @Compendium[pf1.spells.myg2b9ww43nnlbr2]{break enchantment}, @Compendium[pf1.spells.s2p7a4biy7bl4ks2]{limited wish}, @Compendium[pf1.spells.suel7sgnztenv551]{miracle}, or @Compendium[pf1.spells.nnj51dwfkwd15ngj]{wish} spell. It cannot be removed with @Compendium[pf1.spells.o87h8gjxevcbztgd]{remove curse} or suppressed with @Compendium[pf1.spells.iwkrfp38hdgovoj7]{abeyance}. The DC to remove the curse with <em>break enchantment</em> increases by 5.</li>\n</ul>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

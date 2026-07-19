@@ -1,0 +1,108 @@
+{
+  "_id": "aCyDEyMB5PKJAuTi",
+  "name": "Monkey Goblin",
+  "type": "race",
+  "img": "systems/pf1/icons/skills/affliction_24.jpg",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers:</strong> Monkey goblins are fast, but foolishly impulsive and disagreeable. As a result monkey goblins gain a +4 bonus to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>, but suffer a –2 penalty to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>.</li>\n<li><strong>Size: </strong>Monkey goblins are Small creatures and thus gain a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Size-Bonus\">size bonus</a>&nbsp;to their AC and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>, but suffer a –1 penalty to their&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Defense\">CMD</a>&nbsp;and on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers\">combat maneuver</a>&nbsp;checks, and a +4&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Size-Bonus\">size bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;checks.</li>\n<li><strong>Speed (Slow Speed):</strong> Monkey goblins have a base speed of 20 feet.</li>\n<li><strong>Natural Climber:</strong> Monkey goblins have a climb speed of 30 feet.</li>\n<li><strong>Languages: </strong>Monkey goblins begin play speaking Goblin. Monkey goblins with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose from the following: Common, Draconic, Dwarven, Gnoll, Gnome, Halfling, Orc. See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n<li><strong>Prehensile Tail:</strong> Monkey goblins have long, flexible tails that they can use to carry objects. They cannot wield weapons with their tails, but the tails do allow them to retrieve small objects stowed on their persons as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions\">swift action</a>.</li>\n</ul>\n<h3>Defensive Racial Traits</h3>\n<ul>\n<li><strong>Fearless:</strong> Monkey goblins gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on all saving throws against fear.</li>\n</ul>\n<h3>Skill Racial Traits</h3>\n<ul>\n<li><strong>Acrobatic:</strong> Monkey goblins gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/acrobatics\">Acrobatics</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;checks.</li>\n</ul>\n<h3>Senses Racial Traits</h3>\n<ul>\n<li><strong>Low-Light Vision:</strong> Monkey goblins can see twice as far as humans in conditions of dim light.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "030rnu3x",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "fazi52ji",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "6dfeetxp",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "82s9ccrc",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "skill.acr",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "ib43m387",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "skill.ste",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "subTarget": "allSavingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] Racial vs. Fear Effects"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "goblin"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "size": "sm",
+    "subTypes": [
+      [
+        "Goblin"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

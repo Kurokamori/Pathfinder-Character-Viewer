@@ -1,0 +1,171 @@
+{
+  "_id": "pr7mgfj4oylrd26u",
+  "name": "Sentry Skull",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "9ewp527e20e6skxx",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "hour"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "hour"
+          }
+        },
+        "duration": {
+          "value": "permanent (D); see text",
+          "units": ""
+        },
+        "target": {
+          "value": "severed head touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "cleric/oracle",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "antipaladin",
+          1
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "nec",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "an onyx gem worth at least 10 gp",
+      "gpValue": 10
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "sr": false,
+    "shortDescription": "<p>You restore the senses to the severed head of a humanoid or monstrous humanoid killed within the past 24 hours, creating a grisly sentinel. The head must be affixed to a pole, spear, tree branch, or other stable object, and the spell ends if the head or its object is moved. The head has darkvision 60 feet and low-light vision, can swivel in place to look in any direction, and has a +5 bonus on Perception checks.  If you are within 30 feet of the head, as a standard action you can shift your senses to it, seeing and hearing from its location and gaining the benefit of its darkvision and low-light vision, and you may use its Perception skill instead of your own. While your senses are in the severed head, your body is blind and deaf until you spend a free action to shift your senses back to your own body.  When you create the head, you can imprint it with a single triggering condition, similar to <i>magic mouth</i>. Once this triggering condition is set, it can never be changed. If you are within 30 feet of the head, you immediately know if it is triggered (if you have multiple active <i><i>sentry skull</i>s</i>, you also know which one was triggered). This wakens you from normal sleep but does not otherwise disturb your concentration. For example, you could have a <i>sentry skull</i> alert you if any humanoid comes into view, if a particular rival approaches, if your guard animal is killed, and so on, as long as it occurs where the severed head can see it.  This spell does not give the head any ability to speak, think, or take any kind of action other than to turn itself, though it is a suitable target for other spells such as <i>magic mouth</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

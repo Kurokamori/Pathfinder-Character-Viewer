@@ -1,0 +1,154 @@
+{
+  "_id": "bnM8psLOFegcdWg1",
+  "name": "Light Repeating Crossbow",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/crossbow-repeating.PNG",
+  "data": {
+    "description": {
+      "value": "<p>This weapon functions identically to a&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/crossbow-repeating-heavy/\">repeating heavy crossbow</a>, except that its damage, critical, and range values are equivalent to those of a light crossbow instead of a heavy crossbow. Its significantly lighter construction and pull make it both more portable and more useful to those who rely on stealth or speed.</p>"
+    },
+    "tags": [],
+    "weight": 6,
+    "price": 250,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Light Repeating Crossbow",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "8t1wirl3p7ut22tg",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/crossbow-repeating.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "80",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged",
+    "ammoType": "repeatingBolt"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

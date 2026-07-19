@@ -1,0 +1,53 @@
+{
+  "_id": "NUsLshXpE3d8W3AI",
+  "name": "Phantom Recall",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/affliction_03.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 6th level, as either a swift or an immediate action, a spiritualist can call her manifested phantom to her side or back into her consciousness. This ability functions as&nbsp;dimension door, using the spiritualist’s class level as the caster level. When the spiritualist calls the phantom in this way, the phantom appears adjacent to the spiritualist (or as close as possible, if all adjacent spaces are occupied).<br><br>When the spiritualist uses this ability to call the phantom back to her consciousness, she can activate bonded manifestation as part of that action, but doing so costs 1 extra round of bonded manifestation.<br><br>The spiritualist can use this ability once per day at 6th level, plus one additional time per day for every 4 spiritualist levels she possesses beyond 6th.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.spiritualist.level - 2) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_phantomRecall",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Spiritualist"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

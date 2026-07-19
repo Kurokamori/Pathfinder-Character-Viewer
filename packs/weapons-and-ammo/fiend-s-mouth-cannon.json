@@ -1,0 +1,147 @@
+{
+  "_id": "jz9pCuu5ubrF4wQa",
+  "name": "Fiend's Mouth Cannon",
+  "type": "weapon",
+  "img": "icons/weapons/artillery/cannon-simple.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 163</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 9,000 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> 8d6; <strong>Critical</strong> x4; <strong>Range</strong> 150 ft.; <strong>Type</strong> B and P</p><p><strong>Crew</strong> 3; <strong>Aim</strong> 1; <strong>Load</strong> 3; <strong>Speed</strong> 0 ft.</p><p><strong>Category</strong> Direct-Fire (Huge); <strong>Proficiency</strong> Siege Engine</p><h3 class=\"framing\">Description</h3><p>These massive cannons are usually crafted in multiple pieces, and sometimes feature the heads of demons, devils, or other fiends at their mouths. Like normal canons, they propel their projectiles with great force. A fiend's mouth cannon has a misfire range of 1 (30 ft.). Fiend's mouth canons have a hardness of 10 and 140 hit points. Fiend's mouth cannon balls cost 45 gp and weigh 30 pounds each.</p>"
+    },
+    "tags": [],
+    "price": 9000,
+    "hardness": 10,
+    "identifiedName": "Fiend's Mouth Cannon",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "kwkyhdyrtyfz1tvk",
+        "name": "Attack",
+        "img": "icons/weapons/artillery/cannon-simple.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 150,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(8, 6, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "",
+          "critMult": "4"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "fiendsMouthCannon",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

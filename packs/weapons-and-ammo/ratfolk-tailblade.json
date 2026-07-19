@@ -1,0 +1,150 @@
+{
+  "_id": "yCdJdLHsqUb7yLs1",
+  "name": "Ratfolk Tailblade",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/kobold-tail-attachment.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Advanced Race Guide pg. 154</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 11 gp <strong>Weight</strong> 1/2 lb.</p><p><strong>Damage</strong> 1d2 (small), 1d3 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>A tailblade is a small, sharp knife designed to be strapped to the tip of a wielder's tail. It takes a full-round action to strap on or remove a tailblade. The wearer can loosely attach the tailblade (without strapping it securely in place) as a move action, but using a loosely attached tailblade gives the wielder a -4 penalty on all attack rolls made with the weapon, and other creatures get a +4 bonus on disarm combat maneuver checks to disarm the tailblade. A ratfolk wielding a tailblade can make a tail attack, adding its Strength modifier to the tailblade's damage. Ratfolk are considered proficient with such attacks and can apply feats or effects appropriate to natural attacks to tail attacks made with a tailblade. If used as part of a full attack action, attacks with a tailblade are considered secondary attacks.</p>"
+    },
+    "tags": [],
+    "weight": 0.5,
+    "price": 11,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Ratfolk Tailblade",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "cdw1qa9cgbjosasg",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/kobold-tail-attachment.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 3, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "ratfolkTailblade",
+    "scriptCalls": [],
+    "weaponType": "martial"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

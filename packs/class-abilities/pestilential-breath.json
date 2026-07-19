@@ -1,0 +1,53 @@
+{
+  "_id": "IhSn8BMyjnIzLxiH",
+  "name": "Pestilential Breath",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/green_21.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 15th level, the sickness within your body finally becomes so potent that your very breath is deadly. Once per day as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>, you can exhale a cloud of pestilence in a 30-foot cone. Those caught in the area of this miasmic cloud receive a single&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Fortitude\">Fortitude</a>&nbsp;save to avoid suffering the effects of two different diseases. The DC of this save is equal to 10 + 1/2 your&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;level + your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier. You can choose what two diseases you inflict on each target that succumbs to your plague breath, but they must be two different diseases chosen from the following list: blinding sickness, bubonic plague, cackle fever, filth fever, leprosy, mindfire, red ache, shakes, or slimy&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/d/doom\">doom</a>. The victim suffers the initial effects of these two diseases immediately — use the diseases’ frequency and save DC normally to determine further effects as detailed on page 557 of the Pathfinder RPG Core Rulebook. At 17th level, you can use this ability twice per day. At 20th level you can use this ability three times per day.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "@classes.sorcerer.level >= 20 ? 3 : ((@classes.sorcerer.level > 16 && @classes.sorcerer.level < 20) ? 2 : 1)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_pestilentialBreath",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

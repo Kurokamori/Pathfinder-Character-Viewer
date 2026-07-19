@@ -1,0 +1,174 @@
+{
+  "_id": "fkdhZBKmlJcLH3dU",
+  "name": "Hive Creature (Quick)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>While a creature infested by a hive corruption usually becomes a warrior, mutations can create hive creatures that retain the capabilities of the original creatures.<br><br><strong>Quick Rules:</strong> +3 to AC; +1 on rolls based on Str, Dex, and Con; –3 on rolls based on Cha; +1 hp/ HD; two claw attacks that each deal 1d4 points of damage (for Medium creatures) and one bite attack that deals 1d6 points of damage (for Medium creatures); immunity to acid; blind; blindsense 60 ft.; blindsight 10 ft.; corrosive blood*; hive mind*.<br><br><strong>Rebuild Rules:</strong>&nbsp;Type&nbsp;gain the hive subtype and all the corresponding abilities;&nbsp;AC&nbsp;natural armor bonus increases by 2;&nbsp;Melee&nbsp;two claw attacks that each deal 1d4 points of damage (for Medium creatures) and one bite attack that deals 1d6 points of damage (for Medium creatures);&nbsp;Ability Scores&nbsp;+2 Str, +2 Dex, +2 Con, –6 Cha.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "einc517k",
+        "formula": "3",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "8jc5ne3b",
+        "formula": "@attributes.hd.total",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      },
+      {
+        "_id": "vpsy5i2w",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "mattack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "bi77yiom",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "wdamage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      },
+      {
+        "_id": "wg7s2yop",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "strSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "yybgs5l3",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "strChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "m7lwww61",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "ref",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "1g1jcxjj",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "dexSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "a2k0x65h",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "dexChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "p9cu147z",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "conSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "0suhcrta",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "conChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "a3w6pbhg",
+        "formula": "-3",
+        "operator": "+",
+        "subTarget": "chaSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "r0qmkzok",
+        "formula": "-3",
+        "operator": "+",
+        "subTarget": "chaChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

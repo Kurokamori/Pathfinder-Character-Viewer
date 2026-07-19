@@ -1,0 +1,164 @@
+{
+  "_id": "vphjuk9z5iofueuu",
+  "name": "Anywhere but Here",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "0ltliyt2byi8ju8h",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "you and up to four willing creatures, none of whom can be on their home plane"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "magus",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "con",
+    "subschool": "teleportation",
+    "components": {
+      "verbal": true
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions similarly to <i>plane shift</i>, but instead of transporting the targets to a destination near an intended location on a specific plane, <i>Anywhere but Here</i> transports affected creatures to a random plane. A creature can be affected by <i>Anywhere but Here</i> only if it is currently not on its home plane (although targets can, by chance, end up traveling to their home plane as a result of this spell). Subjects always appear in a location that is not inherently harmful, but the exact destination is otherwise random. The specific plane is determined by the table below; the location on the destination plane where the transported creatures arrive is completely subject to the GM's whim.     <table border ='1'><tr><th>d%</th><th>Planar Destination</th></tr><tr><td>1-7</td><td>Abyss</td></tr><tr><td>8-14</td><td>Abaddon</td></tr><tr><td>15-20</td><td>Hell</td></tr><tr><td>21-24</td><td>Shadow Plane</td></tr><tr><td>25-28</td><td>First World</td></tr><tr><td>29-35</td><td>Maelstrom</td></tr><tr><td>36-42</td><td>Boneyard</td></tr><tr><td>43-49</td><td>Axis</td></tr><tr><td>50-56</td><td>Ethereal Plane</td></tr><tr><td>57-63</td><td>Elysium</td></tr><tr><td>64-70</td><td>Nirvana</td></tr><tr><td>71-77</td><td>Heaven</td></tr><tr><td>78-84</td><td>Astral Plane</td></tr><tr><td>85-90</td><td>Random demiplane</td></tr><tr><td>91-95</td><td>Material Plane (random world)</td></tr><tr><td>96-100</td><td>GM's choice</td></tr></table>   A creature that is transported by <i>Anywhere but Here</i> cannot be affected by a subsequent casting of <i>Anywhere but Here</i> for 24 hours afterward (but can be affected normally by other forms of planar travel).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

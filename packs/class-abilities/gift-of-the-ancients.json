@@ -1,0 +1,60 @@
+{
+  "_id": "3neTSVdhL7jOzaZ9",
+  "name": "Gift of the Ancients",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, you gain a +2 resistance bonus on saving throws against gaze attacks and to resist poison. You also gain a +2 competence bonus on Perception checks.</p>\n<p>At 8th level, these bonuses increase by 2.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "8uflro54",
+        "formula": "@classes.bloodrager.level >= 8 ? 4 : 2",
+        "operator": "+",
+        "subTarget": "skill.per",
+        "modifier": "competence",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_giftOfTheAncients",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

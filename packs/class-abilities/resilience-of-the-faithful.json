@@ -1,0 +1,63 @@
+{
+  "_id": "pVJhodGnj550G0Hq",
+  "name": "Resilience of the Faithful",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/slice-spirit-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 5th level, you gain a +2 resistance bonus on all saving throws. This bonus increases by 1 for every 5 levels you possess beyond 5th.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "150bn2je",
+        "formula": "1 + floor(@classes.psychic.level / 5)",
+        "operator": "+",
+        "subTarget": "allSavingThrows",
+        "modifier": "resist",
+        "priority": "0",
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_resilienceOfTheFaithful",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Psychic"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

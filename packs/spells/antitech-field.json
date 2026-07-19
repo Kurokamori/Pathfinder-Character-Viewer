@@ -1,0 +1,160 @@
+{
+  "_id": "zf433hcywcvrhf0l",
+  "name": "Antitech Field",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "4jbjtu0xygzsjc41",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "10-ft.-radius emanation centered on you"
+        },
+        "range": {
+          "value": 10,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude partial (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "druid",
+          6
+        ],
+        [
+          "hunter",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "pinch of rust"
+    },
+    "shortDescription": "<p>You bring into being a mobile, hemispherical energy field that prevents technological objects, signals, and creatures from entering.</p><p>An <i>antitech field</i> suppresses any technological effect used within, brought into, or deployed into the area, but does not negate it. Time spent within an <i>antitech field</i> counts against the suppressed effect's duration.</p><p>Robots and other technological constructs that come in contact with an <i>antitech field</i> must attempt a Fortitude saving throw each round they remain in the field. Failure indicates a creature can take no actions that round and is considered to be helpless. Success indicates a creature can take either one move action or one standard action that round. Partially technological creatures like androids or cyborgs are merely staggered if they fail this saving throw. Note that cybernetic equipment does not function in an <i>antitech field</i>, and all benefits granted by such gear are suppressed.</p><p>Non-technological creatures can enter the area, as can low-tech missiles like sling stones and arrows. High-tech missiles such as bullets and missiles immediately halt upon contacting the field, and either drop to the ground harmlessly or detonate. An <i>antitech field</i> doesn't stop rays created by magical sources, but does stop rays fired from beam weapons such as lasers. The <i>antitech field</i> does not offer any protection against explosions caused by technological explosives detonating against it-thus, creatures within the field could still take damage from a rocket that explodes against it.</p><p>If a creature is larger than the area enclosed by the barrier, any part of the creature that lies outside the barrier is unaffected by the field.</p><p>This spell can be used only defensively, not aggressively.</p><p>Forcing an abjuration barrier against creatures that the spell keeps at bay collapses the barrier.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

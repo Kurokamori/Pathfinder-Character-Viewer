@@ -1,0 +1,73 @@
+{
+  "_id": "l52geoeGQcQz84AE",
+  "name": "Defensive Instinct",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/weapon_13.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 2nd level, when unarmored, not using a shield, unencumbered, and conscious, the shifter adds her Wisdom bonus (if any) to her AC and CMD. If she is wearing nonmetal armor or using a nonmetal shield, she instead adds half her Wisdom bonus to her AC (minimum 0). In addition, the shifter gains a +1 bonus to her AC and CMD at 4th level. This bonus increases by 1 for every 4 shifter levels thereafter (up to a maximum of +5 at 20th level).<br><br>These bonuses to AC apply even against touch attacks and when the shifter is flatfooted. She loses these bonuses when she is immobilized or helpless. These bonuses do not stack with the monk AC bonus class feature.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "98mux6b3",
+        "formula": "@abilities.wis.mod",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "gt7tjv6l",
+        "formula": "@abilities.wis.mod",
+        "operator": "add",
+        "subTarget": "cmd",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_defensiveInstinct",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Shifter"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

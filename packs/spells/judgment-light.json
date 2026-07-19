@@ -1,0 +1,148 @@
+{
+  "_id": "kp5zx6jqqsikq6ey",
+  "name": "Judgment Light",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "kpc2a1zigyf2396l",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous, see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": "see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "30-ft.-radius burst",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "inquisitor",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "evo",
+    "types": "light",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>An inquisitor may only cast this spell while she has a judgment active. When she does cast this spell, it causes one or more of the following effects based on the inquisitor's active judgments.  <i>Destruction</i>: Red light erupts from the caster. Enemies in the area take 4d8 points of damage and become shaken for 1d4 rounds. A successful Will saving throw halves the damage and negates the shaken effect.  <i>Healing</i>: Green light erupts from the caster. Allies in the area regain a number of hit points equal to 1d8 + the caster's Wisdom modifier.  <i>Justice</i>: Blue light erupts from the caster, revealing hidden and invisible creatures to all. The light outlines such creatures for 1 round per caster level, imposing a -20 penalty on Stealth checks on those creatures.  <i>Piercing</i>: Violet light erupts from the caster, reducing the spell resistance of enemies within the burst by 5 for 1 round per caster level.  <i>Protection</i>: Amber light erupts from the caster, granting allies in the burst a +2 sacred bonus to AC and CMD, and a +4 bonus to AC against critical confirmation attack rolls for 1 round per caster level.  <i>Purity</i>: White light erupts from the caster, allowing each ally within the burst to attempt a saving throw against a single effect that allows a saving throw with a +2 sacred bonus on the roll.  <i>Resiliency</i>: Golden light erupts from the caster, granting allies within the burst DR 3/magic or the alignment your judgment allows for 1 round per caster level.  <i>Resistance</i>: Copper light erupts from the caster, granting allies within the burst resistance 5 against the energy the judgment protects the inquisitor against when she casts this spell for 1 round per caster level.  <i>Smiting</i>: Silver light erupts from the caster, making allies' weapons within the burst count as magic, the alignment her weapon is, and adamantine for purposes of overcoming damage reduction for 1 round per caster level.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

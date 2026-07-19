@@ -1,0 +1,169 @@
+{
+  "_id": "qvcbd606owi2zeix",
+  "name": "Dahak's Release",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "6377uki5xm8y2hjn",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": "creature touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "mesmerist",
+          5
+        ],
+        [
+          "occultist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "draconic, evil, mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a dried drop of blood"
+    },
+    "shortDescription": "<p>You unleash all the target's anger and destructive urges, causing it to fly into a violent bloodlust. The target attacks creatures as determined by the following table. If a creature is killed or the target is for some reason unable to effectively attack it, roll on the table again to select a new action for the target.     <table border ='1'><tr><th>d%</th><th>Behavior</th></tr><tr><td>1-25</td><td>Target attacks the creature nearest to it.</td></tr><tr><td>26-75</td><td>Target attacks its nearest ally.</td></tr><tr><td>76-100</td><td>Target always attacks the last creature to attack it.</td></tr></table>     Beginning on its next turn, the target attacks the subject determined by the chart with a melee weapon, natural weapon, or supernatural ability that deals damage. If necessary, it moves to or charges to the subject in order to make this attack. If it is unable to reach its subject on its next turn, the target uses its turn to get as close as possible to the subject of its bloodlust. The target gains a +2 morale bonus on attack and damage rolls, and cannot use any Charisma-, Dexterity-, or Intelligence-based skills (except Acrobatics, Fly, Intimidate, and Ride) or any abilities that require patience or concentration. This spell is otherwise treated as <i>confusion</i> and <i>rage</i>-any creature immune to <i>confusion</i> or <i>rage</i> is immune to this spell, and any ability or effect that ends <i>confusion</i> or <i>rage</i> (such as <i>calm</i> emotions) can end this spell.  Antipaladins, blood<i>rage</i>rs, clerics, and inquisitors who worship Dahak add Dahak's release to their spell lists as a 4th-level spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

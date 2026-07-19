@@ -1,0 +1,59 @@
+{
+  "_id": "56xPhAHkjpDk4gGj",
+  "name": "Heavens Spirit Manifestation",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_20.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Upon reaching 20th level, the shaman becomes the spirit of heaven. She receives a bonus on all saving throws equal to her Wisdom modifier. She automatically stabilizes if she is reduced to below 0 hit points. She’s immune to fear effects, and she automatically confirms all critical hits she threatens. If she dies, she’s reborn 3 days later in the form of a star child, maturing over the course of 7 days (as reincarnate).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "0bwhkb2c",
+        "formula": "@abilities.wis.mod",
+        "operator": "+",
+        "subTarget": "allSavingThrows",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_heavensSpiritManifestation",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Shaman"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

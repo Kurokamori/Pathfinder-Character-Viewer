@@ -1,0 +1,155 @@
+{
+  "_id": "t5h6nBc1BuN8Eh5d",
+  "name": "Gastraphetes",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/crossbow-double.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Distant Shores pg. 12</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 65 gp <strong>Weight</strong> 12 lbs.</p><p><strong>Damage</strong> 1d10 (small), 1d12 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> 120 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>The gastraphetes, sometimes called a \"belly bow,\" is an oversized crossbow reloaded by pressing one end against the ground, the other against one's abdomen, and locking the string in place through ratchet action. Reloading takes a full-round action, uses two hands, and requires that the wielder be standing. Wielding a gastraphetes requires two hands, and due to the weapon's bulk, firing it while standing without support (such as a wall, a window, or a stand) imposes a -4 penalty on attack rolls; you take no penalty for firing a gastraphetes while prone. A Large or larger creature can use a gastraphetes one size smaller than itself without any support, but takes the normal penalty for firing an inappropriately sized weapon.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 65,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Gastraphetes",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "mvh4ava0gf8sfu42",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/crossbow-double.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 12, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "gastraphetes",
+    "scriptCalls": [],
+    "weaponType": "martial",
+    "weaponSubtype": "ranged",
+    "ammoType": "bolt"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

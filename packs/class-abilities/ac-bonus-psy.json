@@ -1,0 +1,70 @@
+{
+  "_id": "vXa1y1ZH170iWgNh",
+  "name": "AC Bonus (PSY)",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/slice-spirit-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>When unarmored and unencumbered, you add your Wisdom bonus (if any) to your AC and CMD. The bonus to AC applies even against touch attacks or when you’re flat-footed. You lose these bonuses when you’re immobilized or helpless, when you wear any armor, when you carry a shield, or when you carry a medium or heavy load.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "xjtaratc",
+        "formula": "if (d.shield.type < 1 && d.armor.type < 1 && d.attributes.encumbrance.level < 1) {\n    result.value = d.abilities.wis.mod;\n}",
+        "operator": "script",
+        "subTarget": "ac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "18jtneni",
+        "formula": "if (d.shield.type < 1 && d.armor.type < 1 && d.attributes.encumbrance.level < 1) {\n    result.value = d.abilities.wis.mod;\n}",
+        "operator": "script",
+        "subTarget": "cmd",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_acBonusPsy",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Psychic"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

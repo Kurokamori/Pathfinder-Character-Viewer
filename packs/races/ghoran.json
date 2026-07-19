@@ -1,0 +1,94 @@
+{
+  "_id": "2mWMyKiPWk6Y8cNx",
+  "name": "Ghoran",
+  "type": "race",
+  "img": "systems/pf1/icons/races/creature-types/plant.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers</strong>: +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>, +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>, –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>: Ghorans are hardy, guileful, and eager to explore their emotions, but they process complex thoughts slowly.</li>\n<li><strong>Size</strong>: Ghorans are Medium creatures and receive no bonuses or penalties due to their size.</li>\n<li><strong>Type</strong>: Ghorans have the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Plant\">plant</a>&nbsp;type but lack the immunities to&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Magic-Descriptor-Mind-Affecting\">mind-affecting</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Paralysis\">paralysis</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/afflictions/poison\">poison</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/p/polymorph\">polymorph</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/sleep\">sleep</a>, and stunning effects that type usually has. The&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Plant\">plant</a>&nbsp;type features immunities that, when granted to a player character race, can be disruptive and overpowered.</li>\n<li><strong>Languages</strong>: Ghorans begin play speaking Common and Sylvan. Ghorans with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose any languages they want (except secret languages such as Druidic).</li>\n<li><strong>Defensive Traits</strong>: Ghorans have tough, rugged skin and so gain a +2 Natural Armor bonus to AC.</li>\n</ul>\n<h3>Special Traits</h3>\n<ul>\n<li><strong>Natural Magic (Sp)</strong>: Ghorans with a&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;score of 11 or higher gain the following&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Spell-Like-Abilities-Sp-\">spell-like abilities</a>: 1/day—<a href=\"https://www.d20pfsrd.com/magic/all-spells/d/detect-poison\">detect poison</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/g/goodberry\">goodberry</a>&nbsp;(created berries bud from the ghoran’s own body), and&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/p/purify-food-and-drink\">purify food and drink</a>. The&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Caster-Level\">caster level</a>&nbsp;is equal to the ghoran’s level. The DC for these spells is equal to 10 + the spell’s level + the ghoran’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;bonus.</li>\n<li><strong>Seed (Ex)</strong>: As a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Full-Round-Actions\">full-round action</a>, a ghoran can expel the seed from an orifice in its abdomen. If planted in fertile ground and left undisturbed for 2d6 days, the seed grows into a healthy duplicate of the original ghoran, save that the duplicate can reallocate all skill ranks upon sprouting. Once a ghoran expels this seed, it gains 1&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Drain-and-Negative-Levels\">negative level</a>, and it dies as soon as the duplicate sprouts. This duplicate replaces the previous ghoran character.</li>\n<li><strong>Past-Life Knowledge(Ex)</strong>: Ghorans have memories encoded in their seeds. They treat all&nbsp;<a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>&nbsp;skills as class skills.</li>\n</ul>\n<h3>Weaknesses</h3>\n<ul>\n<li><strong>Light Dependent</strong>: Ghorans are heavily light dependent and so take 1d4 points of&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage\">Constitution damage</a>&nbsp;each day they go without exposure to sunlight.</li>\n<li><strong>Delicious (Ex)</strong>: Ghorans take a –2 penalty on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/escape-artist\">Escape Artist</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers\">combat maneuver</a>&nbsp;checks to escape a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Grapple\">grapple</a>&nbsp;against a creature that has a bite attack with the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Grab-Ex-\">grab</a>&nbsp;ability.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "v52ws00y",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "sm0jeyh8",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "pl925bl1",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "d5tu1b2h",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "ltl3eis4",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "skill.esc",
+        "modifier": "penalty",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common",
+        "sylvan"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "creatureType": "plant",
+    "subTypes": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

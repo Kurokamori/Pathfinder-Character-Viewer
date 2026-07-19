@@ -1,0 +1,169 @@
+{
+  "_id": "aq152bwi65cfz8fo",
+  "name": "Phobia",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "803edxpaj08vi5we",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "one intelligent creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "bard",
+          5
+        ],
+        [
+          "witch",
+          6
+        ],
+        [
+          "psychic",
+          6
+        ],
+        [
+          "mesmerist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "emotion, fear, mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a single white hair"
+    },
+    "shortDescription": "<p>You instill the target with an intense, instinctual fear of a condition or circumstance, more powerful than the <i>phobia</i> lesser madness (see page 182). You can name an energy type (acid, cold, electricity, fire, or sonic), a hazard (such as an avalanche or earthquake), or a single creature of the animal type or all vermin (applying when the target sees a swarm or a single Small or larger creature). Alternatively, you can name the following specific environments: darkness (darker than dim light, and you can't apply this <i>phobia</i> to a creature with natural racial darkvision, see in darkness, blindsight, or similar senses), enclosed spaces (places that require the creature to squeeze),heights (10 times the  target's height, and you can't apply this <i>phobia</i> to creatures with a natural fly speed), or water (you can't apply this <i>phobia</i> to aquatic creatures or creatures with a natural swim speed).  When the target takes damage of the energy type (for an energy type <i>phobia</i>), or perceives the presence of the creature, environment, or hazard, it must attempt a DC 20 Will save. If it fails, it becomes panicked, but even if it succeeds, it becomes shaken and feels intensely uncomfortable; a creature shaken in this way does not need to roll further saving throws against its <i>phobia</i> until its shaken condition ends, even if it continues to be exposed to its <i>phobia</i>.  A creature panicked by <i>phobia</i> can begin to act normally 1 minute after it ceases being able to perceive its <i>phobia</i> or after taking the energy damage if the <i>phobia</i> is an energy type, though the shaken condition ends immediately after the creature can no longer perceive its <i>phobia</i>. <i>Break enchantment</i>, <i>heal</i>, <i>limited <i>wish</i></i>, <i>miracle</i>, or <i>wish</i> can remove a <i>phobia</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

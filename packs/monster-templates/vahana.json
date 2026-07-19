@@ -1,0 +1,164 @@
+{
+  "_id": "kCnCPAaNfB0HPheV",
+  "name": "Vahana",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons&nbsp;</strong>No<br><br>Vahanas are steeds of legend, created by the gods. Deities gift vahanas to faithful servants to help them accomplish great deeds or as rewards for the same. Makaras, elephants with crocodile features, are one of the common types of vahana.<br><br>Vahana is an acquired template that can be added to any living creature of the animal type. A vahana retains the base creature’s statistics and special abilities except as noted here.<br><br><strong>CR:</strong> Base creature’s CR + 2.<br><br><strong>Alignment:</strong> Within one step of the vahana’s creator deity.<br><br><strong>Type:</strong> The creature’s type changes to magical beast, and it gains darkvision 60 feet. Don’t recalculate HD, BAB, or saves.<br><br><strong>Armor Class:</strong> Natural armor improves by 3.<br><br><strong>Defensive Abilities:</strong> A vahana gains acid, cold, electricity, and fire resistance 10; DR 10/magic, and spell resistance equal to CR + 11 (maximum 35).<br><br><strong>Speed:</strong> +30 feet for all movement types (up to double the creature’s base movement speed).<br><br><strong>Special Abilities:</strong> A vahana gains the following.<br><br><em>Blended Beast (Su):</em> A vahana’s creator blends animal features to strengthen the vahana. Each vahana gains one additional natural attack, with damage typical for its size (usually a bite attack). A vahana gains one additional form of movement speed at its new base speed, usually a swim speed or a fly speed. If it gains a swim speed, it gains the aquatic subtype, the amphibious special quality, and the ability to grant its rider constant&nbsp;<a href=\"https://aonprd.com/SpellDisplay.aspx?ItemName=water%20breathing\">water breathing</a>. If it gains a fly speed, both the vahana and its rider benefit from constant&nbsp;<a href=\"https://aonprd.com/SpellDisplay.aspx?ItemName=feather%20fall\">feather fall</a>&nbsp;(in the rider’s case, this includes when she falls off the vahana). Additionally, all vahana gain the&nbsp;<a href=\"https://aonprd.com/ClassDisplay.aspx?ItemName=Companion\">devotion special ability of an animal companion</a>.<br><br><em>Rider Bond (Su): </em>A vahana’s bond with its rider allows them to communicate telepathically as long as they’re on the same plane. As a free action that the rider can take even when it is not her turn, a vahana’s rider can choose to redirect damage dealt to the vahana to instead affect the rider.<br><br><strong>Abilities: </strong>Increase from the base creature as follows: Str +4, Dex +4, Con +4, Int +10, Wis +2, Cha +2.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "ohmp0wd7",
+        "formula": "3",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "xfrqcsv0",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ndsz9phx",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "r410zwpu",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "9h2fz7qi",
+        "formula": "10",
+        "operator": "add",
+        "subTarget": "int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "wdl3ulml",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "wis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "gejl6fyx",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "94zw9odn",
+        "formula": "min(@attributes.speed.land.base, 30)",
+        "operator": "add",
+        "subTarget": "landSpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "e2xtgxw0",
+        "formula": "min(@attributes.speed.climb.base, 30)",
+        "operator": "add",
+        "subTarget": "climbSpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "l366fvqf",
+        "formula": "min(@attributes.speed.swim.base, 30)",
+        "operator": "add",
+        "subTarget": "swimSpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "t3goyg2m",
+        "formula": "min(@attributes.speed.burrow.base, 30)",
+        "operator": "add",
+        "subTarget": "burrowSpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "7lp6k55t",
+        "formula": "min(@attributes.speed.fly.base, 30)",
+        "operator": "add",
+        "subTarget": "flySpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

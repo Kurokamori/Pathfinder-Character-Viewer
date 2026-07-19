@@ -1,0 +1,70 @@
+{
+  "_id": "uixzVg5UNv8LEqXI",
+  "name": "Nature's Whispers",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You have become so attuned to the whispers of the natural world, from the croaking of frogs to the groaning of great boulders, that your surroundings constantly keep you preternaturally aware of danger. You may add your Charisma modifier, instead of your Dexterity modifier, to your Armor Class and CMD. Any condition that would cause you to lose your Dexterity modifier to your Armor Class instead causes you to lose your Charisma modifier to your Armor Class.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "6m5362vy",
+        "formula": "@abilities.cha.mod - @abilities.dex.mod",
+        "operator": "+",
+        "subTarget": "ac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "t3bpvqhe",
+        "formula": "@abilities.cha.mod - @abilities.dex.mod",
+        "operator": "+",
+        "subTarget": "cmd",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_naturesWhispers",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

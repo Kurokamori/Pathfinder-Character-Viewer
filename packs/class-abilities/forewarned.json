@@ -1,0 +1,60 @@
+{
+  "_id": "S0CoHzJwn5NlgQU9",
+  "name": "Forewarned",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/enchant-acid-2.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You can always act in the surprise round even if you fail to make a&nbsp;<a href=\"https://www.d20pfsrd.com/skills/perception\" rel=\"nofollow\">Perception</a>&nbsp;roll to notice a foe, but you are still considered flat-footed until you take an action. In addition, you receive a bonus on initiative checks equal to 1/2 your wizard level (minimum +1). At 20th level, anytime you roll initiative, assume the roll resulted in a natural 20.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "xia1jsup",
+        "formula": "@classes.wizard.level < 4 ? 1 : (floor(@classes.wizard.level / 2))",
+        "operator": "+",
+        "subTarget": "init",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_forewarned",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Wizard"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

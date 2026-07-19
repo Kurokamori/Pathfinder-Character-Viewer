@@ -1,0 +1,60 @@
+{
+  "_id": "XRPuApgE1Ltz4YHN",
+  "name": "Greater Shield Focus",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/greater-shield-focus.jpg",
+  "data": {
+    "description": {
+      "value": "<p><em>You are skilled at deflecting blows with your shield.</em><br /><br /><strong>Prerequisites</strong><br />Shield Focus, Shield Proficiency, base attack bonus +1, 8th-level fighter.<br /><br /><strong>Benefits</strong><br />Increase the AC bonus granted by any shield you are using by 1. This bonus stacks with the bonus granted by Shield Focus.<br /><br /><strong>Combat Trick</strong><br />When an attack is made against you while you are using a shield, you can spend up to 4 stamina points. For that attack, your shield bonus increases by an amount equal to the number of stamina points you spent. This increase does not stack with any gained from the Shield Focus combat trick.</p>\n<p>&nbsp;</p>\n<p><strong>Usage</strong>: add 1 to Armor Class to any shield in your inventory.</p>"
+    },
+    "tags": [
+      [
+        "PFS"
+      ],
+      [
+        "Combat"
+      ]
+    ],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "qexjy8jn",
+        "formula": "@shield.type > 0 ? 1 : 0",
+        "operator": "add",
+        "subTarget": "sac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 1
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "feat_greaterShieldFocus",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "associations": {
+      "classes": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

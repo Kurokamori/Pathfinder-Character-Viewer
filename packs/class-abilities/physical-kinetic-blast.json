@@ -1,0 +1,165 @@
+{
+  "_id": "3MqENnx0U6aWGZ4o",
+  "name": "Physical Kinetic Blast",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/fire_02.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 1st level, a kineticist gains a kinetic blast wild talent of her choice. This kinetic blast must be a simple blast that matches her element. Simple blasts are listed with their corresponding&nbsp;<a href=\"https://www.d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/kineticist-elements/\">elements</a>.</p>\n<p>As a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>, the kineticist can unleash a kinetic blast at a single target up to a range of 30 feet. She must have at least one hand free to aim the blast (or one prehensile appendage, if she doesn’t have hands). All damage from a kinetic blast is treated as magic for the purpose of bypassing&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\">damage reduction</a>. Kinetic blasts count as a type of weapon for the purpose of feats such as @Compendium[pf1.feats.n250dFlbykAIAg5Z]{Weapon Focus}. The kineticist is never considered to be wielding or gripping the kinetic blast (regardless of effects from form infusions; see Infusion), and she can’t use @Compendium[pf1.feats.26k1Gi7t5BoqxhIj]{Vital Strike}&nbsp;feats with kinetic blasts. Even the weakest kinetic blast involves a sizable mass of elemental matter or energy, so kinetic blasts always deal full damage to swarms of any size (though only area blasts deal extra damage to swarms). A&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Ready\">readied</a>&nbsp;kinetic blast can be used to&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Counterspells\">counterspell</a>&nbsp;any spell of equal or lower level that shares its descriptor. A kinetic blast that deals energy damage of any type (including force) has the corresponding descriptor.</p>\n<p>Each simple blast is either a physical blast or an energy blast.</p>\n<p>Physical blasts are ranged attacks that deal an amount of damage equal to 1d6+1 + the kineticist’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>&nbsp;modifier, increasing by 1d6+1 for every 2 kineticist levels beyond 1st. Spell resistance doesn’t apply against physical blasts.</p>\n<p>Energy blasts are ranged touch attacks that deal an amount of damage equal to 1d6 + 1/2 the kineticist’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>&nbsp;modifier, increasing by 1d6 for every 2 kineticist levels beyond 1st.</p>\n<p>Composite blasts combine elements to form a new blast. When a kineticist gains a new element through&nbsp;<a href=\"https://www.d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/#TOC-Expanded-Element-Su-\">expanded element</a>, she gains access to all composite blasts for which she qualifies. All composite blasts are listed after the&nbsp;<a href=\"https://www.d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/kineticist-elements/#TOC-Composite-Blasts\">kineticist elements</a>.</p>\n<p>Most composite blasts are either physical or energy blasts, like simple blasts.</p>\n<p>Physical composite blasts deal an amount of damage equal to 2d6+2 + the kineticist’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>&nbsp;modifier, increasing by 2d6+2 for every 2 kineticist levels beyond 1st.</p>\n<p>Energy composite blasts deal an amount of damage equal to 2d6 + 1/2 the kineticist’s&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>&nbsp;modifier, increasing by 2d6 for every 2 kineticist levels beyond 1st.</p>\n<ul>\n<li>A complete listing of kinetic blasts and composite blasts can be found within the Kineticist Elements page, here:&nbsp;<a href=\"https://www.d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/kineticist/kineticist-elements/\">Kineticist Elements</a></li>\n</ul>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3l3uiyi3iu32666h",
+        "name": "Use",
+        "img": "systems/pf1/icons/skills/fire_02.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rsak",
+        "attackBonus": "min(@resources.burn.value, floor(@classes.kineticist.level / 3))",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "(ceil(@classes.kineticist.level/2))d6+ceil(@classes.kineticist.level/2)+min(@resources.burn.value, floor(@classes.kineticist.level/3))*2*@critMult",
+              {
+                "values": [
+                  "untyped"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_physicalKineticBlast",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    },
+    "abilityType": "sp",
+    "crOffset": "0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,150 @@
+{
+  "_id": "tjuTlbdI85ClQhf6",
+  "name": "Starknife",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/starknife.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 18</em>, <em>Rise of the Runelords Player's Guide pg. 11</em>, <em>Curse of the Crimson Throne Player's Guide pg. 13</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>PRPG Core Rulebook pg. 142</em>, <em>Varisia, Birthplace of Legends pg. 14</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 24 gp <strong>Weight</strong> 3 lbs.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x3; <strong>Range</strong> 20 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Martial</p><p><strong>Weapon Groups</strong> Blades, Light; Thrown</p><h3 class=\"framing\">Description</h3><p>From a central metal ring, four tapering metal blades extend from this weapon like points on a compass rose. By gripping the crossbar that runs through the weapon's open middle, a wielder can strike with it as a deadly melee weapon. Alternatively, by gripping it by the outer rim, a starknife's light, aerodynamic design allows it to be thrown short distances in a manner similar to a chakram.</p>"
+    },
+    "tags": [],
+    "weight": 3,
+    "price": 24,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Starknife",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "gnzktrhys4wktm7r",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/starknife.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 20,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "starknife",
+    "scriptCalls": [],
+    "weaponType": "martial"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

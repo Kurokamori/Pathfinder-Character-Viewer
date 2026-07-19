@@ -1,0 +1,152 @@
+{
+  "_id": "3r2yhd1pd5v59bir",
+  "name": "Aroden's Spellbane",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "apvf6ka885oo83hq",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "10-ft.-radius emanation, centered on you",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 9,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "cold iron scepter worth at least 1,000 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p>One of many spells originally created by the Last Azlanti before he became a god, Aroden's <i>spellbane</i> creates an area within which spells selected by you simply do not function.</p><p>Select one spell per five caster levels at the time of casting.</p><p>The spells selected cannot be changed after the spell is cast. Aroden's <i>spellbane</i> otherwise functions like <i>antimagic field</i>, except its emanation only prevents the functioning of the selected spells. Only the exact spells mentioned are affected-a <i>spellbane</i> set to prevent the casting of summon nature's ally II would not prevent castings of summon nature's ally I or summon nature's ally III. If you move into an area where a previously cast spell you have selected as a banned spell is in effect, that spell is affected as if by <i>antimagic field</i>. If the spell affects a summoned creature that has spell resistance, you must make a caster level check against the creature's spell resistance to make it wink out.</p><p>Aroden's <i>spellbane</i> can even negate an <i>antimagic field</i>, another Aroden's <i>spellbane</i>, or any spell that specifies immunity to <i>antimagic field</i> (such as <i>Wall of Force</i>, <i><i>prismatic</i> sphere</i>, and <i>prismatic</i> wall). Multiple <i>spellbane</i> effects can overlap.</p><p>Their effects stack, preventing the functioning of every spell targeted by any of the multiple <i>spellbane</i> emanations. Spell effects created by artifacts or deities cannot be suppressed by Aroden's <i>spellbane</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

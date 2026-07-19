@@ -1,0 +1,45 @@
+{
+  "_id": "KsgdOd5vzGu7UDBe",
+  "name": "Eagle's Splendor",
+  "type": "buff",
+  "img": "systems/pf1/icons/spells/runes-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The subject has a +4 enhancement bonus to Charisma.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "rzpoixra",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level"
+    },
+    "links": {
+      "children": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "3"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100001,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

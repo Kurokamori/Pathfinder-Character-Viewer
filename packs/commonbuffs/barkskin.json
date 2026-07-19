@@ -1,0 +1,45 @@
+{
+  "_id": "kG8EriOOSJmDmYZd",
+  "name": "Barkskin",
+  "type": "buff",
+  "img": "systems/pf1/icons/skills/blue_34.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Your skin is toughened, granting you an enhancement bonus to your natural armor as per the barkskin spell.</p>\n<p><strong>Usage</strong>: Set the buff's level to the caster level of Barkskin.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "zjfo24qt",
+        "formula": "min(5, 2 + max(0, floor((@item.level - 3) / 3)))",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level * 10"
+    },
+    "links": {
+      "children": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "3"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 5700000,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

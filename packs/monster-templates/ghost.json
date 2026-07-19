@@ -1,0 +1,84 @@
+{
+  "_id": "718KMxAaTejfY2co",
+  "name": "Ghost",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons&nbsp;</strong>Yes<br><br>“Ghost” is an acquired template that can be added to any living creature that has a Charisma score of at least 6. A ghost retains all the base creature's statistics and special abilities except as noted here.<br><br><strong>Challenge Rating:</strong> Same as the base creature +2.<br><br><strong>Type:</strong> The creature's type changes to undead. Do not recalculate the creature's base attack bonus, saves, or skill points. It gains the incorporeal subtype.<br><br><strong>Armor Class: </strong>A ghost gains a deflection bonus equal to its Charisma modifier. It loses the base creature's natural armor bonus, as well as all armor and shield bonuses not from force effects or&nbsp;ghost touch&nbsp;items.<br><br><strong>Hit Dice: </strong>Change all of the creature's racial Hit Dice to d8s. All Hit Dice derived from class levels remain unchanged. Ghosts use their Charisma modifiers to determine bonus hit points (instead of Constitution).<br><br><strong>Defensive Abilities:</strong> A ghost retains all of the defensive abilities of the base creature save those that rely on a corporeal form to function. Ghosts gain channel resistance +4, darkvision 60 ft., the incorporeal ability, and all of the immunities granted by its undead traits. Ghosts also gain the rejuvenation ability.<br><br><em>Rejuvenation (Su):</em> In most cases, it's difficult to destroy a ghost through simple combat: the “destroyed” spirit restores itself in 2d4 days. Even the most powerful spells are usually only temporary solutions. The only way to permanently destroy a ghost is to determine the reason for its existence and set right whatever prevents it from resting in peace. The exact means varies with each spirit and may require a good deal of research, and should be created specifically for each different ghost by the GM.<br><br><strong>Speed:</strong> Ghosts lose their previous speeds and gain a fly speed of 30 feet (perfect), unless the base creature has a higher fly speed.<br><br><strong>Melee and Ranged Attacks: </strong>A ghost loses all of the base creature's attacks. If it could wield weapons in life, it can wield&nbsp;ghost touch weapons&nbsp;as a ghost.<br><br><strong>Special Attacks:</strong> A ghost retains all the special attacks of the base creature, but any relying on physical contact do not function. In addition, a ghost gains one ghost special attack from the list below for every 3 points of CR (minimum 1—the first ability chosen must always be corrupting touch). The save DC against a ghost's special attack is equal to 10 + 1/2 ghost's HD + ghost's Charisma modifier unless otherwise noted. Additional ghost abilities beyond these can be designed at the GM's discretion.<br><br><em>Corrupting Gaze (Su):</em> The ghost is disfigured through age or violence, and has a gaze attack with a range of 30 feet that causes 2d10 damage and 1d4 Charisma damage (Fortitude save negates Charisma damage but not physical damage).<br><br><em>Corrupting Touch (Su):</em> All ghosts gain this incorporeal touch attack. By passing part of its incorporeal body through a foe's body as a standard action, the ghost inflicts a number of d6s equal to its CR in damage. This damage is not negative energy—it manifests in the form of physical wounds and aches from supernatural aging. Creatures immune to magical aging are immune to this damage, but otherwise the damage bypasses all forms of damage reduction. A Fortitude save halves the damage inflicted.<br><br><em>Draining Touch (Su):</em> The ghost died while insane or diseased. It gains a touch attack that drains 1d4 points from any one ability score it selects on a hit. On each such successful attack, the ghost heals 5 points of damage to itself. When a ghost makes a draining touch attack, it cannot use its standard ghostly touch attack.<br><br><em>Frightful Moan (Su):</em> The ghost died in the throes of crippling terror. It can emit a frightful moan as a standard action. All living creatures within a 30-foot spread must succeed on a Will save or become panicked for 2d4 rounds. This is a sonic mind-affecting fear effect. A creature that successfully saves against the moan cannot be affected by the same ghost's moan for 24 hours.<br><br><em>Malevolence (Su): </em>The ghost's jealousy of the living is particularly potent. Once per round, the ghost can merge its body with a creature on the Material Plane. This ability is similar to a&nbsp;magic jar&nbsp;spell (caster level 10th or the ghost's Hit Dice, whichever is higher), except that it does not require a receptacle. To use this ability, the ghost must be adjacent to the target. The target can resist the attack with a successful Will save. A creature that successfully saves is immune to that same ghost's malevolence for 24 hours.<br><br><em>Telekinesis (Su):</em> The ghost's death involved great physical trauma. The ghost can use&nbsp;telekinesis&nbsp;as a standard action once every 1d4 rounds (caster level 12th or equal to the ghost's HD, whichever is higher).<br><br><strong>Abilities:</strong> Cha +4; as an incorporeal undead creature, a ghost has no Strength or Constitution score.<br><br><strong>Skills:</strong> Ghosts have a +8 racial bonus on Perception and Stealth skill checks. A ghost always treats Climb, Disguise, Fly, Intimidate, Knowledge (arcana), Knowledge (religion), Perception, Sense Motive, Spellcraft, and Stealth as class skills. Otherwise, skills are the same as the base creature.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "0wwuebw6",
+        "formula": "@abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "ac",
+        "modifier": "deflection",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "njfnkfir",
+        "formula": "-max(0, @attributes.naturalAC)",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "7919odge",
+        "formula": "30",
+        "operator": "+",
+        "subTarget": "flySpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "im5ym2hw",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "2"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

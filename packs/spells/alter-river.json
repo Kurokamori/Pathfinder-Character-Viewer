@@ -1,0 +1,165 @@
+{
+  "_id": "hh6zfpev2qgawfmy",
+  "name": "Alter River",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "au1j7aimef9xvnrl",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "area of river up to 5 ft. wide/2 levels and 10 ft. long/level"
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "cleric/oracle",
+          4
+        ],
+        [
+          "druid",
+          4
+        ],
+        [
+          "hunter",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "trs",
+    "types": "water",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "silt from a dry riverbed"
+    },
+    "sr": false,
+    "shortDescription": "<p>You alter the flow of water in a natural freshwater channel such as a river, stream, or waterfall. The first version of this spell alters the speed of a river's flow. The second diverts the course of the targeted river.</p><p><i>Alter Current</i>: The river's current increases or decreases in speed by up to 1 mile per hour per 2 caster levels you possess. A typical placid river travels at a rate of up to 2 mph (no effect on local movement); a swift river travels 2-4 mph, moving creatures and objects 10 to 40 feet downstream per round; and an area of river rapids travels 7-10 mph, moving creatures and objects 60 to 90 feet downstream per round. Altering the speed of the current alters the difficulty of swimming in the water accordingly.</p><p><i>Divert River</i>: The river diverts its course in a direction of your choosing. The river flows in the general direction indicated, but otherwise conforms to the shape of the local terrain. This spell cannot cause a river to flow uphill, though the river surges over its natural banks and inundates terrain lower than its average depth. Creatures in the path of the redirected river are in danger of being swept away; if directed properly, this spell causes a flood. See Aquatic Terrain on page 432 of the <i>Core Rulebook</i> for more details.</p><p><i>Alter river</i> can be made permanent with a <i>permanency</i> spell.</p><p>Clever application of spells such as <i>move earth</i> can be combined with this spell to likewise make the river's new course permanent.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

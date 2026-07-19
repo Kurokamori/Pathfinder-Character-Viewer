@@ -1,0 +1,157 @@
+{
+  "_id": "6jz03m4lryndt0kd",
+  "name": "Phantasmal Revenge",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "11krdmaq3jpinwt4",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": "dead body touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Will disbelief then Fortitude partial; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "psychic",
+          7
+        ],
+        [
+          "mesmerist",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "ill",
+    "subschool": "phantasm",
+    "types": "fear, mind-affecting, emotion",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>When you cast this eerie spell upon a recently slain creature, you cause a ghastly, spectral image of it to rise up from its corpse, shrieking for vengeance before it vanishes in a burst of unnatural light. This phantom then unerringly seeks out the creature that killed it, as long as that creature is on the same plane, and tries to slay its killer in turn.</p><p>Only the corpse's killer can see the phantasmal image created by this spell. You and any others who witness the spell's casting or its ultimate effects see only a vague shape. The target first gets a Will save to disbelieve the illusion. If that save fails, the target must succeed on Fortitude saving throw or take 10 points of damage per caster level from the phantasmal image. Even if the Fortitude save is successful, the target takes 5d6 points of damage + 1 point of damage per caster level. You know immediately if the spell succeeded or failed to kill its target but gain no other information, including the identity of the target of the spell.</p><p>The creature providing the corpse must have died no more than 1 day per caster level prior to the casting of this spell. If the creature that provided the corpse was not, in fact, killed by another, or if the killer is dead or no longer on the same plane, the spell fails. <i>Phantasmal revenge</i> makes no moral judgments; it targets winners of fair fights just as easily as murderers. Any given body can only be targeted by a <i>phantasmal revenge</i> spell once.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

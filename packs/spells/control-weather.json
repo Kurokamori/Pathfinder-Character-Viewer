@@ -1,0 +1,179 @@
+{
+  "_id": "578t0lra5ll3aifs",
+  "name": "Control Weather",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "oijrp0xylxed9ljc",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "4d12 hours; see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 2,
+          "units": "mi",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "2-mile-radius circle, centered on you; see text",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ],
+        [
+          "cleric/oracle",
+          7
+        ],
+        [
+          "druid",
+          7
+        ],
+        [
+          "witch",
+          7
+        ],
+        [
+          "shaman",
+          7
+        ]
+      ],
+      "domain": [
+        [
+          "Weather",
+          7
+        ]
+      ],
+      "subDomain": [
+        [
+          "Catastrophe",
+          7
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Stormborn",
+          7
+        ]
+      ]
+    },
+    "level": 7,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>You change the weather in the local area. It takes 10 minutes to cast the spell and an additional 10 minutes for the effects to manifest. You can call forth weather appropriate to the climate and season of the area you are in. You can also use this spell to cause the weather in the area to become calm and normal for the season.</p>   <table border ='1'><tr><th>Season</th><th>Possible Weather</th></tr><tr><td>Spring</td><td>Tornado, thunderstorm, sleet storm, or hot weather</td></tr><tr><td>Summer</td><td>Torrential rain, heat wave, or hailstorm</td></tr><tr><td>Autumn</td><td>Hot or cold weather, fog, or sleet</td></tr><tr><td>Winter</td><td>Frigid cold, blizzard, or thaw</td></tr><tr><td>Late winter or early spring</td><td>Hurricane-force winds</td></tr></table>   You control the general tendencies of the weather, such as the direction and intensity of the wind. You cannot control specific applications of the weather-where lightning strikes, for example, or the exact path of a tornado. The weather continues as you left it for the duration, or until you use a standard action to designate a new kind of weather (which fully manifests itself 10 minutes later). Contradictory conditions are not possible simultaneously.</p><p><i>Control weather</i> can do away with atmospheric phenomena (naturally occurring or otherwise) as well as create them.</p><p>A druid casting this spell doubles the duration and affects a circle with a 3-mile radius.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "iUTsKFtIX9gfoN1o",
+  "name": "Ki Pool (ROG)",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/weapons/dagger.PNG",
+  "data": {
+    "description": {
+      "value": "<p>A rogue with this talent gains a small&nbsp;ki&nbsp;pool. This&nbsp;ki&nbsp;pool is similar to a ninja’s&nbsp;ki&nbsp;pool, but the rogue’s&nbsp;ki&nbsp;pool does not grant any extra attacks. The rogue gains a number of&nbsp;ki&nbsp;points equal to her Wisdom modifier (minimum 1). These&nbsp;ki&nbsp;points replenish at the start of each day. If she already has a&nbsp;ki&nbsp;pool, or gains a&nbsp;ki&nbsp;pool later, she gains half her Wisdom bonus (minimum 1) as bonus&nbsp;ki&nbsp;points to her&nbsp;ki&nbsp;pool. She can spend a&nbsp;ki&nbsp;point to gain a +10-foot bonus to movement until the end of her turn.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "max(1, @abilities.wis.mod)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_kiPoolRog",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Rogue"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

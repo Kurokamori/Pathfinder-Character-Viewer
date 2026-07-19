@@ -1,0 +1,148 @@
+{
+  "_id": "wouprx7l18n6o918",
+  "name": "Open the Dead Roads",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "vb3quvoilonj58lw",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "up to one touched creature/level"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "con",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "divineFocus": 1
+    },
+    "shortDescription": "<p>To cast <i>open the</i> <i>Dead Roads</i>, you must be in an area of fog or dim light. Upon completion of the spell, swirling mists part and deposit you and any creatures you touched on a nearby stretch of the <i>Dead Roads</i>, a network of extraplanar roadways. You can take up to one creature per level, but all targets must be touching each other. You must specify a location known to you or one of your travelers as your destination when casting this spell.  When traveling the otherworldly paths of the <i>Dead Roads</i>, you move at a speed of 50 miles per hour regardless of the terrain on the Material Plane. Your own movement speed does not change; you simply arrive at distant destinations more quickly because the <i>Dead Roads</i> offer a shorter route. You can exit the <i>Dead Roads</i> at any point before reaching your destination by wandering off the path, in which case you are usually returned to your starting place. If this would place  you within a solid object, you (and any creatures with you) are shunted to the nearest empty space available.</p><p>Because the <i>Dead Roads</i> occupy another plane, it is impossible to spy on the Material Plane while using this spell without additional spells or supernatural abilities.</p><p><i>Open the</i> <i>Dead Roads</i> can be used to travel to or from the Shadow Plane, the Ethereal Plane, the Astral Plane, or the Boneyard; any of these destinations requires 10 hours of travel. Thanks to their unique nature, the <i>Dead Roads</i> can be used to travel from any plane to the Material Plane-a trip likewise requiring 10 hours-unless that plane normally bars all extraplanar travel.</p><p>Creatures you bring with you to the <i>Dead Roads</i> are not obligated to follow you. If they wander off, there is an 80% chance they arrive at a random point on the Material Plane within 2d6x10 miles of your starting point, otherwise they arrive in the Boneyard.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

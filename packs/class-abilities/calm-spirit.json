@@ -1,0 +1,53 @@
+{
+  "_id": "bwPeas5tuLvKhuE4",
+  "name": "Calm Spirit",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/affliction_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 7th level, a spiritualist gains the ability to use @Compendium[pf1.spells.y4ztvvswf2uuwuqo]{Calm Spirit}&nbsp;as a spell-like ability once per day.</p>\n<p>At 11th level and every 4 levels thereafter, the spiritualist can use this ability an additional time per day (to a maximum of 4 times per day at 19th level).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.spiritualist.level - 3) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_calmSpirit",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Spiritualist"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

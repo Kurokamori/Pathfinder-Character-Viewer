@@ -1,0 +1,153 @@
+{
+  "_id": "9cn9pmPR4WPGbgUH",
+  "name": "Dwarven Light Axe-Gauntlet",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/axe-gauntlet-dwarven-light.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Heroes from the Fringe pg. 8</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 16 gp <strong>Weight</strong> 5 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x3; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> blocking, disarm</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Axes; Close</p><h3 class=\"framing\">Description</h3><p>An axe-gauntlet is a locked gauntlet covering the hand and forearm up to and over the elbow, with an axe blade built around the gauntlet's permanently closed fist. Axe-gauntlets were developed during the long Quest for Sky, when dwarven warriors often had to engage in running fights against larger, stronger opponents in areas the dwarves did not intend to ever return to. Losing a weapon in such circumstances often made it irretrievable, and the axe-gauntlet became popular with rearguard warriors. Though these weapons have seen significantly less use since the dwarves reached the surface, some dwarven warriors still appreciate the reliability of such designs. An axe-gauntlet takes a full-round action to don, and it gives you a +10 bonus to your CMD against disarm attempts. You can't use the hand on which an axe-gauntlet is worn for anything else.</p>"
+    },
+    "tags": [],
+    "weight": 5,
+    "price": 16,
+    "hp": {
+      "max": "2",
+      "value": "2"
+    },
+    "hardness": 10,
+    "identifiedName": "Dwarven Light Axe-Gauntlet",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "50nodapt471mjehe",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/axe-gauntlet-dwarven-light.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 3
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "dwarvenLightAxegauntlet",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

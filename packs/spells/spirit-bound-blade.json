@@ -1,0 +1,164 @@
+{
+  "_id": "c99w6rm28rpz14xu",
+  "name": "Spirit-Bound Blade",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "gowdi6jegq432k9h",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": "weapon touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless, object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "shaman",
+          4
+        ],
+        [
+          "medium",
+          4
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "spiritualist",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Ectoplasm",
+          4
+        ]
+      ]
+    },
+    "level": 4,
+    "school": "evo",
+    "components": {
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>You focus emotional energy and weave it into a shroud of hardened ectoplasm around the weapon you touch, infusing it with a ghostly glow and great power. The weapon becomes a <i>ghost touch</i> weapon, and gains one of the following additional benefits, depending on the type of emotion you  infuse into the weapon. If a special ability wouldn't apply to the chosen weapon (such as <i>vicious</i> on a ranged weapon), the weapon doesn't gain that benefit.  <b>Anger</b>: The weapon also gains the <i>vicious</i> special ability.  <b>Dedication</b>: The weapon also gains the <i>returning</i> special ability.  <b>Despair</b>: The weapon also gains the cruelUE special ability.  <b>Fear</b>: The weapon also gains the menacingUE special ability.  <b>Hatred</b>: The weapon also gains the cunningUE special ability.  <b>Jealousy</b>: The weapon also gains the mimeticUE special ability.  <b>Zeal</b>: The weapon also gains the <i>keen</i> special ability.  If you are a spiritualist and the type of emotional energy you choose matches the emotional focus of your phantom, the weapon grants its wielder a +2 bonus on skill checks with both skills you gain Skill Focus in from your phantom's emotional focus.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

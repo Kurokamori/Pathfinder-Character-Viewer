@@ -1,0 +1,218 @@
+{
+  "_id": "n0bsyxchnigkkuqo",
+  "name": "Confusion",
+  "type": "spell",
+  "img": "systems/pf1/icons/spells/air-burst-magenta-2.jpg",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "l7tfxenfaxiqesi8",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/air-burst-magenta-2.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": "all creatures in a 15-ft.-radius burst"
+        },
+        "range": {
+          "value": null,
+          "units": "medium",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "15",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "bard",
+          3
+        ],
+        [
+          "witch",
+          4
+        ],
+        [
+          "bloodrager",
+          4
+        ],
+        [
+          "psychic",
+          4
+        ],
+        [
+          "mesmerist",
+          3
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "spiritualist",
+          4
+        ]
+      ],
+      "domain": [
+        [
+          "Madness",
+          4
+        ],
+        [
+          "Trickery",
+          4
+        ]
+      ],
+      "subDomain": [
+        [
+          "Lust",
+          4
+        ],
+        [
+          "Entropy",
+          5
+        ],
+        [
+          "Riot",
+          4
+        ],
+        [
+          "Whimsy",
+          4
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Impossible",
+          4
+        ],
+        [
+          "Protean",
+          4
+        ]
+      ]
+    },
+    "level": 3,
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "three nutshells"
+    },
+    "spellbook": "",
+    "shortDescription": "<p>This spell causes confusion in the targets, making them unable to determine their actions. Roll on the following table at the start of each subject's turn each round to see what it does in that round.</p><p><table><tr><th>d%</th><th>Behavior</th></tr> <tr><td>01-25</td><td>Act normally</td></tr> <tr><td>26-50</td><td>Do nothing but babble incoherently</td></tr> <tr><td>51-75</td><td>Deal 1d8 points of damage + Str modifier to self with item in hand</td></tr> <tr><td>76-100</td><td>Attack nearest creature (for this purpose, a familiar counts as part of the subject's self)</td></tr></table>  A confused character who can't carry out the indicated action does nothing but babble incoherently. Attackers are not at any special advantage when attacking a confused character. Any confused character who is attacked automatically attacks its attackers on its next turn, as long as it is still confused when its turn comes. Note that a confused character will not make attacks of opportunity against any creature that it is not already devoted to attacking (either because of its most recent action or because it has just been attacked).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

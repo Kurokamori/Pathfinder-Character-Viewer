@@ -1,0 +1,154 @@
+{
+  "_id": "XdX8iAaWbpcxO5Tk",
+  "name": "Hallucinogenic Aura",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/slice-spirit-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 13th level, a mental field emanates from you, touching the minds of those nearby. Any creature within 30 feet of you must succeed at a Will save or be confused for 1d4 rounds. A creature that succeeds at its saving throw is immune to your hallucinogenic aura for 24 hours. A creature that fails its save doesn’t need to continue making saves while it’s confused by this aura, and becomes immune for 24 hours once its confusion ends. This is a mind-affecting effect.</p>\n<p>You’re immune to your own hallucinogenic aura, as well as that of any other psychic. You can brew an antidote that protects the imbiber from your aura. Brewing 1 dose requires 1 hour and a successful DC 15 Craft (alchemy) check. One dose’s effects last for 1 month.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "re0s5q9y3ogqrgw3",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/slice-spirit-3.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "passive"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "passive"
+          }
+        },
+        "duration": {
+          "value": "1d4",
+          "units": "round"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": false,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_hallucinogenicAura",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Psychic"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

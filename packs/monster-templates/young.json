@@ -1,0 +1,84 @@
+{
+  "_id": "OSt0Qkjh4F8O4ymC",
+  "name": "Young",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template&nbsp;</strong>Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>Creatures with the young template are immature specimens of the base creature. You can also use this simple template to easily create a smaller variant of a monster. This template cannot be applied to creatures that increase in power through aging or feeding (such as dragons or barghests) or creatures that are Fine-sized.<br><br><strong>Quick Rules:</strong> +2 to all Dex-based rolls, –2 to all other rolls, –2 hp/HD.<br><br><strong>Rebuild Rules:</strong>&nbsp;Size&nbsp;decrease by one category;&nbsp;AC&nbsp;reduce natural armor by –2 (minimum +0);&nbsp;Attacks&nbsp;decrease damage dice by 1 step;&nbsp;Ability Scores&nbsp;–4 Strength, –4 Con, +4 size bonus to Dex.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "jnhu8bwm",
+        "formula": "-min(2, @attributes.naturalAC)",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": -10,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "jzankxwi",
+        "formula": "-4",
+        "operator": "add",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "w7c4m08y",
+        "formula": "-4",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "t3p96nbw",
+        "formula": "4",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "size",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "-1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

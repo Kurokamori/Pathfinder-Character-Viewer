@@ -1,0 +1,14 @@
+{
+  "name": "Calculate Spellbook Price",
+  "permission": {
+    "default": 0
+  },
+  "type": "script",
+  "flags": {},
+  "scope": "global",
+  "command": "const CONFIG = {\n  basePrice: 15,\n  spellValue: {\n    \"0\": {\n      gp: 5,\n      pages: 1,\n    },\n    \"1\": {\n      gp: 10,\n      pages: 1,\n    },\n    \"2\": {\n      gp: 40,\n      pages: 2,\n    },\n    \"3\": {\n      gp: 90,\n      pages: 3,\n    },\n    \"4\": {\n      gp: 160,\n      pages: 4,\n    },\n    \"5\": {\n      gp: 250,\n      pages: 5,\n    },\n    \"6\": {\n      gp: 360,\n      pages: 6,\n    },\n    \"7\": {\n      gp: 490,\n      pages: 7,\n    },\n    \"8\": {\n      gp: 640,\n      pages: 8,\n    },\n    \"9\": {\n      gp: 810,\n      pages: 9,\n    },\n  },\n};\n\nlet html = `\n<table>\n  <thead>\n    <tr>\n      <th>Spell level</th>\n      <th>Amount of spells</th>\n    </tr>\n  </thead>\n  <tbody>\n`;\nfor (const [k, v] of Object.entries(CONFIG.spellValue)) {\n  html += `\n    <tr>\n      <td>${k}</td>\n      <td>\n        <input class=\"spell-input\" type=\"text\" name=\"level-${k}\" value=\"0\" data-price=\"${v.gp}\" data-pages=\"${v.pages}\" />\n      </td>\n    </tr>\n  `;\n}\nhtml += `\n  </tbody>\n  <thead>\n    <tr>\n      <th>Spellbook price</th>\n      <th>Pages required</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><input class=\"spellbook-price\" type=\"text\" disabled name=\"spellbook-price\" value=\"${CONFIG.basePrice}\" /></td>\n      <td><input class=\"spellbook-pages\" type=\"text\" disabled name=\"page-value\" value=\"0\" /></td>\n    </tr>\n  </tbody>\n</table>\n\n<div class=\"help-text\">\n  Typical spellbooks can only hold 100 pages.\n</div>\n`;\n\n// -------------------------\n// Functions\n// -------------------------\n\nconst _onChange = function (event) {\n  event.preventDefault();\n  const html = $(this.element);\n\n  let pages = 0;\n  let price = CONFIG.basePrice;\n  html.find(\".spell-input\").each((idx, elem) => {\n    const amount = Number(elem.value);\n    if (Number.isNaN(amount)) return;\n\n    price += Number(elem.dataset.price) * amount;\n    pages += Number(elem.dataset.pages) * amount;\n  });\n\n  html.find(\".spellbook-price\").attr(\"value\", price);\n  html.find(\".spellbook-pages\").attr(\"value\", pages);\n};\n\n// -------------------------\n// Dialog\n// -------------------------\n\nconst d = new Dialog({\n  title: \"Calculate spellbook value\",\n  content: html,\n  buttons: {},\n});\n\nd.activateListeners = function (html) {\n  Dialog.prototype.activateListeners.call(this, html);\n\n  html.find(\"input.spell-input\").change(_onChange.bind(this));\n};\n\nd.render(true);",
+  "author": "61klraqiWb97OOLa",
+  "img": "icons/sundries/books/book-embossed-jewel-gold-purple.webp",
+  "actorIds": [],
+  "_id": "1l7Iw6xRgx8OMnJH"
+}

@@ -1,0 +1,156 @@
+{
+  "_id": "aQRocmXzAwvZkBEZ",
+  "name": "Chain Spear",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/spear.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 20</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>Crown of the Kobold King pg. 17</em>, <em>Revenge of the Kobold King pg. 13</em>, <em>Adventurer's Armory pg. 3</em>, <em>Advanced Player's Guide pg. 178</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 15 gp <strong>Weight</strong> 13 lbs.</p><p><strong>Damage</strong> 1d4/1d4 (small), 1d6/1d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> P and S; <strong>Special</strong> double, trip</p><p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Double; Flails; Spears</p><h3 class=\"framing\">Description</h3><p>This vicious weapon is often used in gladiatorial events due to its versatility. The body of the weapon is a standard short spear, primarily used for thrusting. The butt of the spear is fitted with a length of chain, often spiked, with a hook at the end. The hook and chain may be used to make trip attacks. If your trip attack fails by 10 or more, you may drop the chain spear to avoid being knocked prone.</p>"
+    },
+    "tags": [],
+    "weight": 13,
+    "price": 15,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Chain Spear",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "91ab5r3hb4cnvz6g",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/spear.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing",
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1.5,
+          "critRange": null,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "chainSpear",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

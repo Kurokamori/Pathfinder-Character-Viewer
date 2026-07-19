@@ -1,0 +1,166 @@
+{
+  "_id": "25iy235izs71qlns",
+  "name": "Swarm Skin",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "agrnjqb9y6fiumu5",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "see text",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "druid",
+          6
+        ],
+        [
+          "witch",
+          6
+        ],
+        [
+          "hunter",
+          6
+        ]
+      ],
+      "domain": [
+        [
+          "Vermin",
+          5
+        ]
+      ],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true,
+      "divineFocus": 2
+    },
+    "materials": {
+      "value": "a crushed insect hive"
+    },
+    "sr": false,
+    "shortDescription": "<p>You convert all of your soft tissue into swarms of insects or other creatures and send them off to do your bidding, leaving nothing but your bones and gear behind. These swarms have all their normal qualities and abilities but also bear a tiny portion of your consciousness that allows you to perceive what they do and to control their actions. While in this form, you cannot use any of your own abilities or take any actions other than controlling the swarms.</p><p>Each time you cast this spell you get a total allotment of levels equal to your caster level and any swarm you choose to create costs one or more of those levels. You can \"spend\" your allotment of levels to create any combination of swarms so long as their total does not exceed your caster level.</p><p> <table><tr><th>Number of Levels</th><th>Swarm Type(s)</th></tr><tr><td>2 caster levels</td><td>Spider swarm (Pathfinder Bestiary page 258)</td></tr><tr><td>4 caster levels</td><td>Rat swarm (Bestiary 232)</td></tr><tr><td>6 caster levels</td><td>Crab swarm, wasp swarm (Bestiary 50, 275)</td></tr><tr><td>8 caster levels</td><td>Centipede swarm, leech swarm (Bestiary 43, 187)</td></tr><tr><td>10 caster levels</td><td>Army ant swarm (Bestiary 16)</td></tr></table> Once you create these swarms they remain in existence until destroyed or you order them to return to your body. When all swarms have returned to your body or are destroyed, your flesh wraps itself back around your bones and you regain the ability to act normally. If your bones are not where you left them you must first locate them in order to regain access to your body. You always know if your bones are destroyed and your consciousness remains in control of the swarms until they too are destroyed (and your die). If you can use the swarms to get help and arrange for someone to repair your bones (using anything that would normally restore you to life), at which point you can return the swarms to your body.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

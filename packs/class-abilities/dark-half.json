@@ -1,0 +1,53 @@
+{
+  "_id": "EhfHgdkicFggcUg0",
+  "name": "Dark Half",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/slice-spirit-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p>By allowing the dark forces to overcome you, you can enter a state of instinctual cruelty as a swift action. While you’re manifesting your dark half, you increase the DCs of your psychic spells by 1, gain a +2 morale bonus on Will saves, and become immune to fear effects. Whenever you cast a spell that deals damage while manifesting your dark half, you can cause one creature that took damage from the spell to also take 1 point of bleed damage. The amount of bleed damage increases to 2 points at 5th level and to 1d6 points at 13th level.</p>\n<p>While manifesting your dark half, you can’t use any Charisma-, Dexterity-, or Intelligence-based skills (except Acrobatics, Fly, Intimidate, and Ride) or any ability that requires patience or concentration other than casting spells using psychic magic, using phrenic amplifications, or attempting to return to normal.</p>\n<p>You can attempt to return to your normal self as a free action, but must succeed at a concentration check with a DC equal to 10 + your caster level. If you fail, you continue to manifest your dark half and can’t attempt to change back for 1 round.</p>\n<p>You can manifest your dark half for a number of rounds per day equal to 3 + 1/2 your psychic level + your Charisma modifier; when these rounds are expended, you return to your normal self without requiring a concentration check.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "3 + floor(@classes.psychic.level / 2) + @abilities.cha.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_darkHalf",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Psychic"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

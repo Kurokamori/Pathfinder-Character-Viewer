@@ -1,0 +1,73 @@
+{
+  "_id": "8AJT0T9xGWRxxj5i",
+  "name": "Aquatic Adaptation",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/emerald_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, you gain a swim&nbsp;<a href=\"https://www.d20pfsrd.com/magic-items/magic-weapons#TOC-Speed\">speed</a>&nbsp;of 30 feet. At 9th level, you gain the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Amphibious-Ex-\">amphibious</a>&nbsp;special quality and develop a fat layer that grants a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-armor-Bonus\">natural armor bonus</a>&nbsp;and resist cold 5. When immersed in water, you gain&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Blindsight-and-Blindsense\">blindsense</a>&nbsp;30 feet. At 15th level, you gain a swim&nbsp;<a href=\"https://www.d20pfsrd.com/magic-items/magic-weapons#TOC-Speed\">speed</a>&nbsp;of 60 feet and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Blindsight-and-Blindsense\">blindsense</a>&nbsp;of 60 feet in water.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "vk3jemkk",
+        "formula": "@classes.sorcerer.level >= 15 ? 60 : 30",
+        "operator": "+",
+        "subTarget": "swimSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "uq8lnaor",
+        "formula": "@classes.sorcerer.level >= 9 ? 1 : 0",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_aquaticAdaptation",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

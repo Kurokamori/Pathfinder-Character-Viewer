@@ -1,0 +1,63 @@
+{
+  "_id": "3XQKlRNSG9oMjioc",
+  "name": "Leathery Skin",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/affliction_24.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, you gain cold&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance\">resistance</a>&nbsp;5 and a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor bonus</a>&nbsp;to AC. At 9th level, your cold&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance\">resistance</a>&nbsp;increases to 10 and&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor bonus</a>&nbsp;increases to +2. At 15th level, your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor bonus</a>&nbsp;increases to +4.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "znwko99v",
+        "formula": "@classes.sorcerer.level >= 15 ? 3 : ((@classes.sorcerer.level > 8 && @classes.sorcerer.level < 15) ? 2 : 1)",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_leatherySkin",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

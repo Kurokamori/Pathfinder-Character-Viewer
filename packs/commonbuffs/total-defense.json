@@ -1,0 +1,43 @@
+{
+  "_id": "DvcRWaWndZ1s2tB4",
+  "name": "Total Defense",
+  "type": "buff",
+  "img": "icons/svg/combat.svg",
+  "data": {
+    "tags": [],
+    "changes": [
+      {
+        "_id": "bhjbvsog",
+        "formula": "@skills.acr.rank>=3?6:4",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "dodge",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "round",
+      "value": "1"
+    },
+    "links": {
+      "children": []
+    },
+    "tag": "totalDefense",
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

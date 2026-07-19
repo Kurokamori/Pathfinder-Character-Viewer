@@ -1,0 +1,63 @@
+{
+  "_id": "RMyYdVe1LzfR5bbO",
+  "name": "Ancestors Final Revelation",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Upon reaching 20th level, you become one with the spirits of your ancestors. You gain a bonus on Will saving throws equal to your Charisma modifier, blindsense out to a range of 60 feet, and a +4 bonus on your caster level for all divination spells. You can cast @Compendium[pf1.spells.lnahlmp5mih2ongh]{Astral Projection} as a spell-like ability once per day without requiring material components.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "qmdrdwya",
+        "formula": "@abilities.cha.mod",
+        "operator": "+",
+        "subTarget": "will",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_ancestorsFinalRevelation",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

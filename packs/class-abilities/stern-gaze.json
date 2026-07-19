@@ -1,0 +1,73 @@
+{
+  "_id": "CzEGD1Fv60Sa4UXe",
+  "name": "Stern Gaze",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/evil-eye-eerie-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Inquisitors are skilled at sensing deception and intimidating their foes. An inquisitor receives a morale bonus on all Intimidate and Sense Motive checks equal to 1/2 her inquisitor level (minimum +1).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "9vo63x5i",
+        "formula": "max(1, floor(@classes.inquisitor.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.int",
+        "modifier": "morale",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "cvwe4abv",
+        "formula": "max(1, floor(@classes.inquisitor.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.sen",
+        "modifier": "morale",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_sternGaze",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Inquisitor"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

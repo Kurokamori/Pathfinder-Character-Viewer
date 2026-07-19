@@ -1,0 +1,178 @@
+{
+  "_id": "do6e31hgstlpbx8x",
+  "name": "Vile Dog Transformation",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "vsbfhfcc7h3wt0le",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one or more dogs touched"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "druid",
+          5
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "antipaladin",
+          3
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "hunter",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "trs",
+    "subschool": "polymorph",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a strip of leather"
+    },
+    "sr": false,
+    "shortDescription": "<p>You transform one or more dogs into evil, monstrous creatures. Each dog can attempt a Will save to negate the transformation, but if the dog trusts you (it has been trained by you for a purpose, or has been in your care for at least 30 days and generally treated well), it takes a -4 penalty on this saving throw. Each transformed dog has the same stats as a hell hound (<i>Bestiary</i> 173) except that it doesn't have fire immunity and cold vulnerability and instead has acid, cold, and fire resistance 5. Additionally, each transformed dog deals an extra 1d6 points of acid damage with its bite attack (instead of fire damage), and its breath weapon is replaced with a vaporous cloud that spreads out in front of the creature in a 10-foot cone, dealing 2d4 points of acid damage. The creature can't understand Infernal but understands any languages you know. The dog is normally neutral evil, but is chaotic evil if you are chaotic or lawful evil if you are lawful.  For every 3 caster levels you have, you can transform one dog (to a maximum of five dogs at 15th level). At the end of the spell's duration, the dogs immediately dissolve into a stinking pile of gore and bones.  You can command the creature in the same way you would a creature you summoned via a <i>summon monster</i> spell. If you buy dogs to use with this spell, they cost 15 gp for a lap dog, 25 gp for a guard dog, or 150 gp for a riding dog (<i>Pathfinder RPG Ultimate Equipment</i> 82). Any kind of dog can be transformed by this spell and has the same statistics.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

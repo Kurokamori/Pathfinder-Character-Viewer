@@ -1,0 +1,53 @@
+{
+  "_id": "2Og23i3rRXu5QQlg",
+  "name": "Ki Pool",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_09.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, a monk gains a pool of&nbsp;ki&nbsp;points, supernatural energy he can use to accomplish amazing feats. The number of points in a monk&rsquo;s&nbsp;ki&nbsp;pool is equal to 1/2 his monk level + his&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>&nbsp;modifier. As long as he has at least 1 point in his&nbsp;ki&nbsp;pool, he can make a&nbsp;ki&nbsp;strike.</p>\n<ul>\n<li><strong>At 4th level</strong>,&nbsp;ki&nbsp;strike allows his unarmed attacks to be treated as magic weapons for the purpose of overcoming&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\">damage reduction</a>.</li>\n<li><strong>At 7th level</strong>,&nbsp;his unarmed attacks are also treated as&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/special-materials#TOC-Iron-Cold\">cold iron</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/special-materials#TOC-Silver-Alchemical\">silver</a>&nbsp;for the purpose of overcoming&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\">damage reduction</a>.</li>\n<li><strong>At 10th level</strong>, his unarmed attacks are also treated as lawful weapons for the purpose of overcoming&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\">damage reduction</a>.</li>\n<li><strong>At 16th level</strong>, his unarmed attacks are treated as&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/special-materials#TOC-Adamantine\">adamantine</a>&nbsp;weapons for the purpose of overcoming&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\">damage reduction</a>&nbsp;and bypassing&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/damaging-objects#TOC-Hardness\">hardness</a>.</li>\n</ul>\n<p>By spending 1 point from his&nbsp;ki&nbsp;pool, a monk can do one of the following:</p>\n<ul>\n<li>Make one additional attack at his highest&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Bonus\">attack bonus</a>&nbsp;when making a flurry of blows attack, or</li>\n<li>Increase his speed by 20 feet for 1 round, or</li>\n<li>Give himself a +4&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Dodge-Bonuses\">dodge bonus</a>&nbsp;to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\">AC</a>&nbsp;for 1 round.</li>\n</ul>\n<p>Each of these powers is activated as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions\">swift action</a>.</p>\n<p>The&nbsp;ki&nbsp;pool is replenished each morning after 8 hours of rest or meditation; these hours do not need to be consecutive.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor(@classes.monk.level / 2) + @abilities.wis.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_kiPool",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Monk"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

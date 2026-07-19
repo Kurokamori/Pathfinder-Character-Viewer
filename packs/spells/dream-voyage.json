@@ -1,0 +1,149 @@
+{
+  "_id": "759y8xzdg3unvt6s",
+  "name": "Dream Voyage",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ey3a487or0ovalvm",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "you and one creature/level"
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "psychic",
+          9
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 9,
+    "school": "con",
+    "subschool": "teleportation",
+    "types": "mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "shortDescription": "<p>This spell functions as <i><i>dream</i> travel</i>, but you and your companions travel through the Dimension of Dreams in a fantastical vehicle of your own devising that halves the travel time. Only you can pilot the vessel, and you can do so even if you aren't inside it. Your psychic vehicle buffers minds from the intense emotional tides of the Dimension of Dreams, rendering everyone inside immune to harmful emotion and fear effects. Unlike with <i><i>dream</i> travel</i>, there is no chance the vessel arrives off target. In addition, you need not have met the target creature, but in that case you must have at least a reliable description of it. However, if you attempt to travel there with insufficient or incorrect information, you do need to roll, using the false identity entry from <i><i>dream</i> travel</i>.  Creatures that disembark from your vehicle can either enter the <i>dream</i>scape or exit to the plane where the <i>dream</i>er's body lies, arriving within 1 mile of the <i>dream</i>er's body. All creatures that disembark from the vehicle onto a plane at the same time arrive in the same place. The <i>dream</i>er can't prevent the <i><i>dream</i> voyage</i>rs from entering its <i>dream</i>, but can attempt a Will save to prevent a group of creatures from exiting to the plane where its body resides.  The psychic vehicle remains in the <i>dream</i> for the remainder of the spell's duration, even if it's unoccupied. A creature adjacent to the <i>dream</i>er can reenter the <i>dream</i> vessel as a full-round action through an illusory portal only subjects of the spell can see. You can return the vessel to the point where you cast <i><i>dream</i> voyage</i> to allow any number of passengers to return to that plane, and can return it to the <i>dream</i> again. Either of these trips takes the same amount of time as the initial travel, and can be done any number of times within the spell's duration. If the vessel moves out of a <i>dream</i>scape, companions left behind can't return to the vessel by being near the <i>dream</i>er. If a companion is killed, its body doesn't return to the <i><i>dream</i> voyage</i> unless you carry it with you, just like any other object.  If the <i>dream</i>er awakens while the <i>dream</i> vessel is still in its <i>dream</i>, it can allow the <i><i>dream</i> travel</i>ers to exit or not (as with <i><i>dream</i> travel</i>). The <i>dream</i> vessel remains intact in the Dimension of Dreams for the spell's duration even if it's untethered from a  <i>dream</i>. It drifts through <i>dream</i>s when this happens, and you can't pilot it to another <i>dream</i> (even a <i>dream</i> of the initial <i>dream</i>er if that creature begins <i>dream</i>ing again). If you dismiss the spell at any time, you and all subjects within the <i>dream</i> vessel return to where you started on the Material Plane.  You can increase the number of companions you can bring on a <i><i>dream</i> voyage</i> to 10 creatures per caster level, though to do so you must increase the casting time, maintaining your concentration and touching up to 6 creatures per round as a full-round action. If your concentration is disrupted before you touch all of the targets, the spell is wasted and has no effect. Once you have touched all of your companions, the <i><i>dream</i> voyage</i> begins; however, its duration is reduced to 1 hour.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

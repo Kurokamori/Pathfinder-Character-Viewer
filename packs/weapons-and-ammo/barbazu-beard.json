@@ -1,0 +1,150 @@
+{
+  "_id": "SW6Os7QVZTWc4Ctd",
+  "name": "Barbazu Beard",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/barbazu-beard.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Cheliax, Empire of Devils pg. 27</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 25 gp <strong>Weight</strong> 5 lbs.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>Popular in Egorian but rarely seen elsewhere, a barbazu beard is an intimidating helm with a full facemask wrought to look like a snarling barbazu's head. Extending from the chin area of the face guard is a razor-sharp blade much like an actual barbazu's beard, usually 8 inches long but sometimes longer. A barbazu beard can be used as an off-hand weapon that requires no hands to use; thus, a warrior could combine use of a barbazu beard with a two-handed weapon. It otherwise follows all rules for using an off-hand weapon. Attacking with a barbazu beard provokes an attack of opportunity. Because it is so close to the wearer's face, using a barbazu beard against creatures harmful to touch (such as fire elementals and acidic oozes) has the same risks as using a natural weapon or unarmed strike against these creatures.</p><p></p><p> A barbazu beard is a light melee exotic weapon.</p>"
+    },
+    "tags": [],
+    "weight": 5,
+    "price": 25,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Barbazu Beard",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "1f0zsodcflydmjmb",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/barbazu-beard.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "barbazuBeard",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

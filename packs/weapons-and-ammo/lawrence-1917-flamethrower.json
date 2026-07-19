@@ -1,0 +1,155 @@
+{
+  "_id": "hHwOUIg2oTyV6vME",
+  "name": "Lawrence 1917 Flamethrower",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-brown.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #71: Rasputin Must Die! pg. 64</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 800 gp <strong>Weight</strong> 20 lbs.</p>\n<p><strong>Damage</strong> 4d6 (medium); <strong>Critical</strong> -; <strong>Range</strong> -; <strong>Type</strong> fire; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> ; <strong>Capacity</strong> 6</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>One of the most infamous devices to evolve as a result of trench warfare, the flamethrower is still in its infancy in the early twentieth century. The British military produced the Lawrence 1917, which found its way into the hands of Russia's soldiers. The device consists of a cumbersome backpack of two tanks and a swivelmounted, handheld projection unit, or \"lance.\" When the device is aimed and a small hand lever depressed, a small gas burner ignites the oil, which is propelled forth in a blazing stream of intense flame. A flamethrower with full tanks is capable of unleashing up to 6 charges of ignited oil, to devastating effect.</p>\n<p>When using a flamethrower, the wielder projects a 60-foot-long line of fire, attempting a separate attack roll against each creature within the line. Each attack roll takes a -2 penalty, and its attack damage cannot be modified by precision damage or damage-increasing feats such as @Compendium[pf1.feats.26k1Gi7t5BoqxhIj]{Vital Strike}. Effects that grant concealment, such as fog or smoke, or the <em>blur</em>, <em>invisibility</em>, or <em>mirror image</em> spells, do not foil this line attack. If any of the rolls threatens a critical hit, the wielder confirms the critical for that roll alone.</p>\n<p>All affected creatures take 4d6 points of damage, and any creature hit by the flaming stream must also succeed at succeed at a DC 20 Reflex save or catch fire, taking an additional 2d6 points of damage each round until the flames are extinguished. A burning creature can attempt a new save as a full-round action, and dropping and rolling on the ground grants a +2 bonus on this save.</p>\n<p>The device's tanks and backpacks are awkward, and the wielder takes a -4 armor check penalty when wearing the cumbersome device. In addition, the tanks have hardness 10 and 5 hit points, and if the tank is ruptured in the presence of any adjacent flame (including the device's own gas igniter), a mighty conflagration erupts, the wielder takes 6d6 points of fire damage, and all creatures within a 20-foot radius take 3d6 points of fire damage (Reflex DC 20 for half ). Any creatures who take damage must succeed at a DC 20 Reflex save or catch on fire.</p>"
+    },
+    "tags": [],
+    "weight": 20,
+    "price": 800,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Lawrence 1917 Flamethrower",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "4cmb1pix4gtcdkk6",
+        "name": "Attack",
+        "img": "icons/weapons/guns/rifle-brown.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "60",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(4, 6, @size)",
+              {
+                "values": [
+                  "fire"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "20",
+          "type": "ref",
+          "description": "Reflex to avoid catching fire (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "lawrence1917Flamethrower",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

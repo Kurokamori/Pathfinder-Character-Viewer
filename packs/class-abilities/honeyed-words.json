@@ -1,0 +1,58 @@
+{
+  "_id": "VjyJLTkaNBSclOro",
+  "name": "Honeyed Words",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/weapons/dagger.PNG",
+  "data": {
+    "description": {
+      "value": "<p>Once per day, the rogue can roll two dice while making a Bluff check, and take the better result. She must choose to use this talent before making the Bluff check. A rogue can use this ability one additional time per day for every five rogue levels she possesses.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "ceil(@classes.rogue.level / 5)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [
+      {
+        "subTarget": "skill.blf",
+        "text": "Honeyed Words: roll two dice and take the better result."
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_honeyedWords",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Rogue"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

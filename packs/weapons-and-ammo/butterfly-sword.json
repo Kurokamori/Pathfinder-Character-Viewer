@@ -1,0 +1,153 @@
+{
+  "_id": "GbstglnVnDh9wzuA",
+  "name": "Butterfly Sword",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/butterfly-knife.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 18</em>, <em>Ultimate Combat pg. 130</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 20 gp <strong>Weight</strong> 1 lb.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> monk</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Martial</p><p><strong>Weapon Groups</strong> Blades, Light; Monk</p><h3 class=\"framing\">Description</h3><p>These short matching swords come in pairs, cleverly nested together to appear as a single blade. Both weapons can be drawn at the same time, and they can be separated as a free action and wielded in both hands to make wickedly effective chops and slashes. Their thin, broad blades extend just 1 foot in length. A butterfly sword has a hardwood grip covered with braided cord, and a metal D-shaped guard to protect the wielder's hand. The listed price is for a pair of butterfly swords. Masterwork butterfly swords cost 320 gp for the pair. If you add magical enhancement bonuses or properties to a butterfly sword, treat each sword in the pair as a separate weapon (for example, adding a +1 magical enhancement bonus to a pair of masterwork butterfly swords costs 4,000 gp).</p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 20,
+    "hp": {
+      "max": "2",
+      "value": "2"
+    },
+    "hardness": 10,
+    "identifiedName": "Butterfly Sword",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ybg2ulufs794ckxh",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/butterfly-knife.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "butterflySword",
+    "scriptCalls": [],
+    "weaponType": "martial"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

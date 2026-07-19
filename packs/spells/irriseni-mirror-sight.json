@@ -1,0 +1,157 @@
+{
+  "_id": "m881pmz483rl4ks6",
+  "name": "Irriseni Mirror Sight",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "r1mskfjy45qx07w3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "magical sensor",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "witch",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "div",
+    "subschool": "scrying",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a mirror"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell lets you look into a mirror near you and see an image that is reflected in another specific mirror (chosen by you) or an individual reflected in any other mirror. This works like a <i>scrying</i> spell, except you can only view creatures on the same plane as you. Each time you cast the spell, you can choose to see one of three types of reflections in your mirror.  <i>Known Mirror</i>: The current reflection in another mirror with which you are familiar.  <i>Known Person</i>: The current reflection of a person you know well, assuming that person is near a mirror.  <i>Known Place</i>: The current reflection of a place you know well, assuming the location is being reflected in a mirror.  You receive only visual information through this ability. You can choose to transmit information both ways so that a person reflected in the remote mirror can view whatever appears in the mirror you are using.  For example, Urion Petresky knows that Queen Elvanna keeps a mirror in a hall near her throne room. He can look through his own handheld mirror and see into this hall, even if the queen is not there. Alternatively, he can attempt to find the queen (wherever she is) by looking into his mirror; if, at that moment, the queen is near any mirror at all, he can see her. He may instead cast the spell and try to see into her throne room, hoping that someone has brought a mirror there. If any of these conditions fails, Urion sees nothing but his own reflection.  This spell works with intentionally fabricated mirrors only; it is not effective with other reflective surfaces, such as still pools or polished metal shields. <b>Effect</b>s that block <i>scrying</i> block this spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

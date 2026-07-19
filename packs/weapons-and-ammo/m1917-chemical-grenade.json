@@ -1,0 +1,144 @@
+{
+  "_id": "ePbnk98skXUyRdDY",
+  "name": "M1917 Chemical Grenade",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/bomb-fuse-cloth-pink.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #71: Rasputin Must Die! pg. 64</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 100 gp <strong>Weight</strong> 2 lbs.</p>\n<p><strong>Damage</strong> see description (medium); <strong>Critical</strong> -; <strong>Range</strong> 20 ft.; <strong>Type</strong> acid; <strong>Special</strong> see description</p>\n<p><strong>Category</strong> Explosive; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>The M1917 is a modified M1914 grenade specially modified and enlarged to release a cloud of toxic gas upon detonation. Resembling an overlarge metal can with a small lever and handle protruding from the bottom, the grenade is armed by pulling back on a metal firing pin held in place by the handle's depressed lever, which is released when thrown.</p>\n<p>At the beginning of your next turn, the grenade spews forth a cloud of mustard gas (see the sidebar on this page) in a 20-foot radius. The cloud disperses naturally after 4 rounds; a strong wind (21+ mph) disperses the cloud in 1 round.</p>"
+    },
+    "tags": [],
+    "weight": 2,
+    "price": 100,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "M1917 Chemical Grenade",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "r3hqccteyjderjle",
+        "name": "Attack",
+        "img": "icons/weapons/thrown/bomb-fuse-cloth-pink.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 5,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "m1917ChemicalGrenade",
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,157 @@
+{
+  "_id": "Ey9KrEfCDEqBAXuO",
+  "name": "Double-Barreled Shotgun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-double-barrel.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 140</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 7,000 gp <strong>Weight</strong> 15 lbs.</p>\n<p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 20 ft.; <strong>Type</strong> B and P; <strong>Special</strong> scatter</p>\n<p><strong>Misfire</strong> 1-2; <strong>Capacity</strong> 2</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This twin-barreled shotgun can be shot one barrel at a time, or both together as one attack. A double shot that fires bullets is inaccurate, and takes a -4 penalty on both attacks.</p>\n<p>A double shot that fires bullets targets only a single creature and increases the damage of each barrel to 2d6 points (Small) or 2d8 points (Medium) for a total of 4d6 or 4d8 points of damage. A doublebarreled shotgun uses metal cartridges (loaded with either a bullet or pellets) as ammunition.</p>\n<p><strong>This is an advanced firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 15,
+    "price": 7000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Double-Barreled Shotgun",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "oyy9drw5dmscarer",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-double-barrel.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "doublebarreledShotgun",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

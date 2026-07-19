@@ -1,0 +1,156 @@
+{
+  "_id": "3zi4ie97hxr1d3ng",
+  "name": "Word of Chaos",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "3g1oyhb6zkjtjfhp",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "instantaneous",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 40,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "none or Will negates; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "nonchaotic creatures in a 40-ft.-radius spread centered on you",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          7
+        ],
+        [
+          "inquisitor",
+          6
+        ]
+      ],
+      "domain": [
+        [
+          "Chaos",
+          7
+        ]
+      ],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "evo",
+    "types": "chaotic, sonic",
+    "components": {
+      "verbal": true
+    },
+    "shortDescription": "<p>Any nonchaotic creature within the area of a <i>Word of Chaos</i> spell suffers the following ill effects, depending on their <table><tr><th>HD</th><th>Effect</th></tr><tr><td>Equal to caster level</td><td>Deafened</td></tr><tr><td>Up to caster level -1</td><td>Stunned, deafened</td></tr><tr><td>Up to caster level -5</td><td>Confused, stunned, deafened</td></tr><tr><td>Up to caster level -10</td><td>Killed, confused, stunned, deafened</td></tr></table></td></tr></table>   The effects are cumulative and concurrent. A successful Will save reduces or eliminates these effects. Creatures affected by multiple effects make only one save and apply the result to all the effects.</p><p><i><b>Deafened</b></i>: The creature is deafened for 1d4 rounds. Save negates.</p><p><i>Stunned</i>: The creature is stunned for 1 round. Save negates.</p><p><i>Confused</i>: The creature is confused for 1d10 minutes. This is a mind-affecting enchantment effect. Save reduces the confused effect to 1 round.</p><p><i>Killed</i>: Living creatures die. Undead creatures are destroyed. Save negates. If the save is successful, the creature instead takes 3d6 points of damage + 1 point per caster level (maximum +25).</p><p>Furthermore, if you are on your home plane when you cast this spell, nonchaotic extraplanar creatures within the area are instantly banished back to their home planes. Creatures so banished cannot return for at least 24 hours. This effect takes place regardless of whether the creatures hear the <i>Word of Chaos</i> or not. The banishment effect allows a Will save (at a -4 penalty) to negate.</p><p>Creatures whose HD exceed your caster level are unaffected by <i>Word of Chaos</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

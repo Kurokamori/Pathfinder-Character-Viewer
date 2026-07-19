@@ -1,0 +1,53 @@
+{
+  "_id": "rPoHllxGfUC4y7us",
+  "name": "Speed or Slow Time",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>As a standard action, you can speed up or slow down time, as either the @Compendium[pf1.spells.s9amdo5398alb5p0]{Haste} or @Compendium[pf1.spells.jcr72piqo6g549e1]{Slow} spell.</p>\n<p>You can use this ability once per day, plus one additional time per day at 12th level and 17th level.</p>\n<p>You must be at least 7th level before selecting this revelation.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "@classes.oracle.level >= 17 ? 3 : ((@classes.oracle.level > 11 && @classes.oracle.level < 17) ? 2 : 1)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_speedOrSlowTime",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,156 @@
+{
+  "_id": "1qsCQ6TiPgSsNPFj",
+  "name": "Maxim M1910 Machine Gun",
+  "type": "weapon",
+  "img": "icons/weapons/guns/rifle-brown.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #71: Rasputin Must Die! pg. 64</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 1,500 gp <strong>Weight</strong> 140 lbs.</p>\n<p><strong>Damage</strong> 2d8 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 120 ft.; <strong>Type</strong> B and P; <strong>Special</strong> automatic</p>\n<p><strong>Misfire</strong> 1-2; <strong>Capacity</strong> 250</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This heavy machine gun uses 7.62 54mmR ammunition in 250-round belts. Although a single person can fire a Maxim, it typically has a two-person crew: the gunner, and a loader who assists with feeding the ammunition belt into the weapon.</p>\n<p>As a full-round action, the loader can use a special aid another action to grant the gunner a +2 bonus on his next attack roll. Because of its size and heavy weight, a Maxim is often either mounted on a wheeled chassis with a gun shield for trench defensive use, or on the back of a horse-drawn wagon called a tachanka (see page 67).</p>\n<p>Assuming a user can even lift the weapon, firing a Maxim M1910 machine gun that is not mounted imparts a -4 penalty on attack rolls and the recoil knocks the wielder prone. The Maxim M1910 is automatic-fire only.</p>\n<p>The armored shield provides cover when firing the weapon from the prone position.</p>"
+    },
+    "tags": [],
+    "weight": 140,
+    "price": 1500,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Maxim M1910 Machine Gun",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "7b1hjnlvh2njt8z3",
+        "name": "Attack",
+        "img": "icons/weapons/guns/rifle-brown.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(2, 8, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "maximM1910MachineGun",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

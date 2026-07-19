@@ -1,0 +1,152 @@
+{
+  "_id": "xa4xvoswgiq54zzn",
+  "name": "Arcane Cannon",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "94sswtgqsxhbfkgd",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "one magically animated cannon",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "an ornate miniature cannon forged with a drop of your blood that costs 5,000 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p>Your focus becomes a Medium arcane cannon that appears in an unoccupied square within the spell's range. If no unoccupied square is within range, the spell fails. The cannon comes into existence loaded. Each round thereafter, the cannon can either fire or load. A cannon must be loaded to fire. You do not need to supply ammunition for the cannon.</p><p>On your turn, you can spend a move action to direct the cannon to wheel itself to a new location, moving the cannon up to 20 feet. If the arcane cannon ever leaves your line of sight, it winks out of existence, and the spell's duration ends.</p><p>The cannon has a range increment of 50 feet. It targets touch attack in the first range increment, and it has no misfire chance.</p><p>The cannon acts as a weapon with the conductive special weapon ability (see page 286 of the Advanced Player's Guide), which you can use to channel your spell-like or supernatural abilities as long as you are within the range of arcane cannon. The cannon's attack bonus is equal to your caster level + your Intelligence bonus or your Charisma bonus (for wizards or sorcerers, respectively) with an additional +1 per four caster levels (maximum +5 at 20th level). On a hit, the cannon deals 4d10 damage. The arcane cannon attacks have a critical modifier of x4.</p><p>The cannon has AC 10, hardness 10, and 80 hit points. If the cannon is subject to a spell or effect that requires a save, it uses your saving throw modifiers. The cannon never provokes attacks of opportunity. If the cannon is destroyed, so is your focus.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

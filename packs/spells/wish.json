@@ -1,0 +1,194 @@
+{
+  "_id": "nnj51dwfkwd15ngj",
+  "name": "Wish",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "a84z7u5o74fzckoq",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "see text",
+          "units": ""
+        },
+        "target": {
+          "value": "see text"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": "none; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "see text",
+        "spellArea": "see text",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ],
+        [
+          "psychic",
+          9
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Arcane",
+          9
+        ],
+        [
+          "Djinni",
+          9
+        ],
+        [
+          "Draconic",
+          9
+        ],
+        [
+          "Efreeti",
+          9
+        ],
+        [
+          "Marid",
+          9
+        ],
+        [
+          "Shaitan",
+          9
+        ],
+        [
+          "Div",
+          9
+        ],
+        [
+          "Impossible",
+          9
+        ]
+      ]
+    },
+    "level": 9,
+    "school": "uni",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "diamond worth 25,000 gp",
+      "gpValue": 25000
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "shortDescription": "<p><i>Wish is</i> the mightiest spell a wizard or sorcerer can cast. By simply speaking aloud, you can alter reality to better suit you. Even <i><i>wish</i>,</i> however, has its limits. A <i>wish</i> can produce any one of the following effects.</p><p><ul><li> Duplicate any sorcerer/wizard spell of 8th level or lower, provided the spell does not belong to one of your opposition schools.</p><p><li> Duplicate any non-sorcerer/wizard spell of 7th level or lower, provided the spell does not belong to one of your opposition schools.</p><p><li> Duplicate any sorcerer/wizard spell of 7th level or lower, even if it belongs to one of your opposition schools.</p><p><li> Duplicate any non-sorcerer/wizard spell of 6th level or lower, even if it belongs to one of your opposition schools.</p><p><li> Undo the harmful effects of many other spells, such as <i>geas/ quest</i> or <i>insanity.</i></p><p><li> Grant a creature a +1 inherent bonus to an ability score. Two to five <i>wish</i> spells cast in immediate succession can grant a creature a +2 to +5 inherent bonus to an ability score (two <i>wish</i>es for a +2 inherent bonus, three <i>wish</i>es for a +3 inherent bonus, and so on).</p><p>Inherent bonuses are instantaneous, so they cannot be dispelled.</p><p><i>Note:</i> An inherent bonus may not exceed +5 for a single ability score, and inherent bonuses to a particular ability score do not stack, so only the best one applies.</p><p><li> Remove injuries and afflictions. A single <i>wish</i> can aid one creature per caster level, and all subjects are cured of the same kind of affliction. For example, you could heal all the damage you and your companions have taken, or remove all poison effects from everyone in the party, but not do both with the same <i>wish</i>.</p><p><li> Revive the dead. A <i>wish</i> can bring a dead creature back to life by duplicating a <i>resurrection</i> spell. A <i>wish</i> can revive a dead creature whose body has been destroyed, but the task takes two <i>wish</i>es: one to recreate the body and another to infuse the body with life again. A <i>wish</i> cannot prevent a character who was brought back to life from gaining a permanent negative level.</p><p><li> Transport travelers. A <i>wish</i> can lift one creature per caster level from anywhere on any plane and place those creatures anywhere else on any plane regardless of local conditions. An unwilling target gets a Will save to negate the effect, and spell resistance (if any) applies.</p><p><li> Undo misfortune. A <i>wish</i> can undo a single recent event.</p><p>The <i>wish</i> forces a reroll of any roll made within the last round (including your last turn). Reality reshapes itself to accommodate the new result. For example, a <i>wish</i> could undo an opponent's successful save, a foe's successful critical hit (either the attack roll or the critical roll), a friend's failed save, and so on. The reroll, however, may be as bad as or worse than the original roll. An unwilling target gets a Will save to negate the effect, and spell resistance (if any) applies.</ul></p><p>You may try to use a <i>wish</i> to produce greater effects than these, but doing so is dangerous. (The <i>wish</i> may pervert your intent into a literal but undesirable fulfillment or only a partial fulfillment, at the GM's discretion.) Duplicated spells allow saves and spell resistance as normal (but save DCs are for 9th-level spells).</p><p>When a <i>wish</i> duplicates a spell with a material component that costs more than 10,000 gp, you must provide that component (in addition to the 25,000 gp diamond component for this spell).</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

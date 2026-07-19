@@ -1,0 +1,53 @@
+{
+  "_id": "WSqWT9ZIshtC5vlV",
+  "name": "Rage",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/extra-rage.jpg",
+  "data": {
+    "description": {
+      "value": "<p>A barbarian can call upon inner reserves of strength and ferocity, granting her additional combat prowess. Starting at 1st level, a barbarian can rage for a number of rounds per day equal to 4 + her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>&nbsp;modifier. At each level after 1st, she can rage for 2 additional rounds. Temporary increases to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>, such as those gained from rage and spells like&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/b/bear-s-endurance\">bear’s endurance</a>, do not increase the total number of rounds that a barbarian can rage per day. A barbarian can enter rage as a free action. The total number of rounds of rage per day is renewed after resting for 8 hours, although these hours do not need to be consecutive.</p>\n<p>While in rage, a barbarian gains a +4 morale bonus to her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\" rel=\"nofollow\">Strength</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>, as well as a +2 morale bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a>&nbsp;saves. In addition, she takes a –2 penalty to&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">Armor Class</a>. The increase to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>&nbsp;grants the barbarian 2 hit points per Hit Dice, but these disappear when the rage ends and are not lost first like&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Temporary-Hit-Points\" rel=\"nofollow\">temporary hit points</a>. While in rage, a barbarian cannot use any&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Charisma-Cha-\" rel=\"nofollow\">Charisma</a>-,&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a>-, or&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Intelligence-Int-\" rel=\"nofollow\">Intelligence</a>-based skills (except&nbsp;<a href=\"https://www.d20pfsrd.com/skills/acrobatics\" rel=\"nofollow\">Acrobatics</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/skills/fly\" rel=\"nofollow\">Fly</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/skills/intimidate\" rel=\"nofollow\">Intimidate</a>, and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/ride\" rel=\"nofollow\">Ride</a>) or any ability that requires patience or concentration.</p>\n<p>A barbarian can end her rage as a free action and is&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fatigued\" rel=\"nofollow\">fatigued</a>&nbsp;after rage for a number of rounds equal to 2 times the number of rounds spent in the rage. A barbarian cannot enter a new rage while&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fatigued\" rel=\"nofollow\">fatigued</a>&nbsp;or&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Exhausted\" rel=\"nofollow\">exhausted</a>&nbsp;but can otherwise enter rage multiple times during a single encounter or combat. If a barbarian falls&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Unconscious\" rel=\"nofollow\">unconscious</a>, her rage immediately ends, placing her in peril of death.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "4 + @abilities.con.mod + (2*(@classes.barbarian.level - 1))"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_rage",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Barbarian"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

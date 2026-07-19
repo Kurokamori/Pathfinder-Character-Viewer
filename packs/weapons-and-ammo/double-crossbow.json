@@ -1,0 +1,155 @@
+{
+  "_id": "vyRDu111njgEV8xw",
+  "name": "Double Crossbow",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/crossbow-double.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 33</em>, <em>Classic Monsters Revisited pg. 42</em>, <em>Pathfinder Campaign Setting pg. 209</em>, <em>Adventurer's Armory pg. 18</em>, <em>Advanced Player's Guide pg. 178</em>, <em>Ultimate Equipment pg. 21</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 300 gp <strong>Weight</strong> 18 lbs.</p><p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> 80 ft.; <strong>Type</strong> P; <strong>Special</strong> see text</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p><p><strong>Weapon Groups</strong> Crossbows</p><h3 class=\"framing\">Description</h3><p>This heavy weapon fires a pair of iron-tipped bolts with a single squeeze of the trigger. Because of its size and weight, you take a -4 penalty on your attack roll if you're proficient with it, or -8 if you're not. If the attack hits, the target takes damage from both bolts. Critical hits, sneak attack damage, and other precision-based damage apply to only the first bolt. Reloading one bolt is a standard action; the Rapid Reload feat reduces this to a move action. Crossbow Mastery (<em>Advanced Player's Guide</em>) allows you to reload both bolts as a move action. A double crossbow fires crossbow bolts.</p>"
+    },
+    "tags": [],
+    "weight": 18,
+    "price": 300,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Double Crossbow",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ure4k5225nilv414",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/crossbow-double.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "80",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "doubleCrossbow",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged",
+    "ammoType": "bolt"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

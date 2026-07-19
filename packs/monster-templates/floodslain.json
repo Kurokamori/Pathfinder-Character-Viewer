@@ -1,0 +1,94 @@
+{
+  "_id": "8sJxllkGBnqqUgu5",
+  "name": "Floodslain",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons</strong>&nbsp;No<br><br>Collectively known as “the after-storm” by Belkzen natives, floodslain are victims of flash floods that have risen as undead. They’re creatures of panic and despair, driven by anger, fear, and a yearning to drag others into the waters. Long after the floodwaters recede, floodslain continue spreading the miserable death that claimed them.<br><br>Floodslain are similar in appearance to their original living forms, and are recognizable even in their waterlogged state. Many were gruesomely damaged by the floods that took their lives, though, their bodies battered and broken by rushing water and debris. The one feature common among all floodslain is wild, panicked eyes—a telltale sign of a death mired in shock and fear. Floodslain tend to drift toward lower ground, as if seeking the very water that transformed them. While this habitual migration makes them a contained threat in some areas, the relatively flat floodplains of Belkzen offer little resistance to the wandering undead. They can be found floating in major rivers, trapped in ravines and valleys, and staggering across flatlands, sometimes in large numbers. Floodslain that come close to living creatures try to drown them, and relentlessly follow those who flee. Targets who escape often draw the attention of yet more floodslain, eventually leading the undead to their homes. In great numbers, floodslain can slaughter small settlements.<br><br>While many find the possibility of undead born from purely natural disasters to be disturbing in and of itself, theories from druids and scholars in Lastwall hold even more chilling implications. Given that floodslain are most common in eastern Belkzen yet are little known outside that region, it is suspected that the floodwater itself was cursed even before falling as snow, perhaps by the dark influence of Gallowspire. If the Whispering Tyrant’s insidious reach could extend so far using only passing clouds, the crusaders of Lastwall might be facing a threat even more dire than they realize.<br><br>“Floodslain” is an acquired template that can be added to any non-aquatic living creature. A floodslain uses the base creature’s stats and abilities except as noted here.<br><br><strong>CR: </strong>Same as base creature + 1.</p>\n<p><strong>Alignment: </strong>Chaotic evil.</p>\n<p><strong>Type: </strong>The creature’s type changes to undead (augmented). Do not recalculate class BAB or saves.</p>\n<p><strong>Armor Class: </strong>Natural armor increases by 2.</p>\n<p><strong>Hit Dice: </strong>Change all racial Hit Dice to d8s. Class Hit Dice are unaffected. As undead, floodslain creatures use their Charisma modifiers to determine bonus hit points (instead of their Constitution modifiers).</p>\n<p><strong>Defensive Abilities: </strong>A floodslain creature gains channel resistance +2, DR 5/magic, and cold resistance 10 in addition to other defensive abilities granted by the undead type.</p>\n<p><strong>Speed: </strong>A floodslain creature gains a swim speed of 30 feet unless it already possesses a swim speed.</p>\n<p><strong>Melee: </strong>A floodslain creature gains a slam attack based on its size, if the base creature doesn’t have one. Its slam attack also delivers the drowning touch effect (see below). Its natural attacks are treated as magic weapons for the purpose of overcoming damage reduction.</p>\n<p><strong>Special Attacks: </strong>Floodslain creatures gain several special attacks. The save DCs are equal to 10 + 1/2 the base creature’s HD + its Charisma modifier unless otherwise noted.<br><br><em>Crashing Waters (Su): </em>Once per day, a floodslain creature can instinctively summon a spectral echo of the rushing waters that created it. This mass of phantom water slams the floodslain creature from behind, carrying it forward at up to three times its normal speed and enabling it to charge a single target. These waters also impact all creatures near the end of the floodslain creature’s movement, pushing them back. This acts as a bull rush; the floodslain creature attempts a single combat maneuver check against the CMD of each creature within 10 feet of the end of its charge. This bull rush attempt doesn’t provoke attacks of opportunity.</p>\n<p><em>Create Spawn (Su): </em>Any creature killed by a floodslain creature rises as a floodslain creature if it’s left immersed in water for 24 hours. These spawn aren’t under the control of their creators.<br>Drowning Touch (Su): The slam attack of a floodslain creature partially fills a living victim’s lungs with water. The victim must succeed at a Fortitude saving throw in order to cough up this water or become fatigued for 1d4 rounds. A fatigued creature that fails this save becomes exhausted instead. An exhausted creature that fails this save is staggered and falls to 0 hp. A creature at 0 hp that fails this save drops to –1 hp and begins dying. A creature killed in this fashion appears to have drowned.</p>\n<p><em>Panic (Su): </em>The dead eyes of a floodslain creature are frozen with shock and fear. The floodslain creature can induce fear in a living victim as a standard action. Targets must succeed at a Will saving throw or become shaken for 1d6 rounds. A creature can be affected by the same floodslain creature’s panic attack only once every 24 hours.<br><br><strong>Special Qualities: </strong>A floodslain creature gains the following special quality.<br><br><em>Flash Flood (Su): </em>A floodslain creature is constantly surrounded by an echo of the disaster that originally took its life. Water streams from the floodslain creature’s body, forming a 30-foot-radius pool that renders the ground in that area slick and muddy and increases the DCs of Acrobatics checks made in the area by 5.<br><br><strong>Ability Scores: </strong>Str +2, Dex –2, Int +0, Wis +2, Cha +2 (minimum 14). Waterlogged and ruined, floodslain creatures are driven to cling to life by maddened fear and confusion. As undead, floodslain creatures have no Constitution scores.</p>\n<p><strong>Feats: </strong>Floodslain creatures gain Toughness as a bonus feat.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "vdtwoeyv",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "6zdufjns",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "qsckvorl",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "y4i217kt",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "szu1wl6v",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

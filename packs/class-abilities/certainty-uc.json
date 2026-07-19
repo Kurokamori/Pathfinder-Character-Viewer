@@ -1,0 +1,53 @@
+{
+  "_id": "nE3Bi20thBNFLuxa",
+  "name": "Certainty (UC)",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/weapons/hunga-munga.PNG",
+  "data": {
+    "description": {
+      "value": "<p>The rogue chooses one of the skills she selected with rogue’s edge. Once per day, the rogue can reroll a skill check she just made with the selected skill and take the better result. She can use this reroll with the selected skill one additional time per day at 10th level and every 5 levels thereafter.</p>\n<p>A rogue can select this talent multiple times. Each time, the rogue must choose a different skill.</p>\n<p>A rogue must have the rogue’s edge class feature before selecting this talent.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor(@classes.rogueUnchained.level / 5)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_certaintyUc",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Rogue (Unchained)"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

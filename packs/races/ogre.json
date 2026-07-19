@@ -1,0 +1,96 @@
+{
+  "_id": "gZxiUYLYsGqQYwGZ",
+  "name": "Ogre",
+  "type": "race",
+  "img": "systems/pf1/icons/races/ogre.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers</strong>: Paragon (+4&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Str</a>, +2 Con, –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Int</a>, –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Cha</a>)</li>\n<li><strong>Type:</strong>&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Humanoid\">Humanoid</a>&nbsp;(<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Giant\">giant</a>)</li>\n<li><strong>Size:</strong> Large</li>\n<li><strong>Base Speed</strong>: Ogres have a base land speed of 40 ft.</li>\n<li><strong>Languages:</strong> Ogres only know Giant.</li>\n<li><strong>Natural Armor</strong>: Ogres have thick greasy skin, granting them a +2 natural armor bonus.</li>\n<li><strong>Darkvision:</strong> Ogres have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision\">darkvision</a>&nbsp;and so can see perfectly in the dark up to 60 feet</li>\n<li><strong>Low-Light Vision</strong>: Ogres can see twice as far as&nbsp;<a href=\"https://www.d20pfsrd.com/races/core-races/human\">humans</a>&nbsp;in dim light (they have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Low-Light-Vision\">low-light vision</a>)&nbsp;</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "m5xcngfg",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "8tew4zcy",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "4uqlx7ij",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "cxae6jpw",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "bkqv04h5",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [],
+      "custom": "Ogre"
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "size": "lg",
+    "subTypes": [
+      [
+        "Giant"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

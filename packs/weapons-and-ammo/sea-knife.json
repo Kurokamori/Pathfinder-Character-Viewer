@@ -1,0 +1,150 @@
+{
+  "_id": "nq0b69zA7Q35n0oE",
+  "name": "Sea-Knife",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/sea-knife.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Advanced Race Guide pg. 189</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 8 gp <strong>Weight</strong> 1 lb.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> -; <strong>Type</strong> S; <strong>Special</strong> -</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Martial</p><h3 class=\"framing\">Description</h3><p>A sea-knife is a long-handled weapon with a short blade. It is designed to be strapped to the ankle or foot of the wielder, pointing downward and jutting out beyond the wearer's leg. Donning or removing a sea-knife is a full-round action. The wearer cannot use a leg with a sea-knife strapped to it for walking or running. A sea-knife can be used as a light melee weapon when the wielder is swimming, flying, or prone. This allows the wielder to use a two-handed weapon, or wield a weapon with one hand and carry a shield, and still make off-hand attacks with the sea-knife. Attacks made with a sea-knife take a -2 circumstance penalty on attack rolls in addition to all other attack penalties. </p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 8,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Sea-Knife",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ev63fr3s7udnyugb",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/sea-knife.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "seaknife",
+    "scriptCalls": [],
+    "weaponType": "martial"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

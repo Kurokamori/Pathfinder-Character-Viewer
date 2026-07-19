@@ -1,0 +1,153 @@
+{
+  "_id": "3h6xbwxd3gvuvp77",
+  "name": "Magical Beast Shape",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "xjlz4s8cqr9enrhy",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 min./level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          7
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 7,
+    "school": "trs",
+    "subschool": "polymorph",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a piece of the creature whose form you plan to assume"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions as <i>beast shape IV</i> except you can assume the form of only a magical beast of a size between Diminutive and Huge. If the form you assume has any of the following abilities, you gain those abilities: burrow speed 60 feet, climb speed 90 feet, fly speed 120 feet (good maneuverability), swim speed 120 feet, blindsense 60 feet, blindsight 30 feet, darkvision 90 feet, low-light vision, scent, see in darkness, tremorsense 60 feet, blood drain, blood frenzy, breath weapon (if damage, up to 12d6 points), constrict, fast healing 5, ferocity, grab, hold breath, jet, no breath, poison, pounce, powerful charge, pull, rake, rend, roar, spikes, trample, trip, and web. If the creature has immunity to poison, you gain a +8 resistance bonus on saves against poison. If the creature has immunity or resistance to any energy types, you gain resistance 20 to those energy types. If the creature has vulnerability to an energy type, you gain that vulnerability.</p><p><b>Diminutive Magical Beast</b>: If you assume this form, you gain a +10 size bonus to your Dexterity score and take a -4 penalty to your Strength score.</p><p><b>Huge Magical Beast</b>: If you assume this form, you gain a +8 size bonus to your Strength score, take a -4 penalty on your Dexterity score, a +2 size bonus to your Constitution score, and gain a +7 natural armor bonus.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

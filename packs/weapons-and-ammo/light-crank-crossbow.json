@@ -1,0 +1,155 @@
+{
+  "_id": "CbqPpYdIwqOOSTdR",
+  "name": "Light Crank Crossbow",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/crossbow-crank.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ranged Tactics Toolbox pg. 18</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"PFS Legal\" src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 250 gp <strong>Weight</strong> 6 lbs.</p>\n<p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> 19-20/x2; <strong>Range</strong> 80 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p>\n<p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This weapon functions as a @Compendium[pf1.weapons-and-ammo.0MFbQaJ3MUWV2fGM]{Heavy Crank Crossbow}, except that its damage, critical, and range values are equivalent to those of a @Compendium[pf1.weapons-and-ammo.RWbjRwSPsuPAUDhw]{Light Crossbow}. Its lighter construction means it provides only a +1 bonus on @Compendium[pf1.skills.xvua9V5Zggkc77Gt]{Climb} checks and grapple combat maneuver checks to pull the target toward you.</p>"
+    },
+    "tags": [],
+    "weight": 6,
+    "price": 250,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Light Crank Crossbow",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "6u3h1wllm3v9rt1s",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/crossbow-crank.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "80",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 19,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "lightCrankCrossbow",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged",
+    "ammoType": "bolt"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "XuRBVEMC7oaHPR9V",
+  "name": "Counterspell Mastery",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/link-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 6th level, you gain @Compendium[pf1.feats.V8GIvVaAofyw9xIl]{Improved Counterspell}&nbsp;as a bonus feat. You may attempt to&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Counterspells\">counterspell</a>&nbsp;an opponent’s spell once per day as an&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions\">immediate action</a>&nbsp;(instead of a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Ready\">readied</a>&nbsp;action). You must use a spell at least one level higher than the spell being countered to use this ability. You can use this ability once per day at 6th level, plus one additional time per day for every 4 levels beyond 6th.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + (floor((@classes.wizard.level - 6) / 4))"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_counterspellMastery",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Wizard"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

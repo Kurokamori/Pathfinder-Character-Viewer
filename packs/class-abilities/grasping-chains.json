@@ -1,0 +1,70 @@
+{
+  "_id": "DzAOKrNemfm4mT1R",
+  "name": "Grasping Chains",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, chains cover your body and extend from your arms, grasping at the air around you and granting you a +4 bonus on Climb skill checks.</p>\n<p>At 9th level, this bonus increases to +8 and you gain a Climb speed equal to 1/2 your base speed.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "8c5qur3o",
+        "formula": "@classes.bloodrager.level >= 9 ? 8 : 4",
+        "operator": "+",
+        "subTarget": "skill.clm",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "ow8gnugm",
+        "formula": "@classes.bloodrager.level >= 9 ? (floor(@attributes.speed.land.base / 2)) : 0",
+        "operator": "+",
+        "subTarget": "climbSpeed",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_graspingChains",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

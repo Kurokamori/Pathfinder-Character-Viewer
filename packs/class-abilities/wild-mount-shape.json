@@ -1,0 +1,53 @@
+{
+  "_id": "O4YT0uwfkK9U9iUL",
+  "name": "Wild Mount Shape",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/banner-red.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, an order of the of the beast cavalier gains the ability to turn his mount into a different Medium or Large animal and back again once per day. His options for new forms include all creatures with the animal type. This ability functions as @Compendium[pf1.spells.774kmgcb7ygviht0]{Beast Shape II}, except as noted here. The effect lasts for 1 hour per cavalier level, or until the cavalier chooses to change his mount back. Changing the mount’s form (to a different animal or back to normal) requires the cavalier to touch his mount as a standard action that does not provoke an attack of opportunity. The form chosen must be that of an animal the cavalier is familiar with. The mount does not change size, but does receive the bonuses (not the penalty) presented in&nbsp;beast shape II&nbsp;for the Large animal.<br><br>The cavalier can use this ability an additional time per day at 10th level and every 4 levels thereafter (to a maximum of four times per day at 18th level).</p>\n<p>At 15th level, the cavalier can use wild mount shape to change his mount into a Medium or Large dragon. When taking this form, the cavalier’s wild mount shape now functions as @Compendium[pf1.spells.iqcjiyi9leldfzxt]{Form of the Dragon I}, except as above.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + floor((@classes.cavalier.level - 6) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_wildMountShape",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cavalier"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

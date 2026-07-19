@@ -1,0 +1,73 @@
+{
+  "_id": "WUFd7HiRakgydhaW",
+  "name": "Vampiric Cunning",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/beast_02.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The vampire hunter gains a bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/perception\">Perception</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;checks equal to half his level. At 8th level, he can move at his normal&nbsp;<a href=\"https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/speed\">speed</a>&nbsp;while using&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;with no penalty. At 16th level, the vampire hunter can use&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;while charging (but not while making any other attack); when charging (and only when charging), he can attempt a&nbsp;<a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>&nbsp;check even if he lacks&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Cover\">cover</a>&nbsp;relative to his target.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "u1900evo",
+        "formula": "floor(@classes.vampirehunter.level / 2)",
+        "operator": "add",
+        "subTarget": "skill.per",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "nxddvbsp",
+        "formula": "floor(@classes.vampirehunter.level / 2)",
+        "operator": "add",
+        "subTarget": "skill.ste",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_vampiricCunning",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Vampire Hunter"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,157 @@
+{
+  "_id": "EOyNLLDmi1aiZNL6",
+  "name": "Culverin",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-wood.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 137</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 4,000 gp <strong>Weight</strong> 40 lbs.</p>\n<p><strong>Damage</strong> 2d6 (small), 2d8 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 30 ft.; <strong>Type</strong> B and P; <strong>Special</strong> scatter</p>\n<p><strong>Misfire</strong> 1 (10 ft.); <strong>Capacity</strong> 1</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>The culverin, also known as a hand bombard, consists of a simple smoothbore tube, sealed at one end except for a small hole used to ignite a gunpowder charge. A wooden stock partially encases the barrel, allowing you to hold it under your arm with relative ease when carrying it. Firing a culverin without support (such as a wall, a window, or a stand) imposes a -4 penalty on attack rolls, and knocks you prone.</p>\n<p>A culverin uses 4 doses of black powder and grapeshot (a handful of pellets) as ammunition. Note that these statistics simulate only the original, hand-held culverins-their larger descendants are considered cannons and are dealt with in the siege weapon section of <em>Ultimate Combat</em>.</p>\n<p><strong>This is an early firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 40,
+    "price": 4000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Culverin",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "fa4wo8j78bp94nrf",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-wood.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(2, 8, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "culverin",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

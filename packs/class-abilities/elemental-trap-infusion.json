@@ -1,0 +1,150 @@
+{
+  "_id": "9vOeCMi7U5K9iR3K",
+  "name": "Elemental Trap Infusion",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/runes-blue-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element</strong>&nbsp;universal;&nbsp;<strong>Type&nbsp;</strong>form infusion;&nbsp;<strong>Level&nbsp;</strong>3;&nbsp;<strong>Burn&nbsp;</strong>2<br><strong>Associated Blasts&nbsp;</strong>any<br><strong>Saving Throw&nbsp;</strong>Reflex half, see text</p>\n<p>You touch an area of natural ground, drawing up elemental energy that roils just below the surface, ready to explode when stepped on. This 5-foot square detonates when triggered by a weight of 10 pounds or more, affecting all creatures within 10 feet of the trap with your simple blast (or composite blast, if you have it). Any creature other than the one that triggered the elemental trap can attempt a Reflex save for half damage. The elemental trap lasts until the next time you use this wild talent or until it triggers. This counts as a magical trap with a Perception and Disable Device DC equal to 10 + your kineticist level + your Dexterity modifier.</p>\n<p>You can accept 2 points of burn, which cannot be reduced with gather power, to make a new trap without dismissing any previous traps. If you do, the trap lasts until the next time you recover burn.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "a4iyfvervhsfml8v",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/runes-blue-1.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": ""
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_elementalTrapInfusion",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

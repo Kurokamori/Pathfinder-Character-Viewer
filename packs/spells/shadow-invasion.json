@@ -1,0 +1,161 @@
+{
+  "_id": "cl8la3rhhfb0imdo",
+  "name": "Shadow Invasion",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "c045nk57y16uvz0y",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level (D); see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 30,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "30-ft. radius emanation centered on you",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "summoner",
+          4
+        ],
+        [
+          "magus",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "con",
+    "subschool": "summoning",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a masterwork piercing or slashing weapon"
+    },
+    "sr": false,
+    "shortDescription": "<p>Using a slashing motion with the spell's focus as part of the casting of <i><i>shadow</i> invasion</i>, you cut open a rift to the Plane of Shadow that fills a 30-foot area with <i>shadow</i>y energies. This area is stationary and becomes dark and gloomy, reducing the light level by one step (as darkness). Certain spells are enhanced within the area; spells of the <i>shadow</i> subschool that have reduced effects when disbelieved (such as <i>shadow</i> evocation) have their reduced effects increased by 20% (to a maximum of 90%) when determining their effects on targets within the area of <i><i>shadow</i> invasion</i>.  In addition, the rift created by <i><i>shadow</i> invasion</i> has a chance of attracting attention from the other side, and the spell can be inverted to bring these watchers through. When <i><i>shadow</i> invasion</i> is dismissed as a standard action, there is a chance that a single evangelist kyton (<i>Pathfinder RPG Bestiary</i> 185) will be summoned under the caster's command (as per <i>summon monster</i> V). This chance is 5% for every full round that <i><i>shadow</i> invasion</i> was active. If the caster level of <i><i>shadow</i> invasion</i> is 16th or greater, this effect summons an interlocutorB3 kyton instead. A kyton summoned this way remains for a number of rounds equal to what the remaining duration of <i><i>shadow</i> invasion</i> would have been had it not been dismissed. Successfully summoning a kyton this way is a lawful and evil act, as though casting a spell with the lawful and evil descriptors.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

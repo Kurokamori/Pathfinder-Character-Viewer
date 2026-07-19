@@ -1,0 +1,164 @@
+{
+  "_id": "QzzviyFKJkv2v1kK",
+  "name": "Lycanthropic Creature (Quick)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>Lycanthropic creatures can act as simpler variants of any sort of lycanthrope in hybrid form, but the default is for a werewolf-like creature, so if the base lycanthrope has different features, adjust the creature accordingly (for instance, a wereshark can swim). This simple template reflects the creature’s hybrid form. The creature can’t take full animal form, and when it’s in its ordinary form, remove this template with the exceptions of change shape, low-light vision, and scent. Lycanthropic creatures don’t have to be humanoids, and at your discretion, a lycanthropic creature can afflict creatures of its own type with lycanthropy, in addition to humanoids.<br><br><strong>Quick Rules:</strong> +1 to AC; DR 5/silver; +1 on rolls based on Str, Dex, and Con; +1 hp/HD; bite attack that deals 1d6 points of damage (for Medium creatures) plus curse of lycanthropy*; change shape (normal or hybrid form; polymorph); lycanthropic empathy* (as appropriate for the lycanthrope).<br><br><strong>Rebuild Rules:</strong>&nbsp;Type&nbsp;gain the shapechanger subtype;&nbsp;DR&nbsp;5/ silver;&nbsp;Senses&nbsp;low-light vision, scent;&nbsp;AC&nbsp;natural armor bonus increases by 1;&nbsp;Melee&nbsp;bite attack that deals 1d6 points of damage (for Medium creatures) plus curse of lycanthropy*;&nbsp;Special Attacks&nbsp;curse of lycanthropy*;&nbsp;Special Qualities&nbsp;change shape (normal or hybrid form; polymorph), lycanthropic empathy* (as appropriate for the lycanthrope);&nbsp;Ability Scores&nbsp;+2 Str, +2 Dex, +2 Con.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "ff2iph0h",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "xejnvwr9",
+        "formula": "@attributes.hd.total",
+        "operator": "+",
+        "subTarget": null,
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": ""
+      },
+      {
+        "_id": "lem4ujkc",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "mattack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "fid7lp4h",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "wdamage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      },
+      {
+        "_id": "6smdiwgx",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "strSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "zsliwlol",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "strChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "ed1ipgnj",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "ref",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "c7o9ufy3",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "dexSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "0o51brjf",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "dexChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "iru11ya8",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "fort",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "mrig4oc2",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "conSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "qfmmqwc2",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "conChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

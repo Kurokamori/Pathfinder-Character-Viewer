@@ -1,0 +1,174 @@
+{
+  "_id": "kZD3bdHeImDGDvIo",
+  "name": "Gnarled Creature (Quick)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;Yes<br><br>Creatures who have been “blessed” with the demon lord Kostchtchie’s attention may acquire this template, which leaves them hunched and knotted with corded muscles and awkwardly formed limbs. Though slower and clumsier than their fellows, gnarled creatures are much stronger and hardier and have thick, horny skin. “Gnarled” is an acquired template that can be applied to any creature of the animal, dragon, fey, humanoid, magical beast, monstrous humanoid, outsider, undead, or vermin type.<br><br><strong>Quick Rules:</strong> +1 on all rolls based on Str or Con, +1 hp/HD, –1 penalty on all rolls based on Dex, –2 penalty on all rolls based on Cha, gains Diehard as a bonus feat.<br><br><strong>Rebuild Rules:</strong> AC increase natural armor by +3; Speed reduce base speed by 10 ft. (cannot be lower than 10 ft.); Defensive Abilities gains the ferocity ability; Ability Scores +2 Str, +2 Con, –2 Dex, –4 Cha.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "vlvqugco",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "mattack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "jli7dqys",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "wdamage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      },
+      {
+        "_id": "ftc0u059",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "strSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "byzb7fr2",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "strChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "it4gmv1b",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "fort",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "ew04mwhu",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "conSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "baxyzkor",
+        "formula": "1",
+        "operator": "+",
+        "subTarget": "conChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "jeycf5xf",
+        "formula": "@attributes.hd.total",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      },
+      {
+        "_id": "fn9dobfz",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "ref",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "u6kh3x95",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "dexChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "7mglwesu",
+        "formula": "-1",
+        "operator": "+",
+        "subTarget": "dexSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "93g6kfdr",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "chaSkills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "4vm7db9q",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "chaChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

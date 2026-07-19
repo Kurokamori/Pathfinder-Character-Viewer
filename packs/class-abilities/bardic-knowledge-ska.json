@@ -1,0 +1,150 @@
+{
+  "_id": "6789ez9tvie2bw08",
+  "name": "Bardic Knowledge (SKA)",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/inventory/book-blue.jpg",
+  "data": {
+    "description": {
+      "value": "<p>A skald adds half his class level (minimum 1) to all&nbsp;<a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>&nbsp;skill checks and may make all&nbsp;<a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>&nbsp;skill checks untrained.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "6sscr87o",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kar",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "94gu8vjl",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kdu",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "bn6gr4pt",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.ken",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "fhfj3z0d",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kge",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "wz4j0u2a",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.khi",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "dbhfna7q",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.klo",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "4f9cxfzj",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kna",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "4qbc121d",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kno",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "8x070v7o",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kpl",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "oymywgls",
+        "formula": "max(1, floor(@classes.skald.level / 2))",
+        "operator": "add",
+        "subTarget": "skill.kre",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_bardicKnowledgeSka",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bard"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "1gKaluTk5z6U2nZM",
+  "name": "Technique Feat",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_11.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Due to the inherent deadliness of hunting vampires, the methods and traditions of vampire hunters are rare and little understood. This often makes vampire hunters just as feared as the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>&nbsp;they hunt. As vampire hunters study and train, they develop their skills, mastering ancient fighting techniques and drawing upon mystical arts feared by both the living and the&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Dead\">dead</a>.</p>\n<p>At 1st level, a vampire hunter gains a bonus feat. This new feat can be selected from either those listed as&nbsp;<a href=\"https://www.d20pfsrd.com/feats/combat-feats\">combat feats</a>&nbsp;or as vampire hunting technique feats (see page 14). A vampire hunter must meet the prerequisites for these feats to select them. The vampire hunter gains an additional bonus feat at 3rd level and every three levels thereafter.</p>\n<p>Upon reaching 6th level, and every six levels thereafter (12th and 18th), a vampire hunter can choose to learn a new combat or technique feat in place of a combat or technique feat he has already learned. In effect, the vampire hunter loses the old feat in exchange for the new one. The old feat cannot be one that was used as a prerequisite for another feat, prestige class, or another ability the vampire hunter knows. A vampire hunter can exchange only one feat at any given level and must choose whether or not to swap the feat at the time he gains a new bonus feat for the level.</p>\n<p>Technique feats include:&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/blessed-waters-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Blessed Waters</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/deaths-nightmare-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Death’s Nightmare</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/extended-vampiric-focus-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Extended Vampiric Focus</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/know-master-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Know Master</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/liberating-critical-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Liberating Critical</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/locked-will-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Locked Will</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/resolute-steed-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Resolute Steed</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/revealing-waters-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Revealing Waters</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/soured-soul-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Soured Soul</a>, and&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/vampire-scholar-technique/\" target=\"_blank\" rel=\"noopener nofollow ugc\">Vampire Scholar</a>.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "h17xzys9",
+        "formula": "1 + floor(@classes.vampireHunter.level / 3)",
+        "operator": "add",
+        "subTarget": "bonusFeats",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_techniqueFeat",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Vampire Hunter"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

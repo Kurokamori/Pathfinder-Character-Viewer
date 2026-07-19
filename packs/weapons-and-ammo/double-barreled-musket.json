@@ -1,0 +1,157 @@
+{
+  "_id": "2pK6KVVGJgaJMWE7",
+  "name": "Double-Barreled Musket",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-double-barrel.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 138</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"No character may purchase a firearm unless she possesses the Gunsmithing feat and firearms are never considered Always Available\" src=\"https://www.aonprd.com/images/PathfinderSocietySymbolN.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 2,500 gp <strong>Weight</strong> 11 lbs.</p>\n<p><strong>Damage</strong> 1d10 (small), 1d12 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 10 ft.; <strong>Type</strong> B and P; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> 1-3 (5 ft.); <strong>Capacity</strong> 2</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This musket has two parallel barrels; each barrel can be shot independently as separate attacks, or both can be fired at once as a standard action (the attack action).</p>\n<p>If both barrels are fired at once, they must both target the same creature or object, and the gun becomes wildly inaccurate, taking a -4 penalty on each shot. Each barrel of a double-barreled musket uses either a bullet and 1 dose of black powder or a single alchemical cartridge as ammunition.</p>\n<p><strong>This is an early firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 11,
+    "price": 2500,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Double-Barreled Musket",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "elhh6ssljosa7xhu",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-double-barrel.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 12, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "doublebarreledMusket",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,144 @@
+{
+  "_id": "0EZPEkeiIiU2ZkBh",
+  "name": "Advanced (Quick)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><span id=\"ctl00_MainContent_DataListMonsterTemplates_ctl00_LabelName\" style=\"margin-top: 0px;\"><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>Creatures with the advanced template are fiercer and more powerful than their ordinary cousins.<br><br><strong>Quick Rules</strong>: +2 on all rolls (including damage rolls) and special ability DCs; +4 to AC and CMD; +2 hp/HD.<br><br><strong>Rebuild Rules</strong>:&nbsp;<strong>AC</strong>&nbsp;increase natural armor by +2;&nbsp;<strong>Ability Scores</strong>&nbsp;+4 to all ability scores (except Int scores of 2 or less).</span></p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "a6zrvg6a",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "attack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      },
+      {
+        "_id": "hm9l51ql",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "damage",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "damage"
+      },
+      {
+        "_id": "q7a4j6ty",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "allSavingThrows",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      },
+      {
+        "_id": "wfk7ommm",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "skills",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skills"
+      },
+      {
+        "_id": "szl2ybmw",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "allChecks",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "abilityChecks"
+      },
+      {
+        "_id": "ngn45chi",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "cmb",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      },
+      {
+        "_id": "dt624sxt",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "init",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      },
+      {
+        "_id": "fanw1vex",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "iespqmig",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "cmd",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      },
+      {
+        "_id": "rdnbl17l",
+        "formula": "2*@attributes.hd.total",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

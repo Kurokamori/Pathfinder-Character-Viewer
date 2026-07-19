@@ -1,0 +1,70 @@
+{
+  "_id": "kYVyZ854gTAuNt21",
+  "name": "Whispered Glimpses",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/light-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The whispers of intrigue sing to you with glimpses of insight into others’ presence and motives, granting you greater awareness than your own senses could manage. You can add your Charisma modifier instead of your Wisdom bonus on Perception and Sense Motive checks.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "5q4616nq",
+        "formula": "@abilities.cha.mod - @abilities.wis.mod",
+        "operator": "+",
+        "subTarget": "skill.per",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "wqkq7q2s",
+        "formula": "@abilities.cha.mod - @abilities.wis.mod",
+        "operator": "+",
+        "subTarget": "skill.sen",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_whisperedGlimpses",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

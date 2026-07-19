@@ -1,0 +1,160 @@
+{
+  "_id": "68acsi5rli5t9mef",
+  "name": "Unconscious Agenda",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "28redvljql6k1xfp",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 week/level or until discharged (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "One humanoid"
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          6
+        ],
+        [
+          "bard",
+          6
+        ],
+        [
+          "witch",
+          6
+        ],
+        [
+          "inquisitor",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 6,
+    "school": "enc",
+    "subschool": "compulsion",
+    "types": "language-dependent, mind-affecting",
+    "components": {
+      "verbal": true
+    },
+    "shortDescription": "<p>This spell plants a subconscious directive in the target's mind that forces him to act as you dictate when specific circumstances arise. The target humanoid can be either conscious or unconscious, but must understand your language. Upon casting this spell, you must state a course of action you <i>wish</i> the target to take. This course of action must be described in 20 words or fewer. You must then state the condition under which you <i>wish</i> the target to take this action, also describing it in 20 or fewer words. Actions or conditions more elaborate than 20 words cause the spell to fail. <i>Unconscious agenda</i> cannot compel a target to kill himself, though it can compel him to perform exceedingly dangerous acts, face impossible odds, or undertake almost any other course of activity. You cannot issue new commands to the target after the spell is cast.  If the target fails his save against this spell, he is not compelled to act in any way until the specified trigger circumstances are encountered. He also has no knowledge of the details of the spell affecting him, and has no memory of the last 10 minutes (although he might come to notice the missing time or the presence of the caster). He can function as he <i>wish</i>es until the events you detailed as the condition take place. Upon experiencing the prerequisite condition, the target is forced to perform the course of action you described as per the spell <i>dominate person</i>. (If the compelled action is against the victim's nature, he immediately gains a new saving throw at a +5 bonus against the spell to end its effects.) For the next hour, the target acts as you dictated, doing all he can to fulfill your command. If, at the end of the hour, the target still has not completed your command, the target is released from the enchantment and the spell ends. Once the course of action is completed, the spell ends. The target has full memory of acts performed during this hour.  It's difficult to detect an <i>unconscious agenda</i> before the spell is triggered. Casting <i>detect magic</i> on one affected by it only reveals an aura of enchantment if the caster of <i>detect magic</i> has a higher caster level then the caster of <i>unconscious agenda</i>. Even if the spell is detected, it can only be removed by <i>break enchantment</i>, <i>limited <i>wish</i></i>, <i>remove curse</i>, <i>miracle</i>, or <i>wish</i>. <i>Dispel magic</i> does not affect <i>unconscious agenda</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

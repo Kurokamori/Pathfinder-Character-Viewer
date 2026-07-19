@@ -1,0 +1,14 @@
+{
+  "_id": "ccZmfabwQrONq2kg",
+  "name": "Toggle Buff",
+  "permission": {
+    "default": 0
+  },
+  "type": "script",
+  "flags": {},
+  "scope": "global",
+  "command": "// CONFIGURATION\n// If one or more tokens are selected, those will be used instead of the listed actors\n// Leave the actorNames array empty to guess the players\n// Example actorNames: `actorNames: [\"Bob\", \"John\"],`\nconst c = {\n  actorNames: [],\n  buffName: \"Mage Armor\"\n};\n// END CONFIGURATION\n\nconst tokens = canvas.tokens.controlled;\nlet actors = tokens.map(o => o.actor);\nif (!actors.length && c.actorNames.length) actors = game.actors.filter(o => c.actorNames.includes(o.name));\nif (!actors.length) actors = game.actors.filter(o => o.isPC);\nactors = actors.filter(o => o.testUserPermission(game.user, \"OWNER\"));\n\nif (!actors.length) ui.notifications.warn(\"No applicable actor(s) found\");\nelse {\n  for (const actor of actors) {\n    const buff = actor.items.find(o => o.name === c.buffName && o.type === \"buff\");\n    if (buff != null) {\n      let active = getProperty(buff.data, \"data.active\");\n      if (active == null) active = false;\n      buff.update({ \"data.active\": !active });\n    }\n  }\n}",
+  "author": "T9i9xVjdkHeFZC72",
+  "img": "systems/pf1/icons/spells/protect-blue-1.jpg",
+  "actorIds": []
+}

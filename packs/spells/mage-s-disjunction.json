@@ -1,0 +1,156 @@
+{
+  "_id": "19p4nr8rsvt42lmn",
+  "name": "Mage's Disjunction",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ue1i2d2vwadvfpdv",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (object)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "all magical effects and magic items within a 40-ft.-radius burst, or one magic item (see text)",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          9
+        ],
+        [
+          "psychic",
+          9
+        ]
+      ],
+      "domain": [
+        [
+          "Magic",
+          9
+        ]
+      ],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 9,
+    "school": "abj",
+    "components": {
+      "verbal": true
+    },
+    "sr": false,
+    "shortDescription": "<p>All magical effects and magic items within the radius of the spell, except for those that you carry or touch, are disjoined.</p><p>That is, spells and spell-like effects are unraveled and destroyed completely (ending the effect as a <i>dispel magic</i> spell does), and each permanent magic item must make a successful Will save or be turned into a normal item for the duration of this spell.</p><p>An item in a creature's possession uses its own Will save bonus or its possessor's Will save bonus, whichever is higher. If an item's saving throw results in a natural 1 on the die, the item is destroyed instead of being suppressed.</p><p>You also have a 1% chance per caster level of destroying an <i>antimagic field</i>. If the <i>antimagic field</i> survives the <i>disjunction</i>, no items within it are disjoined.</p><p>You can also use this spell to target a single item. The item gets a Will save at a -5 penalty to avoid being permanently destroyed. Even artifacts are subject to mage's <i>disjunction</i>, though there is only a 1% chance per caster level of actually affecting such powerful items. If successful, the artifact's power unravels, and it is destroyed (with no save). If an artifact is destroyed, you must make a DC 25 Will save or permanently lose all spellcasting abilities. These abilities cannot be recovered by mortal magic, not even <i>miracle</i> or <i>wish</i>. Destroying artifacts is a dangerous business, and it is 95% likely to attract the attention of some powerful being who has an interest in or connection with the device.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

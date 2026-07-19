@@ -1,0 +1,154 @@
+{
+  "_id": "MM8q59f8AImA8qCV",
+  "name": "M1914 Grenade (Concussion)",
+  "type": "weapon",
+  "img": "icons/weapons/thrown/bomb-fuse-black.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Pathfinder #71: Rasputin Must Die! pg. 64</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 50 gp <strong>Weight</strong> 1 lb.</p>\n<p><strong>Damage</strong> 3d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> 20 ft.; <strong>Type</strong> B; <strong>Special</strong> see description</p>\n<p><strong>Category</strong> Explosive; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This time-delayed concussion grenade is a mainstay of trench warfare. The device appears to be little more than a metal cylinder tapering to a handle containing a spring-loaded lever. To detonate the device, you disengage the safety pin while depressing the handle's lever, which releases the firing pin when thrown. The device detonates at the beginning of your next turn, hopefully in the area you targeted.</p>\n<p>The device relies on a concussive blast to deal damage, and all creatures within a 20-foot radius take 3d6 points of bludgeoning damage (Reflex DC 15 for half ).</p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 50,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "M1914 Grenade (Concussion)",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "wpmx70puemokqzzd",
+        "name": "Attack",
+        "img": "icons/weapons/thrown/bomb-fuse-black.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 5,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "20",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(3, 6, @size)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "15",
+          "type": "ref",
+          "description": "Reflex half"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "m1914GrenadeConcussion",
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

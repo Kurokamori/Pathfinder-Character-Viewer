@@ -1,0 +1,160 @@
+{
+  "_id": "j0dh215788a0x07d",
+  "name": "Quintessence Mastery",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "kf2oqmyo3dp1y3w8",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "round"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 3,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 hour/level or 1 day/level; see text",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "control over a plane's terrain and traits",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "cleric/oracle",
+          8
+        ],
+        [
+          "witch",
+          8
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 8,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a staff crafted from the chosen plane's material worth 2,500 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell grants the caster limited control over the quintessence of an Outer Plane. The control granted by <i><i>quintessence mastery</i> can take one of two forms</i>, <i>depending on the version of the spell</i> cast. Both versions can be cast only on one of the nine Outer Planes, for it is these planes, not the Transitive or Inner Planes, that are comprised of quintessence.  <b>Planewarp</b>: This allows the caster to <i>create</i> various objects or effects. When this spell is cast, you can replicate a number of effects from one or more of the following spells: <i>control water</i>, <i>diminish plants</i>, <i>fog cloud</i>, <i>major creation</i>, <i>move earth</i>, <i>plant growth</i>, <i>secure shelter</i>, <i>soften earth and stone</i>, <i>spike growth</i>, <i>spike stones</i>, <i>stone shape</i>, <i>transmute mud to rock</i>, <i>transmute rock to mud</i>, <i>Wall of Stone</i>, or <i>Wall of Thorns</i>. The total spell levels of effects to be <i>create</i>d must not exceed 8. For example, you could use this spell to replicate the effects of <i>fog cloud</i>, <i>secure shelter</i>, and <i>soften earth and stone</i> (since these three spells have levels that add up to 8) or <i>diminish plants</i> and <i>spike stones</i> (since these two spells have levels that add up to 7), but not <i>move earth</i> and <i>plant growth</i> (since these two spells have levels that add up to 9). If a spell appears on different spell lists at different levels, use the lowest level-<i>control water</i>, for example, counts as a 4th-level spell even though it's a 6th-level spell for sorcerers and wizards. This list need not be exhaustive; at the GM's discretion, this list may be expanded to include similar spells from other sources or similarly themed effects that do not mimic specific spells. This version of the spell has a casting time of 1 round and lasts for 1 hour per caster level or until its effects are expended.  <b>Shape Realm</b>: This functions similarly to <i>create</i> demiplaneUM, except that it alters an equivalent area of the plane the caster is on rather than creating a self-contained realm on the Astral or Ethereal Plane. You cannot grant the affected area an alignment or essence trait opposed by the plane's traits (such as granting the lawful-aligned trait to a portion of Elysium), and the area is not self-contained. At the GM's discretion, additional restrictions beyond those listed in the <i>create</i> demiplane spell may limit this spell's effects, and additional options for customizing the affected area may be available. This version of the spell has a casting time of 4 hours and lasts for 1 day per caster level. This version of <i>quintessence mastery</i> can be made permanent in the same way and for the same cost as <i>create</i> demiplane. This version of <i>quintessence mastery</i> does not function within the boundaries of a divine realm.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

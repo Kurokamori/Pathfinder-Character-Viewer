@@ -1,0 +1,161 @@
+{
+  "_id": "k0ihiqhfppkchs1j",
+  "name": "Call Spirit",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "f24cg4kt6s6e1hhm",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "concentration",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 10,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates; see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "call the spirit of a single deceased humanoid creature",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          5
+        ],
+        [
+          "shaman",
+          5
+        ],
+        [
+          "medium",
+          3
+        ],
+        [
+          "spiritualist",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "con",
+    "subschool": "calling",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "sr": false,
+    "shortDescription": "<p>You attempt to cause the spirit of a specific individual to manifest from its final resting place. You must request the spirit's presence by speaking its name.  Unwilling spirits can resist the summons by succeeding at a Will save. If the chosen spirit resists your call, another spirit with malevolent intent almost always takes its place, intent on deceiving you. The difficulty of the save depends on how well you know the subject and what sort of physical connection (if any) you have to the creature whose spirit you wish to call.     <table border ='1'><tr><th>Knowledge</th><th>Will Save Modifier</th></tr><tr><td>Name only*</td><td>+15</td></tr><tr><td>Secondhand (you have heard of the subject)</td><td>+10</td></tr><tr><td>Firsthand (you met the subject in life)</td><td>+5</td></tr><tr><td>Familiar (you knew the subject well)</td><td>+0</td></tr><tr><td>* You must have at least a name the creature was called in life.</td></tr></table>     <table border ='1'><tr><th>Connection</th><th>Will Save Modifier</th></tr><tr><td>Likeness or picture</td><td>-2</td></tr><tr><td>Possession or garment</td><td>-4</td></tr><tr><td>Body part, lock of hair, nail clipping, etc.</td><td>-10</td></tr><tr><td>Different alignment</td><td>+4</td></tr></table>     A successfully called spirit manifests as a wispy, vaporous form that vaguely resembles the form the deceased creature had in life. The spirit has the physical attributes of an <i>unseen servant</i> and is capable of minor physical manipulations, with the ability to speak in quiet, ghostly whispers in whatever languages the creature knew while it was alive. The spirit isn't an undead creature, and isn't beholden to its caller. Whether you summoned the chosen spirit or a deceitful replacement, the spirit can refuse to answer your questions or attempt to deceive you using Bluff, though in either case these spirits can speak about only what they knew in life and have no knowledge of events that occurred after their deaths. Malevolent spirits might take advantage of their limited physical abilities to cause terrifying spectacles designed to scare the caster.  You must concentrate on maintaining the spell (as a standard action) in order to ask questions at the rate of one per round. You can ask a total of one question per caster level; the spirit answers each during the same round. When the spell ends, the spirit's ectoplasmic form fades and the soul returns to its rest. This spell can't call the spirits of creatures that are currently undead.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

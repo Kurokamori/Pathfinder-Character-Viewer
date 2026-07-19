@@ -1,0 +1,151 @@
+{
+  "_id": "Sp3O5Mn9lpnXxX8N",
+  "name": "Suffocate",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/link-blue-2.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element&nbsp;</strong>aether, air, void, water;&nbsp;<strong>Type&nbsp;</strong>utility (Sp);&nbsp;<strong>Level&nbsp;</strong>6;&nbsp;<strong>Burn&nbsp;</strong>0<br><strong>Saving Throw&nbsp;</strong>Fortitude partial;&nbsp;<strong>SR&nbsp;</strong>yes</p>\n<p>You use aether to choke a creature within 120 feet, air to create an area of unbreathable air around it, or water to fill its throat with water. If your target needs to breathe, it must hold its breath for as long as you concentrate. On each of its turns, it can attempt a Fortitude save in order to speak, but it can breathe only if your concentration breaks, you leave the 120-foot range, or you break line of effect.</p>\n<p>You can accept 1 point of burn when activating this wild talent in order to expel the air from your target’s lungs. If you do so and the target fails its first Fortitude save, it becomes disabled and is reduced to 0 hit points, and on its second failed Fortitude save, it falls unconscious and is reduced to –1 hit points.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "fm5rowow5ulr1p36",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/link-blue-2.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": ""
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Fortitude partial"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_suffocate",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

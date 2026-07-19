@@ -1,0 +1,158 @@
+{
+  "_id": "YD6Y3Nxf9OwUAzPD",
+  "name": "Apparent Master",
+  "type": "spell",
+  "img": "icons/magic/control/control-influence-puppet.webp",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "qpgh02o3llmu7j84",
+        "name": "Use",
+        "img": "icons/magic/control/control-influence-puppet.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": "1 hour/level",
+          "units": ""
+        },
+        "target": {
+          "value": "one construct; see text"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "arcanist",
+          5
+        ],
+        [
+          "bard",
+          4
+        ],
+        [
+          "skald",
+          4
+        ],
+        [
+          "sorcerer/wizard",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "enc",
+    "components": {
+      "verbal": true,
+      "somatic": true
+    },
+    "spellbook": "",
+    "shortDescription": "<p><span id=\"ctl00_MainContent_DataListTypes_ctl00_LabelName\">This charm makes a construct regard you as its master. The spell only affects mindless constructs that are attuned to the commands of a master, such as animated objects, golems, retrievers, and shield guardians. All constructs with Intelligence scores, even those that explicitly follow the commands of their creator, such as an homunculus, are unaffected. If the construct is currently being threatened or attacked by you or your allies it receives a +5 bonus on its saving throw.<br /><br />The spell enables you to control the construct completely, with the sole exception that commands directly resulting in damage break the spell. Any act by you or your apparent allies that damages the construct also breaks the spell. You can communicate your commands in any spoken language. The construct reverts to obeying the last commands given by its true master when the spell&rsquo;s duration expires.<br /><br />If the construct&rsquo;s true master attempts to command a construct affected by <em>apparent master</em>, you must win an opposed Charisma check for the construct to continue to follow your commands. Failing this check breaks the spell.</span></p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "LhFOnsRrYD2v4zOf": 3
+  },
+  "flags": {}
+}

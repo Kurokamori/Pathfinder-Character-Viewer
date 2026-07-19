@@ -1,0 +1,83 @@
+{
+  "_id": "wnb7IxOCmhk4SXzR",
+  "name": "Enchanting Smile",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/light_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You gain a +2 enhancement bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/bluff\" rel=\"nofollow\">Bluff</a>,&nbsp;<a href=\"https://www.d20pfsrd.com/skills/diplomacy\" rel=\"nofollow\">Diplomacy</a>, and&nbsp;<a href=\"https://www.d20pfsrd.com/skills/intimidate\" rel=\"nofollow\">Intimidate</a>&nbsp;skill checks. This bonus increases by +1 for every five wizard levels you possess, up to a maximum of +6 at 20th level. At 20th level, whenever you succeed at a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Saving-Throws\" rel=\"nofollow\">saving throw</a>&nbsp;against a spell of the enchantment school, that spell is reflected back at its caster, as per&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/s/spell-turning\" rel=\"nofollow\">spell turning</a>.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "m2d5u906",
+        "formula": "2 + floor(@classes.wizard.level / 5)",
+        "operator": "+",
+        "subTarget": "skill.blf",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "88fd5nrn",
+        "formula": "2 + floor(@classes.wizard.level / 5)",
+        "operator": "+",
+        "subTarget": "skill.dip",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "0szwiif8",
+        "formula": "2 + floor(@classes.wizard.level / 5)",
+        "operator": "+",
+        "subTarget": "skill.int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_enchantingSmile",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Wizard"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

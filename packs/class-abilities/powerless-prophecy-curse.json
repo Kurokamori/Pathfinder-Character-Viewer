@@ -1,0 +1,59 @@
+{
+  "_id": "1CmMryKMJkLy2CQu",
+  "name": "Powerless Prophecy Curse",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/horror-eerie-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>You are forewarned of danger but can’t act to prevent it. You gain uncanny dodge, as the rogue class feature. However, you can’t take any actions in a surprise round, including free actions, except for flash of insight. In the absence of a surprise round, you are staggered for the entire first round of combat.</p>\n<p>At 5th level, you gain a +4 insight bonus on initiative checks.</p>\n<p>At 10th level, you gain improved uncanny dodge as the rogue ability, using your oracle level as your rogue level.</p>\n<p>At 15th level, you gain a +4 insight bonus on all your saving throws and to your AC during surprise rounds and when you are otherwise unaware of an attack.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "1novvvy9",
+        "formula": "@classes.oracle.level >= 5 ? 4 : 0",
+        "operator": "+",
+        "subTarget": "init",
+        "modifier": "insight",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_powerlessProphecyCurse",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Oracle"
+        ]
+      ]
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

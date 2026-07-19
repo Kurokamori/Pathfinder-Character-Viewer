@@ -1,0 +1,187 @@
+{
+  "_id": "wniqskqkk0cubu9u",
+  "name": "Create Demiplane",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ij1s68it5njweczk",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 4,
+          "type": "hour"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 4,
+            "type": "hour"
+          }
+        },
+        "duration": {
+          "value": "1 day/level or instantaneous (see text)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "other",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "extradimensional demiplane, up to 10 10-ft. cubes/level (S)",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          8
+        ],
+        [
+          "cleric/oracle",
+          8
+        ],
+        [
+          "summoner",
+          6
+        ],
+        [
+          "witch",
+          8
+        ],
+        [
+          "psychic",
+          8
+        ],
+        [
+          "occultist",
+          6
+        ],
+        [
+          "unchained Summoner",
+          6
+        ]
+      ],
+      "domain": [],
+      "subDomain": [
+        [
+          "Greed",
+          8
+        ]
+      ],
+      "elementalSchool": [],
+      "bloodline": [
+        [
+          "Ectoplasm",
+          8
+        ]
+      ]
+    },
+    "level": 8,
+    "school": "con",
+    "subschool": "creation",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a forked metal rod worth at least 500 gp"
+    },
+    "sr": false,
+    "shortDescription": "<p>This spell functions as <i>create lesser demiplane</i>, except the area is larger and you can add more features to the plane. You can use this spell to expand a demiplane you created with <i>create lesser demiplane</i> (you do not need to create an entirely new plane using this spell), in which case it has a duration of 1 day/level. Alternatively, when cast within your demiplane, you may add (or remove) one of the following features to your demiplane with each casting of the spell, in which case it has an instantaneous duration.</p><p>Alignment: Your plane gains the (mildly) chaos-, good-, evil-, law-, or neutral-aligned alignment trait (see Alignment Traits, <i>GameMastery Guide</i> 187). You cannot give your demiplane an alignment trait for an alignment you do not have.</p><p>Bountiful: Your demiplane gains a thriving natural ecology, with streams, ponds, waterfalls, and plants. The demiplane provides enough plant-based food (nuts, grains, fruit, fungi, and so on) to support one Medium creature for every 10-foot cube of the demiplane. The demiplane does not have any animals unless you transport them there, but the ecology can sustain itself for as long as the demiplane exists without requiring watering, gardening, pollination, and so on, and dead organic material decays and returns to the soil in the normal manner. If your demiplane has ambient light, these plants are normal, familiar surface plants; if it is a realm of twilight or darkness, these plants are fungi and other plants adapted to near-darkness or underground locations.</p><p>Elemental: Your plane gains the air-, earth-, fire-, or water-elemental dominant trait (see Elemental and Energy Traits, <i>GameMastery Guide</i> 186).</p><p>Gravity: By default a demiplane's gravity is normal and oriented in one direction, like what most creatures are used to on the Material Plane. By selecting this feature, the plane's gravity is heavy, light, none, objectively directional, or subjectively directional (see Gravity, <i>GameMastery Guide</i> 184).</p><p>Seasonal: The demiplane has a seasonal cycle and a light cycle, usually similar to those of a land on the Material Plane, but customizable as you see fit (for example, your demiplane could always be winter, day and night could alternate every 4 hours, and so on).</p><p>Shape: By default, the demiplane has a fixed shape and borders. By selecting this feature, you may make your plane self-contained so it loops upon itself when a creature reaches one edge (see Shape and Size, <i>GameMastery Guide</i> 185). You may designate areas or locations on the edges of your plane where this occurs (such as a pair of secret doors or a path in the woods) or apply it to the entire plane.</p><p>Structure: Your demiplane has a specific, linked physical structure, such as a giant tree, floating castle, labyrinth, mountain, and so on. (This option exists so you can pick a theme for your plane without having to worry about the small details of determining what spells you need for every hill, hole, wall, floor, and corner).</p><p>You can make this spell permanent with the <i>permanency</i> spell, at a cost of 20,000 gp. If you have cast <i>create demiplane</i> multiple times to enlarge the demiplane, each casting's area requires its own <i>permanency</i> spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

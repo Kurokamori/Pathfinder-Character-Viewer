@@ -1,0 +1,153 @@
+{
+  "_id": "2enTpUyXaDcCqALb",
+  "name": "Harvester",
+  "type": "weapon",
+  "img": "systems/pf1/icons/skills/weapon_12.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Belkzen, Hold of the Orc Hordes pg. 39</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 800 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> 2d8; <strong>Critical</strong> x4; <strong>Range</strong> -; <strong>Type</strong> S</p><p><strong>Crew</strong> 4; <strong>Aim</strong> 0; <strong>Load</strong> 0; <strong>Speed</strong> 0 ft.</p><p><strong>Category</strong> Close Assault; <strong>Proficiency</strong> Siege Engine</p><h3 class=\"framing\">Description</h3><p>A variety of scythe-like blades extend from two sides of this wheeled machine. When it's pulled-typically by an aurochs or enslaved giants-the wheels' rotation causes the blades to slash indiscriminately. Each round the harvester moves, it makes a melee attack with a +10 modifier against any adjacent creature it passes; it deals 2d8 points of damage to those it hits. Multiple harvesters can be strung together. The crew required for a train of harvesters is equal to the total crew of the individual machines. Adjacent creatures are attacked by each individual harvester that passes them. A harvester has a hardness of 5 and 50 hit points.</p><p></p><p>A harvester is a Large siege engine.</p>"
+    },
+    "tags": [],
+    "price": 800,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Harvester",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "9enf6w6fs0rle6k6",
+        "name": "Attack",
+        "img": "systems/pf1/icons/skills/weapon_12.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(2, 8, @size)",
+              {
+                "values": [
+                  "slashing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": null,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "harvester",
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

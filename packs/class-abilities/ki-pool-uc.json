@@ -1,0 +1,53 @@
+{
+  "_id": "7BfYNNkYjjBevun8",
+  "name": "Ki Pool (UC)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_09.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, a monk gains a pool of ki points, supernatural energy he can use to accomplish amazing feats. The number of points in a monk’s ki pool is equal to 1/2 his monk level + his Wisdom modifier. As long as he has at least 1 point in his ki pool, he can make a ki strike.</p>\n<p>At 3rd level, ki strike allows his unarmed attacks to be treated as magic weapons for the purpose of overcoming damage reduction.</p>\n<p>At 7th level, his unarmed attacks are also treated as cold iron and silver for the purpose of overcoming damage reduction.</p>\n<p>At 10th level, his unarmed attacks are also treated as lawful weapons for the purpose of overcoming damage reduction.</p>\n<p>At 16th level, his unarmed attacks are treated as adamantine weapons for the purpose of overcoming damage reduction and bypassing hardness.<br><br>By spending 1 point from his ki pool as a swift action, a monk can make one additional unarmed strike at his highest attack bonus when making a flurry of blows attack. This bonus attack stacks with all bonus attacks gained from flurry of blows, as well as those from haste and similar effects.</p>\n<p>A monk gains additional powers that consume points from his ki pool as he gains levels.<br><br>The ki pool is replenished each morning after 8 hours of rest or meditation; these hours do not need to be consecutive.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor(@classes.monkUnchained.level / 2) + @abilities.wis.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_kiPoolUc",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Monk (Unchained)"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,97 @@
+{
+  "_id": "nVjKDLZSRONzYm8f",
+  "name": "Tiefling",
+  "type": "race",
+  "img": "systems/pf1/icons/races/tiefling.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers</strong>: Tieflings are quick in body and mind, but are inherently strange and unnerving. They gain +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>, +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>, and &ndash;2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>.</li>\n<li><strong>Type:</strong> Tieflings are&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Outsider\">outsiders</a>&nbsp;with the&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Native\">native</a>&nbsp;subtype.</li>\n<li><strong>Size:</strong> Tieflings are Medium creatures and thus receive no bonuses or penalties due to their size.</li>\n<li><strong>Speed:</strong> Tieflings have a base speed of 30 feet.</li>\n<li><strong>Languages:</strong> Tieflings begin play speaking Common and either Abyssal or Infernal. Tieflings with high intelligence scores can choose from the following: Abyssal, Draconic, Dwarven, Elven, Gnome, Goblin, Halfling, Infernal, and Orc. See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n</ul>\n<h3>Defense Racial Traits</h3>\n<ul>\n<li><strong>Fiendish Resistance</strong>: Tieflings have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance\">cold resistance</a>&nbsp;5,&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance\">electricity resistance</a>&nbsp;5, and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance\">fire resistance</a>&nbsp;5.</li>\n</ul>\n<h3>Feat and Skill Racial Traits</h3>\n<ul>\n<li><strong>Skilled:</strong> Tieflings gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a> on @Compendium[pf1.skills.pAB2PYkZO3lsmeaC]{Bluff} and @Compendium[pf1.skills.T6nefKotIb5vKE9h]{Stealth}&nbsp;checks.</li>\n</ul>\n<h3>Magical Racial Traits</h3>\n<ul>\n<li><strong>Spell-like ability</strong>: Tieflings can use @Compendium[pf1.spells.tsndfcfijmgxs37p]{Darkness}&nbsp;once per day as a&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Spell-Like-Abilities-Sp-\">spell-like ability</a>. The&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Caster-Level\">caster level</a>&nbsp;for this ability equals the tiefling&rsquo;s class level.</li>\n</ul>\n<h3>Senses Racial Traits</h3>\n<ul>\n<li><strong>Darkvision:</strong> Tieflings can see perfectly in the dark for up to 60 feet.</li>\n</ul>\n<h3>Other Racial Traits</h3>\n<ul>\n<li><strong>Fiendish Sorcery</strong>: Tiefling @Compendium[pf1.classes.AoWSbnuTSGIxmv61]{sorcerers} with the @Compendium[pf1.class-abilities.YibSkrURB0yHprQK]{Abyssal} or @Compendium[pf1.class-abilities.yHDVCenLfvduBVM7]{Infernal} bloodlines treat their <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;score as 2 points higher for all&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/sorcerer\">sorcerer</a>&nbsp;class abilities.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "jnalf5sb",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "wjh57q1a",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "q1m8b4sr",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "9end19my",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.blf",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "ulr4homw",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "skill.ste",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "creatureType": "outsider",
+    "subTypes": [
+      [
+        "Native"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

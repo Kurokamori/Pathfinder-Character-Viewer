@@ -1,0 +1,63 @@
+{
+  "_id": "K3aX1o5greborn8s",
+  "name": "Snakeskin",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/shielding-acid-2.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 9th level, you gain a +1 bonus to&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-armor-Bonus\">natural armor</a>, a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on saves against poison, and a +2 bonus on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/escape-artist\">Escape Artist</a>&nbsp;checks. At 13th level and 17th level, these bonuses increase by +1.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "0jaxfo9p",
+        "formula": "floor((@classes.sorcerer.level - 9) / 4) + 1",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_snakeskin",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,155 @@
+{
+  "_id": "uMKYQeN9RWCuuucG",
+  "name": "Fire Lance",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-wood.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 137</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"No character may purchase a firearm unless she possesses the Gunsmithing feat and firearms are never considered Always Available\" src=\"https://www.aonprd.com/images/PathfinderSocietySymbolN.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 25 gp <strong>Weight</strong> 4 lbs.</p>\n<p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 10 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> 1-4 (5 ft.); <strong>Capacity</strong> 1</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This primitive firearm is merely a long tube that, when ignited, propels forth a short gout of flame and a javelin. Unlike other firearms, the fire lance is wildly imprecise, and targets AC rather than touch AC. A fire lance is always treated as having the broken condition for the purpose of determining the effects of a misfire. A fire lance uses a javelin and 2 doses of black powder as ammunition.</p>\n<p><strong>This is an early firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 4,
+    "price": 25,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Fire Lance",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "3bopq1ihmj9lrozm",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-wood.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "10",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "fireLance",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

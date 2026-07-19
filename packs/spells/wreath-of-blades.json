@@ -1,0 +1,180 @@
+{
+  "_id": "ymn35wwseihya15d",
+  "name": "Wreath of Blades",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "ap4x7dn3pxq7r80x",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 round/level",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "Reflex half (special, see below)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "5-foot-radius emanation centered on you",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "summoner",
+          5
+        ],
+        [
+          "witch",
+          5
+        ],
+        [
+          "magus",
+          4
+        ],
+        [
+          "bloodrager",
+          4
+        ],
+        [
+          "psychic",
+          5
+        ],
+        [
+          "occultist",
+          4
+        ],
+        [
+          "unchained Summoner",
+          5
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "abj",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "four mithral daggers, each worth at least 502 gp each"
+    },
+    "sr": false,
+    "shortDescription": "<p>The daggers serving as focus of this spell take on a deadly sharpness as they animate and spin around you, creating a 5-foot-radius emanation of spinning mithral blades that moves with you. Any creature that starts its turn within the area of the spinning blades takes 1d4 points of damage for every two caster levels (maximum 10d4 at 20th level) and the damage bypasses DR/silver.  Furthermore, the daggers ward off some attacks, in a way similar to the <i>warding weapon</i> spell (see page 48). While subject to this spell, you do not provoke attacks of opportunity for casting spells, even from creatures with the Disruptive feat. Creatures with the Spellbreaker feat (<i>Core Rulebook</i> 134) can easily bypass this defensive property, though they still take damage from the spell. Your casting (even failing to cast defensively) still provokes attacks of opportunity from creatures with that feat.  Lastly, the blades that serve as the focus for this spell can be enchanted for greater effect. When all of the blades share the same enhancement bonus and special weapon qualities, a creature that is damaged by this spell is also treated as if hit by one of these weapons. For example, if a 12th-level magus casts this spell using four <i>+1 frost mithral daggers</i> as focus, the damage dealt by the blades would be 6d4+1 plus 1d6 cold damage, as long as the daggers were commanded to be sheathed in ice. No matter the modifications made to the focus weapons, they must always be mithral daggers. No other type of weapons can serve as a focus for this spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

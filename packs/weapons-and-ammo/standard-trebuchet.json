@@ -1,0 +1,153 @@
+{
+  "_id": "IqF7fyEweSv3KMug",
+  "name": "Standard Trebuchet",
+  "type": "weapon",
+  "img": "icons/weapons/artillery/trebuchet-simple.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 163</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 1,000 gp <strong>Weight</strong> -</p><p><strong>Damage</strong> 6d6; <strong>Critical</strong> x2; <strong>Range</strong> 300 ft. (150 ft. min.); <strong>Type</strong> B</p><p><strong>Crew</strong> 4; <strong>Aim</strong> 2; <strong>Load</strong> 3; <strong>Speed</strong> 0 ft.</p><p><strong>Category</strong> Indirect-Fire (Huge); <strong>Proficiency</strong> Siege Engine</p><h3 class=\"framing\">Description</h3><p>Trebuchets are similar in form to catapults, with the payload placed into a basket, cup, or sling at the end of a long lever, and a counterweight (often with crew or animals pulling attached ropes) close to the fulcrum. The leverage imparted by a trebuchet allows it to hurl massive missiles that scatter to a number of squares around the target square based on the size of the trebuchet. Trebuchets are too bulky to move on wheels or vehicles and must be assembled on the battlefield. Trebuchets have a minimum range of 150 feet.</p><p></p><p> <em>Light</em>: These Large siege engines typically hurl large stones indirectly at a target (targeting DC 15). A light trebuchet's ammunition scatters on contact, dealing full damage to the target square and half its damage to creatures and objects within 5 feet of the target square (creatures can make a DC 15 Reflex save to halve the damage again). Light trebuchets have a hardness of 5 and 50 hit points. One use of light trebuchet stones costs 15 gp and weighs 60 pounds.</p><p></p><p> <em>Standard</em>: These Huge siege engines typically hurl large stones indirectly at a target (targeting DC 20). A standard trebuchet's ammunition scatters on contact, dealing full damage to the target square and half damage to creatures and objects within 15 feet of the target square (creatures can make a DC 20 Reflex save to halve the damage again). Standard trebuchets have a hardness of 5 and 100 hit points. One use of standard trebuchet stones costs 30 gp and weighs 110 pounds.</p><p></p><p> <em>Heavy</em>: These Gargantuan siege engines typically hurl large stones indirectly at a target (targeting DC 25). A heavy trebuchet's ammunition scatters on contact, dealing full damage to the target square and half its damage to creatures and objects within 30 feet of the target square (creatures can make a DC 25 Reflex save to halve the damage again). Heavy trebuchets have a hardness of 5 and 200 hit points. One use of heavy trebuchet stones costs 40 gp and weighs 120 pounds.</p>"
+    },
+    "tags": [],
+    "price": 1000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Standard Trebuchet",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "cqmdxql5v857iwyb",
+        "name": "Attack",
+        "img": "icons/weapons/artillery/trebuchet-simple.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "300",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": "150",
+          "minUnits": "ft"
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "6d6",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "standardTrebuchet",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "YCCdi4OEC4WuzelM",
+  "name": "Reptoid",
+  "type": "race",
+  "img": "systems/pf1/icons/feats/gorgons-fist.jpg",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers:</strong> Reptoids are both manipulative and strong, but they’re deliberate in their movements. They gain +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;and +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;but suffer –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a>.</li>\n<li><strong>Size:</strong> Reptoids are Medium creatures and have no bonuses or penalties due to their size.</li>\n<li><strong>Speed: </strong>Reptoids have a base speed of 30 feet.</li>\n<li><strong>Languages:</strong> All reptoids begin play speaking Common and Reptoid. Reptoids with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose any languages they want (except for secret languages, such as Druidic). See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n</ul>\n<h3>Defensive Racial Traits</h3>\n<ul>\n<li style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-weight: bold;\">Scales</span>: When in its natural form, a reptoid has a +1&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Natural-Armor-Bonus\">natural armor bonus</a>.</li>\n<li style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; font-weight: bold;\">Cold-Blooded (Ex)</span>: Reptoids receive a +2 racial saving throw bonus against&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Magic-Descriptor-Mind-Affecting\">mind-affecting</a>&nbsp;effects and&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/afflictions/poison\">poison</a>.</li>\n</ul>\n<h3>Offensive Racial Traits</h3>\n<ul>\n<li><strong>Natural Weapons (Ex):</strong> When in its natural form, a reptoid has a bite attack and two claw attacks that deal 1d3 points of damage each.</li>\n</ul>\n<h3>Senses Racial Traits</h3>\n<ul>\n<li><strong>Low-Light Vision:</strong> Reptoids can see twice as far as&nbsp;<a href=\"https://www.d20pfsrd.com/races/core-races/human\">humans</a>&nbsp;in dim light.</li>\n</ul>\n<h3>Other Racial Traits</h3>\n<ul>\n<li><strong>Change Shape (Su)</strong>&nbsp;A reptoid can assume the appearance of a specific single Medium&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Humanoid\">humanoid</a>. The reptoid always takes this specific form when it uses this ability. The reptoid gains a +10&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a>&nbsp;on&nbsp;<a href=\"https://www.d20pfsrd.com/skills/disguise\">Disguise</a>&nbsp;checks to appear as that type of&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Humanoid\">humanoid</a>. This ability otherwise functions as&nbsp;<a href=\"https://www.d20pfsrd.com/magic/all-spells/a/alter-self\">alter self</a>, except the reptoid does not adjust its ability scores. A reptoid can select a new humanoid form by spending 1 week preparing itself for the change, but can then no longer assume its previous humanoid form.</li>\n<li><strong>Mental Potency (Ex)</strong>&nbsp;A reptoid’s mental effects can affect more powerful creatures or a greater number of creatures than normal. Both the&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Die</a>&nbsp;limit and the total number of&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a>&nbsp;affected by each&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment\">enchantment</a>&nbsp;or&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a>&nbsp;spell it casts increase by 1. For&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment\">enchantment</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a>&nbsp;spells it casts that target a number of creatures greater than one, the number of creatures affected also increases by one (so a spell that targets one creature per level would be affected, but a spell that targets only one creature would not be). This ability stacks with the&nbsp;<a href=\"https://www.d20pfsrd.com/alternative-rule-systems/occult-adventures/occult-classes/mesmerist\">mesmerist’s</a> ability of the same name.</li>\n</ul>\n<h4>&nbsp;</h4>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "7xfg3gn5",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "zyw7cn18",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "pe20zpoa",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] Racial vs. Mind-Affecting Effects and Poison"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ],
+      "custom": "Reptoid"
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "subTypes": [
+      [
+        "Reptoid"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

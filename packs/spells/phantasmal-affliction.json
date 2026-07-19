@@ -1,0 +1,165 @@
+{
+  "_id": "118e7kl304qi23ap",
+  "name": "Phantasmal Affliction",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "i8m8o2f8t2q0cd7f",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "see text",
+          "units": ""
+        },
+        "target": {
+          "value": "living creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "fort",
+          "description": "Will disbelief, then Fortitude or Will negates (see text)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "witch",
+          3
+        ],
+        [
+          "psychic",
+          3
+        ],
+        [
+          "mesmerist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "ill",
+    "subschool": "phantasm",
+    "types": "mind-affecting",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a drop of cod liver oil"
+    },
+    "shortDescription": "<p>You cause the creature to believe she has a debilitating affliction. The target can attempt a Will save to recognize the affliction as unreal. If that save fails, the creature suffers an imaginary affliction of your choice.  <i>Curse</i>: The target believes she has been cursed. She takes a permanent -4 penalty on attack rolls, saves, ability checks, and skill checks for 1 hour per caster level. After her save to disbelieve, the target attempts a second Will save to negate this effect.  <i>Poison</i>: The target believes she has been poisoned. Choose a physical ability score. Each round for 6 rounds, plus 1 round per 5  caster levels, the target takes 1d3 points of damage to the chosen ability score. Each turn, the creature can attempt a Fortitude save to negate the damage and end the ongoing damage.  <i>Wasting</i>: The target believes she has contracted a wasting disease. Each day, the creature takes 1d4 points of Constitution damage and becomes fatigued. A successful Fortitude save prevents this damage. Two consecutive successful saves end the effect.  Since the affliction exists entirely in the creature's mind, <i>phantasmal affliction</i> is not affected by normal cures like <i>neutralize poison</i> or <i>remove disease</i>, or other effects like <i>delay poison</i> or the Heal skill. Ordinary immunities do not apply in this case (though a creature immune to the affliction receives a +4 bonus on the Will save to disbelieve the illusion). Constitution damage from the affliction can't kill the target. Instead, it causes the target to fall unconscious like other forms of ability damage. <i>Phantasmal affliction</i> is a spell effect and can be dispelled normally.  <i>Placebo</i> effectOA counters and dispels <i>phantasmal affliction</i>.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

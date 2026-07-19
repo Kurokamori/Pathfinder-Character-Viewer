@@ -1,0 +1,134 @@
+{
+  "_id": "NnsKur4FhOsxb5ci",
+  "name": "Id Mutant",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons&nbsp;</strong>Yes<br><br>Scholars of the mind have many names for the part of the psyche that controls unconscious and animalistic urges— be it the primal brain, instinct, or simply the id. Some scholars believe that, were this underlying mind to seize control, a normally mild-mannered person would revert to a savage, bestial state; some even theorize that when a barbarian enters a rage, he is in fact tapping into the id to empower his wrath. But what would happen if powerful magic were to act upon the id and make it transform not only a person’s mind, but his physical being as well? One such method by which this can occur is via the curse of bestial dreams, an affliction that arises when the wishcraft of a vespergaunt interacts with powerful magical crystals infused with mortal dreams and memories—an affliction that, in time, transforms its victims into a deformed and bestial creature known as an id mutant.<br><br>An id mutant loses its identity almost entirely, changing into an animalistic version of its previous self. If its adjusted Intelligence score remains above 3, it can still speak and understand language, but it does not retain any societal affiliations it had prior to devolving. Survival becomes the paramount concern for an id mutant, and it focuses more on base animalistic desires—the thrill of the hunt, securing a safe lair, and procreation. An id mutant’s personality is entirely new—one based on fulfilling base needs, and as such an id mutant’s alignment changes to chaotic neutral.<br><br>When a humanoid becomes an id mutant, its physical deformations almost always result in a resemblance to a specific animal. Some believe this animal to be a sort of spirit animal, but in fact the animal associated with the mutation is somewhat arbitrary, influenced in part by the original creature’s temperament and personality. For up to 10 days after a humanoid transforms into an id mutant,&nbsp;break enchantment&nbsp;or&nbsp;remove curse&nbsp;can remove the template. After this window of time closes, the condition becomes much more difficult to reverse. Both&nbsp;miracle&nbsp;and&nbsp;wish&nbsp;can restore an id mutant to its previous life. Likewise, an id mutant that dies and is then brought back from death sheds the template and is restored to its previous life.<br><br><br></p>\n<h2>Creating an Id Mutant</h2>\n<p>“Id mutant” is an acquired template that can be added to any humanoid (referred to hereafter as the base creature). An id mutant retains all the base creature’s statistics and special abilities except as noted here. Statistics for several example id mutants can be found throughout this adventure.<br><br><strong>CR: </strong>Same as the base creature +1.</p>\n<p><strong>Alignment: </strong>Chaotic neutral.</p>\n<p><strong>Senses: </strong>An id mutant gains low-light vision.</p>\n<p><strong>AC: </strong>An id mutant’s natural armor bonus increases by 2.</p>\n<p><strong>Speed: </strong>An id mutant’s base speed increases by 10 feet. Some id mutants gain an additional movement type as well (see Special Qualities, below).</p>\n<p><strong>Melee: </strong>An id mutant gains a single natural attack. This can be a bite, a claw, a gore, a slam, or a talon. Damage caused by this natural attack depends on the id mutant’s size (see Table 3–1 on page 302 of the&nbsp;Pathfinder RPG Bestiary).</p>\n<p><strong>Feats: </strong>An id mutant gains one of the following as a bonus feat: Great Fortitude, Iron Will, Lightning Reflexes, or Toughness.</p>\n<p><strong>Skills: </strong>Id mutants gain a +4 racial bonus on Perception, Stealth, and Survival checks.</p>\n<p><strong>Ability Scores: </strong>Str +4, Con +4, Int –6 (minimum 1), Cha –4 (minimum 1).</p>\n<p><strong>Special Qualities: </strong>An id mutant gains one mutation from the list below for every 3 points of the base creature’s adjusted CR (minimum 1). Additional mutations beyond these can be designed at the GM’s discretion (although id mutants never gain supernatural or spell-like abilities in this manner, with the exception of the infectious mutation, described below).</p>\n<p><em>Additional Movement (Ex): </em>The id mutant gains a burrow, climb, or fly speed (average maneuverability) equal to the base creature’s unmodified speed. This mutation can be selected up to three times—each time, a different form of movement must be chosen.</p>\n<p><em>Additional Natural Attack (Ex): </em>The id mutant gains an additional natural attack chosen from the Melee entry above. This mutation can be selected multiple times.</p>\n<p><em>Aquatic (Ex): </em>The id mutant gains the aquatic subtype, a swim speed equal to its base land speed, and the amphibious special quality.</p>\n<p><em>Blindsense (Ex): </em>The id mutant gains blindsense to a range of 30 feet. This mutation may be selected multiple times— each time it is selected, the range increases by 30 feet.</p>\n<p><em>Ferocious (Ex): </em>The id mutant gains ferocity.</p>\n<p><em>Infectious (Su): </em>Whenever an infectious id mutant damages a humanoid with one of its natural attacks, that humanoid must succeed at a Fortitude save (DC = 10 + 1/2 the id mutant’s HD + the id mutant’s Constitution modifier) or be afflicted by the curse of bestial dreams (see page 4).</p>\n<p><em>Scent (Ex): </em>The id mutant gains the scent ability.</p>\n<p><em>Swift (Ex): </em>The id mutant’s base speed increases by an additional 20 feet.</p>\n<p><em>Tentacled (Ex): </em>The id mutant gains a number of tentacle attacks equal to its adjusted CR divided by 5 (minimum 2). Each tentacle also has the grab and constrict special attack (constrict damage equals the tentacle’s damage). This mutation can only be selected by id mutants of CR 10 or higher.</p>\n<p><em>Thick Hide (Ex): </em>The id mutant’s thick hide grants it DR 2/piercing. This mutation can be selected multiple times—each time it is selected, the DR increases by 2.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "awyl915s",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "47a3n170",
+        "formula": "10",
+        "operator": "+",
+        "subTarget": "landSpeed",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "eu0hml3k",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "skill.per",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "96cuxn7p",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "skill.ste",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "1qmxdwxz",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "skill.sur",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "tl1xjkqv",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ufn5qkau",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "m6u4efkm",
+        "formula": "-6",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "3oupo46k",
+        "formula": "-4",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,124 @@
+{
+  "_id": "VWsM44QuzCrRDw65",
+  "name": "Shadow Animal",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Both<br><strong>Simple Template</strong>&nbsp;No<br><strong>Usable with Summons&nbsp;</strong>No<br><br>Dread energies from the Plane of Shadow have leaked into the countryside of Nidal for thousands of years, pooling in shadowed groves and along darkened hillsides. Although normal animals shun these shadow-haunted regions, hunger or adversity sometimes compels a creature to enter them. Some animals who do so are wholly transformed by these energies, becoming shadow animals.<br><br>Shadow animals are more than mere animals, becoming hunters bleached of bright colors and commanding unusual predatory powers. Even herbivores that undergo this transformation become short tempered and dangerous.<br><br>Shadow animals have the brute cunning to understand spoken language, but they generally cannot speak.<br><br>The shadow animal template is inherited or acquired and can be added to any living, corporeal animal (referred to hereafter as the base creature). A shadow animal uses all the base creature’s statistics and special abilities except as noted.<br><br><strong>CR:</strong> If 9 HD or fewer, base creature’s CR + 1; if 10 HD or more, base creature’s CR + 2.<br><br><strong>Type:</strong> The creature’s type changes to outsider (native). Do not recalculate HD, BAB, or saves.<br><br><strong>Alignment:</strong> Any (usually nongood).<br><br><strong>Armor Class: </strong>Reduce the creature’s natural armor, if any, by 1 (to a minimum of 0).<br><br><strong>Senses: </strong>A shadow animal gains darkvision with a range up to 60 feet and low-light vision if it didn’t already have it.<br><br><strong>Defensive Abilities:</strong> A shadow animal gains the following defensive ability.<br><br><strong>Shadow Blend (Su):</strong> In any illumination other than bright light, a shadow animal blends into the shadows, giving it concealment (20% miss chance). A shadow animal can suspend or resume this ability as a free action.<br><br><strong>Speed: </strong>All of the shadow animal’s movement speeds increase by 10 feet.<br><br><strong>Special Abilities:</strong> A shadow animal gains one of the following abilities for every 3 HD it has (round up).<br><br><em>Blinding Savagery (Ex):</em> Choose the rake, rend, or trample ability. Whenever the shadow animal creature uses the selected ability to deal damage to a creature, the damaged creature must succeed at a Fortitude saving throw or become blinded for 1 round. The save DC is equal to 10 + half the shadow animal’s Hit Dice + the shadow animal’s Wisdom modifier. This ability can be selected up to three times, applying it to a different ability each time.<br><br><em>Energy Resistance (Ex):</em> The shadow animal gains cold resistance 10 or increases its existing cold resistance of 10 or greater to immunity to cold. This ability can be selected up to two times.<br><br><em>Evasion (Ex):</em> The shadow animal gains evasion, as per the rogue ability of the same name.<br><br><em>Fear Aura (Su):</em> Any creature within a 60-foot radius of the shadow animal that can see or hear it must succeed at a Will saving throw (DC = 10 + half the shadow animal’s HD + the shadow animal’s Charisma modifier) or be shaken for as long as it remains within the aura. Whether or not it succeeds at its save, that creature cannot be affected again by the same shadow animal’s fear aura for 24 hours. This is a mind-affecting fear effect.<br><br><em>Frightful Presence (Su): </em>The shadow animal gains the frightful presence universal monster ability, which activates as a free action when the shadow animal charges, attacks during a surprise round, or succeeds at a DC 15 Intimidate check. Its frightful presence has a range of 30 feet and a duration of 5d6 rounds.<br><br><em>Hide in Plain Sight (Su): </em>The shadow animal can use Stealth even while being observed. As long as it is within 10 feet of a shadow other than its own, a shadow animal can attempt to use Stealth to hide itself from view even if it does not have cover or concealment.<br><br><em>See in Darkness (Su):</em> The shadow animal can see perfectly in darkness of any kind, including that created by&nbsp;deeper darkness.<br><br><em>Shadow Bite (Su):</em> The shadow animal can make one of its natural attacks through its shadow. Its reach with the selected natural attack increases by 5 feet, and a creature damaged by this natural attack must succeed at a Fortitude save (DC = 10 + half the shadow animal’s HD + the shadow animal’s Charisma modifier) or take 1 point of Strength damage in addition to the normal damage dealt.<br><br><em>Shadow Form (Su):</em> Once per day as a standard action, the shadow animal can turn into an animate pool of darkness for up to 10 minutes. This duration need not be used at all once, but it must be used in 1-minute increments. This ability functions as per gaseous form.<br><br><em>Shadow Spirit (Su): </em>The shadow animal gains a +4 racial bonus on saving throws against energy drain and death effects. This ability can be selected up to two times; if this ability is selected a second time, the shadow animal instead gains immunity to energy drain and death effects.<br><br><em>Shadow Step (Su): </em>The shadow animal can teleport up to 10 feet per Hit Die as a move action, so long as the creature starts and ends this travel in dim light or darkness. It can use this ability once every 1d4 rounds.<br><br><em>Spectral Attacks (Su):</em> The shadow animal’s natural attacks affect incorporeal creatures as if they had the ghost touch weapon special ability.<br><br><em>Spell Resistance (Ex):</em> The shadow animal gains SR equal to 11 + its CR. This does not stack with any SR the base creature has.<br><br><em>Umbral Fast Healing (Ex):</em> The shadow animal gains fast healing 1 when in areas of dim light or darkness. A shadow animal must have at least 10 HD to select this ability.<br><br><em>Vanish (Su): </em>As a swift action, the shadow animal can vanish for 1 round as if affected by&nbsp;invisibility. Each day, it can use this ability for 1 round per Hit Die. This ability’s duration need not be used all at once, but it must be used in 1-round increments.<br><br><strong>Abilities: </strong>A shadow animal gains a +4 bonus to Dexterity and Charisma and a +2 bonus to Intelligence and Wisdom.<br><br><strong>Skills:</strong> A shadow animal gains a +4 racial bonus on Intimidate and Stealth checks, which does not stack with any racial bonuses the base creature has. A shadow animal has a number of skill points per racial Hit Dice equal to 6 + its Intelligence modifier. Its racial class skills are Acrobatics, Climb, Fly, Intimidate, Perception, Stealth, and Swim.<br><br><strong>Languages: </strong>Shadow animals gain Common and Infernal, but if the base creature is unable to speak, it can only understand these languages.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "nxi7spwa",
+        "formula": "@attributes.naturalAC > 0 ? -1 : 0",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "ue6ocv11",
+        "formula": "10",
+        "operator": "+",
+        "subTarget": "allSpeeds",
+        "modifier": "base",
+        "priority": 0,
+        "value": 0,
+        "target": "speed"
+      },
+      {
+        "_id": "mllujmbk",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "hxki93vt",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ar65ur0o",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "j0kisojx",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "a5fn9oes",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "skill.int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      },
+      {
+        "_id": "hefcltvz",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "skill.ste",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "@attributes.hd.total >= 10 ? 2 : 1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

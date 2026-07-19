@@ -1,0 +1,60 @@
+{
+  "_id": "mMVzwNJo1A7g7TO4",
+  "name": "Magic Item Skill",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/equipment/belt-gems.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 2nd level, an occultist’s knowledge of magic items grants him a bonus when attempting to use them. He gains a bonus on all Use Magic Device checks equal to 1/2 his occultist level.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "4zwj3q9h",
+        "formula": "floor(@classes.occultist.level / 2)",
+        "operator": "+",
+        "subTarget": "skill.umd",
+        "modifier": "untyped",
+        "priority": "0",
+        "value": 0,
+        "target": "skill"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_magicItemSkill",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Occultist"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,156 @@
+{
+  "_id": "p2swk1h5l88uff3z",
+  "name": "Infuse Decay",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "k39ib5k0hwodpef3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 10,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 10,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "permanent until discharged (D)",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": null,
+          "units": "touch",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will negates (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "corporeal undead touched; see text",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          4
+        ],
+        [
+          "witch",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 4,
+    "school": "nec",
+    "types": "evil",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a set of fine mortician's tools worth 100 gp"
+    },
+    "shortDescription": "<p>This spell functions as per <i>imbue with spell ability</i>, except it can only target corporeal undead creatures, and can only transfer touch spells. The number and level of spells the subject can be granted depends on the undead creature's Hit Dice; even multiple castings of <i>infuse decay</i> can't exceed this limit.   <table border ='1'><tr><th>HD of Undead</th><th>Touch Spells Infused</th></tr><tr><td>5 or lower</td><td>One 1st-level spell</td></tr><tr><td>6-10</td><td>One or two 1st-level spells</td></tr><tr><td>11 or higher</td><td>One or two 1st-level spells and one 2nd-level spell</td></tr></table>   Once you cast <i>infuse decay</i>, you can't prepare a new 4th-level spell to replace it (see <i>imbue with spell ability</i> on page 299 of the <i>Pathfinder RPG Core Rulebook</i> for further details). The infused spell is automatically triggered the next time the undead creature makes a successful touch attack or attack with a natural weapon. An intelligent undead can choose not to trigger the spell on a hit. Only one infused spell can be triggered per attack. An intelligent undead can choose which spell to trigger if it has more than one infused spell. A nonintelligent undead triggers a random spell when it hits with a natural weapon. Only one spell can be triggered per round, regardless of the number of attacks the undead makes.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

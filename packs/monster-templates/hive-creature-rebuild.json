@@ -1,0 +1,94 @@
+{
+  "_id": "0B6iOkMz64GCIzdO",
+  "name": "Hive Creature (Rebuild)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>While a creature infested by a hive corruption usually becomes a warrior, mutations can create hive creatures that retain the capabilities of the original creatures.<br><br><strong>Quick Rules:</strong> +3 to AC; +1 on rolls based on Str, Dex, and Con; –3 on rolls based on Cha; +1 hp/ HD; two claw attacks that each deal 1d4 points of damage (for Medium creatures) and one bite attack that deals 1d6 points of damage (for Medium creatures); immunity to acid; blind; blindsense 60 ft.; blindsight 10 ft.; corrosive blood*; hive mind*.<br><br><strong>Rebuild Rules:</strong>&nbsp;Type&nbsp;gain the hive subtype and all the corresponding abilities;&nbsp;AC&nbsp;natural armor bonus increases by 2;&nbsp;Melee&nbsp;two claw attacks that each deal 1d4 points of damage (for Medium creatures) and one bite attack that deals 1d6 points of damage (for Medium creatures);&nbsp;Ability Scores&nbsp;+2 Str, +2 Dex, +2 Con, –6 Cha.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "ojij39ob",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "o5fe7yhx",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "str",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "0s9t4kv3",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "norb3tva",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "uumsjbel",
+        "formula": "-6",
+        "operator": "+",
+        "subTarget": "cha",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

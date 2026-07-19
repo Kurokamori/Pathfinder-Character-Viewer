@@ -1,0 +1,53 @@
+{
+  "_id": "bWPWEkpSOHEr5RNz",
+  "name": "Divine Touch",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/ice_16.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 2nd level, an omdura can deliver divine energy by touch. She can deliver either positive energy or negative energy. A good omdura (or a neutral omdura of a good deity) must select positive energy. An evil omdura (or a neutral omdura of an evil deity) must select negative energy. An omdura who is neither good nor evil and whose deity is neither good nor evil can select either positive or negative energy. This choice is made when the omdura gains this ability and cannot be changed.</p>\n<p>Each day the omdura can use this ability a number of times equal to half her omdura level plus her&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;modifier. With one use of this ability, an omdura can use divine energy to restore to a target 1d6&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Hit-Points\">hit points</a>&nbsp;for every 2 omdura levels she has. Using this ability is a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>, unless the omdura targets herself, in which case it is a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions\">swift action</a>. An omdura who delivers negative energy with her&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks\">touch</a>&nbsp;can instead deal 1d6 points of damage to a living creature for every 2 omdura levels she has. Alternatively, an omdura can use this divine energy to affect&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a>&nbsp;creatures, dealing damage when delivering positive energy or restoring&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Hit-Points\">hit points</a>&nbsp;when delivering negative energy.</p>\n<p>An omdura needs only one freehand to use this ability. Using divine touch to harm a creature requires a successful melee&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks\">touch attack</a>&nbsp;and doesn’t provoke an&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity\">attack of opportunity</a>. Creatures do not receive a saving throw against the damage from divine touch. Divine touch is modified by any feat, spell, or effect that specifically works with the&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/paladin#TOC-Lay-On-Hands-Su-\">lay on hands</a>&nbsp;<a href=\"https://www.d20pfsrd.com/classes/core-classes/paladin\">paladin</a>&nbsp;class feature. For example, the&nbsp;<a href=\"https://www.d20pfsrd.com/feats/general-feats/extra-lay-on-hands\">Extra Lay On Hands</a>&nbsp;feat grants an omdura two additional uses of the divine touch class feature.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor(@classes.omdura.level / 2) + @abilities.cha.mod"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_divineTouch",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Omdura"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,144 @@
+{
+  "_id": "lPysXmaoVEP6zB1L",
+  "name": "Wrist Launcher",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/wrist-launcher.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Intrigue pg. 232</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 200 gp <strong>Weight</strong> 1 lb.</p><p><strong>Damage</strong> - (small), - (medium); <strong>Critical</strong> -; <strong>Range</strong> 20 ft.; <strong>Type</strong> P; <strong>Special</strong> -</p><p><strong>Category</strong> Ranged; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>This slender tube is strapped to one forearm and designed to be concealed beneath the sleeve, where the wielder can fire a featherweight dart with a twist of the wrist. The launcher functions by means of a tightly compressed spring, and must be reloaded and re-cocked with a separate ramrod as a full-round action. After firing, the wearer can attempt a Sleight of Hand check opposed by opponents' Perception checks to keep the wrist launcher concealed. If you are proficient with hand crossbows, you are also proficient with wrist launchers. </p>"
+    },
+    "tags": [],
+    "weight": 1,
+    "price": 200,
+    "hp": {
+      "max": "5",
+      "value": "5"
+    },
+    "hardness": 5,
+    "identifiedName": "Wrist Launcher",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "uk0mvvt4n5tnfgwt",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/wrist-launcher.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 0
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "wristLauncher",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "ranged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

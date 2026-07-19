@@ -1,0 +1,136 @@
+{
+  "_id": "rW1loOMX2unzeREU",
+  "name": "Corvus",
+  "type": "weapon",
+  "img": "icons/commodities/wood/framing-reinforced-brown.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Combat pg. 165</em></p>\n<h3 class=\"framing\">Statistics</h3>\n<p><strong>Cost</strong> 100 gp <strong>Weight</strong> -</p>\n<p><strong>Damage</strong> -; <strong>Critical</strong> -; <strong>Range</strong> -; <strong>Type</strong> -</p>\n<p><strong>Crew</strong> 1; <strong>Aim</strong> 0; <strong>Load</strong> 0; <strong>Speed</strong> 0 ft.</p>\n<p><strong>Category</strong> Close Assault; <strong>Proficiency</strong> Siege Engine</p>\n<h3 class=\"framing\">Description</h3>\n<p>A corvus is a boarding device that features a hinged counterweight system for mounting a bridge vertically on a siege tower or a vehicle, with a hooked end to grab onto a target vehicle or structure. A corvus is usually 10 feet wide and 15 feet long. It has a hardness of 5 and 10 hit points per square.</p>\n<p>Using a corvus requires a DC 10 Profession (siege engineer) check as a full-round action; if the check fails, the corvus fails to catch on the target and must be reset (a full-round action). A corvus mounted on a vehicle can target another moving vehicle (see Chapter 4: Vehicles). Doing so requires an opposed driving check to get the corvus into the correct position, which is within the length of the corvus and adjacent to the other vehicle. Once a corvus is attached, it takes a Strength check as a full-round action to dislodge the corvus. Alternatively, if the corvus is attached to a vehicle, either vehicle driver can make a driving check as a standard action to dislodge the corvus (a check that succeeds by 5 or more destroys the corvus).</p>\n<p>The base DC for either of these checks is 15, and the DC increases by 5 for every Small or Medium creature currently standing on the corvus. If a corvus is disengaged while creatures are standing on it, those creatures must make a DC 15 Reflex saving throw or fall. Succeeding at the saving throw allows them to move to the nearest area of safe ground, but such movement provokes attacks of opportunity. A corvus cannot be armored.</p>"
+    },
+    "tags": [],
+    "price": 100,
+    "hardness": 10,
+    "identifiedName": "Corvus",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ingj1hpo7ye9rm7t",
+        "name": "Attack",
+        "img": "icons/commodities/wood/framing-reinforced-brown.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": "",
+          "critMult": "2"
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "corvus",
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

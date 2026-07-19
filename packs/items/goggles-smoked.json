@@ -1,0 +1,44 @@
+{
+  "_id": "dxoaodiakqybbbyc",
+  "name": "Goggles, Smoked",
+  "type": "loot",
+  "img": "icons/equipment/head/goggles-leather-grey.webp",
+  "data": {
+    "description": {
+      "value": "\r\n<p><b>Price</b> 10 gp; <b>Weight</b> -</p>\r\n<p>These spectacles have lenses made of smoked glass that help protect against creatures with gaze attacks. You are always treated as averting your gaze when dealing with gaze attacks, and you gain a +8 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus\">circumstance bonus</a> on saving throws against visual-based attacks (any attack that a blind creature would be immune to). You take a -4 penalty on <a href=\"https://www.d20pfsrd.com/skills/perception\">Perception</a> checks while wearing the goggles, and all opponents are treated as having concealment (20% miss chance).</p>\r\n\r\n"
+    },
+    "tags": [],
+    "price": 10,
+    "equipped": false,
+    "identifiedName": "Goggles, Smoked",
+    "changes": [
+      {
+        "_id": "61pbtwrm",
+        "formula": "-4",
+        "operator": "add",
+        "subTarget": "skill.per",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0
+      }
+    ],
+    "contextNotes": [
+      {
+        "subTarget": "allSavingThrows",
+        "text": "+8 vs sight based attacks"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "subType": "gear"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

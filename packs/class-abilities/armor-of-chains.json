@@ -1,0 +1,60 @@
+{
+  "_id": "25elveRPC5vJDEMZ",
+  "name": "Armor of Chains",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 8th level, you gain resistance 5 to cold and the chains covering your body provide a +4 armor bonus to AC with no armor check penalty, maximum Dexterity bonus, or additional weight.</p>\n<p>At 16th level, the resistance increases to 10 and the armor bonus increases to +8.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "8li97yz7",
+        "formula": "@classes.bloodrager.level >= 16 ? 8 : 4",
+        "operator": "+",
+        "subTarget": "aac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_armorOfChains",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

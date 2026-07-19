@@ -1,0 +1,87 @@
+{
+  "_id": "JxLvkHxDYY98HcAH",
+  "name": "Astomoi",
+  "type": "race",
+  "img": "systems/pf1/icons/races/fetchling.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers:</strong> Astomoi ever pursue enlightenment through self-denial and are psychically attuned to their surroundings, but their delicate bodies are more susceptible to the physical dangers of the world. They gain +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;and +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-\">Wisdom</a>&nbsp;but suffer –2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a>.</li>\n<li><strong>Size:</strong> Astomoi are Medium creatures and have no bonuses or penalties due to their size.</li>\n<li><strong>Speed:</strong> Astomoi have a base speed of 30 feet.</li>\n<li><strong>Languages:</strong> Astomoi begin play knowing Common, but as they have no mouths, they cannot speak. They have&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Telepathy-Su-\">telepathy</a>&nbsp;with a range of 100 feet. Astomoi with high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;scores can choose any of the following languages: Abyssal, Aklo, Celestial, Elven, Gnome, Infernal, and Sylvan. See the&nbsp;<a href=\"https://www.d20pfsrd.com/skills/linguistics\">Linguistics skill page</a>&nbsp;for more information about these languages.</li>\n</ul>\n<h4>Senses</h4>\n<ul>\n<li><strong>Scent:</strong> Astomoi have the&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Scent\">scent</a>&nbsp;special ability.</li>\n<li><strong>Telepathic Senses:</strong> Astomoi can’t speak or see, but can mentally sense the area within 60 feet, as per&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision\">darkvision</a>, and can speak telepathically. An astomoi can’t see anything beyond 60 feet. An astomoi must provide thought&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Components\">components</a>&nbsp;for spells that normally require verbal&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Components\">components</a>. It can use&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Magic-Descriptor-Language-Dependent\">language-dependent</a>&nbsp;abilities with its&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Telepathy-Su-\">telepathy</a>, but not abilities that depend on audible&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Components\">components</a>.</li>\n</ul>\n<h4>Defensive Abilities</h4>\n<ul>\n<li><strong>Sensitive Breath:</strong> Astomoi take a –2 penalty on saving throws against&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/afflictions/diseases\">disease</a>&nbsp;and inhaled poisons.</li>\n</ul>\n<h4>Offensive Abilities</h4>\n<ul>\n<li><strong>Mouthless:</strong> Astomoi don’t need to eat or drink to survive. Instead, they absorb the essence of food and drink; this consumes the nutrients of the&nbsp;<a href=\"https://www.d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-Meal\">meal</a>&nbsp;as though it had been eaten, rendering the food useless to others. Astomoi consume&nbsp;<a href=\"https://www.d20pfsrd.com/magic-items/potions\">potions</a>&nbsp;and other ingested materials in the same fashion. Since they never actually ingest anything, they can’t normally be exposed to ingested poisons.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "qqk1qko5",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "oyi5aof9",
+        "formula": "2",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "meqly22c",
+        "formula": "-2",
+        "operator": "+",
+        "subTarget": "con",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "subTarget": "allSavingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "-[[2]] vs Disease and Inhaled Poisons"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "subTypes": [
+      [
+        "Native"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

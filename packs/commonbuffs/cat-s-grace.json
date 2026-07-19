@@ -1,0 +1,45 @@
+{
+  "_id": "dVqLY99ECYnLeoB5",
+  "name": "Cat's Grace",
+  "type": "buff",
+  "img": "systems/pf1/icons/spells/runes-orange-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The subject has a +4 enhancement bonus to Dexterity.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "67mmsygc",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "dex",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level"
+    },
+    "links": {
+      "children": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "3"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100001,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

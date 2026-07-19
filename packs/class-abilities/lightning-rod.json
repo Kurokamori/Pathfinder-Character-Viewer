@@ -1,0 +1,53 @@
+{
+  "_id": "rRgDV4GMJf7BosAE",
+  "name": "Lightning Rod",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/lighting-fire-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>As a swift action when you cast a spell with the electricity descriptor, you can designate one creature within line of sight. The spell’s damage against that creature increases by 50%, as if affected by the Empower Spell feat. This additional damage results from divine power that is not subject to being reduced by electricity resistance, and you take an equal amount of electricity damage immediately after you cast the spell. The spell can deal this additional damage only once, even if it could affect the target multiple times. You can use this ability once per day at 8th level and one additional time per day for every 4 cleric levels you have beyond 8th.</p>\n<p>This power replaces the Electricity Resistance power granted by the Air Domain.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "floor((@classes.cleric.level - 4) / 4)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_lightningRod",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Cleric"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

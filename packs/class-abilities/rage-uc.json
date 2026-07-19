@@ -1,0 +1,53 @@
+{
+  "_id": "2Az38ZPYwjYBKZd2",
+  "name": "Rage (UC)",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/extra-rage.jpg",
+  "data": {
+    "description": {
+      "value": "<p>A barbarian can call upon inner reserves of strength and ferocity, granting her additional combat prowess. At 1st level, a barbarian can rage for a number of rounds per day equal to 4 + her Constitution modifier. For each level after 1st she possesses, the barbarian can rage for 2 additional rounds per day. Temporary increases to Constitution, such as that gained from&nbsp;bear’s endurance, do not increase the total number of rounds that a barbarian can rage per day. A barbarian can enter a rage as a free action. The total number of rounds of rage per day is renewed after resting for 8 hours, although these hours need not be consecutive.<br><br>While in a rage, a barbarian gains a +2 bonus on melee attack rolls, melee damage rolls, thrown weapon damage rolls, and Will saving throws. In addition, she takes a –2 penalty to Armor Class. She also gains 2 temporary hit points per Hit Die. These temporary hit points are lost first when a character takes damage, disappear when the rage ends, and are not replenished if the barbarian enters a rage again within 1 minute of her previous rage. While in a rage, a barbarian cannot use any Charisma-, Dexterity-, or Intelligence-based skill (except Acrobatics, Fly, Intimidate, and Ride) or any ability that requires patience or concentration (such as spellcasting).<br><br>A barbarian can end her rage as a free action, and is fatigued for 1 minute after a rage ends. A barbarian can’t enter a new rage while fatigued or exhausted, but can otherwise enter a rage multiple times per day. If a barbarian falls unconscious, her rage immediately ends.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "4 + @abilities.con.mod + (@classes.barbarianUnchained.level - 1)*2"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_rageUc",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Barbarian (Unchained)"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,150 @@
+{
+  "_id": "QXs5iZ1gpobwCNp9",
+  "name": "Dwarven Boulder Helmet",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/helmet-dwarven-bolder.PNG",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Advanced Race Guide pg. 17</em></p><h3 class=\"framing\"><img src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" title=\"PFS Legal\" style=\"margin:3px 3px 0px 3px;\">Statistics</h3><p><strong>Cost</strong> 20 gp <strong>Weight</strong> 10 lbs.</p><p><strong>Damage</strong> 1d3 (small), 1d4 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> B; <strong>Special</strong> see text</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Exotic</p><h3 class=\"framing\">Description</h3><p>This heavy, reinforced helmet can be used to make melee attacks. The wearer may also use the helmet when attempting bull rush maneuvers, granting a +2 circumstance bonus on the check, but after completing the maneuver (whether successful or not), the wearer is staggered until the end of his next turn. In addition, the helmet grants a +2 circumstance bonus to the wearer's AC against critical hit confirmation rolls. A dwarven boulder helmet adds 20% to the wearer's arcane spell failure chance. It occupies the head slot and is made of metal, not stone, meaning that it can be crafted from unusual materials as a metal weapon. A dwarven boulder helmet can be enchanted as a weapon (not as armor, despite providing some protection). </p>"
+    },
+    "tags": [],
+    "weight": 10,
+    "price": 20,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Dwarven Boulder Helmet",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "wpjtiltmuxa6clli",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/helmet-dwarven-bolder.PNG",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 4, @size)",
+              {
+                "values": [
+                  "bludgeoning"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "dwarvenBoulderHelmet",
+    "scriptCalls": [],
+    "weaponType": "exotic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

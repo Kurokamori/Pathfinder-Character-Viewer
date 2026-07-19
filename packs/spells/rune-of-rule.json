@@ -1,0 +1,169 @@
+{
+  "_id": "3quizxugd8o4c4yb",
+  "name": "Rune of Rule",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "gwgl0uv9yal1stxv",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "minute"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": "minute"
+          }
+        },
+        "duration": {
+          "value": "1 day or until activated (see description)",
+          "units": ""
+        },
+        "target": {
+          "value": "one living creature"
+        },
+        "range": {
+          "value": null,
+          "units": "close",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "spellsave",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "will",
+          "description": "Will (harmless)"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          2
+        ],
+        [
+          "bard",
+          2
+        ],
+        [
+          "witch",
+          2
+        ],
+        [
+          "occultist",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "trs",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "material": true
+    },
+    "materials": {
+      "value": "vial of paint worth 25 gp",
+      "gpValue": 25
+    },
+    "spellbook": "",
+    "preparation": {
+      "autoDeductCharges": false,
+      "spontaneousPrepared": false
+    },
+    "shortDescription": "<p>Investigations into the ancient and mysterious traditions of the seven virtues of rule of the lost human empire of Azlant, which were later corrupted by the runelords into the more familiar seven deadly sins, inspired the Cyphermages to develop the runes of rule. This spell allows you to place a rune upon another creature that can then be used to aid it at a later time. You determine the spell's effect at the time of casting by using your finger to paint a specific rune on the recipient's body with a dose of specially prepared paint worth 25 gp. The inscribed rune lasts for 24 hours or until the spell is activated. Unless otherwise noted, the creature upon which the <i>Rune of Rule</i> has been inscribed can activate it at any time as a swift action. If the spell effect isn't used, all markings associated with the rune disappear and the effect fades. You can never place the spell upon yourself-it must be bestowed on someone else. The seven runes of rule, along with their specific effects when the user activates them, are listed below. A creature can bear only one <i>Rune of Rule</i> at a time. <b>Charity</b>: A creature bearing this mark gains a +5 insight bonus on a single attack roll or skill check attempted at the request of another creature, provided the creature bearing this mark does not gain any immediate benefit or reward for making the roll or attempting the check. <b>Generosity</b>: A creature bearing the rune of generosity can activate it as an immediate action, but it must do so as another creature within 30 feet activates a consumable magic item such as a potion or scroll that was given to it at some point within the last 24 hours by the creature bearing the rune. When the rune is activated, the effects of the consumable magic item resolve at a caster level that is 2 higher than the item's actual caster level. <b>Humility</b>: When a creature activates the rune of humility, it does not provoke attacks of opportunity for 1 round. <b>Kindness</b>: A creature must be using the aid another action or casting a healing spell in order to activate a rune of kindness. If the creature activates the rune while using the aid another action, the bonus imparted on a success increases to +5. If the creature instead activates the rune while casting a healing spell, the effective caster level of the spell increases by 2. <b>Love</b>: When a creature activates the rune of love as he casts a spell with the charm descriptor, the save DC of that spell increases by 1. Alternatively, a creature can activate the rune of love after he rolls damage for a weapon or spell attack, causing the damage dealt to become nonlethal damage. <b>Temperance</b>: A creature bearing the rune of temperance can activate it as an immediate action immediately upon failing a saving throw against a poison, disease, drug, or similar effect. The creature can immediately attempt a second saving throw against the effect and can use the result of that second saving throw as the actual result. <b>Zeal</b>: A creature that activates the rune of zeal gains a +3 bonus on Will saves, and the save DCs of all language-dependent effects created by the creature increase by 1; these effects last for 1 round.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

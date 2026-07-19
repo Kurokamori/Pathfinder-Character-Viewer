@@ -1,0 +1,53 @@
+{
+  "_id": "V8cRFtOQA6ltklEl",
+  "name": "Fighting Defensively",
+  "type": "buff",
+  "img": "icons/svg/combat.svg",
+  "data": {
+    "tags": [],
+    "changes": [
+      {
+        "_id": "zmpj4gpd",
+        "formula": "@skills.acr.rank>=3?3:2",
+        "operator": "add",
+        "subTarget": "ac",
+        "modifier": "dodge",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "osyl628w",
+        "formula": "-4",
+        "operator": "add",
+        "subTarget": "attack",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "attack"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "round",
+      "value": "1"
+    },
+    "links": {
+      "children": []
+    },
+    "tag": "fightingDefensively",
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

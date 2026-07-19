@@ -1,0 +1,149 @@
+{
+  "_id": "mDJlmENIJf6IpZFc",
+  "name": "Spider-Leg Sickle",
+  "type": "weapon",
+  "img": "systems/pf1/icons/items/weapons/sickle.png",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>The House on Hook Street pg. 13</em></p><h3 class=\"framing\">Statistics</h3><p><strong>Cost</strong> 15 gp <strong>Weight</strong> 2 lbs.</p><p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x2; <strong>Range</strong> -; <strong>Type</strong> P; <strong>Special</strong> trip</p><p><strong>Category</strong> Light; <strong>Proficiency</strong> Simple</p><h3 class=\"framing\">Description</h3><p>This wickedly curved sickle is cast in the form of a segmented spider's leg. It has the same statistics as a normal sickle and can trip opponents, but deals piercing damage rather than slashing damage. The leatherwrapped handle contains a hollow recess that can hold a single dose of poison. Filling the reservoir is a full-round action that carries the usual risks of poisoning yourself. Once filled, the reservoir keeps the blade saturated and viable for up to 2 hours. The first successful attack made with the spider-leg sickle during this time administers and expends the dose of poison. Mog-Lathar's deacons carry masterwork versions of these weapons. The cult uses blue whinnis poison, and within the radius of the <em>dreamstone</em>'s effects the unconsciousness effect may trigger lucid dreaming.</p>"
+    },
+    "tags": [],
+    "weight": 2,
+    "price": 15,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "hardness": 10,
+    "identifiedName": "Spider-Leg Sickle",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "49wojonavuw07tgp",
+        "name": "Attack",
+        "img": "systems/pf1/icons/items/weapons/sickle.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 0,
+          "units": "melee",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": null,
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "mwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "str",
+          "damage": "str",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": 0,
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "spiderlegSickle",
+    "scriptCalls": []
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

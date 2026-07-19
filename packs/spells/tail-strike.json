@@ -1,0 +1,172 @@
+{
+  "_id": "a8gphahx0vu294yj",
+  "name": "Tail Strike",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "90o8c25vknfibymd",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (see text)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          3
+        ],
+        [
+          "paladin",
+          3
+        ],
+        [
+          "alchemist",
+          4
+        ],
+        [
+          "antipaladin",
+          3
+        ],
+        [
+          "bloodrager",
+          3
+        ],
+        [
+          "medium",
+          3
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 3,
+    "school": "trs",
+    "types": "draconic",
+    "components": {
+      "verbal": true,
+      "material": true
+    },
+    "materials": {
+      "value": "a dragon scale"
+    },
+    "sr": false,
+    "shortDescription": "<p>You grow a draconic tail (clothing and armor adjust as necessary), or if you already have a tail, it takes on a draconic appearance. If you have a draconic bloodline, the tail matches the appearance of that dragon type; otherwise, it matches the appearance of a dragon type whose alignment matches your own. You gain a tail slam attack that deals 1d6 points of damage (1d4 if Small, 1d8 if Large) + your Strength modifier. If you already have a tail attack, you instead extend the reach of your tail attack by 5 feet. If you have a tail sweep attack, this spell increases its radius by 10 feet.  If used as part of a full-attack action, the tail slam is considered a secondary attack, is made at your full base attack bonus - 5, and adds half your Strength modifier to its damage. You can end this spell before its normal duration by uttering a bestial roar as a swift action. When you do, you can attempt an Intimidate check to demoralize all foes within a 30-foot radius that can hear the roar.  Clerics, inquisitors, oracles, and warpriests who worship dragon deities add <i>tail strike</i> to their class spell lists as a 4th-level spell.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

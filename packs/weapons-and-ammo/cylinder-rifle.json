@@ -1,0 +1,157 @@
+{
+  "_id": "YHAGfpGI0Ghd9udz",
+  "name": "Cylinder Rifle",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-wood.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>People of the Wastes pg. 15</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"PFS Legal\" src=\"https://www.aonprd.com/images/PathfinderSocietySymbol.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 6,000 gp <strong>Weight</strong> 12 lbs.</p>\n<p><strong>Damage</strong> 1d6 (small), 1d8 (medium); <strong>Critical</strong> x4; <strong>Range</strong> 40 ft.; <strong>Type</strong> B and P; <strong>Special</strong> -</p>\n<p><strong>Misfire</strong> 1-3 (10 ft.); <strong>Capacity</strong> 8</p>\n<p><strong>Category</strong> Two-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>This long-barreled early firearm has a slim horizontal disk with eight uncovered slots, each of which can hold one bullet and 1 dose of black powder (but not alchemical cartridges).</p>\n<p>Each time the weapon is fired, the disk rotates to load the next available shot. Misfiring with a cylinder rifle causes rogue sparks to cause the gun to erratically fire all the remaining bullets loaded in the disk, and each stray bullet has a 50% chance to hit the wielder, dealing 1d6 points of damage.</p>\n<p>Reloading a cylinder rifle requires two full-round actions, regardless of the number of slots being loaded. The @Compendium[pf1.feats.11ClnanF4PdEPd9g]{Rapid Reload} feat reduces this to a single full-round action.</p>"
+    },
+    "tags": [],
+    "weight": 12,
+    "price": 6000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Cylinder Rifle",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "pqsswouhous6u4wj",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-wood.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "40",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 8, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1.5,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "cylinderRifle",
+    "scriptCalls": [],
+    "held": "2h",
+    "weaponType": "exotic",
+    "weaponSubtype": "2h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

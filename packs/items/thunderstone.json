@@ -1,0 +1,143 @@
+{
+  "_id": "akgicrcsuznrhvkk",
+  "name": "Thunderstone",
+  "type": "weapon",
+  "img": "icons/commodities/stone/stone-chunk-teal.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong>&nbsp;<a href=\"http://paizo.com/products/btpy959n?Pathfinder-Player-Companion-Alchemy-Manual\" target=\"_blank\" rel=\"noopener\">Alchemy Manual pg. 31</a></p>\n<p>You can throw this stone as a ranged attack with a range increment of 20 feet. When it strikes a hard surface (or is struck hard), it creates a deafening bang that is treated as a sonic attack. Each creature within a 10-foot-radius spread must make a DC 15 Fortitude save or be deafened for 1 hour. A deafened creature, in addition to the obvious effects, takes a &ndash;4 penalty on initiative and has a 20% chance to miscast and lose any spell with a verbal component that it tries to cast.<br /><br />Since you don&rsquo;t need to hit a specific target, you can simply aim at a particular 5-foot square. Treat the target square as AC 5.</p>\n<p>@Compendium[pf1.skills.L6LEhHRrn53cMuhE]{Craft (alchemy)} DC: 25</p>\n<p>Alchemical Power Component</p>\n<p><strong>Source</strong>&nbsp;<a href=\"http://paizo.com/store/downloads/pathfinder/pathfinderCompanion/pathfinderRPG/v5748btpy8dmf\" target=\"_blank\" rel=\"noopener\">Adventurer's Armory pg. 27</a></p>\n<p>While they are effective enough on their own, these stones have useful interactions with some spells.</p>\n<ul>\n<li>@Compendium[pf1.spells.nee6cxpoekp3aklq]{Alarm} (M): If cast as a mental alarm, you may have the spell activate a mental and audible alarm. If cast as an audible alarm, the alarm is as loud as a thunderstone and affects creatures in a 10-foot-radius spread as if a thunderstone had detonated there.</li>\n<li>@Compendium[pf1.spells.53dyu81yaw4y0nz4]{Glyph of Warding} (M): Creatures that fail their saves against a blast glyph are also deafened as if by a thunderstone.</li>\n</ul>"
+    },
+    "tags": [],
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "identifiedName": "Thunderstone",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "ez6oij602cosucdz",
+        "name": "Attack",
+        "img": "icons/commodities/stone/stone-chunk-teal.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 5,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "single",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "circle",
+          "size": "10",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": ""
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "15",
+          "type": "fort",
+          "description": "Fortitude negates"
+        },
+        "effectNotes": [
+          "<b>Save Fail</b> @Compendium[pf1.conditions.ZTA39rR8AnZcydiu]{Deafened} for 1 hour"
+        ],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": "single"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "weaponType": "misc",
+    "weaponSubtype": "other"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0,
+    "61klraqiWb97OOLa": 3
+  },
+  "flags": {}
+}

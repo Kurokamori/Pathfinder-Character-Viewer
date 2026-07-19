@@ -1,0 +1,156 @@
+{
+  "_id": "PT81W3PcwSrepF3I",
+  "name": "Dragon Pistol",
+  "type": "weapon",
+  "img": "icons/weapons/guns/gun-red.webp",
+  "data": {
+    "description": {
+      "value": "<p><strong>Source</strong> <em>Ultimate Equipment pg. 43</em>, <em>Ultimate Combat pg. 139</em></p>\n<h3 class=\"framing\"><img style=\"margin: 3px 3px 0px 3px;\" title=\"No character may purchase a firearm unless she possesses the Gunsmithing feat and firearms are never considered Always Available\" src=\"https://www.aonprd.com/images/PathfinderSocietySymbolN.gif\" />Statistics</h3>\n<p><strong>Cost</strong> 1,000 gp <strong>Weight</strong> 3 lbs.</p>\n<p><strong>Damage</strong> 1d4 (small), 1d6 (medium); <strong>Critical</strong> x4; <strong>Range</strong> special; <strong>Type</strong> B and P; <strong>Special</strong> scatter</p>\n<p><strong>Misfire</strong> 1-2 (5 ft.); <strong>Capacity</strong> 1</p>\n<p><strong>Category</strong> One-Handed; <strong>Proficiency</strong> Exotic</p>\n<h3 class=\"framing\">Description</h3>\n<p>Like a miniature blunderbuss, the dragon pistol fires pellets or a bullet from its flared barrel. The dragon pistol fires in a 15-foot cone when firing pellets, and has a 10-foot range increment when firing a bullet.</p>\n<p>A dragon pistol uses either a bullet or group of pellets and 1 dose of black powder, or a single alchemical cartridge (with either bullets or pellets) as ammunition.</p>\n<p><strong>This is an early firearm.</strong></p>"
+    },
+    "tags": [],
+    "weight": 3,
+    "price": 1000,
+    "hp": {
+      "max": "10",
+      "value": "10"
+    },
+    "hardness": 10,
+    "identifiedName": "Dragon Pistol",
+    "changes": [],
+    "actions": [
+      {
+        "_id": "6zowzymqf0q2l61x",
+        "name": "Attack",
+        "img": "icons/weapons/guns/gun-red.webp",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "attack"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 1,
+            "type": ""
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": "inst"
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": "20",
+          "units": "ft",
+          "maxIncrements": 10,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "rwak",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [
+            [
+              "sizeRoll(1, 6, @size)",
+              {
+                "values": [
+                  "bludgeoning",
+                  "piercing"
+                ],
+                "custom": ""
+              }
+            ]
+          ],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": "min(3, ceil(@attributes.bab.total / 5) - 1)"
+          },
+          "bonus": {
+            "formula": "@formulaicAttack * -5"
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "dex",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 4
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": true,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "contextNotes": [],
+    "links": {
+      "children": []
+    },
+    "tag": "dragonPistol",
+    "scriptCalls": [],
+    "weaponType": "exotic",
+    "weaponSubtype": "1h",
+    "ammoType": "gunBullet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

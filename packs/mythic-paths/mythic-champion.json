@@ -1,0 +1,101 @@
+{
+  "_id": "aebckf1uBbviGr2m",
+  "name": "(Mythic) Champion",
+  "type": "class",
+  "img": "systems/pf1/icons/skills/yellow_37.jpg",
+  "data": {
+    "description": {
+      "value": "<p>Source&nbsp;<a href=\"http://paizo.com/products/btpy8ywe?Pathfinder-Roleplaying-Game-Mythic-Adventures\" target=\"_blank\" rel=\"noopener\">Mythic Adventures pg. 20</a><br />The champion is the pinnacle of skill at arms and armor. No ordinary fighter could hope to match the skill with a blade, a bow, or an axe that surges within a mythic champion. The champion turns aside blows and shatters shields with every movement, all while racing gracefully across the chaotic battlefield. When the screams of fallen foes die down, the champion stands strong and defiant in blood-spattered armor, hefting a weapon and shouting a terrifying war cry.<br /><br />Role: As a champion, your role is to take the fight to your enemies. Using devastating melee powers, you can crush your enemies before they even have a chance to harm you and your allies. Few can match your skill at arms or your ability to perform amazing feats of strength. The champion abilities allow you to control your foes, move easily around the battlefield, and challenge a large number of foes all at once. The rest of the party can count on you to dominate any melee you charge into.<br /><br />Classes: While members or nearly any class could be champions, those who focus on melee attacks&mdash; barbarians, cavaliers, fighters, monks, paladins, and rangers&mdash;will find the abilities in this path most attractive and useful. However, even magi or rogues could find that the path of the champion is an excellent way to augment their abilities.<br /><br />Bonus Hit Points: Whenever you gain a champion tier, you gain 5 bonus hit points. These hit points stack with themselves, and don&rsquo;t affect your overall Hit Dice or other statistics.</p>\n<h2>Path Features</h2>\n<div>\n<table>\n<tbody>\n<tr>\n<td>Tier</td>\n<td>Path Features</td>\n</tr>\n<tr>\n<td>1st</td>\n<td>Champion's strike, path ability</td>\n</tr>\n<tr>\n<td>2nd</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>3rd</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>4th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>5th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>6th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>7th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>8th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>9th</td>\n<td>Path ability</td>\n</tr>\n<tr>\n<td>10th</td>\n<td>Legendary champion, path ability</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>As you increase in tier, you gain the following abilities.<br /><br />Champion&rsquo;s Strike: Select one of the following abilities. Once chosen, it can&rsquo;t be changed.<br /><br />Distant Barrage (Ex): As a swift action, you can expend one use of mythic power to make a ranged attack at your highest attack bonus. This is in addition to any other attacks you make this round. When making this attack, ignore the target&rsquo;s cover and concealment other than total cover, and add your tier to the attack roll. Damage from this attack bypasses all damage reduction.<br /><br />Fleet Charge (Ex): As a swift action, you can expend one use of mythic power to move up to your speed. At any point during this movement, you can make a single melee or ranged attack at your highest attack bonus, adding your tier to the attack roll. This is in addition to any other attacks you make this round. Damage from this attack bypasses all damage reduction.<br /><br />Sudden Attack (Ex): As a swift action, you can expend one use of mythic power to make a melee attack at your highest attack bonus. This is in addition to any other attacks you make this round. When making a sudden attack, you roll twice and take the better result, adding your tier to the attack roll. Damage from this attack bypasses all damage reduction.<br /><br />Path Ability: At 1st tier and every tier thereafter, select one new path ability from the champion path abilities lists or from the universal path abilities lists (see page 50). Once you select an ability, it can&rsquo;t be changed. Unless otherwise noted, each ability can be selected only once. Some abilities have requirements, such as a class ability or minimum mythic tier, that you must meet before you select them.<br /><br />Legendary Champion (Ex): At 10th tier, whenever you make an attack roll against a non-mythic foe and miss, you may immediately roll again. You must take the second roll, even if it&rsquo;s lower. Once per round when you roll a natural 20 on an attack roll, you regain one use of mythic power.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "zp6g23zz",
+        "formula": "@classes.mythicChampion.level*5",
+        "operator": "+",
+        "subTarget": "mhp",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "misc"
+      }
+    ],
+    "links": {
+      "children": [],
+      "classAssociations": []
+    },
+    "tag": "mythicChampion",
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "classType": "mythic",
+    "hd": 0,
+    "hp": 0,
+    "bab": "",
+    "savingThrows": {
+      "fort": {
+        "value": ""
+      },
+      "ref": {
+        "value": ""
+      },
+      "will": {
+        "value": ""
+      }
+    },
+    "classSkills": {
+      "acr": false,
+      "apr": false,
+      "art": false,
+      "blf": false,
+      "clm": false,
+      "crf": false,
+      "dip": false,
+      "dev": false,
+      "dis": false,
+      "esc": false,
+      "fly": false,
+      "han": false,
+      "hea": false,
+      "int": false,
+      "kar": false,
+      "kdu": false,
+      "ken": false,
+      "kge": false,
+      "khi": false,
+      "klo": false,
+      "kna": false,
+      "kno": false,
+      "kpl": false,
+      "kre": false,
+      "lin": false,
+      "lor": false,
+      "per": false,
+      "prf": false,
+      "pro": false,
+      "rid": false,
+      "sen": false,
+      "slt": false,
+      "spl": false,
+      "ste": false,
+      "sur": false,
+      "swm": false,
+      "umd": false
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

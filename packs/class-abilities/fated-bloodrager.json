@@ -1,0 +1,70 @@
+{
+  "_id": "hgiQpbIXwLsgTvlt",
+  "name": "Fated Bloodrager",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, you gain a +1 luck bonus to AC and on saving throws.</p>\n<p>At 8th level and every 4 levels thereafter, this bonus increases by 1 (to a maximum of +5 at 20th level).</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "37s24fyj",
+        "formula": "floor(@classes.bloodrager.level / 4)",
+        "operator": "+",
+        "subTarget": "ac",
+        "modifier": "luck",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "7bhdpdxp",
+        "formula": "floor(@classes.bloodrager.level / 4)",
+        "operator": "+",
+        "subTarget": "allSavingThrows",
+        "modifier": "luck",
+        "priority": 0,
+        "value": 0,
+        "target": "savingThrows"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_fatedBloodrager",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

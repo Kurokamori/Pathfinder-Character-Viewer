@@ -1,0 +1,45 @@
+{
+  "_id": "1W9YmqCqawLmMXmf",
+  "name": "Owl's Wisdom",
+  "type": "buff",
+  "img": "systems/pf1/icons/spells/runes-royal-1.jpg",
+  "data": {
+    "description": {
+      "value": "<p>The subject has a +4 enhancement bonus to Wisdom.</p>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "o943eq2i",
+        "formula": "4",
+        "operator": "+",
+        "subTarget": "wis",
+        "modifier": "enh",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "duration": {
+      "units": "minute",
+      "value": "@item.level"
+    },
+    "links": {
+      "children": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "level": "3"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 100001,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

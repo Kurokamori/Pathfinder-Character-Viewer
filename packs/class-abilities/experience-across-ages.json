@@ -1,0 +1,53 @@
+{
+  "_id": "JOGQ5xqsUQvvAq9b",
+  "name": "Experience Across Ages",
+  "type": "feat",
+  "img": "systems/pf1/icons/items/weapons/rhoka.PNG",
+  "data": {
+    "description": {
+      "value": "<p><a href=\"https://aonprd.com/RacesDisplay.aspx?ItemName=Samsaran\">Samsaran</a>&nbsp;only.</p>\n<p>Once per day, a samsaran slayer can draw upon insights from his previous lifetimes to help identify a foe or recall a key piece of information. As a swift action, the slayer can attempt a Knowledge check as if he had a number of ranks in the appropriate Knowledge skill equal to his slayer level.</p>\n<p>A slayer can use this talent one additional time per day for every 5 slayer levels he has.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + floor(@classes.slayer.level / 5)"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_experienceAcrossAges",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Slayer"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

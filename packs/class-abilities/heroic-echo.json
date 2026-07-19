@@ -1,0 +1,53 @@
+{
+  "_id": "O6PEQBu8OA6EMPoI",
+  "name": "Heroic Echo",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/intimidating-prowess.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 3rd level, when you receive a&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Morale-Bonus\">morale bonus</a>&nbsp;from any spell,&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Spell-Like-Abilities-Sp-\">spell-like ability</a>, or magic item, including those you cast on yourself, that bonus increases by +1. At 9th level, this ability also applies to competence bonuses. If you receive a morale effect (or a competence effect at 9th level) that affects an area or multiple targets, as an&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions\">immediate action</a>&nbsp;you can share your increased bonus with all other recipients. This increase to other participants lasts a number of rounds equal to your&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Charisma</a>&nbsp;bonus. You can use this ability once per day, plus one time per three levels after 3rd.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "uses": {
+      "per": "day",
+      "maxFormula": "1 + (floor((@classes.sorcerer.level - 3) / 3))"
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_heroicEcho",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Sorcerer"
+        ]
+      ]
+    },
+    "abilityType": "su"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

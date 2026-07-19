@@ -1,0 +1,60 @@
+{
+  "_id": "wxQ6Nx7AuZVCOdSq",
+  "name": "Draconic Resistances",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/red_05.jpg",
+  "data": {
+    "description": {
+      "value": "<p>At 4th level, you gain resistance 5 against your energy type and a +1 natural armor bonus to AC.</p>\n<p>At 8th level, your energy resistance increases to 10 and your natural armor bonus increases to +2.</p>\n<p>At 16th level, your natural armor bonus increases to +4.</p>"
+    },
+    "tags": [],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "amfwsk0c",
+        "formula": "@classes.bloodrager.level >= 16 ? 4 : ((@classes.bloodrager.level >= 8 && @classes.bloodrager.level < 16)  ? 2 : 1)",
+        "operator": "+",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_draconicResistances",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Bloodrager"
+        ]
+      ]
+    },
+    "abilityType": "ex"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

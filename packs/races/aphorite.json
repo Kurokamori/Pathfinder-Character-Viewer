@@ -1,0 +1,88 @@
+{
+  "_id": "zlWiqUqxCajrZRe3",
+  "name": "Aphorite",
+  "type": "race",
+  "img": "systems/pf1/icons/races/aphorite.png",
+  "data": {
+    "description": {
+      "value": "<h2>Standard Racial Traits</h2>\n<ul>\n<li><strong>Ability Score Modifiers</strong>:&nbsp;Aphorites are strong and intelligent, but move and react somewhat stiffly. They gain +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\">Strength</a>&nbsp;and&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;but suffer &ndash;2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-\">Dexterity</a></li>\n<li><strong>Size:</strong> Aphorites are Medium creatures and have no bonuses of penalties due to their size.</li>\n<li><strong>Speed:</strong> Aphorites have a base speed of 30 feet.</li>\n<li><strong>Senses:</strong>&nbsp;Aphorites have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Darkvision\">darkvision</a>&nbsp;60 feet.</li>\n<li><strong>Languages:</strong> Aphorites speak Common and either&nbsp;<a href=\"https://www.d20pfsrd.com/bestiary/monster-listings/templates/celestial-creature-cr-special\">Celestial</a>&nbsp;or Infernal. An aphorite with a high&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Intelligence-Int-\">Intelligence</a>&nbsp;score can choose from the following as bonus languages: Abyssal, Aquan, Auran, Celestial, Ignan, Infernal, or Terran.</li>\n<li><strong>Skilled:</strong> Aphorites gain a +2&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus\">racial bonus</a> on checks with a single @Compendium[pf1.skills.L6LEhHRrn53cMuhE]{Craft}&nbsp;skill of their choice.</li>\n<li><strong>Spell-Like Abilities</strong>: Aphorites can use @Compendium[pf1.spells.md6ltvqh9paadsm4]{Protection From Chaos}&nbsp;once per day as a&nbsp;<a href=\"https://www.d20pfsrd.com/magic#TOC-Spell-Like-Abilities-Sp-\">spell-like ability</a>&nbsp;(<a href=\"https://www.d20pfsrd.com/magic#TOC-Caster-Level\">caster level</a>&nbsp;equal to the aphorite&rsquo;s class level).</li>\n<li><strong>Aphorite Resistances</strong>: Aphorites have&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance\">electricity resistance</a>&nbsp;5 and a +2 bonus on saves versus <a href=\"https://www.d20pfsrd.com/gamemastering/afflictions/poison\">poison</a>&nbsp;and <a href=\"https://www.d20pfsrd.com/magic#TOC-Magic-Descriptor-Mind-Affecting\">mind-affecting</a>&nbsp;effects.</li>\n<li><strong>Crystalline Dust (Su)</strong>: An aphorite can manifest a haze of crystalline dust that forms into indistinct runes and glyphs surrounding its body. This effect grants the aphorite a 20% miss chance against melee and ranged attacks. Activating this dust is a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions\">move action</a>, but it can be maintained each round as a&nbsp;<a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Free-Actions\">free action</a>. The effect cannot be disrupted, but it ends immediately if the aphorite is killed, @Compendium[pf1.conditions.8zG4yDD2zGVSAJFH]{paralyzed}, @Compendium[pf1.conditions.assqfdN6G1URo9MZ]{stunned}, knocked @Compendium[pf1.conditions.bj36eCfZGJG5AGTQ]{unconscious}, or otherwise prevented from taking a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Free-Actions\">free action</a>&nbsp;to maintain it each round. An aphorite can use this ability a number of rounds per day equal to its&nbsp;<a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a>, but the rounds do not need to be consecutive.</li>\n</ul>"
+    },
+    "tags": [],
+    "changes": [
+      {
+        "_id": "wukla7bt",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "str",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "lslo5vb9",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "int",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "4h10gpqi",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "racial",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [
+      {
+        "formula": "",
+        "operator": "+",
+        "target": "savingThrows",
+        "subTarget": "allSavingThrows",
+        "modifier": "",
+        "priority": 0,
+        "value": 0,
+        "text": "+[[2]] vs Poison and Mind-affecting effects"
+      }
+    ],
+    "links": {
+      "children": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": [
+        "common"
+      ]
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "creatureType": "outsider",
+    "subTypes": [
+      [
+        "Native"
+      ]
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

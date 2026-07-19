@@ -1,0 +1,156 @@
+{
+  "_id": "auqa5b0x0een6jcm",
+  "name": "Trace Teleport",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "c711ekco3ov8nrx3",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level",
+          "units": ""
+        },
+        "target": {
+          "value": ""
+        },
+        "range": {
+          "value": 40,
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "40-ft.-radius emanation centered on you",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "sorcerer/wizard",
+          5
+        ],
+        [
+          "psychic",
+          4
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 5,
+    "school": "div",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "focus": true
+    },
+    "materials": {
+      "focus": "a magnifying lens"
+    },
+    "sr": false,
+    "shortDescription": "<p>You immediately become aware of any <i>teleport</i>ation effects that begin or end within the spell's area. The spell's area radiates from you and moves as you move. You know the exact origin point of any <i>teleport</i>ation effect that originates within the spell's area, and the exact end point of any <i>teleport</i>ation effect that terminates within the spell's area. Further, you can detect the lingering traces of any <i>teleport</i>ation effect that occurred up to 1 hour previously, in the same fashion. You intuitively know, to the nearest minute, when the <i>teleport</i>ation effect occurred.  Whenever you detect the origin point or termination point of any <i>teleport</i>ation effect with this spell, you can study that origin point or termination point for 1 round. If you do, you can attempt a caster level check (DC = 11 + the <i>teleport</i>ation effect's caster level), taking a -5 penalty if the effect occurred more than 1 minute ago. If you succeed, you gain a glimpse of the <i>teleport</i>ation effect's termination point (if you detected an origin point) or origin point (if you detected a termination point). This glimpse lasts long enough for you to get a brief look at the area, but not long enough to scrutinize it in detail. It doesn't come with any geographic knowledge of the location, so it is not sufficient for <i>teleport</i> or similar magic. You can't retry the caster level check, even if you cast trace <i>teleport</i> again.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

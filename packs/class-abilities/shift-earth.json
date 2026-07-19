@@ -1,0 +1,154 @@
+{
+  "_id": "albKb3GTBSu9LzNg",
+  "name": "Shift Earth",
+  "type": "feat",
+  "img": "systems/pf1/icons/spells/rock-sky-3.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Element&nbsp;</strong>earth;&nbsp;<strong>Type&nbsp;</strong>utility (Sp);&nbsp;<strong>Level&nbsp;</strong>4;&nbsp;<strong>Burn&nbsp;</strong>0<br><strong>Prerequisite&nbsp;</strong>kinetic cover<br><strong>Saving Throw&nbsp;</strong>see text;&nbsp;<strong>SR&nbsp;</strong>no</p>\n<p>As a standard action, you can push or pull a 5-foot cube of earth or unworked stone within 30 feet, moving the cube 5 feet in any direction. You can create raised platforms, stairs up a cliff, holes, or other useful features. This doesn’t cause the earth to float in the air, although in areas with plenty of earth, you can move a cube upward, creating a short pillar.</p>\n<p>If you move the earth beneath a creature’s feet, it can attempt a DC 20 Reflex save to leap elsewhere and avoid moving along with the earth.</p>"
+    },
+    "tags": [],
+    "actions": [
+      {
+        "_id": "qdkwwe9slbikatjw",
+        "name": "Use",
+        "img": "systems/pf1/icons/spells/rock-sky-3.jpg",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": "5-ft. cube of earth"
+        },
+        "range": {
+          "value": "30",
+          "units": "ft",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": false,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "save",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": null,
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "ref",
+          "description": "see text"
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "classFeat_shiftEarth",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "featType": "classFeat",
+    "associations": {
+      "classes": [
+        [
+          "Kineticist"
+        ]
+      ]
+    },
+    "abilityType": "sp"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

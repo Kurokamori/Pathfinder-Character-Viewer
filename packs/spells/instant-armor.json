@@ -1,0 +1,159 @@
+{
+  "_id": "50maksnxymh9jsj2",
+  "name": "Instant Armor",
+  "type": "spell",
+  "img": "systems/pf1/icons/misc/magic-swirl.png",
+  "data": {
+    "tags": [],
+    "actions": [
+      {
+        "_id": "fbr5e6ays2kp62xn",
+        "name": "Use",
+        "img": "systems/pf1/icons/misc/magic-swirl.png",
+        "description": "",
+        "activation": {
+          "cost": 1,
+          "type": "standard"
+        },
+        "unchainedAction": {
+          "activation": {
+            "cost": 2,
+            "type": "action"
+          }
+        },
+        "duration": {
+          "value": "1 minute/level (D)",
+          "units": ""
+        },
+        "target": {
+          "value": "you"
+        },
+        "range": {
+          "value": null,
+          "units": "personal",
+          "maxIncrements": 1,
+          "minValue": null,
+          "minUnits": ""
+        },
+        "uses": {
+          "autoDeductCharges": true,
+          "autoDeductChargesCost": "1",
+          "per": "",
+          "value": 0,
+          "maxFormula": ""
+        },
+        "measureTemplate": {
+          "type": "",
+          "size": "0",
+          "overrideColor": false,
+          "customColor": "",
+          "overrideTexture": false,
+          "customTexture": ""
+        },
+        "attackName": "",
+        "actionType": "",
+        "attackBonus": "",
+        "critConfirmBonus": "",
+        "damage": {
+          "parts": [],
+          "critParts": [],
+          "nonCritParts": []
+        },
+        "attackParts": [],
+        "formulaicAttacks": {
+          "count": {
+            "formula": ""
+          },
+          "bonus": {
+            "formula": ""
+          },
+          "label": null
+        },
+        "formula": "",
+        "ability": {
+          "attack": "",
+          "damage": "",
+          "damageMult": 1,
+          "critRange": 20,
+          "critMult": 2
+        },
+        "save": {
+          "dc": "0",
+          "type": "",
+          "description": ""
+        },
+        "effectNotes": [],
+        "attackNotes": [],
+        "soundEffect": "",
+        "powerAttack": {
+          "multiplier": "",
+          "damageBonus": 2,
+          "critMultiplier": 1
+        },
+        "naturalAttack": {
+          "secondary": {
+            "attackBonus": "-5",
+            "damageMult": 0.5
+          }
+        },
+        "attackType": "weapon",
+        "nonlethal": false,
+        "usesAmmo": false,
+        "spellEffect": "",
+        "spellArea": "",
+        "conditionals": [],
+        "enh": {
+          "override": false,
+          "value": 0
+        }
+      }
+    ],
+    "uses": {
+      "per": ""
+    },
+    "attackNotes": [],
+    "effectNotes": [],
+    "links": {
+      "children": []
+    },
+    "scriptCalls": [],
+    "learnedAt": {
+      "class": [
+        [
+          "cleric/oracle",
+          2
+        ],
+        [
+          "paladin",
+          2
+        ],
+        [
+          "psychic",
+          2
+        ]
+      ],
+      "domain": [],
+      "subDomain": [],
+      "elementalSchool": [],
+      "bloodline": []
+    },
+    "level": 2,
+    "school": "con",
+    "subschool": "creation",
+    "types": "force",
+    "components": {
+      "verbal": true,
+      "somatic": true,
+      "divineFocus": 1
+    },
+    "sr": false,
+    "shortDescription": "<p>You instantly wrap your body in a suit of armor made from opaque force. At your option, the armor can be decorated with your religion's holy symbol in a prominent place, such as upon the breastplate or helm. While it exists, this armor replaces any garments or other sort of armor worn, magical as well as mundane. You lose access to, and all benefits from, armor replaced by this spell until the spell ends and the <i>instant armor</i> disappears.</p><p><i>Instant armor</i> acts in all ways as armor typical of its type (armor bonus, maximum Dexterity bonus, arcane spell failure chance, and so on). Since <i>instant armor</i> is made of force, incorporeal creatures can't bypass it the way they do normal armor. The sort of armor you can create with this spell depends on your caster level.</p><p> <table><tr><th>Caster Level</th><th>Armor Created</th></tr><tr><td>5th or lower</td><td>chainmail</td></tr><tr><td>6th-8th banded</td><td>mail</td></tr><tr><td>9th-11th</td><td>half-plate</td></tr><tr><td>12th or higher</td><td>full plate</td></tr></table>  If you choose to create lesser armor than your level allows you gain a +1 magical enhancement bonus to the armor you do create for every type of armor you pass over. For instance, if you have the capacity to create full plate <i>instant armor</i> you could instead choose to create <i>+1 half-plate</i>, <i>+2 banded mail</i>, or <i>+3 chainmail</i>. You cannot replace these bonuses with armor special properties.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

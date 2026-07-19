@@ -1,0 +1,70 @@
+{
+  "_id": "b95YEbR3GE3mLuoJ",
+  "name": "Thicken Ogre",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><strong>Acquired/Inherited Template</strong>&nbsp;Inherited<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>These tall, bone-thin ogres have thick, bark-like skin and spiked growths all over their bodies, and their hands end in sharp, thorn-like claws.<br><br><strong>Quick Rules:</strong> +2 on AC, –1 hp/HD, and –1 on Fortitude saves and Constitution checks; gains 2 claw attacks (1d6); +4 racial bonus on Stealth checks in forests.<br><br><strong>Rebuild Rules:</strong>&nbsp;Ability Scores&nbsp;–2 Constitution, +2 natural armor bonus;&nbsp;Attacks&nbsp;gains 2 claw attacks (1d6);&nbsp;Special&nbsp;+4 racial bonus on Stealth checks in forests.</p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "p9zwbjw7",
+        "formula": "-2",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "2y07x5k1",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      }
+    ],
+    "contextNotes": [
+      {
+        "text": "+[[4]] in Forests",
+        "target": "skill",
+        "subTarget": "skill.ste"
+      }
+    ],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "0"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,69 @@
+{
+  "_id": "rMR6ahXEfYqASE7D",
+  "name": "Athletic",
+  "type": "feat",
+  "img": "systems/pf1/icons/feats/athletic.jpg",
+  "data": {
+    "description": {
+      "value": "<em>You possess inherent physical prowess.</em><br/><br/><b>Benefits</b><br/>You get a +2 bonus on Climb and Swim skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill."
+    },
+    "tags": [
+      [
+        "PFS"
+      ],
+      [
+        "General"
+      ]
+    ],
+    "actions": [],
+    "attackNotes": [],
+    "effectNotes": [],
+    "changes": [
+      {
+        "_id": "7x539gvc",
+        "formula": "@skills.clm.rank >= 10 ? 4 : 2",
+        "operator": "add",
+        "subTarget": "skill.clm",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 2
+      },
+      {
+        "_id": "zgst782n",
+        "formula": "@skills.swm.rank >= 10 ? 4 : 2",
+        "operator": "add",
+        "subTarget": "skill.swm",
+        "modifier": "untyped",
+        "priority": 0,
+        "value": 2
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "tag": "feat_athletic",
+    "useCustomTag": true,
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "languages": {
+      "value": []
+    },
+    "scriptCalls": [],
+    "associations": {
+      "classes": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}

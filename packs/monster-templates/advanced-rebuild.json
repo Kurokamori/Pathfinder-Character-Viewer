@@ -1,0 +1,114 @@
+{
+  "_id": "68lE3FXyBY9P6I7o",
+  "name": "Advanced (Rebuild)",
+  "type": "feat",
+  "img": "systems/pf1/icons/skills/violet_07.jpg",
+  "data": {
+    "description": {
+      "value": "<p><span id=\"ctl00_MainContent_DataListMonsterTemplates_ctl00_LabelName\" style=\"margin-top: 0px;\"><strong>Acquired/Inherited Template</strong>&nbsp;Acquired<br><strong>Simple Template</strong>&nbsp;Yes<br><strong>Usable with Summons</strong>&nbsp;No<br><br>Creatures with the advanced template are fiercer and more powerful than their ordinary cousins.<br><br><strong>Quick Rules</strong>: +2 on all rolls (including damage rolls) and special ability DCs; +4 to AC and CMD; +2 hp/HD.<br><br><strong>Rebuild Rules</strong>:&nbsp;<strong>AC</strong>&nbsp;increase natural armor by +2;&nbsp;<strong>Ability Scores</strong>&nbsp;+4 to all ability scores (except Int scores of 2 or less).</span></p>"
+    },
+    "tags": [],
+    "effectNotes": [],
+    "attackNotes": [],
+    "changes": [
+      {
+        "_id": "guj5108e",
+        "formula": "2",
+        "operator": "add",
+        "subTarget": "nac",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ac"
+      },
+      {
+        "_id": "uhg21xnq",
+        "formula": "@abilities.str.total > 0 ? 4 : 0",
+        "operator": "add",
+        "subTarget": "str",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "zzxxz9rv",
+        "formula": "@abilities.dex.total > 0 ? 4 : 0",
+        "operator": "add",
+        "subTarget": "dex",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "xzfdoozh",
+        "formula": "@abilities.con.total > 0 ? 4 : 0",
+        "operator": "add",
+        "subTarget": "con",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "ub0w5h5m",
+        "formula": "@abilities.int.total > 2 ? 4 : 0",
+        "operator": "add",
+        "subTarget": "int",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "xmmu6br9",
+        "formula": "@abilities.wis.total > 0 ? 4 : 0",
+        "operator": "add",
+        "subTarget": "wis",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      },
+      {
+        "_id": "3cs5sd5j",
+        "formula": "@abilities.cha.total > 0 ? 4 : 0",
+        "operator": "add",
+        "subTarget": "cha",
+        "modifier": "untypedPerm",
+        "priority": 0,
+        "value": 0,
+        "target": "ability"
+      }
+    ],
+    "contextNotes": [],
+    "links": {
+      "children": [],
+      "charges": []
+    },
+    "armorProf": {
+      "value": []
+    },
+    "weaponProf": {
+      "value": []
+    },
+    "flags": {
+      "boolean": [],
+      "dictionary": []
+    },
+    "scriptCalls": [],
+    "featType": "template",
+    "associations": {
+      "classes": []
+    },
+    "crOffset": "1"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "permission": {
+    "default": 0
+  },
+  "flags": {}
+}
