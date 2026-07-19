@@ -1,2 +1,9 @@
+pub mod app;
+pub mod classes;
+pub mod data;
 pub mod model;
+pub mod persistence;
 pub mod pipeline;
+pub mod rules;
+pub mod theme;
+pub mod ui;
