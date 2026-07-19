@@ -55,7 +55,7 @@ fn equipped_defense(character: &Character) -> (i32, i32, Option<i32>, i32) {
             _ => {}
         }
     }
-    (armor, shield, max_dex, acp)
+    (armor, shield, max_dex, -acp)
 }
 
 fn carrying_capacity(str_score: i32) -> (i32, i32, i32) {
@@ -143,16 +143,18 @@ pub fn compute(character: &Character) -> DerivedStats {
     }
 }
 
-/// Whether a skill is a class skill for the character (any of its classes, or an override).
-pub fn is_class_skill(character: &Character, skill_id: &str) -> bool {
-    if character.skill(skill_id).class_skill_override {
-        return true;
-    }
+/// Whether one of the character's classes inherently grants this skill as a class skill.
+pub fn class_skill_granted(character: &Character, skill_id: &str) -> bool {
     character.classes.iter().any(|class| {
         progression::class_def(&class.tag)
             .class_skills
             .contains(&skill_id)
     })
+}
+
+/// Whether a skill is a class skill for the character (granted by a class, or a manual override).
+pub fn is_class_skill(character: &Character, skill_id: &str) -> bool {
+    class_skill_granted(character, skill_id) || character.skill(skill_id).class_skill_override
 }
 
 /// Total modifier for a skill, including ranks, ability, class bonus, and armor penalty.
@@ -174,6 +176,20 @@ pub fn skill_total(character: &Character, derived: &DerivedStats, skill_id: &str
         0
     };
     entry.ranks + ability + class_bonus + entry.misc + penalty
+}
+
+/// Total modifier for a user-defined custom skill.
+pub fn custom_skill_total(
+    character: &Character,
+    skill: &crate::model::character::CustomSkill,
+) -> i32 {
+    let ability = character.ability_mod(skill.ability_key());
+    let class_bonus = if skill.class_skill && skill.ranks > 0 {
+        3
+    } else {
+        0
+    };
+    skill.ranks + ability + skill.misc + class_bonus
 }
 
 /// The character's primary spellcasting class definition, if any.
@@ -209,5 +225,42 @@ mod tests {
         assert!(is_class_skill(&ch, "spl"), "spellcraft should be a witch class skill");
         let total = skill_total(&ch, &d, "spl");
         assert_eq!(total, 1 + 2 + 3, "1 rank + 2 int + 3 class = 6, got {total}");
+    }
+
+    #[test]
+    fn class_toggle_changes_total() {
+        let mut ch = Character::new(1, "Test", "witch");
+        ch.skill_mut("ste").ranks = 1;
+        let d = compute(&ch);
+        assert!(!is_class_skill(&ch, "ste"), "stealth is not a witch class skill");
+        let before = skill_total(&ch, &d, "ste");
+        ch.skill_mut("ste").class_skill_override = true;
+        let after = skill_total(&ch, &d, "ste");
+        assert_eq!(after, before + 3, "toggling class on a ranked skill adds +3");
+    }
+
+    #[test]
+    fn armor_check_penalty_reduces_skill() {
+        use crate::model::character::InventoryItem;
+        use crate::model::compendium::ItemKind;
+        let mut ch = Character::new(1, "Test", "ninja");
+        ch.skill_mut("clm").ranks = 1;
+        let bare = skill_total(&ch, &compute(&ch), "clm");
+        ch.inventory.push(InventoryItem {
+            uid: 1,
+            source_id: None,
+            name: "Chainmail".to_string(),
+            kind: ItemKind::Armor,
+            quantity: 1,
+            weight: 40.0,
+            price: 150.0,
+            equipped: true,
+            ac_bonus: 6,
+            max_dex: Some(2),
+            armor_check_penalty: 5,
+            notes: String::new(),
+        });
+        let armored = skill_total(&ch, &compute(&ch), "clm");
+        assert_eq!(armored, bare - 5, "a +5 ACP armor should lower Climb by 5");
     }
 }
