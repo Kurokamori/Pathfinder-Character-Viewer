@@ -134,6 +134,39 @@ impl ItemKind {
     ];
 }
 
+/// Combat statistics for a weapon, parsed from the weapon's attack action.
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct WeaponStats {
+    /// Base damage dice at Medium size, e.g. "1d8". Empty if unknown.
+    pub damage: String,
+    /// Low end of the critical threat range (e.g. 19 for 19-20). 20 means natural 20 only.
+    pub crit_range: i32,
+    /// Critical damage multiplier (2 for x2, 3 for x3).
+    pub crit_mult: i32,
+    /// Ability key that governs the attack roll ("str" or "dex").
+    pub attack_ability: String,
+    /// Ability key added to damage ("str"), or empty for none.
+    pub damage_ability: String,
+    /// True for a melee weapon, false for a ranged weapon.
+    pub melee: bool,
+    /// Formatted range increment for ranged weapons (e.g. "100 ft."), empty for melee.
+    pub range: String,
+    /// Damage types dealt (e.g. ["slashing"]).
+    pub damage_types: Vec<String>,
+}
+
+impl WeaponStats {
+    /// Threat range and multiplier as a single label, e.g. "19-20/x2".
+    pub fn crit_label(&self) -> String {
+        let range = if self.crit_range >= 20 {
+            "20".to_string()
+        } else {
+            format!("{}-20", self.crit_range)
+        };
+        format!("{range}/x{}", self.crit_mult)
+    }
+}
+
 /// A purchasable / equippable item template.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Item {
@@ -151,6 +184,9 @@ pub struct Item {
     pub armor_check_penalty: i32,
     pub description: String,
     pub source: String,
+    /// Weapon combat statistics, present only for weapons.
+    #[serde(default)]
+    pub weapon: Option<WeaponStats>,
 }
 
 /// A class description entry from the compendium (mechanics live in `rules::progression`).

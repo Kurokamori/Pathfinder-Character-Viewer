@@ -650,6 +650,7 @@ fn build_items(dir: &Path) -> Vec<Item> {
             armor_check_penalty: 0,
             description: description_of(data),
             source: detect_book(&raw),
+            weapon: None,
         });
     }
     out
@@ -675,9 +676,124 @@ fn build_weapons(dir: &Path) -> Vec<Item> {
             armor_check_penalty: 0,
             description: description_of(data),
             source: detect_book(&raw),
+            weapon: weapon_stats(data),
         });
     }
     out
+}
+
+/// Parse combat statistics from a weapon's primary attack action.
+fn weapon_stats(data: &Value) -> Option<WeaponStats> {
+    let action = data
+        .get("actions")
+        .and_then(|a| a.as_array())
+        .and_then(|arr| arr.first())?;
+
+    let action_type = action
+        .get("actionType")
+        .and_then(|v| v.as_str())
+        .unwrap_or("");
+    let range = action.get("range");
+    let range_units = range
+        .and_then(|r| r.get("units"))
+        .and_then(|v| v.as_str())
+        .unwrap_or("");
+    let melee = action_type == "mwak" || range_units == "melee" || range_units == "reach";
+
+    let ability = action.get("ability");
+    let attack_ability = ability
+        .and_then(|a| a.get("attack"))
+        .and_then(|v| v.as_str())
+        .filter(|s| !s.is_empty())
+        .unwrap_or(if melee { "str" } else { "dex" })
+        .to_string();
+    let damage_ability = ability
+        .and_then(|a| a.get("damage"))
+        .and_then(|v| v.as_str())
+        .unwrap_or("")
+        .to_string();
+    let crit_range = ability
+        .and_then(|a| a.get("critRange"))
+        .and_then(|v| v.as_i64())
+        .unwrap_or(20) as i32;
+    let crit_mult = ability
+        .and_then(|a| a.get("critMult"))
+        .and_then(|v| v.as_i64())
+        .unwrap_or(2) as i32;
+
+    let damage_part = action
+        .get("damage")
+        .and_then(|d| d.get("parts"))
+        .and_then(|p| p.as_array())
+        .and_then(|arr| arr.first());
+    let formula = damage_part
+        .and_then(|part| part.get(0))
+        .and_then(|v| v.as_str())
+        .unwrap_or("");
+    let damage = parse_damage_dice(formula);
+    let damage_types = damage_part
+        .and_then(|part| part.get(1))
+        .and_then(|meta| meta.get("values"))
+        .and_then(|v| v.as_array())
+        .map(|arr| {
+            arr.iter()
+                .filter_map(|v| v.as_str().map(|s| s.to_string()))
+                .collect::<Vec<_>>()
+        })
+        .unwrap_or_default();
+
+    let range_str = if melee {
+        String::new()
+    } else {
+        match range.and_then(|r| r.get("value")) {
+            Some(Value::Number(n)) => format!("{} ft.", n),
+            Some(Value::String(s)) if !s.is_empty() => format!("{s} ft."),
+            _ => String::new(),
+        }
+    };
+
+    Some(WeaponStats {
+        damage,
+        crit_range,
+        crit_mult,
+        attack_ability,
+        damage_ability,
+        melee,
+        range: range_str,
+        damage_types,
+    })
+}
+
+/// Extract the base dice from a Foundry damage formula.
+///
+/// Handles `sizeRoll(1, 8, @size)` (Medium base = `1d8`) and a plain `1d8`.
+fn parse_damage_dice(formula: &str) -> String {
+    if let Some(start) = formula.find("sizeRoll(") {
+        let rest = &formula[start + "sizeRoll(".len()..];
+        if let Some(end) = rest.find(')') {
+            let args: Vec<&str> = rest[..end].split(',').map(|s| s.trim()).collect();
+            if args.len() >= 2 {
+                if let (Ok(count), Ok(faces)) =
+                    (args[0].parse::<i64>(), args[1].parse::<i64>())
+                {
+                    return format!("{count}d{faces}");
+                }
+            }
+        }
+    }
+    // Fall back to a bare NdM token if present.
+    for token in formula.split(|c: char| !(c.is_ascii_digit() || c == 'd')) {
+        if let Some((count, faces)) = token.split_once('d') {
+            if !count.is_empty()
+                && !faces.is_empty()
+                && count.chars().all(|c| c.is_ascii_digit())
+                && faces.chars().all(|c| c.is_ascii_digit())
+            {
+                return format!("{count}d{faces}");
+            }
+        }
+    }
+    String::new()
 }
 
 fn build_armor(dir: &Path) -> Vec<Item> {
@@ -719,6 +835,7 @@ fn build_armor(dir: &Path) -> Vec<Item> {
             armor_check_penalty: acp,
             description: description_of(data),
             source: detect_book(&raw),
+            weapon: None,
         });
     }
     out
@@ -773,6 +890,36 @@ mod tests {
     fn drops_unlabeled_enricher() {
         let input = "See @Compendium[pf1.spells.xyz] here.";
         assert_eq!(clean_html(input), "See here.");
+    }
+
+    #[test]
+    fn parses_size_roll_damage() {
+        assert_eq!(parse_damage_dice("sizeRoll(1, 8, @size)"), "1d8");
+        assert_eq!(
+            parse_damage_dice("sizeRoll(1, 6, @size) + min(@abilities.str.mod, 0)[Strength]"),
+            "1d6"
+        );
+        assert_eq!(parse_damage_dice("2d4"), "2d4");
+        assert_eq!(parse_damage_dice(""), "");
+    }
+
+    #[test]
+    fn weapon_stats_from_action() {
+        let data = serde_json::json!({
+            "actions": [{
+                "actionType": "mwak",
+                "range": { "value": 0, "units": "melee" },
+                "ability": { "attack": "str", "damage": "str", "critRange": 19, "critMult": 2 },
+                "damage": { "parts": [["sizeRoll(1, 8, @size)", { "values": ["slashing"] }]] }
+            }]
+        });
+        let stats = weapon_stats(&data).expect("weapon should parse");
+        assert_eq!(stats.damage, "1d8");
+        assert_eq!(stats.crit_range, 19);
+        assert_eq!(stats.crit_mult, 2);
+        assert!(stats.melee);
+        assert_eq!(stats.crit_label(), "19-20/x2");
+        assert_eq!(stats.damage_types, vec!["slashing".to_string()]);
     }
 
     #[test]

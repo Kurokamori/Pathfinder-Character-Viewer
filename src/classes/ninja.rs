@@ -194,7 +194,10 @@ fn custom_trick_list<'a>(app: &'a App, p: crate::theme::Palette) -> Element<'a, 
             entry.uid,
             &entry.name,
             entry.level,
-            &entry.description,
+            app.editors.get(&crate::app::EditorTarget::CustomDesc(
+                crate::app::CustomList::Ability,
+                entry.uid,
+            )),
             false,
         ));
     }

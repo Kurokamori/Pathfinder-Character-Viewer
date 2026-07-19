@@ -1,7 +1,7 @@
 //! Dark visual theme: palette, per-class accent, and reusable widget styles.
 
 use iced::border::Radius;
-use iced::widget::{button, checkbox, container, pick_list, text_input};
+use iced::widget::{button, checkbox, container, pick_list, text_editor, text_input};
 use iced::{Background, Border, Color, Shadow, Theme, Vector};
 
 pub const RADIUS: f32 = 9.0;
@@ -304,6 +304,24 @@ pub fn input(p: Palette) -> impl Fn(&Theme, text_input::Status) -> text_input::S
             _ => p.border_soft,
         };
         text_input::Style {
+            background: Background::Color(p.raised),
+            border: border(border_color, 1.0, RADIUS_SM),
+            icon: p.text_dim,
+            placeholder: p.text_dim,
+            value: p.text,
+            selection: with_alpha(p.accent, 0.35),
+        }
+    }
+}
+
+pub fn editor(p: Palette) -> impl Fn(&Theme, text_editor::Status) -> text_editor::Style {
+    move |_t, status| {
+        let border_color = match status {
+            text_editor::Status::Focused => p.accent,
+            text_editor::Status::Hovered => p.border,
+            _ => p.border_soft,
+        };
+        text_editor::Style {
             background: Background::Color(p.raised),
             border: border(border_color, 1.0, RADIUS_SM),
             icon: p.text_dim,

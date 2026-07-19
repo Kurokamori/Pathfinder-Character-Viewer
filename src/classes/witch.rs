@@ -2,7 +2,7 @@
 //! editable familiar sheet.
 
 use crate::app::{
-    App, CustomSkillField, CustomSkillFlag, FamiliarField, Message, SkillScope,
+    App, CustomSkillField, CustomSkillFlag, EditorTarget, FamiliarField, Message, SkillScope,
 };
 use crate::model::character::{CustomSkill, Familiar, Size, ABILITIES};
 use crate::model::compendium::{Ability, AbilityCategory};
@@ -142,9 +142,11 @@ pub fn hexes_view(app: &App) -> Element<'_, Message> {
     ]
     .spacing(8);
 
-    let list_panel = container(widgets::browse_list(column![list, custom_section].spacing(14)))
-        .width(Length::FillPortion(2))
-        .height(Length::Fill);
+    let list_panel = container(widgets::browse_list(
+        column![owned_hexes(app, p, selected_count, allowance), list, custom_section].spacing(14),
+    ))
+    .width(Length::FillPortion(2))
+    .height(Length::Fill);
 
     let detail = hex_detail(app, p);
     let detail_panel = container(scrollable(detail).height(Length::Fill))
@@ -161,6 +163,88 @@ pub fn hexes_view(app: &App) -> Element<'_, Message> {
         .into()
 }
 
+/// The hexes the character has learned, shown as a distinct "known" list so
+/// they read clearly as selected rather than only as toggled browse rows.
+fn owned_hexes<'a>(
+    app: &'a App,
+    p: Palette,
+    selected_count: usize,
+    allowance: u32,
+) -> Element<'a, Message> {
+    let mut inner = column![].spacing(6);
+
+    let owned: Vec<&Ability> = app
+        .character
+        .selected_abilities
+        .iter()
+        .filter_map(|id| app.game.ability(id))
+        .filter(|a| is_hex(a.category))
+        .collect();
+
+    if owned.is_empty() && app.character.custom_abilities.is_empty() {
+        inner = inner.push(caption(
+            p,
+            "No hexes learned yet. Select hexes from the list below.",
+        ));
+    }
+
+    for ability in owned {
+        let active = app.selected_hex.as_deref() == Some(ability.id.as_str());
+        let name = button(
+            column![
+                text(ability.name.clone()).size(14).color(p.text),
+                text(format!(
+                    "{} · {}",
+                    ability.category.label(),
+                    ability.ability_type.to_uppercase()
+                ))
+                .size(11)
+                .color(p.text_dim),
+            ]
+            .spacing(2),
+        )
+        .padding([6, 10])
+        .width(Length::Fill)
+        .style(crate::theme::list_button(p, active))
+        .on_press(Message::HexSelect(Some(ability.id.clone())));
+
+        let remove = button(text("Remove").size(12))
+            .padding([6, 10])
+            .style(crate::theme::ghost_button(p))
+            .on_press(Message::HexToggle(ability.id.clone()));
+
+        inner = inner.push(
+            row![name, remove]
+                .spacing(8)
+                .align_y(Alignment::Center),
+        );
+    }
+
+    for entry in &app.character.custom_abilities {
+        inner = inner.push(
+            container(
+                column![
+                    text(entry.name.clone()).size(14).color(p.text),
+                    caption(p, "Homebrew hex"),
+                ]
+                .spacing(2),
+            )
+            .padding([6, 10])
+            .width(Length::Fill)
+            .style(crate::theme::plain_row(p)),
+        );
+    }
+
+    let header = row![
+        widgets::heading(p, "Learned Hexes"),
+        Space::with_width(Length::Fill),
+        widgets::pill(p, format!("{selected_count} / {allowance}")),
+    ]
+    .align_y(Alignment::Center);
+
+    widgets::card(p, column![header, inner].spacing(12))
+}
+
 fn custom_hex_list<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
     let mut list = column![].spacing(8);
     for entry in &app.character.custom_abilities {
@@ -170,7 +254,10 @@ fn custom_hex_list<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
             entry.uid,
             &entry.name,
             entry.level,
-            &entry.description,
+            app.editors.get(&crate::app::EditorTarget::CustomDesc(
+                crate::app::CustomList::Ability,
+                entry.uid,
+            )),
             false,
         ));
     }
@@ -231,7 +318,7 @@ fn current_patron(app: &App) -> String {
 pub fn familiar_view(app: &App) -> Element<'_, Message> {
     let p = app.palette();
     match app.character.familiar.as_ref() {
-        Some(fam) => familiar_sheet(p, fam, &app.image_cache),
+        Some(fam) => familiar_sheet(app, p, fam),
         None => column![
             widgets::heading(p, "Familiar"),
             widgets::placeholder(p, "This character has no familiar."),
@@ -242,7 +329,8 @@ pub fn familiar_view(app: &App) -> Element<'_, Message> {
     }
 }
 
-fn familiar_sheet<'a>(p: Palette, fam: &'a Familiar, images: &ImageCache) -> Element<'a, Message> {
+fn familiar_sheet<'a>(app: &'a App, p: Palette, fam: &'a Familiar) -> Element<'a, Message> {
+    let images = &app.image_cache;
     let header = row![
         widgets::heading(p, "Familiar"),
         Space::with_width(Length::Fill),
@@ -257,7 +345,7 @@ fn familiar_sheet<'a>(p: Palette, fam: &'a Familiar, images: &ImageCache) -> Ele
             widgets::section(p, "Saves", saves_block(p, fam)),
         ].spacing(16),
         widgets::section(p, "Attacks", attacks_block(p, fam)),
-        widgets::section(p, "Abilities & Notes", special_block(p, fam)),
+        widgets::section(p, "Abilities & Notes", special_block(app, p)),
     ]
     .spacing(16);
 
@@ -601,29 +689,25 @@ fn familiar_custom_skill_row<'a>(
         .into()
 }
 
-fn special_block<'a>(p: Palette, fam: &'a Familiar) -> Element<'a, Message> {
+fn special_block<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
     column![
-        text_area_field(p, "Granted Ability", &fam.granted_ability, FamiliarField::Granted),
-        text_area_field(p, "Special Qualities", &fam.special, FamiliarField::Special),
-        text_area_field(p, "Notes", &fam.notes, FamiliarField::Notes),
-        
+        familiar_text_area(app, p, "Granted Ability", EditorTarget::FamiliarGranted),
+        familiar_text_area(app, p, "Special Qualities", EditorTarget::FamiliarSpecial),
+        familiar_text_area(app, p, "Notes", EditorTarget::FamiliarNotes),
     ]
     .spacing(12)
     .into()
 }
 
-fn text_area_field<'a>(
+fn familiar_text_area<'a>(
+    app: &'a App,
     p: Palette,
     label: &'a str,
-    value: &'a str,
-    field: FamiliarField,
+    target: EditorTarget,
 ) -> Element<'a, Message> {
     column![
         caption(p, label),
-        text_input("", value)
-            .on_input(move |v| Message::SetFamiliar(field, v))
-            .padding([8, 12])
-            .style(crate::theme::input(p)),
+        widgets::growing_editor(p, app.editors.get(&target), "", target),
     ]
     .spacing(4)
     .into()

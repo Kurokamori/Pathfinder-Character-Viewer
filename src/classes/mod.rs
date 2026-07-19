@@ -16,6 +16,7 @@ pub fn tabs_for(tag: &str) -> Vec<Tab> {
         "witch" => vec![
             Tab::General,
             Tab::Combat,
+            Tab::CombatRef,
             Tab::Skills,
             Tab::Spells,
             Tab::Hexes,

@@ -2,6 +2,7 @@
 
 use crate::app::{App, Message};
 use crate::theme::Palette;
+use crate::ui::images::ImageCache;
 use crate::ui::widgets;
 use iced::widget::{button, column, container, image, row, scrollable, text, Space};
 use iced::{Alignment, Element, Length};
@@ -25,7 +26,7 @@ pub fn view(app: &App) -> Element<'_, Message> {
         let mut grid = column![].spacing(16);
         let mut current = row![].spacing(16);
         for (index, path) in app.character.gallery.iter().enumerate() {
-            current = current.push(tile(p, index, path));
+            current = current.push(tile(p, index, path, &app.image_cache));
             if index % COLUMNS == COLUMNS - 1 {
                 grid = grid.push(current);
                 current = row![].spacing(16);
@@ -41,13 +42,20 @@ pub fn view(app: &App) -> Element<'_, Message> {
         .into()
 }
 
-fn tile<'a>(p: Palette, index: usize, path: &str) -> Element<'a, Message> {
-    let art = container(
-        image(image::Handle::from_path(path))
+fn tile<'a>(p: Palette, index: usize, path: &str, images: &ImageCache) -> Element<'a, Message> {
+    let inner: Element<Message> = match images.handle(path) {
+        Some(handle) => image(handle)
             .width(Length::Fixed(TILE))
-            .height(Length::Fixed(TILE)),
-    )
-    .style(crate::theme::stat_box(p));
+            .height(Length::Fixed(TILE))
+            .into(),
+        None => container(text("Unavailable").size(12).color(p.text_dim))
+            .width(Length::Fixed(TILE))
+            .height(Length::Fixed(TILE))
+            .center_x(Length::Fixed(TILE))
+            .center_y(Length::Fixed(TILE))
+            .into(),
+    };
+    let art = container(inner).style(crate::theme::stat_box(p));
 
     let remove = button(text("Remove").size(12))
         .padding([5, 12])
