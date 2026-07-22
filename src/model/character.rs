@@ -174,6 +174,33 @@ impl Coins {
         self.pp as f64 * 10.0 + self.gp as f64 + self.sp as f64 / 10.0 + self.cp as f64 / 100.0
     }
 
+    /// Total wealth in copper, the smallest denomination.
+    ///
+    /// Integer math, so it is exact where [`Coins::as_gp`] accumulates float
+    /// error.
+    pub fn as_cp(&self) -> i64 {
+        self.pp * 1000 + self.gp * 100 + self.sp * 10 + self.cp
+    }
+
+    /// Total wealth carried up into the largest denominations that fit, as
+    /// `(platinum, gold, silver, copper)`.
+    ///
+    /// Purses hold denominations exactly as entered, so 11 loose silver stays
+    /// 11 silver in the model; this expresses the same value as 1 gp 1 sp for
+    /// display. A negative balance signs every non-zero component, so the
+    /// deficit stays visible even when the platinum place is empty.
+    pub fn normalized(&self) -> (i64, i64, i64, i64) {
+        let total = self.as_cp();
+        let magnitude = total.unsigned_abs() as i64;
+        let sign = if total < 0 { -1 } else { 1 };
+        (
+            sign * (magnitude / 1000),
+            sign * (magnitude % 1000 / 100),
+            sign * (magnitude % 100 / 10),
+            sign * (magnitude % 10),
+        )
+    }
+
     /// Subtract a gp cost, drawing from gp then converting down as needed.
     pub fn spend_gp(&mut self, cost: f64) -> bool {
         let total_cp = (self.as_gp() * 100.0).round() as i64;
@@ -241,6 +268,83 @@ impl CustomSkill {
     }
 }
 
+/// A wondrous/worn magic-item body slot. Armor, shields, and weapons are worn
+/// through the `equipped` flag instead, since they feed the combat math; these
+/// slots hold the one-per-location items (headbands, cloaks, rings, and so on).
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "kebab-case")]
+pub enum EquipSlot {
+    Head,
+    Headband,
+    Eyes,
+    Neck,
+    Shoulders,
+    Chest,
+    Body,
+    Belt,
+    Wrists,
+    Hands,
+    RingLeft,
+    RingRight,
+    Feet,
+}
+
+impl EquipSlot {
+    /// Every slot, in head-to-foot wearing order.
+    pub const ALL: [EquipSlot; 13] = [
+        EquipSlot::Head,
+        EquipSlot::Headband,
+        EquipSlot::Eyes,
+        EquipSlot::Neck,
+        EquipSlot::Shoulders,
+        EquipSlot::Chest,
+        EquipSlot::Body,
+        EquipSlot::Belt,
+        EquipSlot::Wrists,
+        EquipSlot::Hands,
+        EquipSlot::RingLeft,
+        EquipSlot::RingRight,
+        EquipSlot::Feet,
+    ];
+
+    pub fn label(self) -> &'static str {
+        match self {
+            EquipSlot::Head => "Head",
+            EquipSlot::Headband => "Headband",
+            EquipSlot::Eyes => "Eyes",
+            EquipSlot::Neck => "Neck",
+            EquipSlot::Shoulders => "Shoulders",
+            EquipSlot::Chest => "Chest",
+            EquipSlot::Body => "Body",
+            EquipSlot::Belt => "Belt",
+            EquipSlot::Wrists => "Wrists",
+            EquipSlot::Hands => "Hands",
+            EquipSlot::RingLeft => "Ring (left)",
+            EquipSlot::RingRight => "Ring (right)",
+            EquipSlot::Feet => "Feet",
+        }
+    }
+
+    /// Kinds of item that conventionally occupy the slot, for the UI hint.
+    pub fn hint(self) -> &'static str {
+        match self {
+            EquipSlot::Head => "hat, mask, helm",
+            EquipSlot::Headband => "circlet, phylactery",
+            EquipSlot::Eyes => "goggles, lenses",
+            EquipSlot::Neck => "amulet, throat, periapt",
+            EquipSlot::Shoulders => "cloak, mantle, cape",
+            EquipSlot::Chest => "shirt, vest",
+            EquipSlot::Body => "robe, clothes, vestments",
+            EquipSlot::Belt => "belt, girdle, sash",
+            EquipSlot::Wrists => "arms, bracers, bracelets",
+            EquipSlot::Hands => "gloves, gauntlets",
+            EquipSlot::RingLeft => "ring",
+            EquipSlot::RingRight => "ring",
+            EquipSlot::Feet => "boots, shoes, slippers",
+        }
+    }
+}
+
 /// An inventory line item, denormalized from the compendium for portability.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct InventoryItem {
@@ -256,6 +360,9 @@ pub struct InventoryItem {
     pub max_dex: Option<i32>,
     pub armor_check_penalty: i32,
     pub notes: String,
+    /// The worn slot this item occupies, if any (wondrous items only).
+    #[serde(default)]
+    pub slot: Option<EquipSlot>,
 }
 
 /// A spell the character keeps prepared for the day.
@@ -424,6 +531,16 @@ pub struct Character {
 
     pub conditions: Vec<String>,
     pub notes: String,
+
+    /// Narrative data
+    pub origins: String,
+    pub appearance: String,
+    pub personality: String,
+    pub backstory: String,
+    pub affiliation: String,
+    pub friends: String,
+    pub foes: String,
+
     /// Monotonic counter for allocating item/spell uids.
     pub next_uid: u64,
 
@@ -439,6 +556,9 @@ pub struct Character {
     pub custom_skills: Vec<CustomSkill>,
     #[serde(default)]
     pub gallery: Vec<String>,
+    /// Free-form list of languages the character speaks, one per line.
+    #[serde(default)]
+    pub languages: String,
 }
 
 impl Character {
@@ -481,6 +601,13 @@ impl Character {
             familiar: None,
             resources: BTreeMap::new(),
             conditions: Vec::new(),
+            origins: String::new(),
+            appearance: String::new(),
+            personality: String::new(),
+            backstory: String::new(),
+            affiliation: String::new(),
+            friends: String::new(),
+            foes: String::new(),
             notes: String::new(),
             next_uid: 1,
             custom_feats: Vec::new(),
@@ -489,6 +616,7 @@ impl Character {
             racial_traits: Vec::new(),
             custom_skills: Vec::new(),
             gallery: Vec::new(),
+            languages: String::new(),
         }
     }
 
@@ -543,5 +671,40 @@ impl Character {
         let uid = self.next_uid;
         self.next_uid += 1;
         uid
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::Coins;
+
+    fn coins(pp: i64, gp: i64, sp: i64, cp: i64) -> Coins {
+        Coins { pp, gp, sp, cp }
+    }
+
+    #[test]
+    fn normalizes_loose_change_upward() {
+        assert_eq!(coins(0, 0, 11, 0).normalized(), (0, 1, 1, 0));
+        assert_eq!(coins(0, 0, 0, 1234).normalized(), (1, 2, 3, 4));
+        assert_eq!(coins(0, 15, 0, 0).normalized(), (1, 5, 0, 0));
+    }
+
+    #[test]
+    fn leaves_already_normal_purses_alone() {
+        assert_eq!(coins(1, 2, 3, 4).normalized(), (1, 2, 3, 4));
+        assert_eq!(coins(0, 0, 0, 0).normalized(), (0, 0, 0, 0));
+    }
+
+    /// A deficit must stay visibly negative even with an empty platinum place.
+    #[test]
+    fn signs_every_component_when_negative() {
+        assert_eq!(coins(0, -1, -1, 0).normalized(), (0, -1, -1, 0));
+        assert_eq!(coins(0, 0, -11, 0).normalized(), (0, -1, -1, 0));
+    }
+
+    #[test]
+    fn copper_total_is_exact() {
+        assert_eq!(coins(1, 2, 3, 4).as_cp(), 1234);
+        assert_eq!(coins(0, 0, 11, 0).as_cp(), 110);
     }
 }

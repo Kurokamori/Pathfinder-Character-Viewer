@@ -1,7 +1,7 @@
 //! The persistent left panel: identity, vitals, abilities, and defenses.
 
 use crate::app::{App, Message};
-use crate::model::character::{Character, ABILITIES};
+use crate::model::character::{Character, Familiar, ABILITIES};
 use crate::rules::derived::DerivedStats;
 use crate::rules::display::signed;
 use crate::theme::{self, Palette};
@@ -13,13 +13,14 @@ use crate::persistence;
 
 const WIDTH: f32 = 372.0;
 const PORTRAIT: f32 = 112.0;
+const FAMILIAR_PORTRAIT: f32 = 56.0;
 
 pub fn view(app: &App) -> Element<'_, Message> {
     let p = app.palette();
     let ch = &app.character;
     let d = app.derived();
 
-    let content = column![
+    let mut content = column![
         identity(p, ch, &app.image_cache),
         vitals(p, ch, &d),
         abilities(p, ch),
@@ -29,6 +30,10 @@ pub fn view(app: &App) -> Element<'_, Message> {
     ]
     .spacing(12)
     .padding(16);
+
+    if let Some(fam) = ch.familiar.as_ref() {
+        content = content.push(familiar(p, fam, &app.image_cache));
+    }
 
     container(scrollable(content).height(Length::Fill))
         .width(Length::Fixed(WIDTH))
@@ -220,6 +225,60 @@ fn movement<'a>(p: Palette, ch: &'a Character, d: &DerivedStats) -> Element<'a, 
     ]
     .spacing(8);
     compact_section(p, "Movement & Maneuvers", tiles)
+}
+
+fn familiar<'a>(p: Palette, fam: &'a Familiar, images: &ImageCache) -> Element<'a, Message> {
+    let handle = fam.portrait.as_deref().and_then(|path| images.handle(path));
+    let portrait: Element<Message> = match handle {
+        Some(handle) => image(handle)
+            .width(Length::Fixed(FAMILIAR_PORTRAIT))
+            .height(Length::Fixed(FAMILIAR_PORTRAIT))
+            .into(),
+        None => container(text(initials(&fam.name)).size(18).color(p.accent))
+            .width(Length::Fixed(FAMILIAR_PORTRAIT))
+            .height(Length::Fixed(FAMILIAR_PORTRAIT))
+            .center_x(Length::Fixed(FAMILIAR_PORTRAIT))
+            .center_y(Length::Fixed(FAMILIAR_PORTRAIT))
+            .style(theme::stat_box(p))
+            .into(),
+    };
+
+    let name = if fam.name.is_empty() {
+        "Unnamed"
+    } else {
+        &fam.name
+    };
+    let species = if fam.species.is_empty() {
+        "—"
+    } else {
+        &fam.species
+    };
+
+    let identity = column![
+        text(name).size(15).color(p.text),
+        text(species).size(11).color(p.text_dim),
+    ]
+    .spacing(2)
+    .width(Length::Fill);
+
+    let hp = container(
+        column![
+            text("HP").size(10).color(p.text_dim),
+            text(format!("{} / {}", fam.hp_current, fam.hp_max))
+                .size(16)
+                .color(p.text),
+        ]
+        .spacing(1)
+        .align_x(Alignment::Center),
+    )
+    .padding([8, 10])
+    .style(theme::stat_box(p));
+
+    let body = row![portrait, identity, hp]
+        .spacing(10)
+        .align_y(Alignment::Center);
+
+    compact_section(p, "Familiar", body)
 }
 
 fn initials(name: &str) -> String {

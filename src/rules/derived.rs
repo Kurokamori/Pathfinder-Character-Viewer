@@ -259,6 +259,7 @@ mod tests {
             max_dex: Some(2),
             armor_check_penalty: 5,
             notes: String::new(),
+            slot: None,
         });
         let armored = skill_total(&ch, &compute(&ch), "clm");
         assert_eq!(armored, bare - 5, "a +5 ACP armor should lower Climb by 5");

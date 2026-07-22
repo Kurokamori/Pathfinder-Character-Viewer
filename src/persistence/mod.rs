@@ -1,5 +1,9 @@
 //! Disk persistence: characters, settings, autosave, and import/export.
 
+mod pdf;
+
+pub use pdf::export_pdf;
+
 use crate::model::character::Character;
 use crate::model::settings::Settings;
 use std::collections::HashMap;

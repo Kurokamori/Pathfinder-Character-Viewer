@@ -10,10 +10,12 @@ pub mod inventory;
 pub mod notes;
 pub mod roster;
 pub mod settings;
+pub mod shop;
 pub mod sidebar;
 pub mod skills;
 pub mod spells;
 pub mod widgets;
+pub mod narrative;
 
 use crate::app::{App, Message};
 use iced::widget::{button, column, container, row, scrollable, text, Space};
@@ -31,7 +33,9 @@ pub enum Tab {
     Ki,
     Familiar,
     Inventory,
+    Shop,
     Features,
+    Narrative,
     Gallery,
     Notes,
 }
@@ -48,7 +52,9 @@ impl Tab {
             Tab::Ki => "Ki & Tricks",
             Tab::Familiar => "Familiar",
             Tab::Inventory => "Inventory",
+            Tab::Shop => "Shop",
             Tab::Features => "Features",
+            Tab::Narrative => "Narrative",
             Tab::Gallery => "Gallery",
             Tab::Notes => "Notes",
         }
@@ -118,6 +124,10 @@ fn tab_bar(app: &App) -> Element<'_, Message> {
             .padding([8, 14])
             .style(crate::theme::subtle_button(p))
             .on_press(Message::ExportCharacter),
+        button(text("Export PDF").size(13))
+            .padding([8, 14])
+            .style(crate::theme::subtle_button(p))
+            .on_press(Message::ExportPdf),
         button(text("Roster").size(13))
             .padding([8, 14])
             .style(crate::theme::subtle_button(p))
@@ -146,6 +156,8 @@ fn tab_content(app: &App) -> Element<'_, Message> {
         Tab::Ki => crate::classes::ninja::ki_view(app),
         Tab::Familiar => crate::classes::witch::familiar_view(app),
         Tab::Inventory => inventory::view(app),
+        Tab::Shop => shop::view(app),
+        Tab::Narrative => scroll(narrative::view(app)),
         Tab::Features => features::view(app),
         Tab::Gallery => gallery::view(app),
     }

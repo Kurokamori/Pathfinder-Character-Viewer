@@ -1,162 +1,49 @@
-//! Inventory tab: shop browser, owned gear, coins, and encumbrance.
+//! Inventory tab: an exhaustive view of carried gear — worn equipment slots,
+//! armor and shields, consumables by type, and the full editable item list.
 
-use crate::app::{App, CoinField, EditorTarget, Message};
-use crate::model::character::InventoryItem;
-use crate::model::compendium::{Item, ItemKind};
+use crate::app::{App, EditorTarget, Message};
+use crate::model::character::{EquipSlot, InventoryItem};
+use crate::model::compendium::ItemKind;
 use crate::rules::derived::DerivedStats;
 use crate::theme::Palette;
 use crate::ui::widgets::{self, caption};
-use iced::widget::{button, column, container, row, text, text_editor, text_input, Space};
+use iced::widget::{button, column, container, row, scrollable, text, text_editor, text_input, Space};
 use iced::{Alignment, Element, Length};
 
 pub fn view(app: &App) -> Element<'_, Message> {
     let p = app.palette();
     let d = app.derived();
-    column![
-        coins_section(app, p),
+
+    let body = column![
+        capacity_section(app, p, &d),
+        equipment_section(app, p),
         row![
-            container(shop_panel(app, p)).width(Length::FillPortion(1)),
-            container(inventory_panel(app, p, &d)).width(Length::FillPortion(1)),
+            container(kind_section(app, p, "Armor", ItemKind::Armor))
+                .width(Length::FillPortion(1)),
+            container(kind_section(app, p, "Shields", ItemKind::Shield))
+                .width(Length::FillPortion(1)),
         ]
-        .spacing(18)
-        .height(Length::Fill),
+        .spacing(18),
+        row![
+            container(consumable_section(app, p, "Potions", &["potion", "elixir", "oil"]))
+                .width(Length::FillPortion(1)),
+            container(consumable_section(app, p, "Scrolls", &["scroll"]))
+                .width(Length::FillPortion(1)),
+            container(consumable_section(app, p, "Wands", &["wand", "staff", "rod"]))
+                .width(Length::FillPortion(1)),
+        ]
+        .spacing(18),
+        carried_section(app, p),
     ]
-    .spacing(18)
-    .height(Length::Fill)
-    .into()
-}
+    .spacing(18);
 
-fn coins_section<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
-    let c = &app.character.coins;
-    let fields = row![
-        widgets::number_field(p, "Platinum", c.pp as i32, 90.0, |v| Message::SetCoins(
-            CoinField::Pp,
-            v
-        )),
-        widgets::number_field(p, "Gold", c.gp as i32, 90.0, |v| Message::SetCoins(
-            CoinField::Gp,
-            v
-        )),
-        widgets::number_field(p, "Silver", c.sp as i32, 90.0, |v| Message::SetCoins(
-            CoinField::Sp,
-            v
-        )),
-        widgets::number_field(p, "Copper", c.cp as i32, 90.0, |v| Message::SetCoins(
-            CoinField::Cp,
-            v
-        )),
-        Space::with_width(Length::Fill),
-        widgets::stat_tile(p, "Total", format!("{:.1} gp", c.as_gp()), None),
-    ]
-    .spacing(12)
-    .align_y(Alignment::End);
-    widgets::section(p, "Coins", fields)
-}
-
-fn shop_panel<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
-    let mut kind_row = row![].spacing(6);
-    for kind in ItemKind::ALL {
-        let active = app.shop_kind == kind;
-        kind_row = kind_row.push(
-            button(text(kind.label()).size(12))
-                .padding([5, 10])
-                .style(crate::theme::tab_button(p, active))
-                .on_press(Message::ShopKind(kind)),
-        );
-    }
-
-    let search = text_input("Search shop...", &app.shop_search)
-        .on_input(Message::ShopSearch)
-        .padding([8, 12])
-        .style(crate::theme::input(p));
-
-    let needle = app.shop_search.to_lowercase();
-    let mut matches: Vec<&Item> = app
-        .game
-        .compendium
-        .items
-        .iter()
-        .filter(|i| i.kind == app.shop_kind)
-        .filter(|i| app.settings.allows(&i.source))
-        .filter(|i| needle.is_empty() || i.name.to_lowercase().contains(&needle))
-        .collect();
-    matches.sort_by(|a, b| a.name.cmp(&b.name));
-
-    let mut list = column![].spacing(6);
-    for item in matches.iter().take(300) {
-        list = list.push(shop_row(p, app, item));
-    }
-    if matches.len() > 300 {
-        list = list.push(caption(p, format!("Showing first 300 of {}.", matches.len())));
-    }
-
-    widgets::section(
-        p,
-        "Shop",
-        column![
-            kind_row,
-            search,
-            widgets::browse_list(list),
-        ]
-        .spacing(10),
-    )
-}
-
-fn shop_row<'a>(p: Palette, app: &App, item: &Item) -> Element<'a, Message> {
-    let affordable = app.character.coins.as_gp() >= item.price;
-    let selected = app.selected_item.as_deref() == Some(item.id.as_str());
-    let subtitle = format!("{:.1} gp · {:.1} lb", item.price, item.weight);
-    let buy_base = button(text("Buy").size(12))
-        .padding([5, 12])
-        .on_press(Message::ShopBuy(item.id.clone()));
-    let buy = if affordable {
-        buy_base.style(crate::theme::accent_button(p))
-    } else {
-        buy_base.style(crate::theme::subtle_button(p))
-    };
-
-    let add = button(text("Add").size(12))
-        .padding([5, 12])
-        .style(crate::theme::ghost_button(p))
-        .on_press(Message::ShopAdd(item.id.clone()));
-
-    let toggle = if selected {
-        Message::ShopSelect(None)
-    } else {
-        Message::ShopSelect(Some(item.id.clone()))
-    };
-    let info = button(
-        column![
-            text(item.name.clone()).size(13).color(p.text),
-            text(subtitle).size(11).color(p.text_dim),
-        ]
-        .spacing(2),
-    )
-    .padding([6, 10])
-    .width(Length::Fill)
-    .style(crate::theme::list_button(p, selected))
-    .on_press(toggle);
-
-    let top = row![info, add, buy].spacing(8).align_y(Alignment::Center);
-
-    if selected && !item.description.is_empty() {
-        column![top, description_box(p, &item.description)]
-            .spacing(6)
-            .into()
-    } else {
-        top.into()
-    }
-}
-
-fn description_box<'a>(p: Palette, text_body: &str) -> Element<'a, Message> {
-    container(text(text_body.to_string()).size(12).color(p.text_dim))
-        .padding(12)
+    scrollable(container(body).padding(iced::Padding::ZERO.right(12.0)))
+        .height(Length::Fill)
         .width(Length::Fill)
-        .style(crate::theme::stat_box(p))
         .into()
 }
 
-fn inventory_panel<'a>(app: &'a App, p: Palette, d: &DerivedStats) -> Element<'a, Message> {
+fn capacity_section<'a>(app: &'a App, p: Palette, d: &DerivedStats) -> Element<'a, Message> {
     let total_weight: f64 = app
         .character
         .inventory
@@ -164,17 +51,258 @@ fn inventory_panel<'a>(app: &'a App, p: Palette, d: &DerivedStats) -> Element<'a
         .map(|i| i.weight * i.quantity as f64)
         .sum();
 
-    let capacity = row![
+    let tiles = row![
         widgets::stat_tile(p, "Weight", format!("{total_weight:.1} lb"), None),
         widgets::stat_tile(p, "Light", format!("{} lb", d.carry_light), None),
         widgets::stat_tile(p, "Medium", format!("{} lb", d.carry_medium), None),
         widgets::stat_tile(p, "Heavy", format!("{} lb", d.carry_heavy), None),
+        Space::with_width(Length::Fill),
+        {
+            let (pp, gp, sp, cp) = app.character.coins.normalized();
+            widgets::stat_tile(
+                p,
+                "Wealth",
+                format!("{pp} / {gp} / {sp} / {cp}"),
+                Some("pp / gp / sp / cp".to_string()),
+            )
+        },
     ]
-    .spacing(8);
+    .spacing(8)
+    .align_y(Alignment::Center);
 
+    widgets::section(p, "Capacity", tiles)
+}
+
+fn equipment_section<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
+    let mut slots = column![].spacing(6);
+    for slot in EquipSlot::ALL {
+        slots = slots.push(slot_row(app, p, slot));
+    }
+    widgets::section(
+        p,
+        "Worn Equipment",
+        column![
+            caption(p, "Assign one wondrous item per body slot. Armor and shields are worn from their own sections below."),
+            slots,
+        ]
+        .spacing(10),
+    )
+}
+
+fn slot_row<'a>(app: &'a App, p: Palette, slot: EquipSlot) -> Element<'a, Message> {
+    let worn = app.character.inventory.iter().find(|i| i.slot == Some(slot));
+    let picker_open = app.slot_picker == Some(slot);
+
+    let label = column![
+        text(slot.label()).size(14).color(p.text),
+        caption(p, slot.hint()),
+    ]
+    .spacing(2)
+    .width(Length::Fixed(150.0));
+
+    let middle: Element<Message> = match worn {
+        Some(item) => text(item.name.clone()).size(14).color(p.text).into(),
+        None => text("— empty —").size(13).color(p.text_dim).into(),
+    };
+
+    let mut actions = row![].spacing(6).align_y(Alignment::Center);
+    actions = actions.push(
+        button(text(if worn.is_some() { "Change" } else { "Equip" }).size(11))
+            .padding([5, 10])
+            .style(crate::theme::tab_button(p, picker_open))
+            .on_press(Message::InvSlotPicker(Some(slot))),
+    );
+    if worn.is_some() {
+        actions = actions.push(
+            button(text("Unequip").size(11))
+                .padding([5, 10])
+                .style(crate::theme::ghost_button(p))
+                .on_press(Message::InvClearSlot(slot)),
+        );
+    }
+
+    let head = row![
+        label,
+        container(middle).width(Length::Fill),
+        actions,
+    ]
+    .spacing(10)
+    .align_y(Alignment::Center);
+
+    let mut inner = column![head].spacing(8);
+    if picker_open {
+        inner = inner.push(slot_picker(app, p, slot));
+    }
+
+    container(inner)
+        .padding([10, 12])
+        .style(crate::theme::plain_row(p))
+        .into()
+}
+
+fn slot_picker<'a>(app: &'a App, p: Palette, slot: EquipSlot) -> Element<'a, Message> {
+    let mut list = column![].spacing(4);
+    let mut count = 0;
+    for item in &app.character.inventory {
+        if !slot_eligible(item) {
+            continue;
+        }
+        count += 1;
+        let assigned_elsewhere = item.slot.is_some() && item.slot != Some(slot);
+        let subtitle = if assigned_elsewhere {
+            format!("currently: {}", item.slot.map(|s| s.label()).unwrap_or(""))
+        } else {
+            format!("{:.1} lb", item.weight)
+        };
+        let uid = item.uid;
+        list = list.push(
+            button(
+                column![
+                    text(item.name.clone()).size(13).color(p.text),
+                    text(subtitle).size(11).color(p.text_dim),
+                ]
+                .spacing(2),
+            )
+            .padding([6, 10])
+            .width(Length::Fill)
+            .style(crate::theme::list_button(p, false))
+            .on_press(Message::InvAssignSlot(uid, slot)),
+        );
+    }
+
+    if count == 0 {
+        return caption(p, "No wearable items in your gear. Add or buy an item first.");
+    }
+
+    container(scrollable(container(list).padding(iced::Padding::ZERO.right(12.0))))
+        .max_height(220.0)
+        .padding(8)
+        .style(crate::theme::stat_box(p))
+        .into()
+}
+
+/// Whether an item can be assigned to a worn wondrous slot. Armor, shields, and
+/// weapons are worn through their own equip toggles, not the slot grid.
+fn slot_eligible(item: &InventoryItem) -> bool {
+    !matches!(
+        item.kind,
+        ItemKind::Armor | ItemKind::Shield | ItemKind::Weapon
+    )
+}
+
+fn kind_section<'a>(
+    app: &'a App,
+    p: Palette,
+    title: &'a str,
+    kind: ItemKind,
+) -> Element<'a, Message> {
+    let mut list = column![].spacing(6);
+    let mut any = false;
+    for item in app.character.inventory.iter().filter(|i| i.kind == kind) {
+        any = true;
+        list = list.push(worn_row(p, item));
+    }
+    if !any {
+        list = list.push(caption(p, "None owned. Buy or add one from the Shop."));
+    }
+    widgets::section(p, title, list)
+}
+
+fn worn_row<'a>(p: Palette, item: &InventoryItem) -> Element<'a, Message> {
+    let uid = item.uid;
+    let meta = format!("+{} AC · {:.1} lb", item.ac_bonus, item.weight);
+    let info = column![
+        text(item.name.clone()).size(14).color(p.text),
+        text(meta).size(11).color(p.text_dim),
+    ]
+    .spacing(2)
+    .width(Length::Fill);
+
+    let equip = button(text(if item.equipped { "Equipped" } else { "Equip" }).size(11))
+        .padding([5, 10])
+        .style(crate::theme::tab_button(p, item.equipped))
+        .on_press(Message::InvToggleEquip(uid));
+
+    let remove = button(text("Remove").size(11))
+        .padding([5, 10])
+        .style(crate::theme::ghost_button(p))
+        .on_press(Message::InvRemove(uid));
+
+    container(
+        row![info, equip, remove]
+            .spacing(8)
+            .align_y(Alignment::Center),
+    )
+    .padding([8, 12])
+    .style(crate::theme::plain_row(p))
+    .into()
+}
+
+fn consumable_section<'a>(
+    app: &'a App,
+    p: Palette,
+    title: &'a str,
+    keywords: &'a [&'a str],
+) -> Element<'a, Message> {
+    let mut list = column![].spacing(6);
+    let mut any = false;
+    for item in &app.character.inventory {
+        let name = item.name.to_lowercase();
+        if !keywords.iter().any(|k| name.contains(k)) {
+            continue;
+        }
+        any = true;
+        list = list.push(consumable_row(p, item));
+    }
+    if !any {
+        list = list.push(caption(p, "None carried."));
+    }
+    widgets::section(p, title, list)
+}
+
+fn consumable_row<'a>(p: Palette, item: &InventoryItem) -> Element<'a, Message> {
+    let uid = item.uid;
+    let dec = Message::InvSetQty(uid, item.quantity.saturating_sub(1).to_string());
+    let inc = Message::InvSetQty(uid, (item.quantity + 1).to_string());
+
+    let stepper = row![
+        button(text("−").size(14))
+            .padding([1, 9])
+            .style(crate::theme::subtle_button(p))
+            .on_press(dec),
+        container(text(item.quantity.to_string()).size(13).color(p.text))
+            .center_x(Length::Fixed(30.0)),
+        button(text("+").size(14))
+            .padding([1, 9])
+            .style(crate::theme::subtle_button(p))
+            .on_press(inc),
+    ]
+    .spacing(4)
+    .align_y(Alignment::Center);
+
+    let remove = button(text("×").size(14))
+        .padding([1, 9])
+        .style(crate::theme::ghost_button(p))
+        .on_press(Message::InvRemove(uid));
+
+    container(
+        row![
+            text(item.name.clone()).size(13).color(p.text).width(Length::Fill),
+            stepper,
+            remove,
+        ]
+        .spacing(8)
+        .align_y(Alignment::Center),
+    )
+    .padding([7, 12])
+    .style(crate::theme::plain_row(p))
+    .into()
+}
+
+fn carried_section<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
     let mut list = column![].spacing(6);
     if app.character.inventory.is_empty() {
-        list = list.push(caption(p, "No items yet. Buy from the shop or add a custom item."));
+        list = list.push(caption(p, "No items yet. Buy from the Shop or add a custom item."));
     }
     for item in &app.character.inventory {
         let expanded = app.expanded_item == Some(item.uid);
@@ -193,16 +321,7 @@ fn inventory_panel<'a>(app: &'a App, p: Palette, d: &DerivedStats) -> Element<'a
         widgets::ghost_button(p, "+ Custom Item", Message::InvAdd),
     ];
 
-    widgets::section(
-        p,
-        "Carried Gear",
-        column![
-            capacity,
-            header,
-            widgets::browse_list(list),
-        ]
-        .spacing(12),
-    )
+    widgets::section(p, "All Carried Gear", column![header, list].spacing(12))
 }
 
 fn inventory_row<'a>(
@@ -269,7 +388,12 @@ fn inventory_row<'a>(
     .spacing(8)
     .align_y(Alignment::End);
 
-    let mut inner = column![name, fields].spacing(8);
+    let mut header = row![container(name).width(Length::Fill)].spacing(8);
+    if let Some(slot) = item.slot {
+        header = header.push(widgets::pill(p, format!("Worn: {}", slot.label())));
+    }
+
+    let mut inner = column![header.align_y(Alignment::Center), fields].spacing(8);
     if expanded {
         if let Some(desc) = template_desc {
             inner = inner.push(description_box(p, &desc));
@@ -291,6 +415,14 @@ fn inventory_row<'a>(
     container(inner)
         .padding([10, 12])
         .style(crate::theme::plain_row(p))
+        .into()
+}
+
+fn description_box<'a>(p: Palette, text_body: &str) -> Element<'a, Message> {
+    container(text(text_body.to_string()).size(12).color(p.text_dim))
+        .padding(12)
+        .width(Length::Fill)
+        .style(crate::theme::stat_box(p))
         .into()
 }
 

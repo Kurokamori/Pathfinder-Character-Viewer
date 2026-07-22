@@ -27,6 +27,7 @@ fn owned_column<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
     column![
         owned_feats(app, p),
         racial_traits(app, p),
+        languages(app, p),
         class_abilities(app, p),
     ]
     .spacing(18)
@@ -122,6 +123,20 @@ fn racial_traits<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
         widgets::ghost_button(p, "+ Racial Trait", Message::CustomAdd(CustomList::RacialTrait)),
     ];
     widgets::section(p, "Racial Traits", column![inner, add].spacing(12))
+}
+
+fn languages<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {
+    let target = crate::app::EditorTarget::Languages;
+    let body = column![
+        caption(
+            p,
+            "One per line. Bonus languages come from Intelligence and ranks in Linguistics.",
+        ),
+        widgets::growing_editor(p, app.editors.get(&target), "Common", target),
+    ]
+    .spacing(6);
+
+    widgets::section(p, "Languages", body)
 }
 
 fn class_abilities<'a>(app: &'a App, p: Palette) -> Element<'a, Message> {

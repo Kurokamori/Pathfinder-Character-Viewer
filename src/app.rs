@@ -2,7 +2,7 @@
 
 use crate::data::loader;
 use crate::data::GameData;
-use crate::model::character::{Character, Size};
+use crate::model::character::{Character, EquipSlot, Size};
 use crate::model::compendium::{AbilityCategory, Compendium, ItemKind};
 use crate::model::settings::Settings;
 use crate::persistence::{self, CharacterSummary};
@@ -69,6 +69,14 @@ pub enum EditorTarget {
     FamiliarGranted,
     FamiliarSpecial,
     FamiliarNotes,
+    Appearance,
+    Origins,
+    Personality,
+    Affiliation,
+    Backstory,
+    Friends,
+    Foes,
+    Languages,
     /// A homebrew entry's description, keyed by list and entry uid.
     CustomDesc(CustomList, u64),
     /// An inventory item's notes/description, keyed by item uid.
@@ -151,6 +159,7 @@ pub enum Message {
     DeleteCharacter(u64),
     ImportCharacter,
     ExportCharacter,
+    ExportPdf,
     OpenSettings(bool),
     SelectTab(Tab),
     SaveNow,
@@ -213,6 +222,9 @@ pub enum Message {
     InvRemove(u64),
     InvExpand(u64),
     InvToggleEquip(u64),
+    InvAssignSlot(u64, EquipSlot),
+    InvClearSlot(EquipSlot),
+    InvSlotPicker(Option<EquipSlot>),
     InvSetQty(u64, String),
     InvSetName(u64, String),
     InvSetWeight(u64, String),
@@ -274,6 +286,8 @@ pub struct App {
     pub shop_search: String,
     pub selected_item: Option<String>,
     pub expanded_item: Option<u64>,
+    /// The equipment slot whose item picker is currently open, if any.
+    pub slot_picker: Option<EquipSlot>,
     pub feat_search: String,
     pub selected_feat: Option<String>,
     pub expanded_feature: Option<String>,
@@ -316,6 +330,7 @@ impl App {
             shop_search: String::new(),
             selected_item: None,
             expanded_item: None,
+            slot_picker: None,
             feat_search: String::new(),
             selected_feat: None,
             expanded_feature: None,
@@ -354,6 +369,7 @@ impl App {
         self.selected_spell = None;
         self.selected_hex = None;
         self.selected_item = None;
+        self.slot_picker = None;
         self.selected_feat = None;
         self.expanded_combat_ref = None;
         self.dirty = false;
@@ -432,6 +448,11 @@ impl App {
             }
             Message::ExportCharacter => {
                 let _ = persistence::export_character(&self.character);
+            }
+            Message::ExportPdf => {
+                if let Err(error) = persistence::export_pdf(&self.character, &self.game) {
+                    self.load_error = Some(format!("PDF export failed: {error}"));
+                }
             }
             Message::SelectTab(tab) => self.active_tab = tab,
             Message::ChangePortrait => {
@@ -675,6 +696,7 @@ impl App {
                     max_dex: None,
                     armor_check_penalty: 0,
                     notes: String::new(),
+                    slot: None,
                 });
                 self.mark_dirty();
             }
@@ -697,6 +719,29 @@ impl App {
                     item.equipped = !item.equipped;
                     self.mark_dirty();
                 }
+            }
+            Message::InvAssignSlot(uid, slot) => {
+                for item in self.character.inventory.iter_mut() {
+                    if item.slot == Some(slot) {
+                        item.slot = None;
+                    }
+                }
+                if let Some(item) = self.character.inventory.iter_mut().find(|i| i.uid == uid) {
+                    item.slot = Some(slot);
+                }
+                self.slot_picker = None;
+                self.mark_dirty();
+            }
+            Message::InvClearSlot(slot) => {
+                for item in self.character.inventory.iter_mut() {
+                    if item.slot == Some(slot) {
+                        item.slot = None;
+                    }
+                }
+                self.mark_dirty();
+            }
+            Message::InvSlotPicker(slot) => {
+                self.slot_picker = if self.slot_picker == slot { None } else { slot };
             }
             Message::InvSetQty(uid, v) => {
                 if let Some(item) = self.character.inventory.iter_mut().find(|i| i.uid == uid) {
@@ -986,6 +1031,7 @@ impl App {
             max_dex: template.max_dex,
             armor_check_penalty: template.armor_check_penalty,
             notes: String::new(),
+            slot: None,
         });
         self.mark_dirty();
     }
@@ -1047,6 +1093,14 @@ impl App {
                 .as_ref()
                 .map(|f| f.notes.clone())
                 .unwrap_or_default(),
+            EditorTarget::Appearance => self.character.appearance.clone(),
+            EditorTarget::Origins => self.character.origins.clone(),
+            EditorTarget::Personality => self.character.personality.clone(),
+            EditorTarget::Affiliation => self.character.affiliation.clone(),
+            EditorTarget::Backstory => self.character.backstory.clone(),
+            EditorTarget::Friends => self.character.friends.clone(),
+            EditorTarget::Foes => self.character.foes.clone(),
+            EditorTarget::Languages => self.character.languages.clone(),
             EditorTarget::CustomDesc(list, uid) => self
                 .custom_list_ref(list)
                 .iter()
@@ -1081,6 +1135,15 @@ impl App {
                     f.notes = text;
                 }
             }
+            
+            EditorTarget::Appearance => self.character.appearance = text,
+            EditorTarget::Origins => self.character.origins = text,
+            EditorTarget::Personality => self.character.personality = text,
+            EditorTarget::Affiliation => self.character.affiliation = text,
+            EditorTarget::Backstory => self.character.backstory = text,
+            EditorTarget::Friends => self.character.friends = text,
+            EditorTarget::Foes => self.character.foes = text,
+            EditorTarget::Languages => self.character.languages = text,
             EditorTarget::CustomDesc(list, uid) => {
                 if let Some(entry) = self.custom_list_mut(list).iter_mut().find(|e| e.uid == uid) {
                     entry.description = text;
@@ -1098,7 +1161,16 @@ impl App {
     /// fields, drop buffers for removed ones, and leave live buffers untouched
     /// so in-progress edits keep their cursor and selection.
     fn sync_editors(&mut self) {
-        let mut wanted: Vec<EditorTarget> = Vec::new();
+        let mut wanted: Vec<EditorTarget> = vec![
+            EditorTarget::Appearance,
+            EditorTarget::Origins,
+            EditorTarget::Personality,
+            EditorTarget::Affiliation,
+            EditorTarget::Backstory,
+            EditorTarget::Friends,
+            EditorTarget::Foes,
+            EditorTarget::Languages,
+        ];
         if self.character.familiar.is_some() {
             wanted.push(EditorTarget::FamiliarGranted);
             wanted.push(EditorTarget::FamiliarSpecial);
